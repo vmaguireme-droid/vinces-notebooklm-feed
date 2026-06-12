@@ -252,6 +252,10 @@ def render_index(config, episodes):
             <input type="checkbox">
             <span>Remove from this list after I listen</span>
           </label>
+          <label class="playlist-option">
+            <input class="playlist-check" type="checkbox">
+            <span>Add to playlist</span>
+          </label>
         </div>
       </article>""")
     if not rows:
@@ -341,6 +345,22 @@ def render_index(config, episodes):
       margin: 24px 0 34px;
       align-items: center;
     }}
+    .playlist-panel {{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto auto auto;
+      gap: 12px;
+      align-items: center;
+      margin: 0 0 20px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(117, 247, 230, 0.08);
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+    }}
+    .playlist-status {{
+      color: var(--muted);
+      line-height: 1.4;
+    }}
     a, .secondary-button {{
       color: var(--cyan);
     }}
@@ -352,6 +372,22 @@ def render_index(config, episodes):
       padding: 10px 16px;
       font: inherit;
       cursor: pointer;
+    }}
+    .playlist-button {{
+      min-height: 48px;
+      border: 0;
+      border-radius: 999px;
+      padding: 0 18px;
+      color: #061011;
+      background: linear-gradient(135deg, var(--cyan), #a9fff4);
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }}
+    .playlist-button.secondary {{
+      color: var(--cyan);
+      background: rgba(117, 247, 230, 0.08);
+      border: 1px solid var(--line);
     }}
     .episodes {{
       display: grid;
@@ -429,7 +465,8 @@ def render_index(config, episodes):
       height: 100%;
       background: linear-gradient(90deg, var(--cyan), var(--amber));
     }}
-    .remove-option {{
+    .remove-option,
+    .playlist-option {{
       display: flex;
       gap: 10px;
       align-items: center;
@@ -437,11 +474,17 @@ def render_index(config, episodes):
       line-height: 1.35;
       user-select: none;
     }}
-    .remove-option input {{
+    .remove-option input,
+    .playlist-option input {{
       width: 24px;
       height: 24px;
       accent-color: var(--cyan);
       flex: 0 0 auto;
+    }}
+    .playlist-option {{
+      padding: 10px;
+      border-radius: 14px;
+      background: rgba(236, 248, 247, 0.06);
     }}
     .empty-state {{
       display: none;
@@ -456,6 +499,9 @@ def render_index(config, episodes):
         grid-template-columns: 1fr;
       }}
       .episode {{
+        grid-template-columns: 1fr;
+      }}
+      .playlist-panel {{
         grid-template-columns: 1fr;
       }}
       .artwork {{
@@ -478,6 +524,12 @@ def render_index(config, episodes):
       <a href="feed.xml">Podcast RSS feed</a>
       <button class="secondary-button" type="button" id="restore-listened">Show hidden episodes</button>
     </div>
+    <section class="playlist-panel" aria-label="Playlist controls">
+      <div class="playlist-status" id="playlist-status">No playlist episodes selected.</div>
+      <button class="playlist-button" type="button" id="play-playlist">Play playlist</button>
+      <button class="playlist-button secondary" type="button" id="select-visible">Select visible</button>
+      <button class="playlist-button secondary" type="button" id="clear-playlist">Clear playlist</button>
+    </section>
     <section class="episodes" id="episodes">
 {chr(10).join(rows)}
     </section>
@@ -485,17 +537,60 @@ def render_index(config, episodes):
   </main>
   <script>
     const hiddenKey = "vinces-notebooklm-feed-hidden";
+    const playlistKey = "vinces-notebooklm-feed-playlist";
     const hidden = new Set(JSON.parse(localStorage.getItem(hiddenKey) || "[]"));
+    const playlist = new Set(JSON.parse(localStorage.getItem(playlistKey) || "[]"));
     const episodes = Array.from(document.querySelectorAll(".episode"));
     const emptyState = document.getElementById("empty-state");
+    const playlistStatus = document.getElementById("playlist-status");
+    let playlistQueue = [];
+    let playlistIndex = -1;
 
     function saveHidden() {{
       localStorage.setItem(hiddenKey, JSON.stringify(Array.from(hidden)));
     }}
 
+    function savePlaylist() {{
+      localStorage.setItem(playlistKey, JSON.stringify(Array.from(playlist)));
+    }}
+
     function updateEmptyState() {{
       const visible = episodes.some((episode) => episode.style.display !== "none");
       emptyState.style.display = visible ? "none" : "block";
+    }}
+
+    function selectedVisibleEpisodes() {{
+      return episodes.filter((episode) => playlist.has(episode.dataset.episodeId) && episode.style.display !== "none");
+    }}
+
+    function updatePlaylistStatus() {{
+      const count = selectedVisibleEpisodes().length;
+      playlistStatus.textContent = count
+        ? `${{count}} episode${{count === 1 ? "" : "s"}} in playlist.`
+        : "No playlist episodes selected.";
+    }}
+
+    function stopAllAudio() {{
+      document.querySelectorAll("audio").forEach((audio) => {{
+        audio.pause();
+      }});
+    }}
+
+    function playEpisode(episode) {{
+      const audio = episode.querySelector("audio");
+      stopAllAudio();
+      audio.play();
+    }}
+
+    function playNextInPlaylist() {{
+      playlistIndex += 1;
+      if (playlistIndex >= playlistQueue.length) {{
+        playlistIndex = -1;
+        playlistQueue = [];
+        updatePlaylistStatus();
+        return;
+      }}
+      playEpisode(playlistQueue[playlistIndex]);
     }}
 
     function hideEpisode(episode) {{
@@ -515,20 +610,36 @@ def render_index(config, episodes):
       const play = episode.querySelector(".play");
       const stop = episode.querySelector(".stop");
       const removeAfterListen = episode.querySelector(".remove-option input");
+      const playlistCheck = episode.querySelector(".playlist-check");
       const progress = episode.querySelector(".progress-bar");
 
       if (hidden.has(id)) {{
         episode.style.display = "none";
       }}
 
+      if (playlist.has(id)) {{
+        playlistCheck.checked = true;
+      }}
+
+      playlistCheck.addEventListener("change", () => {{
+        if (playlistCheck.checked) {{
+          playlist.add(id);
+        }} else {{
+          playlist.delete(id);
+        }}
+        savePlaylist();
+        updatePlaylistStatus();
+      }});
+
       play.addEventListener("click", () => {{
-        document.querySelectorAll("audio").forEach((other) => {{
-          if (other !== audio) other.pause();
-        }});
-        audio.play();
+        playlistIndex = -1;
+        playlistQueue = [];
+        playEpisode(episode);
       }});
 
       stop.addEventListener("click", () => {{
+        playlistIndex = -1;
+        playlistQueue = [];
         audio.pause();
         audio.currentTime = 0;
       }});
@@ -543,6 +654,9 @@ def render_index(config, episodes):
         if (removeAfterListen.checked) {{
           hideEpisode(episode);
         }}
+        if (playlistQueue.length) {{
+          playNextInPlaylist();
+        }}
       }});
     }});
 
@@ -554,9 +668,40 @@ def render_index(config, episodes):
         episode.style.display = "";
       }});
       updateEmptyState();
+      updatePlaylistStatus();
+    }});
+
+    document.getElementById("play-playlist").addEventListener("click", () => {{
+      playlistQueue = selectedVisibleEpisodes();
+      playlistIndex = -1;
+      if (playlistQueue.length) {{
+        playNextInPlaylist();
+      }}
+    }});
+
+    document.getElementById("select-visible").addEventListener("click", () => {{
+      episodes.forEach((episode) => {{
+        if (episode.style.display === "none") return;
+        playlist.add(episode.dataset.episodeId);
+        episode.querySelector(".playlist-check").checked = true;
+      }});
+      savePlaylist();
+      updatePlaylistStatus();
+    }});
+
+    document.getElementById("clear-playlist").addEventListener("click", () => {{
+      playlist.clear();
+      playlistQueue = [];
+      playlistIndex = -1;
+      episodes.forEach((episode) => {{
+        episode.querySelector(".playlist-check").checked = false;
+      }});
+      savePlaylist();
+      updatePlaylistStatus();
     }});
 
     updateEmptyState();
+    updatePlaylistStatus();
   </script>
 </body>
 </html>

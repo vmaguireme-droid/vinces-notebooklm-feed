@@ -17,6 +17,14 @@ This folder turns audio files into a simple podcast website and RSS feed.
 6. Run `python3 publish.py` again.
 7. Upload or deploy the `public` folder to your podcast hosting location.
 
+Once GitHub Pages is configured, use the one-command deploy:
+
+```bash
+./deploy.sh
+```
+
+That regenerates the feed, commits source changes to `main`, publishes the generated site to `gh-pages`, and pushes both branches.
+
 ## First-Time Setup
 
 Edit `config.json` before submitting the feed anywhere:

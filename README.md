@@ -29,6 +29,8 @@ Run continuously:
 
 The watcher checks every 5 minutes. If it finds audio in `incoming`, it publishes the files, deploys GitHub Pages, and moves the original source files into `old-files`.
 
+The `old-files` folder also contains `Listened Files.md`, an automatically refreshed list of archived audio files.
+
 Install as a Mac login automation:
 
 ```bash

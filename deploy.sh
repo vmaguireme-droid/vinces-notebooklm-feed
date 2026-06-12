@@ -30,6 +30,7 @@ touch "$tmpdir/.nojekyll"
 )
 
 python3 publish.py --archive-incoming
+python3 update_old_files_index.py
 
 echo "Published site: https://vmaguireme-droid.github.io/vinces-notebooklm-feed/"
 echo "Published RSS:  https://vmaguireme-droid.github.io/vinces-notebooklm-feed/feed.xml"

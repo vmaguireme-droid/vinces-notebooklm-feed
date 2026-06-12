@@ -7,7 +7,8 @@
     "published": "Fri, 12 Jun 2026 18:55:13 +0000",
     "guid": "be3a8ef0-8f13-4e02-9784-f6eaa4c7c230",
     "duration": "0:05:48",
-    "draft": false
+    "draft": false,
+    "source_sha256": "2934c255e3017d659c69fa16b69d2ebbda9513432aaae291c7f2493d4665e9a6"
   },
   {
     "title": "Why Faster Hardware Won't Fix Your Cloud",
@@ -17,7 +18,8 @@
     "published": "Fri, 12 Jun 2026 18:55:13 +0000",
     "guid": "cddb3f0c-e41a-4c26-8c3b-950212de5fcd",
     "duration": "0:19:10",
-    "draft": false
+    "draft": false,
+    "source_sha256": "5f87161b96ab320ed29477f61b565771f398db7d2ca3595014fe40687c8a3935"
   },
   {
     "title": "What Your Dog Is Really Telling You",
@@ -27,7 +29,8 @@
     "published": "Fri, 12 Jun 2026 18:55:13 +0000",
     "guid": "29445edd-ad41-4898-9b9b-f5ba005ef64d",
     "duration": "0:21:25",
-    "draft": false
+    "draft": false,
+    "source_sha256": "138f057abf6b5f9217c4357bc9af8ff966cddceda90a346f8d228bc0f9472afc"
   },
   {
     "title": "Triage and Training for Barking Dogs",
@@ -37,7 +40,8 @@
     "published": "Fri, 12 Jun 2026 18:55:13 +0000",
     "guid": "f8c28931-7538-43ef-b4af-0d2f10eae2c7",
     "duration": "0:18:41",
-    "draft": false
+    "draft": false,
+    "source_sha256": "c0d0af0fc20936a4e4cfdf46149e1b7d3bf6cc48dc3e388da0add96d65e8df90"
   },
   {
     "title": "The Death of the Network Perimeter",
@@ -47,7 +51,8 @@
     "published": "Fri, 12 Jun 2026 18:55:13 +0000",
     "guid": "7b9e962a-4ef2-4662-9fbe-101c1f4a766a",
     "duration": "0:20:49",
-    "draft": false
+    "draft": false,
+    "source_sha256": "808c10544615c28ae3c69017e262f9c235ea412083ed2bcb6de5035a582e7eda"
   },
   {
     "title": "Surviving the Adolescence of Powerful AI",
@@ -57,7 +62,8 @@
     "published": "Fri, 12 Jun 2026 18:55:13 +0000",
     "guid": "53e4d25f-0537-444f-89ad-5abee6d96a3e",
     "duration": "0:15:10",
-    "draft": false
+    "draft": false,
+    "source_sha256": "bc233da68bba335d250190ecc7815d54405de0b67e31c613e35834e2541944f5"
   },
   {
     "title": "Replacing Legacy MPLS with uSID Routing",
@@ -67,7 +73,8 @@
     "published": "Fri, 12 Jun 2026 18:55:13 +0000",
     "guid": "95d362c8-e411-4627-9973-7718b2de90f6",
     "duration": "0:22:10",
-    "draft": false
+    "draft": false,
+    "source_sha256": "1e5e2a1a95e2b357cf8bfae04e5bdc9ca1c72a6540cbbb4b164b69cbfab05a8b"
   },
   {
     "title": "Bridging the MPLS and SRv6 Divide",
@@ -77,7 +84,8 @@
     "published": "Fri, 12 Jun 2026 18:55:13 +0000",
     "guid": "12a17c76-621d-4f85-9438-9d624fc05a99",
     "duration": "0:10:44",
-    "draft": false
+    "draft": false,
+    "source_sha256": "7f30fd6a329fdb8c118886ce9a04742c370c52b216fec667a92e624a41dc6d84"
   },
   {
     "title": "Barking Solutions for Busy Working Families",
@@ -87,6 +95,7 @@
     "published": "Fri, 12 Jun 2026 18:55:13 +0000",
     "guid": "a32f0665-5029-4130-a122-82871cf21f9d",
     "duration": "0:18:39",
-    "draft": false
+    "draft": false,
+    "source_sha256": "96a9e523f514322a4b74472f758f9fbb6665e149d75abba453b707d3c198c791"
   }
 ]

@@ -77,6 +77,14 @@ def save_json(path, data):
         handle.write("\n")
 
 
+def file_sha256(path):
+    digest = __import__("hashlib").sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def unique_audio_name(source, existing):
     base = slugify(source.stem)
     candidate = f"{base}{source.suffix.lower()}"
@@ -104,14 +112,24 @@ def unique_archive_name(source):
 def import_incoming(episodes, publish_new=False):
     INCOMING.mkdir(parents=True, exist_ok=True)
     AUDIO_DIR.mkdir(parents=True, exist_ok=True)
-    known_sources = {episode.get("source_name") for episode in episodes}
+    for episode in episodes:
+        if episode.get("source_sha256"):
+            continue
+        audio_file = episode.get("audio_file")
+        if not audio_file:
+            continue
+        audio_path = AUDIO_DIR / audio_file
+        if audio_path.exists():
+            episode["source_sha256"] = file_sha256(audio_path)
+    known_hashes = {episode.get("source_sha256") for episode in episodes if episode.get("source_sha256")}
     known_audio = {episode.get("audio_file") for episode in episodes}
     imported = []
 
     for source in sorted(INCOMING.iterdir()):
         if not source.is_file() or source.suffix.lower() not in AUDIO_EXTENSIONS:
             continue
-        if source.name in known_sources:
+        source_hash = file_sha256(source)
+        if source_hash in known_hashes:
             continue
 
         audio_name = unique_audio_name(source, known_audio)
@@ -124,6 +142,7 @@ def import_incoming(episodes, publish_new=False):
             "description": "",
             "audio_file": audio_name,
             "source_name": source.name,
+            "source_sha256": source_hash,
             "published": rfc2822_now(),
             "guid": str(uuid.uuid4()),
             "duration": duration_from_afinfo(destination),
@@ -133,6 +152,7 @@ def import_incoming(episodes, publish_new=False):
             episode["description"] = episode["title"]
         episodes.insert(0, episode)
         imported.append(episode)
+        known_hashes.add(source_hash)
     return imported
 
 

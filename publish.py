@@ -229,10 +229,30 @@ def render_index(config, episodes):
     rows = []
     for episode in published:
         audio_url = f"audio/{quote(episode['audio_file'])}"
-        rows.append(f"""      <article>
-        <h2>{html.escape(episode["title"])}</h2>
-        <p>{html.escape(episode.get("description") or "")}</p>
-        <audio controls preload="metadata" src="{audio_url}"></audio>
+        episode_id = html.escape(episode["guid"])
+        title = html.escape(episode["title"])
+        description = html.escape(episode.get("description") or "")
+        duration = html.escape(episode.get("duration") or "Audio")
+        rows.append(f"""      <article class="episode" data-episode-id="{episode_id}">
+        <div class="episode-copy">
+          <p class="eyebrow">{duration}</p>
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
+        <div class="player">
+          <audio preload="metadata" src="{audio_url}"></audio>
+          <div class="controls">
+            <button class="control play" type="button" aria-label="Play {title}">Play</button>
+            <button class="control stop" type="button" aria-label="Stop {title}">Stop</button>
+          </div>
+          <div class="progress-shell" aria-hidden="true">
+            <div class="progress-bar"></div>
+          </div>
+          <label class="remove-option">
+            <input type="checkbox">
+            <span>Remove from this list after I listen</span>
+          </label>
+        </div>
       </article>""")
     if not rows:
         rows.append("      <p>No published episodes yet.</p>")
@@ -244,21 +264,300 @@ def render_index(config, episodes):
   <title>{html.escape(config["title"])}</title>
   <link rel="alternate" type="application/rss+xml" title="{html.escape(config["title"])}" href="feed.xml">
   <style>
-    body {{ margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #17202a; background: #f7f5ef; }}
-    main {{ max-width: 760px; margin: 0 auto; padding: 48px 20px; }}
-    h1 {{ font-size: 36px; margin: 0 0 8px; }}
-    article {{ border-top: 1px solid #d9d3c5; padding: 24px 0; }}
-    audio {{ width: 100%; }}
-    a {{ color: #0b5cad; }}
+    :root {{
+      color-scheme: dark;
+      --bg: #071012;
+      --panel: rgba(15, 31, 34, 0.86);
+      --panel-strong: rgba(20, 45, 49, 0.96);
+      --text: #ecf8f7;
+      --muted: #a7bfbd;
+      --line: rgba(132, 255, 239, 0.2);
+      --cyan: #75f7e6;
+      --amber: #ffbd61;
+      --red: #ff7d73;
+      --shadow: rgba(0, 0, 0, 0.36);
+    }}
+    * {{ box-sizing: border-box; }}
+    body {{
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 18% 10%, rgba(117, 247, 230, 0.16), transparent 28rem),
+        radial-gradient(circle at 88% 4%, rgba(255, 189, 97, 0.12), transparent 24rem),
+        linear-gradient(135deg, #071012 0%, #0d1d21 55%, #132529 100%);
+    }}
+    body::before {{
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.28;
+      background-image:
+        linear-gradient(rgba(117, 247, 230, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(117, 247, 230, 0.08) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: linear-gradient(to bottom, black, transparent 82%);
+    }}
+    main {{
+      position: relative;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 56px 20px 72px;
+    }}
+    header {{
+      display: grid;
+      grid-template-columns: 112px 1fr;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 30px;
+    }}
+    .artwork {{
+      width: 112px;
+      height: 112px;
+      border-radius: 22px;
+      box-shadow: 0 18px 48px var(--shadow);
+      border: 1px solid var(--line);
+      object-fit: cover;
+    }}
+    h1 {{
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 0.95;
+      margin: 0 0 12px;
+      letter-spacing: 0;
+    }}
+    .subtitle {{
+      max-width: 700px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.55;
+    }}
+    .top-actions {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 24px 0 34px;
+      align-items: center;
+    }}
+    a, .secondary-button {{
+      color: var(--cyan);
+    }}
+    .secondary-button {{
+      appearance: none;
+      border: 1px solid var(--line);
+      background: rgba(117, 247, 230, 0.08);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font: inherit;
+      cursor: pointer;
+    }}
+    .episodes {{
+      display: grid;
+      gap: 18px;
+    }}
+    .episode {{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 26px;
+      align-items: center;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: linear-gradient(135deg, var(--panel), rgba(11, 23, 26, 0.92));
+      box-shadow: 0 18px 50px var(--shadow);
+      backdrop-filter: blur(12px);
+    }}
+    .episode.removing {{
+      opacity: 0;
+      transform: translateY(8px) scale(0.985);
+      transition: opacity 220ms ease, transform 220ms ease;
+    }}
+    .eyebrow {{
+      margin: 0 0 8px;
+      color: var(--amber);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }}
+    h2 {{
+      margin: 0 0 10px;
+      font-size: clamp(21px, 3vw, 30px);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }}
+    .episode-copy p:last-child {{
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }}
+    .player {{
+      display: grid;
+      gap: 14px;
+    }}
+    .controls {{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }}
+    .control {{
+      min-height: 70px;
+      border: 0;
+      border-radius: 18px;
+      color: #061011;
+      font-size: 20px;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+    }}
+    .play {{
+      background: linear-gradient(135deg, var(--cyan), #a9fff4);
+    }}
+    .stop {{
+      background: linear-gradient(135deg, var(--amber), var(--red));
+    }}
+    .progress-shell {{
+      height: 12px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(236, 248, 247, 0.14);
+      border: 1px solid var(--line);
+    }}
+    .progress-bar {{
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--cyan), var(--amber));
+    }}
+    .remove-option {{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: var(--muted);
+      line-height: 1.35;
+      user-select: none;
+    }}
+    .remove-option input {{
+      width: 24px;
+      height: 24px;
+      accent-color: var(--cyan);
+      flex: 0 0 auto;
+    }}
+    .empty-state {{
+      display: none;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--panel-strong);
+      color: var(--muted);
+    }}
+    @media (max-width: 760px) {{
+      header {{
+        grid-template-columns: 1fr;
+      }}
+      .episode {{
+        grid-template-columns: 1fr;
+      }}
+      .artwork {{
+        width: 96px;
+        height: 96px;
+      }}
+    }}
   </style>
 </head>
 <body>
   <main>
-    <h1>{html.escape(config["title"])}</h1>
-    <p>{html.escape(config["description"])}</p>
-    <p><a href="feed.xml">Podcast RSS feed</a></p>
+    <header>
+      <img class="artwork" src="artwork.png" alt="">
+      <div>
+        <h1>{html.escape(config["title"])}</h1>
+        <p class="subtitle">{html.escape(config["description"])}</p>
+      </div>
+    </header>
+    <div class="top-actions">
+      <a href="feed.xml">Podcast RSS feed</a>
+      <button class="secondary-button" type="button" id="restore-listened">Show hidden episodes</button>
+    </div>
+    <section class="episodes" id="episodes">
 {chr(10).join(rows)}
+    </section>
+    <p class="empty-state" id="empty-state">Everything in this browser has been marked listened. Use "Show hidden episodes" to bring them back.</p>
   </main>
+  <script>
+    const hiddenKey = "vinces-notebooklm-feed-hidden";
+    const hidden = new Set(JSON.parse(localStorage.getItem(hiddenKey) || "[]"));
+    const episodes = Array.from(document.querySelectorAll(".episode"));
+    const emptyState = document.getElementById("empty-state");
+
+    function saveHidden() {{
+      localStorage.setItem(hiddenKey, JSON.stringify(Array.from(hidden)));
+    }}
+
+    function updateEmptyState() {{
+      const visible = episodes.some((episode) => episode.style.display !== "none");
+      emptyState.style.display = visible ? "none" : "block";
+    }}
+
+    function hideEpisode(episode) {{
+      const id = episode.dataset.episodeId;
+      hidden.add(id);
+      saveHidden();
+      episode.classList.add("removing");
+      setTimeout(() => {{
+        episode.style.display = "none";
+        updateEmptyState();
+      }}, 230);
+    }}
+
+    episodes.forEach((episode) => {{
+      const id = episode.dataset.episodeId;
+      const audio = episode.querySelector("audio");
+      const play = episode.querySelector(".play");
+      const stop = episode.querySelector(".stop");
+      const removeAfterListen = episode.querySelector(".remove-option input");
+      const progress = episode.querySelector(".progress-bar");
+
+      if (hidden.has(id)) {{
+        episode.style.display = "none";
+      }}
+
+      play.addEventListener("click", () => {{
+        document.querySelectorAll("audio").forEach((other) => {{
+          if (other !== audio) other.pause();
+        }});
+        audio.play();
+      }});
+
+      stop.addEventListener("click", () => {{
+        audio.pause();
+        audio.currentTime = 0;
+      }});
+
+      audio.addEventListener("timeupdate", () => {{
+        const percent = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+        progress.style.width = `${{percent}}%`;
+      }});
+
+      audio.addEventListener("ended", () => {{
+        progress.style.width = "100%";
+        if (removeAfterListen.checked) {{
+          hideEpisode(episode);
+        }}
+      }});
+    }});
+
+    document.getElementById("restore-listened").addEventListener("click", () => {{
+      hidden.clear();
+      saveHidden();
+      episodes.forEach((episode) => {{
+        episode.classList.remove("removing");
+        episode.style.display = "";
+      }});
+      updateEmptyState();
+    }});
+
+    updateEmptyState();
+  </script>
 </body>
 </html>
 """

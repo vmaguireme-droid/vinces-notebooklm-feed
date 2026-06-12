@@ -20,6 +20,14 @@ CONFIG_PATH = ROOT / "config.json"
 EPISODES_PATH = ROOT / "episodes.json"
 
 AUDIO_EXTENSIONS = {".mp3", ".m4a", ".wav", ".aac", ".ogg", ".flac"}
+MIME_OVERRIDES = {
+    ".m4a": "audio/mp4",
+    ".mp3": "audio/mpeg",
+    ".wav": "audio/wav",
+    ".aac": "audio/aac",
+    ".ogg": "audio/ogg",
+    ".flac": "audio/flac",
+}
 
 
 def slugify(value):
@@ -121,7 +129,8 @@ def render_feed(config, episodes):
             continue
         audio_file = episode["audio_file"]
         audio_path = AUDIO_DIR / audio_file
-        mime_type = mimetypes.guess_type(audio_file)[0] or "audio/mpeg"
+        mime_type = MIME_OVERRIDES.get(Path(audio_file).suffix.lower())
+        mime_type = mime_type or mimetypes.guess_type(audio_file)[0] or "audio/mpeg"
         title = html.escape(episode["title"])
         description = html.escape(episode.get("description") or episode["title"])
         audio_url = absolute_url(site_url, "audio", audio_file)

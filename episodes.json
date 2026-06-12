@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "title": "Xage versus CyberArk for Akamai Port 443",
+    "description": "Xage versus CyberArk for Akamai Port 443",
+    "audio_file": "xage-versus-cyberark-for-akamai-port-443.m4a",
+    "source_name": "Xage_versus_CyberArk_for_Akamai_Port_443.m4a",
+    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "guid": "be3a8ef0-8f13-4e02-9784-f6eaa4c7c230",
+    "duration": "0:05:48",
+    "draft": false
+  },
+  {
+    "title": "Why Faster Hardware Won't Fix Your Cloud",
+    "description": "Why Faster Hardware Won't Fix Your Cloud",
+    "audio_file": "why-faster-hardware-won-t-fix-your-cloud.m4a",
+    "source_name": "Why Faster Hardware Won't Fix Your Cloud.m4a",
+    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "guid": "cddb3f0c-e41a-4c26-8c3b-950212de5fcd",
+    "duration": "0:19:10",
+    "draft": false
+  },
+  {
+    "title": "What Your Dog Is Really Telling You",
+    "description": "What Your Dog Is Really Telling You",
+    "audio_file": "what-your-dog-is-really-telling-you.m4a",
+    "source_name": "What_your_dog_is_really_telling_you.m4a",
+    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "guid": "29445edd-ad41-4898-9b9b-f5ba005ef64d",
+    "duration": "0:21:25",
+    "draft": false
+  },
+  {
+    "title": "Triage and Training for Barking Dogs",
+    "description": "Triage and Training for Barking Dogs",
+    "audio_file": "triage-and-training-for-barking-dogs.m4a",
+    "source_name": "Triage_and_training_for_barking_dogs.m4a",
+    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "guid": "f8c28931-7538-43ef-b4af-0d2f10eae2c7",
+    "duration": "0:18:41",
+    "draft": false
+  },
+  {
+    "title": "The Death of the Network Perimeter",
+    "description": "The Death of the Network Perimeter",
+    "audio_file": "the-death-of-the-network-perimeter.m4a",
+    "source_name": "The_Death_of_the_Network_Perimeter.m4a",
+    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "guid": "7b9e962a-4ef2-4662-9fbe-101c1f4a766a",
+    "duration": "0:20:49",
+    "draft": false
+  },
+  {
+    "title": "Surviving the Adolescence of Powerful AI",
+    "description": "Surviving the Adolescence of Powerful AI",
+    "audio_file": "surviving-the-adolescence-of-powerful-ai.m4a",
+    "source_name": "Surviving the Adolescence of Powerful AI.m4a",
+    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "guid": "53e4d25f-0537-444f-89ad-5abee6d96a3e",
+    "duration": "0:15:10",
+    "draft": false
+  },
+  {
+    "title": "Replacing Legacy MPLS with uSID Routing",
+    "description": "Replacing Legacy MPLS with uSID Routing",
+    "audio_file": "replacing-legacy-mpls-with-usid-routing.m4a",
+    "source_name": "Replacing_legacy_MPLS_with_uSID_routing.m4a",
+    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "guid": "95d362c8-e411-4627-9973-7718b2de90f6",
+    "duration": "0:22:10",
+    "draft": false
+  },
+  {
+    "title": "Bridging the MPLS and SRv6 Divide",
+    "description": "Bridging the MPLS and SRv6 Divide",
+    "audio_file": "bridging-the-mpls-and-srv6-divide.m4a",
+    "source_name": "Bridging_the_MPLS_and_SRv6_divide.m4a",
+    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "guid": "12a17c76-621d-4f85-9438-9d624fc05a99",
+    "duration": "0:10:44",
+    "draft": false
+  },
+  {
+    "title": "Barking Solutions for Busy Working Families",
+    "description": "Barking Solutions for Busy Working Families",
+    "audio_file": "barking-solutions-for-busy-working-families.m4a",
+    "source_name": "Barking_Solutions_for_Busy_Working_Families.m4a",
+    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "guid": "a32f0665-5029-4130-a122-82871cf21f9d",
+    "duration": "0:18:39",
+    "draft": false
+  }
+]

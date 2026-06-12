@@ -1,9 +1,9 @@
 #!/bin/sh
 set -eu
 
-python3 publish.py
+python3 publish.py --publish-new
 
-git add README.md config.json deploy.sh episodes.json publish.py public
+git add README.md automation config.json deploy.sh episodes.json publish.py public run-once-and-archive.sh watch-and-deploy.sh
 if ! git diff --cached --quiet; then
   git commit -m "Update podcast feed"
 fi
@@ -28,6 +28,8 @@ touch "$tmpdir/.nojekyll"
   fi
   git push origin gh-pages
 )
+
+python3 publish.py --archive-incoming
 
 echo "Published site: https://vmaguireme-droid.github.io/vinces-notebooklm-feed/"
 echo "Published RSS:  https://vmaguireme-droid.github.io/vinces-notebooklm-feed/feed.xml"

@@ -2,13 +2,55 @@
 
 This folder turns audio files into a simple podcast website and RSS feed.
 
-## Workflow
+## Automated Workflow
+
+Drop new audio files into `incoming`. The automation publishes them and then moves the source files into `old-files`.
+
+Supported audio files:
+
+- `.mp3`
+- `.m4a`
+- `.wav`
+- `.aac`
+- `.ogg`
+- `.flac`
+
+Run once manually:
+
+```bash
+./run-once-and-archive.sh
+```
+
+Run continuously:
+
+```bash
+./watch-and-deploy.sh
+```
+
+The watcher checks every 5 minutes. If it finds audio in `incoming`, it publishes the files, deploys GitHub Pages, and moves the original source files into `old-files`.
+
+Install as a Mac login automation:
+
+```bash
+mkdir -p ~/Library/LaunchAgents
+cp automation/com.vincemaguire.podcast-feed.plist ~/Library/LaunchAgents/
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.vincemaguire.podcast-feed.plist
+launchctl enable gui/$(id -u)/com.vincemaguire.podcast-feed
+```
+
+Stop the Mac login automation:
+
+```bash
+launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.vincemaguire.podcast-feed.plist
+```
+
+## Manual Workflow
 
 1. Put `.mp3`, `.m4a`, `.wav`, `.aac`, `.ogg`, or `.flac` files in `incoming`.
 2. Run:
 
    ```bash
-   python3 publish.py
+   python3 publish.py --publish-new
    ```
 
 3. Open `episodes.json`.

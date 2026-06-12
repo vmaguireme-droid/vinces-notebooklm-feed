@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import datetime as dt
+import argparse
 import html
 import json
 import mimetypes
@@ -14,6 +15,7 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent
 INCOMING = ROOT / "incoming"
+OLD_FILES = ROOT / "old-files"
 PUBLIC = ROOT / "public"
 AUDIO_DIR = PUBLIC / "audio"
 CONFIG_PATH = ROOT / "config.json"
@@ -83,7 +85,24 @@ def unique_audio_name(source, existing):
     return candidate
 
 
-def import_incoming(episodes):
+def unique_archive_name(source):
+    OLD_FILES.mkdir(parents=True, exist_ok=True)
+    candidate = OLD_FILES / source.name
+    if not candidate.exists():
+        return candidate
+    stem = source.stem
+    suffix = source.suffix
+    timestamp = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+    counter = 1
+    while True:
+        candidate = OLD_FILES / f"{stem}-{timestamp}-{counter}{suffix}"
+        if not candidate.exists():
+            return candidate
+        counter += 1
+
+
+def import_incoming(episodes, publish_new=False):
+    INCOMING.mkdir(parents=True, exist_ok=True)
     AUDIO_DIR.mkdir(parents=True, exist_ok=True)
     known_sources = {episode.get("source_name") for episode in episodes}
     known_audio = {episode.get("audio_file") for episode in episodes}
@@ -108,11 +127,25 @@ def import_incoming(episodes):
             "published": rfc2822_now(),
             "guid": str(uuid.uuid4()),
             "duration": duration_from_afinfo(destination),
-            "draft": True
+            "draft": not publish_new
         }
+        if publish_new:
+            episode["description"] = episode["title"]
         episodes.insert(0, episode)
         imported.append(episode)
     return imported
+
+
+def archive_incoming():
+    INCOMING.mkdir(parents=True, exist_ok=True)
+    moved = []
+    for source in sorted(INCOMING.iterdir()):
+        if not source.is_file() or source.suffix.lower() not in AUDIO_EXTENSIONS:
+            continue
+        destination = unique_archive_name(source)
+        shutil.move(str(source), str(destination))
+        moved.append(destination)
+    return moved
 
 
 def absolute_url(base, *parts):
@@ -212,18 +245,37 @@ def render_index(config, episodes):
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Generate the podcast site and RSS feed.")
+    parser.add_argument(
+        "--publish-new",
+        action="store_true",
+        help="Publish newly imported audio immediately instead of creating draft episodes.",
+    )
+    parser.add_argument(
+        "--archive-incoming",
+        action="store_true",
+        help="Move audio files from incoming to old-files after importing/generating.",
+    )
+    args = parser.parse_args()
+
     config = load_json(CONFIG_PATH, {})
     episodes = load_json(EPISODES_PATH, [])
-    imported = import_incoming(episodes)
+    imported = import_incoming(episodes, publish_new=args.publish_new)
     save_json(EPISODES_PATH, episodes)
     PUBLIC.mkdir(exist_ok=True)
     (PUBLIC / "feed.xml").write_text(render_feed(config, episodes), encoding="utf-8")
     (PUBLIC / "index.html").write_text(render_index(config, episodes), encoding="utf-8")
+    archived = archive_incoming() if args.archive_incoming else []
 
     print(f"Imported {len(imported)} new audio file(s).")
     print(f"Episodes tracked: {len(episodes)}")
     if imported:
-        print("New episodes are drafts. Edit episodes.json and set draft to false when ready.")
+        if args.publish_new:
+            print("New episodes were published immediately.")
+        else:
+            print("New episodes are drafts. Edit episodes.json and set draft to false when ready.")
+    if archived:
+        print(f"Moved {len(archived)} incoming audio file(s) to {OLD_FILES}.")
     print(f"Wrote {PUBLIC / 'feed.xml'}")
     print(f"Wrote {PUBLIC / 'index.html'}")
 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vince&#x27;s NotebookLM Feed</title>
+    <link>https://vmaguireme-droid.github.io/vinces-notebooklm-feed</link>
+    <language>en-us</language>
+    <copyright>Copyright 2026 Vince Maguire</copyright>
+    <description>NotebookLM audio overviews and other narrated briefings from Vince Maguire.</description>
+    <itunes:author>Vince Maguire</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Technology"/>
+    <itunes:image href="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/artwork.png"/>
+    <itunes:owner>
+      <itunes:name>Vince Maguire</itunes:name>
+      <itunes:email>vmaguireme@gmail.com</itunes:email>
+    </itunes:owner>
+
+  </channel>
+</rss>

@@ -1,5 +1,16 @@
 [
   {
+    "title": "Elevenlabs Ww 2 Generals",
+    "description": "Elevenlabs Ww 2 Generals",
+    "audio_file": "elevenlabs-ww-2-generals.mp3",
+    "source_name": "ElevenLabs_WW_2_Generals.mp3",
+    "source_sha256": "3ead2c96c7828bab8e4fe9b0ad16cdaaa1edd873a638a1928b32f03202578a06",
+    "published": "Sun, 14 Jun 2026 22:10:25 +0000",
+    "guid": "80c799bc-6d55-4921-8ae4-cb0ee30c9cda",
+    "duration": "0:16:04",
+    "draft": false
+  },
+  {
     "title": "Active Active Ha And Precision Ai Architecture",
     "description": "Active Active Ha And Precision Ai Architecture",
     "audio_file": "active-active-ha-and-precision-ai-architecture.m4a",

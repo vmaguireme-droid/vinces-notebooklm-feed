@@ -1,4 +1,6 @@
 incoming/
 old-files/
 logs/
+needs-review/
+quality-reports/
 .DS_Store

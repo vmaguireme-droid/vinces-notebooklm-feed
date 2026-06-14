@@ -115,3 +115,38 @@ Good hosting options:
 - New files are imported as drafts so nothing is published accidentally.
 - The script copies audio from `incoming` into `public/audio`; it does not delete your source files.
 - Podcast directories need public, direct audio URLs in the RSS `<enclosure>` tags.
+
+## Commute Topic Automation
+
+Create or edit this Desktop file:
+
+`/Users/vincemaguire/Desktop/commute`
+
+Add one topic per line in this format:
+
+```csv
+Topic,Duration
+Active-active HA and precision AI architecture,12 minutes
+Segment routing versus MPLS,20 minutes
+```
+
+The commute watcher checks every 10 minutes. For each new `topic,duration` pair, it creates a job folder under:
+
+`commutes/jobs`
+
+Each job contains:
+
+- `gemini-deep-research-prompt.txt`
+- `README.md`
+- `job.json`
+
+The automation opens Gemini and ElevenLabs Studio in Chrome when new jobs are created.
+
+Current limitation: Gemini Deep Research and ElevenLabs Studio are browser products. This local watcher can create the job, open the right sites, and prepare the prompts, but the actual Gemini Deep Research run, Google Docs save, and ElevenLabs export may still require your logged-in browser session and occasional human confirmation.
+
+For best results, keep Chrome logged in to:
+
+- Gemini / Google
+- ElevenLabs
+
+You do not need to keep the pages open all the time, but leaving Chrome logged in makes the automation much smoother.

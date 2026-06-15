@@ -1,5 +1,27 @@
 [
   {
+    "title": "True Crimes",
+    "description": "True Crimes",
+    "audio_file": "true-crimes.m4a",
+    "source_name": "true-crimes.m4a",
+    "source_sha256": "0f6163cc8802c52cbb760963152a2e7ce8e2e27447e7450951cb9d9a4ffe92d3",
+    "published": "Mon, 15 Jun 2026 01:58:19 +0000",
+    "guid": "1acc9cb9-a09e-49b9-a038-663ce5645b88",
+    "duration": "0:12:39",
+    "draft": false
+  },
+  {
+    "title": "Gunfighters Of The U S West",
+    "description": "Gunfighters Of The U S West",
+    "audio_file": "gunfighters-of-the-u-s-west.m4a",
+    "source_name": "gunfighters-of-the-u-s-west.m4a",
+    "source_sha256": "760a4b4ae0d36cde0b871e8c0979e93ad69405132c00ab52270391330223184e",
+    "published": "Mon, 15 Jun 2026 01:58:19 +0000",
+    "guid": "a824b65b-c837-4023-94ef-bad8667eae2a",
+    "duration": "0:13:15",
+    "draft": false
+  },
+  {
     "title": "Srv6",
     "description": "Srv6",
     "audio_file": "srv6.m4a",

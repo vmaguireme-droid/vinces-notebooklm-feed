@@ -88,7 +88,7 @@ def update_job_status(job_dir, status, **extra):
 
 
 def rebuild_jobs_from_disk(state):
-    jobs = state.setdefault("jobs", {})
+    jobs = {}
     seen = set(state.get("seen", []))
     for job_path in JOBS.glob("*/job.json"):
         data = read_job(job_path)
@@ -106,6 +106,7 @@ def rebuild_jobs_from_disk(state):
             "status": status
         }
     state["seen"] = sorted(seen)
+    state["jobs"] = jobs
     return state
 
 

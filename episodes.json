@@ -1,5 +1,27 @@
 [
   {
+    "title": "Srv6",
+    "description": "Srv6",
+    "audio_file": "srv6.m4a",
+    "source_name": "srv6.m4a",
+    "source_sha256": "4d3c449055783196135246092dbcbc144d89f0de67d46bc395027cdad95b8cdb",
+    "published": "Mon, 15 Jun 2026 01:31:08 +0000",
+    "guid": "de4b582e-1cae-4c84-bd04-24ae42d8734c",
+    "duration": "0:20:29",
+    "draft": false
+  },
+  {
+    "title": "Mpls",
+    "description": "Mpls",
+    "audio_file": "mpls.m4a",
+    "source_name": "mpls.m4a",
+    "source_sha256": "105cc9d38bdefa1b8ceebcd5c606dfc3f1c2c450da0839013759ab9042d39153",
+    "published": "Mon, 15 Jun 2026 01:31:08 +0000",
+    "guid": "56fd71ed-723a-4990-a8ec-96bcc06fc819",
+    "duration": "0:14:04",
+    "draft": false
+  },
+  {
     "title": "Elevenlabs Ww 2 Generals",
     "description": "Elevenlabs Ww 2 Generals",
     "audio_file": "elevenlabs-ww-2-generals.mp3",

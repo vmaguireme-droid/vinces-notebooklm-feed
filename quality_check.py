@@ -4,9 +4,9 @@ import datetime as dt
 import math
 import re
 import shutil
+import struct
 import subprocess
 import tempfile
-import wave
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -63,6 +63,39 @@ def parse_afinfo(path):
 
 
 def analyze_signal(path):
+    def read_pcm16_wave(wav_path):
+        data = wav_path.read_bytes()
+        if data[:4] != b"RIFF" or data[8:12] != b"WAVE":
+            raise RuntimeError("Decoded file was not a WAVE file")
+
+        offset = 12
+        channels = None
+        sample_width = None
+        pcm = None
+
+        while offset + 8 <= len(data):
+            chunk_id = data[offset:offset + 4]
+            chunk_size = struct.unpack_from("<I", data, offset + 4)[0]
+            chunk_start = offset + 8
+            chunk_end = chunk_start + chunk_size
+
+            if chunk_id == b"fmt ":
+                if chunk_size < 16:
+                    raise RuntimeError("Decoded WAVE fmt chunk was too short")
+                channels = struct.unpack_from("<H", data, chunk_start + 2)[0]
+                bits_per_sample = struct.unpack_from("<H", data, chunk_start + 14)[0]
+                sample_width = bits_per_sample // 8
+            elif chunk_id == b"data":
+                pcm = data[chunk_start:chunk_end]
+
+            offset = chunk_end + (chunk_size % 2)
+
+        if channels is None or sample_width is None or pcm is None:
+            raise RuntimeError("Decoded WAVE file was missing fmt or data chunks")
+        if sample_width != 2:
+            raise RuntimeError(f"Expected 16-bit PCM after conversion, got {sample_width * 8}-bit")
+        return channels, pcm
+
     with tempfile.TemporaryDirectory() as temp_dir:
         wav_path = Path(temp_dir) / "audio.wav"
         result = run(["afconvert", "-f", "WAVE", "-d", "LEI16@44100", str(path), str(wav_path)])
@@ -76,26 +109,17 @@ def analyze_signal(path):
         silent = 0
         silence_threshold = int(32767 * (10 ** (-50 / 20)))
 
-        with wave.open(str(wav_path), "rb") as wav:
-            channels = wav.getnchannels()
-            sample_width = wav.getsampwidth()
-            if sample_width != 2:
-                raise RuntimeError(f"Expected 16-bit PCM after conversion, got {sample_width * 8}-bit")
-            while True:
-                frames = wav.readframes(65536)
-                if not frames:
-                    break
-                sample_count = len(frames) // 2
-                total_samples += sample_count
-                for index in range(0, len(frames), 2):
-                    sample = int.from_bytes(frames[index:index + 2], "little", signed=True)
-                    absolute = abs(sample)
-                    peak = max(peak, absolute)
-                    sum_squares += sample * sample
-                    if absolute >= 32760:
-                        clipped += 1
-                    if absolute <= silence_threshold:
-                        silent += 1
+        channels, frames = read_pcm16_wave(wav_path)
+        total_samples = len(frames) // 2
+        for index in range(0, len(frames), 2):
+            sample = int.from_bytes(frames[index:index + 2], "little", signed=True)
+            absolute = abs(sample)
+            peak = max(peak, absolute)
+            sum_squares += sample * sample
+            if absolute >= 32760:
+                clipped += 1
+            if absolute <= silence_threshold:
+                silent += 1
 
         if total_samples == 0:
             raise RuntimeError("Decoded audio had no samples")

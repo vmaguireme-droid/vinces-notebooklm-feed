@@ -17,6 +17,24 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Srv6</title>
+      <description>Srv6</description>
+      <pubDate>Mon, 15 Jun 2026 01:31:08 +0000</pubDate>
+      <guid isPermaLink="false">de4b582e-1cae-4c84-bd04-24ae42d8734c</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/srv6.m4a" length="19576782" type="audio/mp4"/>
+      <itunes:duration>0:20:29</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Mpls</title>
+      <description>Mpls</description>
+      <pubDate>Mon, 15 Jun 2026 01:31:08 +0000</pubDate>
+      <guid isPermaLink="false">56fd71ed-723a-4990-a8ec-96bcc06fc819</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/mpls.m4a" length="13456058" type="audio/mp4"/>
+      <itunes:duration>0:14:04</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Elevenlabs Ww 2 Generals</title>
       <description>Elevenlabs Ww 2 Generals</description>
       <pubDate>Sun, 14 Jun 2026 22:10:25 +0000</pubDate>

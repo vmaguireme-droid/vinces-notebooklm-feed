@@ -8,8 +8,8 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-DESKTOP_COMMUTE = Path("/Users/vincemaguire/Desktop/commute")
 COMMUTES = ROOT / "commutes"
+COMMUTE_FILE = COMMUTES / "commute"
 JOBS = COMMUTES / "jobs"
 PROCESSED = COMMUTES / "processed"
 GOOGLE_DOCS_READY = COMMUTES / "google-docs-ready"
@@ -28,6 +28,16 @@ def load_state():
     if not STATE_PATH.exists():
         return {"seen": []}
     return json.loads(STATE_PATH.read_text())
+
+
+def notify(title, message):
+    safe_title = title.replace('"', '\\"')
+    safe_message = message.replace('"', '\\"')
+    subprocess.run([
+        "osascript",
+        "-e",
+        f'display notification "{safe_message}" with title "{safe_title}"'
+    ], check=False)
 
 
 def save_state(state):
@@ -138,7 +148,7 @@ def main():
 
     state = load_state()
     seen = set(state.get("seen", []))
-    rows = parse_commute_file(DESKTOP_COMMUTE)
+    rows = parse_commute_file(COMMUTE_FILE)
     created_jobs = []
 
     for row in rows:
@@ -159,6 +169,7 @@ def main():
     (LOGS / "commute-watch.log").open("a", encoding="utf-8").write(log_line)
 
     if created_jobs:
+        notify("Commute automation", f"Created {len(created_jobs)} commute job(s).")
         open_browser_targets()
         for job_dir in created_jobs:
             print(f"Created {job_dir}")

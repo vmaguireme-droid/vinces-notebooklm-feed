@@ -118,9 +118,13 @@ Good hosting options:
 
 ## Commute Topic Automation
 
-Create or edit this Desktop file:
+Create or edit this Desktop shortcut/file:
 
 `/Users/vincemaguire/Desktop/commute`
+
+The Desktop item points to the real automation-readable file:
+
+`/Users/vincemaguire/My Drive/Podcast Automation/commutes/commute`
 
 Add one topic per line in this format:
 
@@ -141,6 +145,8 @@ Each job contains:
 - `job.json`
 
 The automation opens Gemini and ElevenLabs Studio in Chrome when new jobs are created.
+
+The watcher sends a macOS notification when it creates jobs or when it hits an error.
 
 Current limitation: Gemini Deep Research and ElevenLabs Studio are browser products. This local watcher can create the job, open the right sites, and prepare the prompts, but the actual Gemini Deep Research run, Google Docs save, and ElevenLabs export may still require your logged-in browser session and occasional human confirmation.
 

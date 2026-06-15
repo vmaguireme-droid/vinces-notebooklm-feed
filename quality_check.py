@@ -65,7 +65,7 @@ def parse_afinfo(path):
 def analyze_signal(path):
     with tempfile.TemporaryDirectory() as temp_dir:
         wav_path = Path(temp_dir) / "audio.wav"
-        result = run(["afconvert", "-f", "WAVE", "-d", "LEI16", str(path), str(wav_path)])
+        result = run(["afconvert", "-f", "WAVE", "-d", "LEI16@44100", str(path), str(wav_path)])
         if result.returncode != 0 or not wav_path.exists():
             raise RuntimeError(result.stderr.strip() or "afconvert could not decode file")
 

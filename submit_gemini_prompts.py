@@ -75,7 +75,7 @@ def pending_jobs():
     jobs = []
     for job_path in sorted(JOBS.glob("*/job.json")):
         data = read_json(job_path)
-        if data.get("status") == "needs-gemini-script":
+        if data.get("status") in {"needs-gemini-script", "gemini-submit-failed"}:
             prompt_path = job_path.parent / "gemini-flash-prompt.txt"
             if prompt_path.exists():
                 jobs.append((job_path.parent, job_path, prompt_path, data))
@@ -107,6 +107,7 @@ def main():
         job["updated"] = submitted_at
         job["submitted_to_gemini_at"] = submitted_at
         job["submitted_with"] = "Gemini Mac app UI automation"
+        job.pop("submit_error", None)
         write_json(job_path, job)
 
         for key, item in state.get("jobs", {}).items():

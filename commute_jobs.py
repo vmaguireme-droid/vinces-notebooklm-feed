@@ -319,7 +319,7 @@ def process_script_drops(state):
 def process_audio_drops(state):
     processed = 0
     completed_keys = set()
-    candidates = pending_jobs(state, {"script-ready-for-elevenlabs", "needs-gemini-script", "audio-needs-review"})
+    candidates = pending_jobs(state, {"script-ready-for-elevenlabs", "local-audio-ready", "needs-gemini-script", "audio-needs-review"})
     for audio_path in sorted(ELEVENLABS_READY.iterdir()):
         if not audio_path.is_file() or audio_path.suffix.lower() not in AUDIO_EXTENSIONS:
             continue

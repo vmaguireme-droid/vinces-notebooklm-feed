@@ -148,13 +148,25 @@ Each job contains:
 
 The automation opens Gemini and ElevenLabs Studio in Chrome when new jobs are created. Use Gemini Flash for the Gemini step, not Deep Research.
 
-The watcher sends a macOS notification when it creates jobs or when it hits an error.
+The watcher sends macOS notifications when it creates jobs, when it is waiting for Gemini output, when a script is ready for ElevenLabs, when audio is sent to the podcast drop folder, or when it hits an error.
 
-When a topic successfully becomes a commute job, it is removed from `commute` and appended to:
+When Gemini finishes a topic, save the checked script as a `.txt` or `.md` file here:
+
+`/Users/vincemaguire/Desktop/Commute Gemini Scripts`
+
+The watcher copies that text into the Google Drive `commutes` folder and marks the job as ready for ElevenLabs.
+
+When ElevenLabs finishes the audio, save or move the `.mp3`, `.m4a`, `.wav`, `.aac`, `.ogg`, or `.flac` file here:
+
+`/Users/vincemaguire/Desktop/Commute ElevenLabs Audio`
+
+The watcher moves that audio into the podcast drop folder. The podcast watcher then publishes it on its next 5-minute check.
+
+When a topic successfully has audio sent to the podcast drop folder, it is removed from `commute` and appended to:
 
 `/Users/vincemaguire/My Drive/Podcast Automation/commutes/commute complete`
 
-Current limitation: Gemini and ElevenLabs Studio are browser products. This local watcher can create the job, open the right sites, and prepare the prompts, but the actual Gemini generation, Google Docs save, and ElevenLabs export may still require your logged-in browser session and occasional human confirmation.
+Current limitation: Gemini and ElevenLabs Studio are browser products. This local watcher can create the job, open the right sites, prepare the prompts, pick up completed script files, pick up completed audio files, and publish the audio. The actual Gemini generation and ElevenLabs export may still require your logged-in browser session and occasional human confirmation.
 
 For best results, keep Chrome logged in to:
 

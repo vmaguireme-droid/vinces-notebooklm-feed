@@ -4,7 +4,7 @@ set -eu
 python3 quality_check.py --quarantine
 python3 publish.py --publish-new
 
-git add README.md automation config.json deploy.sh episodes.json publish.py quality_check.py public run-once-and-archive.sh update_old_files_index.py watch-and-deploy.sh
+git add README.md automation commute_jobs.py config.json deploy.sh episodes.json publish.py quality_check.py public run-once-and-archive.sh update_old_files_index.py watch-and-deploy.sh watch-commutes.sh
 if ! git diff --cached --quiet; then
   git commit -m "Update podcast feed"
 fi

@@ -82,32 +82,31 @@ def write_job_files(job_dir, topic, duration):
         "topic": topic,
         "duration": duration,
         "created": created,
-        "status": "queued-for-gemini-deep-research",
+        "status": "queued-for-gemini-flash",
         "notes": [
-            "Use Gemini Deep Research to research the topic.",
+            "Use Gemini Flash, not Deep Research, to create the script.",
             "Check and correct the text before using it for audio.",
             "Save final text to Google Docs in the Commutes folder.",
             "Use ElevenLabs Studio to create audio, then export/copy audio to the podcast drop folder."
         ]
     }, indent=2) + "\n")
 
-    prompt = f"""Create a commute-learning script for this topic:
+    prompt = f"""Create a commute-learning script for this topic using Gemini Flash, not Deep Research.
 
 Topic: {topic}
 Target listening duration: {duration}
 
 Instructions:
-- Use Deep Research.
 - Make this educational for my own learning.
 - Keep the structure clear and suitable for spoken audio.
 - Explain important terms simply before using them deeply.
 - Include practical examples and careful caveats.
 - Avoid hype and unsupported claims.
-- After drafting, fact-check the claims against reliable sources.
-- Correct anything uncertain or misleading.
+- Check the script for internal consistency and flag anything that may require outside verification.
+- Correct anything that seems uncertain, misleading, or overstated.
 - Output the final corrected script only.
 """
-    (job_dir / "gemini-deep-research-prompt.txt").write_text(prompt, encoding="utf-8")
+    (job_dir / "gemini-flash-prompt.txt").write_text(prompt, encoding="utf-8")
 
     checklist = f"""# Commute Job: {topic}
 
@@ -117,17 +116,18 @@ Created: {created}
 ## Workflow
 
 1. Open Gemini.
-2. Paste `gemini-deep-research-prompt.txt`.
-3. Run Deep Research.
-4. Review/correct the final text.
-5. Save checked text to Google Docs folder: `Commutes`.
-6. Put the final checked text into ElevenLabs Studio.
-7. Export the audio.
-8. Move/copy the audio to the Desktop shortcut `Drop Audio for Podcast`.
+2. Select Gemini Flash if the UI asks for a model.
+3. Paste `gemini-flash-prompt.txt`.
+4. Generate the script.
+5. Review/correct the final text.
+6. Save checked text to Google Docs folder: `Commutes`.
+7. Put the final checked text into ElevenLabs Studio.
+8. Export the audio.
+9. Move/copy the audio to the Desktop shortcut `Drop Audio for Podcast`.
 
 ## Status
 
-- [ ] Gemini Deep Research complete
+- [ ] Gemini Flash script complete
 - [ ] Accuracy checked/corrected
 - [ ] Saved to Google Docs / Commutes
 - [ ] ElevenLabs Studio project created

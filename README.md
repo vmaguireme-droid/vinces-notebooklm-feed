@@ -140,15 +140,15 @@ The commute watcher checks every 10 minutes. For each new `topic,duration` pair,
 
 Each job contains:
 
-- `gemini-deep-research-prompt.txt`
+- `gemini-flash-prompt.txt`
 - `README.md`
 - `job.json`
 
-The automation opens Gemini and ElevenLabs Studio in Chrome when new jobs are created.
+The automation opens Gemini and ElevenLabs Studio in Chrome when new jobs are created. Use Gemini Flash for the Gemini step, not Deep Research.
 
 The watcher sends a macOS notification when it creates jobs or when it hits an error.
 
-Current limitation: Gemini Deep Research and ElevenLabs Studio are browser products. This local watcher can create the job, open the right sites, and prepare the prompts, but the actual Gemini Deep Research run, Google Docs save, and ElevenLabs export may still require your logged-in browser session and occasional human confirmation.
+Current limitation: Gemini and ElevenLabs Studio are browser products. This local watcher can create the job, open the right sites, and prepare the prompts, but the actual Gemini generation, Google Docs save, and ElevenLabs export may still require your logged-in browser session and occasional human confirmation.
 
 For best results, keep Chrome logged in to:
 

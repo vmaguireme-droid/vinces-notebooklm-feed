@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 COMMUTES = ROOT / "commutes"
 COMMUTE_FILE = COMMUTES / "commute"
+COMMUTE_COMPLETE = COMMUTES / "commute complete"
 JOBS = COMMUTES / "jobs"
 PROCESSED = COMMUTES / "processed"
 GOOGLE_DOCS_READY = COMMUTES / "google-docs-ready"
@@ -70,6 +71,19 @@ def parse_commute_file(path):
         if topic:
             rows.append({"topic": topic, "duration": duration})
     return rows
+
+
+def parse_commute_line(line):
+    if not line.strip() or line.lstrip().startswith("#"):
+        return None
+    parsed = next(csv.reader([line]))
+    if len(parsed) < 2:
+        return None
+    topic = parsed[0].strip()
+    duration = normalize_duration(parsed[1])
+    if not topic:
+        return None
+    return {"topic": topic, "duration": duration}
 
 
 def job_key(topic, duration):
@@ -137,6 +151,49 @@ Created: {created}
     (job_dir / "README.md").write_text(checklist, encoding="utf-8")
 
 
+def move_seen_topics_to_complete(seen):
+    if not COMMUTE_FILE.exists():
+        return 0
+
+    original_lines = COMMUTE_FILE.read_text(encoding="utf-8-sig").splitlines()
+    remaining = []
+    completed = []
+    completed_existing = set()
+
+    if COMMUTE_COMPLETE.exists():
+        for line in COMMUTE_COMPLETE.read_text(encoding="utf-8-sig").splitlines():
+            parsed = parse_commute_line(line)
+            if parsed:
+                completed_existing.add(job_key(parsed["topic"], parsed["duration"]))
+
+    for line in original_lines:
+        parsed = parse_commute_line(line)
+        if not parsed:
+            remaining.append(line)
+            continue
+
+        key = job_key(parsed["topic"], parsed["duration"])
+        if key in seen:
+            if key not in completed_existing:
+                completed.append((parsed["topic"], parsed["duration"]))
+                completed_existing.add(key)
+        else:
+            remaining.append(line)
+
+    while remaining and not remaining[-1].strip():
+        remaining.pop()
+    COMMUTE_FILE.write_text("\n".join(remaining) + "\n", encoding="utf-8")
+
+    if completed:
+        timestamp = dt.datetime.now().astimezone().strftime("%Y-%m-%d %H:%M:%S %Z")
+        with COMMUTE_COMPLETE.open("a", encoding="utf-8") as handle:
+            for topic, duration in completed:
+                writer = csv.writer(handle)
+                writer.writerow([topic, duration, timestamp])
+
+    return len(completed)
+
+
 def open_browser_targets():
     subprocess.run(["open", "https://gemini.google.com/"], check=False)
     subprocess.run(["open", "https://elevenlabs.io/app/studio"], check=False)
@@ -164,8 +221,9 @@ def main():
 
     state["seen"] = sorted(seen)
     save_state(state)
+    completed_count = move_seen_topics_to_complete(seen)
 
-    log_line = f"{dt.datetime.now().isoformat(timespec='seconds')} - created {len(created_jobs)} job(s)\n"
+    log_line = f"{dt.datetime.now().isoformat(timespec='seconds')} - created {len(created_jobs)} job(s), moved {completed_count} topic(s) to commute complete\n"
     (LOGS / "commute-watch.log").open("a", encoding="utf-8").write(log_line)
 
     if created_jobs:

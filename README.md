@@ -150,6 +150,10 @@ The automation opens Gemini and ElevenLabs Studio in Chrome when new jobs are cr
 
 The watcher sends a macOS notification when it creates jobs or when it hits an error.
 
+When a topic successfully becomes a commute job, it is removed from `commute` and appended to:
+
+`/Users/vincemaguire/My Drive/Podcast Automation/commutes/commute complete`
+
 Current limitation: Gemini and ElevenLabs Studio are browser products. This local watcher can create the job, open the right sites, and prepare the prompts, but the actual Gemini generation, Google Docs save, and ElevenLabs export may still require your logged-in browser session and occasional human confirmation.
 
 For best results, keep Chrome logged in to:

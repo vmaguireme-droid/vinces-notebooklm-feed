@@ -285,7 +285,7 @@ def pick_job_for_file(path, candidates):
 
 def process_script_drops(state):
     processed = 0
-    candidates = pending_jobs(state, {"needs-gemini-script", "script-needs-review"})
+    candidates = pending_jobs(state, {"needs-gemini-script", "submitted-to-gemini", "script-needs-review"})
     for script_path in sorted(GOOGLE_DOCS_READY.iterdir()):
         if not script_path.is_file() or script_path.suffix.lower() not in SCRIPT_EXTENSIONS:
             continue
@@ -355,7 +355,7 @@ def process_audio_drops(state):
 
 
 def maybe_notify_pending(state):
-    waiting = pending_jobs(state, {"needs-gemini-script"})
+    waiting = pending_jobs(state, {"needs-gemini-script", "submitted-to-gemini"})
     if not waiting:
         return
     now = dt.datetime.now().astimezone()

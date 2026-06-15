@@ -146,7 +146,9 @@ Each job contains:
 - `README.md`
 - `job.json`
 
-The automation opens Gemini and ElevenLabs Studio in Chrome when new jobs are created. Use Gemini Flash for the Gemini step, not Deep Research.
+The automation opens Gemini and ElevenLabs Studio when new jobs are created. Use Gemini Flash for the Gemini step, not Deep Research.
+
+The watcher also runs `submit_gemini_prompts.py`. That helper opens the Gemini Mac app, starts a new chat, pastes each pending `gemini-flash-prompt.txt`, presses Return, and marks the job as `submitted-to-gemini`.
 
 The watcher sends macOS notifications when it creates jobs, when it is waiting for Gemini output, when a script is ready for ElevenLabs, when audio is sent to the podcast drop folder, or when it hits an error.
 
@@ -166,7 +168,7 @@ When a topic successfully has audio sent to the podcast drop folder, it is remov
 
 `/Users/vincemaguire/My Drive/Podcast Automation/commutes/commute complete`
 
-Current limitation: Gemini and ElevenLabs Studio are browser products. This local watcher can create the job, open the right sites, prepare the prompts, pick up completed script files, pick up completed audio files, and publish the audio. The actual Gemini generation and ElevenLabs export may still require your logged-in browser session and occasional human confirmation.
+Current limitation: Gemini and ElevenLabs Studio are app/browser products. This local watcher can create the job, submit prompts to the Gemini Mac app, pick up completed script files, pick up completed audio files, and publish the audio. Copying Gemini's finished response into `Commute Gemini Scripts` and exporting from ElevenLabs may still require your logged-in session and occasional human confirmation.
 
 For best results, keep Chrome logged in to:
 

@@ -22,6 +22,7 @@ CONFIG_PATH = ROOT / "config.json"
 EPISODES_PATH = ROOT / "episodes.json"
 
 AUDIO_EXTENSIONS = {".mp3", ".m4a", ".wav", ".aac", ".ogg", ".flac"}
+MAX_DIRECT_AUDIO_BYTES = 90 * 1024 * 1024
 MIME_OVERRIDES = {
     ".m4a": "audio/mp4",
     ".mp3": "audio/mpeg",
@@ -93,6 +94,42 @@ def unique_audio_name(source, existing):
     return candidate
 
 
+def unique_converted_audio_name(source, existing):
+    base = slugify(source.stem)
+    candidate = f"{base}.m4a"
+    while candidate in existing or (AUDIO_DIR / candidate).exists():
+        candidate = f"{base}-{uuid.uuid4().hex[:6]}.m4a"
+    return candidate
+
+
+def should_convert_for_deploy(source):
+    return source.stat().st_size > MAX_DIRECT_AUDIO_BYTES
+
+
+def copy_or_convert_for_deploy(source, destination):
+    if not should_convert_for_deploy(source):
+        shutil.copy2(source, destination)
+        return False
+
+    result = subprocess.run(
+        [
+            "afconvert",
+            "-f", "m4af",
+            "-d", "aac@44100",
+            "-b", "128000",
+            str(source),
+            str(destination),
+        ],
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        message = result.stderr.strip() or result.stdout.strip() or "afconvert could not convert large audio file"
+        raise RuntimeError(f"Could not convert {source.name} to AAC: {message}")
+    return True
+
+
 def unique_archive_name(source):
     OLD_FILES.mkdir(parents=True, exist_ok=True)
     candidate = OLD_FILES / source.name
@@ -132,9 +169,12 @@ def import_incoming(episodes, publish_new=False):
         if source_hash in known_hashes:
             continue
 
-        audio_name = unique_audio_name(source, known_audio)
+        converted = should_convert_for_deploy(source)
+        audio_name = unique_converted_audio_name(source, known_audio) if converted else unique_audio_name(source, known_audio)
         destination = AUDIO_DIR / audio_name
-        shutil.copy2(source, destination)
+        copy_or_convert_for_deploy(source, destination)
+        if converted:
+            print(f"Converted {source.name} to AAC for deploy because it is over 90 MB.")
         known_audio.add(audio_name)
 
         episode = {
@@ -143,6 +183,7 @@ def import_incoming(episodes, publish_new=False):
             "audio_file": audio_name,
             "source_name": source.name,
             "source_sha256": source_hash,
+            "converted_to_aac": converted,
             "published": rfc2822_now(),
             "guid": str(uuid.uuid4()),
             "duration": duration_from_afinfo(destination),

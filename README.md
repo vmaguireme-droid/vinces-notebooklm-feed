@@ -29,6 +29,8 @@ Run continuously:
 
 The watcher checks every 5 minutes. If it finds audio in `incoming`, it runs a quality check, publishes passing files, deploys GitHub Pages, and moves the original source files into `old-files`.
 
+Before deployment, files over 90 MB are converted to AAC `.m4a` for the public podcast feed. Smaller files are left in their original format. The original source file is still moved to `old-files`.
+
 If a file appears broken, extremely quiet, mostly silent, too short, or otherwise suspicious, it is moved to `needs-review` instead of being published. Quality reports are written in `quality-reports`.
 
 The watcher sends macOS notifications when podcast publishing succeeds or fails.

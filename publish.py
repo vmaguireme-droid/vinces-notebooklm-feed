@@ -252,6 +252,10 @@ def render_index(config, episodes):
             <input type="checkbox">
             <span>Remove from this list after I listen</span>
           </label>
+          <label class="refresh-remove-option">
+            <input class="refresh-remove-check" type="checkbox">
+            <span>Remove from this list when refreshed</span>
+          </label>
           <label class="playlist-option">
             <input class="playlist-check" type="checkbox">
             <span>Add to playlist</span>
@@ -481,6 +485,7 @@ def render_index(config, episodes):
       background: linear-gradient(90deg, var(--cyan), var(--amber));
     }}
     .remove-option,
+    .refresh-remove-option,
     .playlist-option {{
       display: flex;
       gap: 10px;
@@ -490,11 +495,17 @@ def render_index(config, episodes):
       user-select: none;
     }}
     .remove-option input,
+    .refresh-remove-option input,
     .playlist-option input {{
       width: 24px;
       height: 24px;
       accent-color: var(--cyan);
       flex: 0 0 auto;
+    }}
+    .refresh-remove-option {{
+      padding: 10px;
+      border-radius: 14px;
+      background: rgba(255, 189, 97, 0.08);
     }}
     .playlist-option {{
       padding: 10px;
@@ -556,8 +567,10 @@ def render_index(config, episodes):
   <script>
     const hiddenKey = "vinces-notebooklm-feed-hidden";
     const playlistKey = "vinces-notebooklm-feed-playlist";
+    const refreshRemoveKey = "vinces-notebooklm-feed-refresh-remove";
     const hidden = new Set(JSON.parse(localStorage.getItem(hiddenKey) || "[]"));
     const playlist = new Set(JSON.parse(localStorage.getItem(playlistKey) || "[]"));
+    const refreshRemove = new Set(JSON.parse(localStorage.getItem(refreshRemoveKey) || "[]"));
     const episodes = Array.from(document.querySelectorAll(".episode"));
     const emptyState = document.getElementById("empty-state");
     const playlistStatus = document.getElementById("playlist-status");
@@ -570,6 +583,10 @@ def render_index(config, episodes):
 
     function savePlaylist() {{
       localStorage.setItem(playlistKey, JSON.stringify(Array.from(playlist)));
+    }}
+
+    function saveRefreshRemove() {{
+      localStorage.setItem(refreshRemoveKey, JSON.stringify(Array.from(refreshRemove)));
     }}
 
     function updateEmptyState() {{
@@ -628,8 +645,18 @@ def render_index(config, episodes):
       const play = episode.querySelector(".play");
       const stop = episode.querySelector(".stop");
       const removeAfterListen = episode.querySelector(".remove-option input");
+      const removeOnRefresh = episode.querySelector(".refresh-remove-check");
       const playlistCheck = episode.querySelector(".playlist-check");
       const progress = episode.querySelector(".progress-bar");
+
+      if (refreshRemove.has(id)) {{
+        hidden.add(id);
+        playlist.delete(id);
+        refreshRemove.delete(id);
+        saveHidden();
+        savePlaylist();
+        saveRefreshRemove();
+      }}
 
       if (hidden.has(id)) {{
         episode.style.display = "none";
@@ -647,6 +674,15 @@ def render_index(config, episodes):
         }}
         savePlaylist();
         updatePlaylistStatus();
+      }});
+
+      removeOnRefresh.addEventListener("change", () => {{
+        if (removeOnRefresh.checked) {{
+          refreshRemove.add(id);
+        }} else {{
+          refreshRemove.delete(id);
+        }}
+        saveRefreshRemove();
       }});
 
       play.addEventListener("click", () => {{
@@ -680,10 +716,13 @@ def render_index(config, episodes):
 
     document.getElementById("restore-listened").addEventListener("click", () => {{
       hidden.clear();
+      refreshRemove.clear();
       saveHidden();
+      saveRefreshRemove();
       episodes.forEach((episode) => {{
         episode.classList.remove("removing");
         episode.style.display = "";
+        episode.querySelector(".refresh-remove-check").checked = false;
       }});
       updateEmptyState();
       updatePlaylistStatus();

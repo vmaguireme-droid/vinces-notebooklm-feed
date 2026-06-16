@@ -1,5 +1,16 @@
 [
   {
+    "title": "The Wild West Was Corporate Warfare",
+    "description": "The Wild West Was Corporate Warfare",
+    "audio_file": "the-wild-west-was-corporate-warfare.m4a",
+    "source_name": "The_Wild_West_Was_Corporate_Warfare.m4a",
+    "source_sha256": "4a2cb496b4fad75e09aadf83fe79821c354a43a15d9c44185a0989f7b8d34545",
+    "published": "Tue, 16 Jun 2026 19:19:13 +0000",
+    "guid": "8ae42c63-2a5a-4d4a-aba7-e817b3f75b12",
+    "duration": "1:05:15",
+    "draft": false
+  },
+  {
     "title": "True Crimes",
     "description": "True Crimes",
     "audio_file": "true-crimes.m4a",

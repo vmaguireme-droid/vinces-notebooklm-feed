@@ -9,7 +9,7 @@ notify() {
   osascript -e "display notification \"${message}\" with title \"${title}\"" >/dev/null 2>&1 || true
 }
 
-audio_count="$(find incoming -maxdepth 1 -type f \( -iname '*.mp3' -o -iname '*.m4a' -o -iname '*.wav' -o -iname '*.aac' -o -iname '*.ogg' -o -iname '*.flac' \) | wc -l | tr -d ' ')"
+audio_count="$(find -L incoming -maxdepth 1 -type f \( -iname '*.mp3' -o -iname '*.m4a' -o -iname '*.wav' -o -iname '*.aac' -o -iname '*.ogg' -o -iname '*.flac' \) | wc -l | tr -d ' ')"
 
 if [ "$audio_count" = "0" ]; then
   echo "No incoming audio files to publish."

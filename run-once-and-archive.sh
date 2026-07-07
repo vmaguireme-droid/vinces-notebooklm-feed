@@ -16,9 +16,14 @@ notify() {
   osascript -e "display notification \"${message}\" with title \"${title}\"" >/dev/null 2>&1 || true
 }
 
-ipad_upload="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Podcast Upload"
-if [ -d "$ipad_upload" ]; then
-  find "$ipad_upload" -maxdepth 1 -type f \( -iname '*.mp3' -o -iname '*.m4a' -o -iname '*.wav' -o -iname '*.aac' -o -iname '*.ogg' -o -iname '*.flac' \) -print |
+sweep_upload_folder() {
+  label="$1"
+  folder="$2"
+  if [ ! -d "$folder" ]; then
+    return 0
+  fi
+
+  find "$folder" -maxdepth 1 -type f \( -iname '*.mp3' -o -iname '*.m4a' -o -iname '*.wav' -o -iname '*.aac' -o -iname '*.ogg' -o -iname '*.flac' \) -print 2>/dev/null |
   while IFS= read -r source; do
     base="$(basename "$source")"
     destination="incoming/$base"
@@ -32,9 +37,12 @@ if [ -d "$ipad_upload" ]; then
       destination="incoming/${stem}-${counter}.${ext}"
     fi
     mv "$source" "$destination"
-    echo "Moved iCloud upload into incoming: $base"
+    echo "Moved $label upload into incoming: $base"
   done
-fi
+}
+
+sweep_upload_folder "iCloud" "$HOME/Library/Mobile Documents/com~apple~CloudDocs/Podcast Upload"
+sweep_upload_folder "Google Drive" "$HOME/My Drive/Podcast Upload"
 
 audio_count="$(find -L incoming -maxdepth 1 -type f \( -iname '*.mp3' -o -iname '*.m4a' -o -iname '*.wav' -o -iname '*.aac' -o -iname '*.ogg' -o -iname '*.flac' \) | wc -l | tr -d ' ')"
 

@@ -1,5 +1,41 @@
 [
   {
+    "title": "Why The Universe Doesn T Rip Itself Apart",
+    "description": "Why The Universe Doesn T Rip Itself Apart",
+    "audio_file": "why-the-universe-doesn-t-rip-itself-apart.m4a",
+    "source_name": "Why_the_Universe_Doesn_t_Rip_Itself_Apart.m4a",
+    "source_sha256": "9bae19899c827be5efb6ff61622c72c816299180e3f9597b37914d5fe56a6d35",
+    "converted_to_aac": false,
+    "published": "Tue, 07 Jul 2026 00:28:55 +0000",
+    "guid": "e905ab3c-b612-4c4f-aaf1-93a3e9510bb9",
+    "duration": "0:35:03",
+    "draft": false
+  },
+  {
+    "title": "Stargazing And The Backwards Lens Mystery (1)",
+    "description": "Stargazing And The Backwards Lens Mystery (1)",
+    "audio_file": "stargazing-and-the-backwards-lens-mystery-1.m4a",
+    "source_name": "Stargazing_and_the_Backwards_Lens_Mystery (1).m4a",
+    "source_sha256": "f846ca2ac030641e18b378dd38df35d22580b4748239a1bc25dcb82f4b9f38e2",
+    "converted_to_aac": false,
+    "published": "Tue, 07 Jul 2026 00:28:55 +0000",
+    "guid": "7a4e83ea-e38f-4262-85da-fccd12379681",
+    "duration": "0:44:50",
+    "draft": false
+  },
+  {
+    "title": "Programming Enterprise Networks With Srv6",
+    "description": "Programming Enterprise Networks With Srv6",
+    "audio_file": "programming-enterprise-networks-with-srv6.m4a",
+    "source_name": "Programming_enterprise_networks_with_SRv6.m4a",
+    "source_sha256": "d39d0459452e33f1bc31fefeaff35e8f16f12671868824a2514672ec06b14d90",
+    "converted_to_aac": false,
+    "published": "Tue, 07 Jul 2026 00:28:55 +0000",
+    "guid": "5c3cba5a-2af3-4519-8fe1-75355001e2fb",
+    "duration": "0:45:52",
+    "draft": false
+  },
+  {
     "title": "A Phased Roadmap From Backyard To Astrophysics",
     "description": "A Phased Roadmap From Backyard To Astrophysics",
     "audio_file": "a-phased-roadmap-from-backyard-to-astrophysics.m4a",

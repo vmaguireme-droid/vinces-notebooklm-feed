@@ -16,6 +16,26 @@ notify() {
   osascript -e "display notification \"${message}\" with title \"${title}\"" >/dev/null 2>&1 || true
 }
 
+ipad_upload="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Podcast Upload"
+if [ -d "$ipad_upload" ]; then
+  find "$ipad_upload" -maxdepth 1 -type f \( -iname '*.mp3' -o -iname '*.m4a' -o -iname '*.wav' -o -iname '*.aac' -o -iname '*.ogg' -o -iname '*.flac' \) -print |
+  while IFS= read -r source; do
+    base="$(basename "$source")"
+    destination="incoming/$base"
+    if [ -e "$destination" ]; then
+      stem="${base%.*}"
+      ext="${base##*.}"
+      counter=1
+      while [ -e "incoming/${stem}-${counter}.${ext}" ]; do
+        counter=$((counter + 1))
+      done
+      destination="incoming/${stem}-${counter}.${ext}"
+    fi
+    mv "$source" "$destination"
+    echo "Moved iCloud upload into incoming: $base"
+  done
+fi
+
 audio_count="$(find -L incoming -maxdepth 1 -type f \( -iname '*.mp3' -o -iname '*.m4a' -o -iname '*.wav' -o -iname '*.aac' -o -iname '*.ogg' -o -iname '*.flac' \) | wc -l | tr -d ' ')"
 
 if [ "$audio_count" = "0" ]; then

@@ -3,6 +3,13 @@ set -eu
 
 cd "$(dirname "$0")"
 
+lockdir=".podcast-publish.lock"
+if ! mkdir "$lockdir" 2>/dev/null; then
+  echo "Podcast publish already running; skipping this cycle."
+  exit 0
+fi
+trap 'rmdir "$lockdir"' EXIT INT TERM
+
 notify() {
   title="$1"
   message="$2"

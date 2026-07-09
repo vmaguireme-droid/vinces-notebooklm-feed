@@ -1,5 +1,17 @@
 [
   {
+    "title": "The Technical Struggle To Capture Andromeda",
+    "description": "The Technical Struggle To Capture Andromeda",
+    "audio_file": "the-technical-struggle-to-capture-andromeda.m4a",
+    "source_name": "The_technical_struggle_to_capture_Andromeda.m4a",
+    "source_sha256": "e5ebd8d3b1f5755e6c64b80463b7977eaf804f6e57f7a1bbb5a9369377f2c840",
+    "converted_to_aac": false,
+    "published": "Thu, 09 Jul 2026 03:40:36 +0000",
+    "guid": "9ce065a0-c730-4039-9c7d-98cbd5aa411d",
+    "duration": "0:05:27",
+    "draft": false
+  },
+  {
     "title": "Why Businesses Need Zero Trust Architecture",
     "description": "Why Businesses Need Zero Trust Architecture",
     "audio_file": "why-businesses-need-zero-trust-architecture.m4a",

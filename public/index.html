@@ -111,6 +111,24 @@
     a, .secondary-button {
       color: var(--cyan);
     }
+    .top-actions a {
+      display: inline-flex;
+      min-height: 42px;
+      align-items: center;
+      padding: 0 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(117, 247, 230, 0.08);
+      color: var(--cyan);
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .top-actions a[aria-current="page"],
+    .top-actions a:hover {
+      color: #061011;
+      background: linear-gradient(135deg, var(--cyan), #a9fff4);
+      border-color: transparent;
+    }
     .secondary-button {
       appearance: none;
       border: 1px solid var(--line);
@@ -283,6 +301,9 @@
       </div>
     </header>
     <div class="top-actions">
+      <a href="../index.html">Video Podcasts</a>
+      <a href="../generator.html">Generate</a>
+      <a aria-current="page" href="index.html">Audio Podcasts</a>
       <a href="feed.xml">Podcast RSS feed</a>
       <button class="secondary-button refresh-button" type="button" id="refresh-page">Refresh page</button>
       <button class="secondary-button" type="button" id="restore-listened">Show hidden episodes</button>
@@ -294,6 +315,35 @@
       <button class="playlist-button secondary" type="button" id="clear-playlist">Clear playlist</button>
     </section>
     <section class="episodes" id="episodes">
+      <article class="episode" data-episode-id="1df75bc1-0a1a-43bd-b64e-2eb61cee000f">
+        <div class="episode-copy">
+          <p class="eyebrow">0:22:29</p>
+          <h2>The Commercial Road From Moon To Mars</h2>
+          <p>The Commercial Road From Moon To Mars</p>
+        </div>
+        <div class="player">
+          <audio preload="metadata" src="audio/the-commercial-road-from-moon-to-mars.m4a"></audio>
+          <div class="controls">
+            <button class="control play" type="button" aria-label="Play The Commercial Road From Moon To Mars">Play</button>
+            <button class="control stop" type="button" aria-label="Stop The Commercial Road From Moon To Mars">Stop</button>
+          </div>
+          <div class="progress-shell" aria-hidden="true">
+            <div class="progress-bar"></div>
+          </div>
+          <label class="remove-option">
+            <input type="checkbox">
+            <span>Remove from this list after I listen</span>
+          </label>
+          <label class="refresh-remove-option">
+            <input class="refresh-remove-check" type="checkbox">
+            <span>Remove from this list when refreshed</span>
+          </label>
+          <label class="playlist-option">
+            <input class="playlist-check" type="checkbox">
+            <span>Add to playlist</span>
+          </label>
+        </div>
+      </article>
       <article class="episode" data-episode-id="f128d5f4-19d7-4768-898f-68ba7787f9f6">
         <div class="episode-copy">
           <p class="eyebrow">0:01:42</p>

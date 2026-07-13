@@ -418,6 +418,24 @@ def render_index(config, episodes):
     a, .secondary-button {{
       color: var(--cyan);
     }}
+    .top-actions a {{
+      display: inline-flex;
+      min-height: 42px;
+      align-items: center;
+      padding: 0 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(117, 247, 230, 0.08);
+      color: var(--cyan);
+      font-weight: 800;
+      text-decoration: none;
+    }}
+    .top-actions a[aria-current="page"],
+    .top-actions a:hover {{
+      color: #061011;
+      background: linear-gradient(135deg, var(--cyan), #a9fff4);
+      border-color: transparent;
+    }}
     .secondary-button {{
       appearance: none;
       border: 1px solid var(--line);
@@ -590,6 +608,9 @@ def render_index(config, episodes):
       </div>
     </header>
     <div class="top-actions">
+      <a href="../index.html">Video Podcasts</a>
+      <a href="../generator.html">Generate</a>
+      <a aria-current="page" href="index.html">Audio Podcasts</a>
       <a href="feed.xml">Podcast RSS feed</a>
       <button class="secondary-button refresh-button" type="button" id="refresh-page">Refresh page</button>
       <button class="secondary-button" type="button" id="restore-listened">Show hidden episodes</button>

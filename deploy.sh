@@ -12,12 +12,12 @@ git push origin main
 
 tmpdir="$(mktemp -d "${TMPDIR:-/tmp}/podcast-gh-pages.XXXXXX")"
 cleanup() {
-  git worktree remove "$tmpdir" --force >/dev/null 2>&1 || true
+  rm -rf "$tmpdir"
 }
 trap cleanup EXIT
 
-git worktree add "$tmpdir" gh-pages
-find "$tmpdir" -mindepth 1 ! -name .git -exec rm -rf {} +
+git clone --branch gh-pages --single-branch "$(git config --get remote.origin.url)" "$tmpdir"
+find "$tmpdir" -mindepth 1 ! -path "$tmpdir/.git" ! -path "$tmpdir/.git/*" -exec rm -rf {} +
 cp -R public/. "$tmpdir"/
 touch "$tmpdir/.nojekyll"
 

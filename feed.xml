@@ -17,8 +17,17 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>The Pragmatic Bridge: Unlocking the Future with SRv6 over MPLS</title>
+      <description>Audio-only version of the good SRv6 over MPLS Jogg podcast video.</description>
+      <pubDate>Mon, 13 Jul 2026 22:03:25 +0000</pubDate>
+      <guid isPermaLink="false">0b1d7c34-4d32-4917-ab4c-d85d6d976eb5</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-pragmatic-bridge-srv6-over-mpls.m4a" length="4980042" type="audio/mp4"/>
+      <itunes:duration>0:10:07</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Raising Massive Maine Coons And Ragdolls</title>
-      <description>Raising Massive Maine Coons And Ragdolls</description>
+      <description>Short captured audio only. Full NotebookLM audio overview still needs to be downloaded or regenerated.</description>
       <pubDate>Mon, 13 Jul 2026 13:22:40 +0000</pubDate>
       <guid isPermaLink="false">c9cdf2aa-949b-411f-932c-65761ce075d1</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/raising-massive-maine-coons-and-ragdolls.m4a" length="3240459" type="audio/mp4"/>

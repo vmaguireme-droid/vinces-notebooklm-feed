@@ -267,6 +267,21 @@ def render_feed(config, episodes):
 
 def render_index(config, episodes):
     published = [episode for episode in episodes if not episode.get("draft")]
+    latest_links = []
+    for episode in published[:4]:
+        latest_links.append(
+            f'<a class="latest-link" href="#episode-{html.escape(episode["guid"])}">'
+            f'<span>{html.escape(episode["title"])}</span>'
+            f'<small>{html.escape(episode.get("duration") or "Audio")}</small></a>'
+        )
+    latest_panel = ""
+    if latest_links:
+        latest_panel = f"""    <section class="latest-panel" aria-label="Latest audio episodes">
+      <p class="section-label">Latest audio episodes</p>
+      <div class="latest-grid">
+        {chr(10).join(latest_links)}
+      </div>
+    </section>"""
     rows = []
     for episode in published:
         audio_url = f"audio/{quote(episode['audio_file'])}"
@@ -274,7 +289,7 @@ def render_index(config, episodes):
         title = html.escape(episode["title"])
         description = html.escape(episode.get("description") or "")
         duration = html.escape(episode.get("duration") or "Audio")
-        rows.append(f"""      <article class="episode" data-episode-id="{episode_id}">
+        rows.append(f"""      <article class="episode" id="episode-{episode_id}" data-episode-id="{episode_id}">
         <div class="episode-copy">
           <p class="eyebrow">{duration}</p>
           <h2>{title}</h2>
@@ -443,6 +458,45 @@ def render_index(config, episodes):
     .playlist-status {{
       color: var(--muted);
       line-height: 1.4;
+    }}
+    .latest-panel {{
+      margin: 0 0 20px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(255, 189, 97, 0.08);
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+    }}
+    .section-label {{
+      margin: 0 0 12px;
+      color: var(--amber);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }}
+    .latest-grid {{
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }}
+    .latest-link {{
+      display: grid;
+      gap: 6px;
+      min-height: 84px;
+      align-content: center;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(7, 16, 18, 0.42);
+      color: var(--text);
+      text-decoration: none;
+    }}
+    .latest-link span {{
+      font-weight: 800;
+      line-height: 1.2;
+    }}
+    .latest-link small {{
+      color: var(--muted);
     }}
     a, .secondary-button {{
       color: var(--cyan);
@@ -630,6 +684,9 @@ def render_index(config, episodes):
       .playlist-panel {{
         grid-template-columns: 1fr;
       }}
+      .latest-grid {{
+        grid-template-columns: 1fr;
+      }}
       .artwork {{
         width: 132px;
         height: 132px;
@@ -662,6 +719,7 @@ def render_index(config, episodes):
       <button class="playlist-button secondary" type="button" id="select-visible">Select visible</button>
       <button class="playlist-button secondary" type="button" id="clear-playlist">Clear playlist</button>
     </section>
+{latest_panel}
     <section class="episodes" id="episodes">
 {chr(10).join(rows)}
     </section>

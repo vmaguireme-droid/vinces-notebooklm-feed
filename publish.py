@@ -722,9 +722,28 @@ def render_index(config, episodes):
     }}
 
     function restoreAudioPosition(episode, audio) {{
+      if (audio.currentTime > 1) return audio.currentTime;
       const saved = Number(positions[episode.dataset.episodeId] || 0);
       if (saved > 1 && Number.isFinite(saved)) {{
         audio.currentTime = saved;
+        return saved;
+      }}
+      return 0;
+    }}
+
+    function seekWhenReady(audio, target, afterSeek) {{
+      const applySeek = () => {{
+        if (Number.isFinite(target) && target >= 0) {{
+          const limit = audio.duration ? Math.max(0, audio.duration - 0.5) : target;
+          audio.currentTime = Math.min(target, limit);
+        }}
+        afterSeek();
+      }};
+      if (audio.readyState >= 1) {{
+        applySeek();
+      }} else {{
+        audio.addEventListener("loadedmetadata", applySeek, {{ once: true }});
+        audio.load();
       }}
     }}
 
@@ -754,11 +773,13 @@ def render_index(config, episodes):
       const audio = episode.querySelector("audio");
       stopAllAudio();
       if (fromBeginning) {{
-        audio.currentTime = 0;
+        delete positions[episode.dataset.episodeId];
+        savePositions();
+        seekWhenReady(audio, 0, () => audio.play());
       }} else {{
-        restoreAudioPosition(episode, audio);
+        const target = audio.currentTime > 1 ? audio.currentTime : Number(positions[episode.dataset.episodeId] || 0);
+        seekWhenReady(audio, target, () => audio.play());
       }}
-      audio.play();
     }}
 
     function playNextInPlaylist() {{

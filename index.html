@@ -92,6 +92,30 @@
       margin: 24px 0 34px;
       align-items: center;
     }
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .site-nav a {
+      display: inline-flex;
+      min-height: 42px;
+      align-items: center;
+      padding: 0 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(117, 247, 230, 0.08);
+      color: var(--cyan);
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .site-nav a[aria-current="page"],
+    .site-nav a:hover {
+      color: #061011;
+      background: linear-gradient(135deg, var(--cyan), #a9fff4);
+      border-color: transparent;
+    }
     .playlist-panel {
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto auto auto;
@@ -205,7 +229,7 @@
     }
     .controls {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 12px;
     }
     .control {
@@ -224,17 +248,27 @@
     .stop {
       background: linear-gradient(135deg, var(--amber), var(--red));
     }
-    .progress-shell {
-      height: 12px;
-      overflow: hidden;
-      border-radius: 999px;
-      background: rgba(236, 248, 247, 0.14);
+    .resume {
+      color: var(--cyan);
+      background: rgba(117, 247, 230, 0.08);
       border: 1px solid var(--line);
     }
-    .progress-bar {
-      width: 0%;
-      height: 100%;
-      background: linear-gradient(90deg, var(--cyan), var(--amber));
+    .progress-control {
+      display: grid;
+      gap: 8px;
+    }
+    .progress-slider {
+      accent-color: var(--cyan);
+      cursor: pointer;
+      width: 100%;
+    }
+    .time-row {
+      color: var(--muted);
+      display: flex;
+      font-size: 13px;
+      font-weight: 700;
+      justify-content: space-between;
+      gap: 12px;
     }
     .remove-option,
     .refresh-remove-option,
@@ -298,12 +332,14 @@
       <div>
         <h1>Vince&#x27;s NotebookLM Feed</h1>
         <p class="subtitle">NotebookLM audio overviews and other narrated briefings from Vince Maguire.</p>
+        <nav class="site-nav" aria-label="Podcast navigation">
+          <a data-nav-link href="../index.html">Video Podcasts</a>
+          <a data-nav-link href="../generator.html">Generate</a>
+          <a data-nav-link aria-current="page" href="index.html">Audio Podcasts</a>
+        </nav>
       </div>
     </header>
     <div class="top-actions">
-      <a href="../index.html">Video Podcasts</a>
-      <a href="../generator.html">Generate</a>
-      <a aria-current="page" href="index.html">Audio Podcasts</a>
       <a href="feed.xml">Podcast RSS feed</a>
       <button class="secondary-button refresh-button" type="button" id="refresh-page">Refresh page</button>
       <button class="secondary-button" type="button" id="restore-listened">Show hidden episodes</button>
@@ -325,10 +361,15 @@
           <audio preload="metadata" src="audio/the-commercial-road-from-moon-to-mars.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play The Commercial Road From Moon To Mars">Play</button>
+            <button class="control resume" type="button" aria-label="Resume The Commercial Road From Moon To Mars">Resume</button>
             <button class="control stop" type="button" aria-label="Stop The Commercial Road From Moon To Mars">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for The Commercial Road From Moon To Mars">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -354,10 +395,15 @@
           <audio preload="metadata" src="audio/fable-5-short-audio-overview-anthropic-fable-5-and-xbox-fable-reboot.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Fable 5 Short Audio Overview Anthropic Fable 5 And Xbox Fable Reboot">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Fable 5 Short Audio Overview Anthropic Fable 5 And Xbox Fable Reboot">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Fable 5 Short Audio Overview Anthropic Fable 5 And Xbox Fable Reboot">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Fable 5 Short Audio Overview Anthropic Fable 5 And Xbox Fable Reboot">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -383,10 +429,15 @@
           <audio preload="metadata" src="audio/ai-guardrails-versus-fable-s-morality-system.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Ai Guardrails Versus Fable S Morality System">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Ai Guardrails Versus Fable S Morality System">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Ai Guardrails Versus Fable S Morality System">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Ai Guardrails Versus Fable S Morality System">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -412,10 +463,15 @@
           <audio preload="metadata" src="audio/2why-fable-5-keeps-downgrading-itself.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play 2Why Fable 5 Keeps Downgrading Itself">Play</button>
+            <button class="control resume" type="button" aria-label="Resume 2Why Fable 5 Keeps Downgrading Itself">Resume</button>
             <button class="control stop" type="button" aria-label="Stop 2Why Fable 5 Keeps Downgrading Itself">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for 2Why Fable 5 Keeps Downgrading Itself">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -441,10 +497,15 @@
           <audio preload="metadata" src="audio/the-0.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play The 0">Play</button>
+            <button class="control resume" type="button" aria-label="Resume The 0">Resume</button>
             <button class="control stop" type="button" aria-label="Stop The 0">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for The 0">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -470,10 +531,15 @@
           <audio preload="metadata" src="audio/the-technical-struggle-to-capture-andromeda.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play The Technical Struggle To Capture Andromeda">Play</button>
+            <button class="control resume" type="button" aria-label="Resume The Technical Struggle To Capture Andromeda">Resume</button>
             <button class="control stop" type="button" aria-label="Stop The Technical Struggle To Capture Andromeda">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for The Technical Struggle To Capture Andromeda">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -499,10 +565,15 @@
           <audio preload="metadata" src="audio/why-businesses-need-zero-trust-architecture.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Why Businesses Need Zero Trust Architecture">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Why Businesses Need Zero Trust Architecture">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Why Businesses Need Zero Trust Architecture">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Why Businesses Need Zero Trust Architecture">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -528,10 +599,15 @@
           <audio preload="metadata" src="audio/why-the-universe-doesn-t-rip-itself-apart.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Why The Universe Doesn T Rip Itself Apart">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Why The Universe Doesn T Rip Itself Apart">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Why The Universe Doesn T Rip Itself Apart">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Why The Universe Doesn T Rip Itself Apart">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -557,10 +633,15 @@
           <audio preload="metadata" src="audio/stargazing-and-the-backwards-lens-mystery-1.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Stargazing And The Backwards Lens Mystery (1)">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Stargazing And The Backwards Lens Mystery (1)">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Stargazing And The Backwards Lens Mystery (1)">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Stargazing And The Backwards Lens Mystery (1)">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -586,10 +667,15 @@
           <audio preload="metadata" src="audio/programming-enterprise-networks-with-srv6.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Programming Enterprise Networks With Srv6">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Programming Enterprise Networks With Srv6">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Programming Enterprise Networks With Srv6">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Programming Enterprise Networks With Srv6">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -615,10 +701,15 @@
           <audio preload="metadata" src="audio/a-phased-roadmap-from-backyard-to-astrophysics.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play A Phased Roadmap From Backyard To Astrophysics">Play</button>
+            <button class="control resume" type="button" aria-label="Resume A Phased Roadmap From Backyard To Astrophysics">Resume</button>
             <button class="control stop" type="button" aria-label="Stop A Phased Roadmap From Backyard To Astrophysics">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for A Phased Roadmap From Backyard To Astrophysics">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -644,10 +735,15 @@
           <audio preload="metadata" src="audio/cyberark-versus-xage-for-ai-energy.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Cyberark Versus Xage For Ai Energy">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Cyberark Versus Xage For Ai Energy">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Cyberark Versus Xage For Ai Energy">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Cyberark Versus Xage For Ai Energy">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -673,10 +769,15 @@
           <audio preload="metadata" src="audio/the-wild-west-was-corporate-warfare.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play The Wild West Was Corporate Warfare">Play</button>
+            <button class="control resume" type="button" aria-label="Resume The Wild West Was Corporate Warfare">Resume</button>
             <button class="control stop" type="button" aria-label="Stop The Wild West Was Corporate Warfare">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for The Wild West Was Corporate Warfare">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -702,10 +803,15 @@
           <audio preload="metadata" src="audio/true-crimes.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play True Crimes">Play</button>
+            <button class="control resume" type="button" aria-label="Resume True Crimes">Resume</button>
             <button class="control stop" type="button" aria-label="Stop True Crimes">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for True Crimes">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -731,10 +837,15 @@
           <audio preload="metadata" src="audio/gunfighters-of-the-u-s-west.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Gunfighters Of The U S West">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Gunfighters Of The U S West">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Gunfighters Of The U S West">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Gunfighters Of The U S West">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -760,10 +871,15 @@
           <audio preload="metadata" src="audio/srv6.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Srv6">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Srv6">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Srv6">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Srv6">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -789,10 +905,15 @@
           <audio preload="metadata" src="audio/mpls.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Mpls">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Mpls">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Mpls">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Mpls">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -818,10 +939,15 @@
           <audio preload="metadata" src="audio/elevenlabs-ww-2-generals.mp3"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Elevenlabs Ww 2 Generals">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Elevenlabs Ww 2 Generals">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Elevenlabs Ww 2 Generals">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Elevenlabs Ww 2 Generals">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -847,10 +973,15 @@
           <audio preload="metadata" src="audio/active-active-ha-and-precision-ai-architecture.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Active Active Ha And Precision Ai Architecture">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Active Active Ha And Precision Ai Architecture">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Active Active Ha And Precision Ai Architecture">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Active Active Ha And Precision Ai Architecture">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -876,10 +1007,15 @@
           <audio preload="metadata" src="audio/xage-versus-cyberark-for-akamai-port-443.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Xage versus CyberArk for Akamai Port 443">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Xage versus CyberArk for Akamai Port 443">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Xage versus CyberArk for Akamai Port 443">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Xage versus CyberArk for Akamai Port 443">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -905,10 +1041,15 @@
           <audio preload="metadata" src="audio/why-faster-hardware-won-t-fix-your-cloud.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Why Faster Hardware Won&#x27;t Fix Your Cloud">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Why Faster Hardware Won&#x27;t Fix Your Cloud">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Why Faster Hardware Won&#x27;t Fix Your Cloud">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Why Faster Hardware Won&#x27;t Fix Your Cloud">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -934,10 +1075,15 @@
           <audio preload="metadata" src="audio/what-your-dog-is-really-telling-you.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play What Your Dog Is Really Telling You">Play</button>
+            <button class="control resume" type="button" aria-label="Resume What Your Dog Is Really Telling You">Resume</button>
             <button class="control stop" type="button" aria-label="Stop What Your Dog Is Really Telling You">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for What Your Dog Is Really Telling You">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -963,10 +1109,15 @@
           <audio preload="metadata" src="audio/triage-and-training-for-barking-dogs.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Triage and Training for Barking Dogs">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Triage and Training for Barking Dogs">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Triage and Training for Barking Dogs">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Triage and Training for Barking Dogs">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -992,10 +1143,15 @@
           <audio preload="metadata" src="audio/the-death-of-the-network-perimeter.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play The Death of the Network Perimeter">Play</button>
+            <button class="control resume" type="button" aria-label="Resume The Death of the Network Perimeter">Resume</button>
             <button class="control stop" type="button" aria-label="Stop The Death of the Network Perimeter">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for The Death of the Network Perimeter">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -1021,10 +1177,15 @@
           <audio preload="metadata" src="audio/surviving-the-adolescence-of-powerful-ai.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Surviving the Adolescence of Powerful AI">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Surviving the Adolescence of Powerful AI">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Surviving the Adolescence of Powerful AI">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Surviving the Adolescence of Powerful AI">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -1050,10 +1211,15 @@
           <audio preload="metadata" src="audio/replacing-legacy-mpls-with-usid-routing.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Replacing Legacy MPLS with uSID Routing">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Replacing Legacy MPLS with uSID Routing">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Replacing Legacy MPLS with uSID Routing">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Replacing Legacy MPLS with uSID Routing">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -1079,10 +1245,15 @@
           <audio preload="metadata" src="audio/bridging-the-mpls-and-srv6-divide.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Bridging the MPLS and SRv6 Divide">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Bridging the MPLS and SRv6 Divide">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Bridging the MPLS and SRv6 Divide">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Bridging the MPLS and SRv6 Divide">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -1108,10 +1279,15 @@
           <audio preload="metadata" src="audio/barking-solutions-for-busy-working-families.m4a"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play Barking Solutions for Busy Working Families">Play</button>
+            <button class="control resume" type="button" aria-label="Resume Barking Solutions for Busy Working Families">Resume</button>
             <button class="control stop" type="button" aria-label="Stop Barking Solutions for Busy Working Families">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for Barking Solutions for Busy Working Families">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -1130,13 +1306,16 @@
     </section>
     <p class="empty-state" id="empty-state">Everything in this browser has been marked listened. Use "Show hidden episodes" to bring them back.</p>
   </main>
+  <script src="../nav.js"></script>
   <script>
     const hiddenKey = "vinces-notebooklm-feed-hidden";
     const playlistKey = "vinces-notebooklm-feed-playlist";
     const refreshRemoveKey = "vinces-notebooklm-feed-refresh-remove";
+    const positionKey = "vinces-notebooklm-feed-positions";
     const hidden = new Set(JSON.parse(localStorage.getItem(hiddenKey) || "[]"));
     const playlist = new Set(JSON.parse(localStorage.getItem(playlistKey) || "[]"));
     const refreshRemove = new Set(JSON.parse(localStorage.getItem(refreshRemoveKey) || "[]"));
+    const positions = JSON.parse(localStorage.getItem(positionKey) || "{}");
     const episodes = Array.from(document.querySelectorAll(".episode"));
     const emptyState = document.getElementById("empty-state");
     const playlistStatus = document.getElementById("playlist-status");
@@ -1153,6 +1332,39 @@
 
     function saveRefreshRemove() {
       localStorage.setItem(refreshRemoveKey, JSON.stringify(Array.from(refreshRemove)));
+    }
+
+    function savePositions() {
+      localStorage.setItem(positionKey, JSON.stringify(positions));
+    }
+
+    function formatTime(seconds) {
+      if (!Number.isFinite(seconds) || seconds < 0) return "0:00";
+      const total = Math.floor(seconds);
+      const hours = Math.floor(total / 3600);
+      const minutes = Math.floor((total % 3600) / 60);
+      const secs = total % 60;
+      if (hours) {
+        return `${hours}:${String(minutes).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+      }
+      return `${minutes}:${String(secs).padStart(2, "0")}`;
+    }
+
+    function saveAudioPosition(episode, audio) {
+      const id = episode.dataset.episodeId;
+      if (Number.isFinite(audio.currentTime) && audio.currentTime > 1 && (!audio.duration || audio.currentTime < audio.duration - 2)) {
+        positions[id] = audio.currentTime;
+      } else {
+        delete positions[id];
+      }
+      savePositions();
+    }
+
+    function restoreAudioPosition(episode, audio) {
+      const saved = Number(positions[episode.dataset.episodeId] || 0);
+      if (saved > 1 && Number.isFinite(saved)) {
+        audio.currentTime = saved;
+      }
     }
 
     function updateEmptyState() {
@@ -1177,9 +1389,14 @@
       });
     }
 
-    function playEpisode(episode) {
+    function playEpisode(episode, fromBeginning = false) {
       const audio = episode.querySelector("audio");
       stopAllAudio();
+      if (fromBeginning) {
+        audio.currentTime = 0;
+      } else {
+        restoreAudioPosition(episode, audio);
+      }
       audio.play();
     }
 
@@ -1209,11 +1426,15 @@
       const id = episode.dataset.episodeId;
       const audio = episode.querySelector("audio");
       const play = episode.querySelector(".play");
+      const resume = episode.querySelector(".resume");
       const stop = episode.querySelector(".stop");
       const removeAfterListen = episode.querySelector(".remove-option input");
       const removeOnRefresh = episode.querySelector(".refresh-remove-check");
       const playlistCheck = episode.querySelector(".playlist-check");
-      const progress = episode.querySelector(".progress-bar");
+      const slider = episode.querySelector(".progress-slider");
+      const listenedTime = episode.querySelector(".listened-time");
+      const remainingTime = episode.querySelector(".remaining-time");
+      let sliding = false;
 
       if (refreshRemove.has(id)) {
         hidden.add(id);
@@ -1254,6 +1475,12 @@
       play.addEventListener("click", () => {
         playlistIndex = -1;
         playlistQueue = [];
+        playEpisode(episode, true);
+      });
+
+      resume.addEventListener("click", () => {
+        playlistIndex = -1;
+        playlistQueue = [];
         playEpisode(episode);
       });
 
@@ -1261,16 +1488,52 @@
         playlistIndex = -1;
         playlistQueue = [];
         audio.pause();
-        audio.currentTime = 0;
+        saveAudioPosition(episode, audio);
+      });
+
+      function updateProgress() {
+        const percent = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+        if (!sliding) {
+          slider.value = String(Math.round(percent * 10));
+        }
+        listenedTime.textContent = formatTime(audio.currentTime);
+        remainingTime.textContent = formatTime((audio.duration || 0) - audio.currentTime);
+      }
+
+      audio.addEventListener("loadedmetadata", () => {
+        restoreAudioPosition(episode, audio);
+        updateProgress();
       });
 
       audio.addEventListener("timeupdate", () => {
-        const percent = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
-        progress.style.width = `${percent}%`;
+        updateProgress();
+        saveAudioPosition(episode, audio);
+      });
+
+      slider.addEventListener("input", () => {
+        sliding = true;
+        if (audio.duration) {
+          const nextTime = (Number(slider.value) / 1000) * audio.duration;
+          listenedTime.textContent = formatTime(nextTime);
+          remainingTime.textContent = formatTime(audio.duration - nextTime);
+        }
+      });
+
+      slider.addEventListener("change", () => {
+        if (audio.duration) {
+          audio.currentTime = (Number(slider.value) / 1000) * audio.duration;
+          saveAudioPosition(episode, audio);
+        }
+        sliding = false;
+        updateProgress();
       });
 
       audio.addEventListener("ended", () => {
-        progress.style.width = "100%";
+        slider.value = "1000";
+        listenedTime.textContent = formatTime(audio.duration || audio.currentTime);
+        remainingTime.textContent = "0:00";
+        delete positions[id];
+        savePositions();
         if (removeAfterListen.checked) {
           hideEpisode(episode);
         }

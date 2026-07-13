@@ -10,7 +10,7 @@ if ! git diff --cached --quiet; then
 fi
 git push origin main
 
-tmpdir="$(mktemp -d)"
+tmpdir="$(mktemp -d "${TMPDIR:-/tmp}/podcast-gh-pages.XXXXXX")"
 cleanup() {
   git worktree remove "$tmpdir" --force >/dev/null 2>&1 || true
 }

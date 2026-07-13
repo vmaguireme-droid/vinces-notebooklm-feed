@@ -284,10 +284,15 @@ def render_index(config, episodes):
           <audio preload="metadata" src="{audio_url}"></audio>
           <div class="controls">
             <button class="control play" type="button" aria-label="Play {title}">Play</button>
+            <button class="control resume" type="button" aria-label="Resume {title}">Resume</button>
             <button class="control stop" type="button" aria-label="Stop {title}">Stop</button>
           </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div class="progress-bar"></div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for {title}">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
           </div>
           <label class="remove-option">
             <input type="checkbox">
@@ -398,6 +403,30 @@ def render_index(config, episodes):
       gap: 12px;
       margin: 24px 0 34px;
       align-items: center;
+    }}
+    .site-nav {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }}
+    .site-nav a {{
+      display: inline-flex;
+      min-height: 42px;
+      align-items: center;
+      padding: 0 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(117, 247, 230, 0.08);
+      color: var(--cyan);
+      font-weight: 800;
+      text-decoration: none;
+    }}
+    .site-nav a[aria-current="page"],
+    .site-nav a:hover {{
+      color: #061011;
+      background: linear-gradient(135deg, var(--cyan), #a9fff4);
+      border-color: transparent;
     }}
     .playlist-panel {{
       display: grid;
@@ -512,7 +541,7 @@ def render_index(config, episodes):
     }}
     .controls {{
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 12px;
     }}
     .control {{
@@ -531,17 +560,27 @@ def render_index(config, episodes):
     .stop {{
       background: linear-gradient(135deg, var(--amber), var(--red));
     }}
-    .progress-shell {{
-      height: 12px;
-      overflow: hidden;
-      border-radius: 999px;
-      background: rgba(236, 248, 247, 0.14);
+    .resume {{
+      color: var(--cyan);
+      background: rgba(117, 247, 230, 0.08);
       border: 1px solid var(--line);
     }}
-    .progress-bar {{
-      width: 0%;
-      height: 100%;
-      background: linear-gradient(90deg, var(--cyan), var(--amber));
+    .progress-control {{
+      display: grid;
+      gap: 8px;
+    }}
+    .progress-slider {{
+      accent-color: var(--cyan);
+      cursor: pointer;
+      width: 100%;
+    }}
+    .time-row {{
+      color: var(--muted);
+      display: flex;
+      font-size: 13px;
+      font-weight: 700;
+      justify-content: space-between;
+      gap: 12px;
     }}
     .remove-option,
     .refresh-remove-option,
@@ -605,12 +644,14 @@ def render_index(config, episodes):
       <div>
         <h1>{html.escape(config["title"])}</h1>
         <p class="subtitle">{html.escape(config["description"])}</p>
+        <nav class="site-nav" aria-label="Podcast navigation">
+          <a data-nav-link href="../index.html">Video Podcasts</a>
+          <a data-nav-link href="../generator.html">Generate</a>
+          <a data-nav-link aria-current="page" href="index.html">Audio Podcasts</a>
+        </nav>
       </div>
     </header>
     <div class="top-actions">
-      <a href="../index.html">Video Podcasts</a>
-      <a href="../generator.html">Generate</a>
-      <a aria-current="page" href="index.html">Audio Podcasts</a>
       <a href="feed.xml">Podcast RSS feed</a>
       <button class="secondary-button refresh-button" type="button" id="refresh-page">Refresh page</button>
       <button class="secondary-button" type="button" id="restore-listened">Show hidden episodes</button>
@@ -626,13 +667,16 @@ def render_index(config, episodes):
     </section>
     <p class="empty-state" id="empty-state">Everything in this browser has been marked listened. Use "Show hidden episodes" to bring them back.</p>
   </main>
+  <script src="../nav.js"></script>
   <script>
     const hiddenKey = "vinces-notebooklm-feed-hidden";
     const playlistKey = "vinces-notebooklm-feed-playlist";
     const refreshRemoveKey = "vinces-notebooklm-feed-refresh-remove";
+    const positionKey = "vinces-notebooklm-feed-positions";
     const hidden = new Set(JSON.parse(localStorage.getItem(hiddenKey) || "[]"));
     const playlist = new Set(JSON.parse(localStorage.getItem(playlistKey) || "[]"));
     const refreshRemove = new Set(JSON.parse(localStorage.getItem(refreshRemoveKey) || "[]"));
+    const positions = JSON.parse(localStorage.getItem(positionKey) || "{{}}");
     const episodes = Array.from(document.querySelectorAll(".episode"));
     const emptyState = document.getElementById("empty-state");
     const playlistStatus = document.getElementById("playlist-status");
@@ -649,6 +693,39 @@ def render_index(config, episodes):
 
     function saveRefreshRemove() {{
       localStorage.setItem(refreshRemoveKey, JSON.stringify(Array.from(refreshRemove)));
+    }}
+
+    function savePositions() {{
+      localStorage.setItem(positionKey, JSON.stringify(positions));
+    }}
+
+    function formatTime(seconds) {{
+      if (!Number.isFinite(seconds) || seconds < 0) return "0:00";
+      const total = Math.floor(seconds);
+      const hours = Math.floor(total / 3600);
+      const minutes = Math.floor((total % 3600) / 60);
+      const secs = total % 60;
+      if (hours) {{
+        return `${{hours}}:${{String(minutes).padStart(2, "0")}}:${{String(secs).padStart(2, "0")}}`;
+      }}
+      return `${{minutes}}:${{String(secs).padStart(2, "0")}}`;
+    }}
+
+    function saveAudioPosition(episode, audio) {{
+      const id = episode.dataset.episodeId;
+      if (Number.isFinite(audio.currentTime) && audio.currentTime > 1 && (!audio.duration || audio.currentTime < audio.duration - 2)) {{
+        positions[id] = audio.currentTime;
+      }} else {{
+        delete positions[id];
+      }}
+      savePositions();
+    }}
+
+    function restoreAudioPosition(episode, audio) {{
+      const saved = Number(positions[episode.dataset.episodeId] || 0);
+      if (saved > 1 && Number.isFinite(saved)) {{
+        audio.currentTime = saved;
+      }}
     }}
 
     function updateEmptyState() {{
@@ -673,9 +750,14 @@ def render_index(config, episodes):
       }});
     }}
 
-    function playEpisode(episode) {{
+    function playEpisode(episode, fromBeginning = false) {{
       const audio = episode.querySelector("audio");
       stopAllAudio();
+      if (fromBeginning) {{
+        audio.currentTime = 0;
+      }} else {{
+        restoreAudioPosition(episode, audio);
+      }}
       audio.play();
     }}
 
@@ -705,11 +787,15 @@ def render_index(config, episodes):
       const id = episode.dataset.episodeId;
       const audio = episode.querySelector("audio");
       const play = episode.querySelector(".play");
+      const resume = episode.querySelector(".resume");
       const stop = episode.querySelector(".stop");
       const removeAfterListen = episode.querySelector(".remove-option input");
       const removeOnRefresh = episode.querySelector(".refresh-remove-check");
       const playlistCheck = episode.querySelector(".playlist-check");
-      const progress = episode.querySelector(".progress-bar");
+      const slider = episode.querySelector(".progress-slider");
+      const listenedTime = episode.querySelector(".listened-time");
+      const remainingTime = episode.querySelector(".remaining-time");
+      let sliding = false;
 
       if (refreshRemove.has(id)) {{
         hidden.add(id);
@@ -750,6 +836,12 @@ def render_index(config, episodes):
       play.addEventListener("click", () => {{
         playlistIndex = -1;
         playlistQueue = [];
+        playEpisode(episode, true);
+      }});
+
+      resume.addEventListener("click", () => {{
+        playlistIndex = -1;
+        playlistQueue = [];
         playEpisode(episode);
       }});
 
@@ -757,16 +849,52 @@ def render_index(config, episodes):
         playlistIndex = -1;
         playlistQueue = [];
         audio.pause();
-        audio.currentTime = 0;
+        saveAudioPosition(episode, audio);
+      }});
+
+      function updateProgress() {{
+        const percent = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+        if (!sliding) {{
+          slider.value = String(Math.round(percent * 10));
+        }}
+        listenedTime.textContent = formatTime(audio.currentTime);
+        remainingTime.textContent = formatTime((audio.duration || 0) - audio.currentTime);
+      }}
+
+      audio.addEventListener("loadedmetadata", () => {{
+        restoreAudioPosition(episode, audio);
+        updateProgress();
       }});
 
       audio.addEventListener("timeupdate", () => {{
-        const percent = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
-        progress.style.width = `${{percent}}%`;
+        updateProgress();
+        saveAudioPosition(episode, audio);
+      }});
+
+      slider.addEventListener("input", () => {{
+        sliding = true;
+        if (audio.duration) {{
+          const nextTime = (Number(slider.value) / 1000) * audio.duration;
+          listenedTime.textContent = formatTime(nextTime);
+          remainingTime.textContent = formatTime(audio.duration - nextTime);
+        }}
+      }});
+
+      slider.addEventListener("change", () => {{
+        if (audio.duration) {{
+          audio.currentTime = (Number(slider.value) / 1000) * audio.duration;
+          saveAudioPosition(episode, audio);
+        }}
+        sliding = false;
+        updateProgress();
       }});
 
       audio.addEventListener("ended", () => {{
-        progress.style.width = "100%";
+        slider.value = "1000";
+        listenedTime.textContent = formatTime(audio.duration || audio.currentTime);
+        remainingTime.textContent = "0:00";
+        delete positions[id];
+        savePositions();
         if (removeAfterListen.checked) {{
           hideEpisode(episode);
         }}

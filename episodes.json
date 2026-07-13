@@ -1,5 +1,16 @@
 [
   {
+    "title": "The Pragmatic Bridge: Unlocking the Future with SRv6 over MPLS",
+    "description": "Audio-only version of the good SRv6 over MPLS Jogg podcast video.",
+    "audio_file": "the-pragmatic-bridge-srv6-over-mpls.m4a",
+    "source_name": "The Pragmatic Bridge - SRv6 over MPLS.mp4",
+    "source_sha256": "6c3a02b9ec9561794176b35f0dd965301cf6bb0878cf50be4c5ef8f17b0178a1",
+    "published": "Mon, 13 Jul 2026 22:03:25 +0000",
+    "guid": "0b1d7c34-4d32-4917-ab4c-d85d6d976eb5",
+    "duration": "0:10:07",
+    "draft": false
+  },
+  {
     "title": "Raising Massive Maine Coons And Ragdolls",
     "description": "Short captured audio only. Full NotebookLM audio overview still needs to be downloaded or regenerated.",
     "audio_file": "raising-massive-maine-coons-and-ragdolls.m4a",

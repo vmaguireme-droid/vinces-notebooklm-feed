@@ -1,5 +1,53 @@
 [
   {
+    "title": "Cloudflare Secure Hosting \u2014 Outbound Tunnels Without Open Firewall Ports",
+    "description": "A detailed two-host briefing on Cloudflare Anycast, QUIC tunnels, origin protection, identity-aware access, caching, observability, launchd operations, and systematic troubleshooting for a Mac mini-hosted service.",
+    "audio_file": "cloudflare-secure-hosting-outbound-tunnels-without-open-firewall-ports.mp3",
+    "source_name": "Cloudflare Secure Hosting - Outbound Tunnels Without Open Firewall Ports.mp3",
+    "source_sha256": "1494bbbd0972dffa650c39bd9bc5692201f8159472ba8168ede2dbc7c835177c",
+    "converted_to_aac": false,
+    "published": "Thu, 20 Aug 2026 10:42:19 +0000",
+    "guid": "8bea357b-dfa7-4cb8-bd9c-3780a5c32a4a",
+    "duration": "0:41:07",
+    "draft": false
+  },
+  {
+    "title": "The Logistical Nightmare Of Reaching Mars (1)",
+    "description": "The Logistical Nightmare Of Reaching Mars (1)",
+    "audio_file": "the-logistical-nightmare-of-reaching-mars-1.mp3",
+    "source_name": "The Logistical Nightmare of Reaching Mars (1).mp3",
+    "source_sha256": "c02a31ac10778709f11a0f1e52c45540c7a7c4af7004a3338b0dd098c5f7210f",
+    "converted_to_aac": false,
+    "published": "Sun, 02 Aug 2026 21:53:56 +0000",
+    "guid": "3ec60ba0-9f17-48cb-ad21-86ba92e46758",
+    "duration": "0:21:15",
+    "draft": false
+  },
+  {
+    "title": "Mars Mission Architecture Jogg Render Rendered Voices",
+    "description": "Mars Mission Architecture Jogg Render Rendered Voices",
+    "audio_file": "mars-mission-architecture-jogg-render-rendered-voices.mp3",
+    "source_name": "Mars-Mission-Architecture-Jogg-render-rendered-voices.mp3",
+    "source_sha256": "6094cc48a109739b85b9ba5320f52270da6f520b60e6f883094cd1dc4e309e91",
+    "converted_to_aac": false,
+    "published": "Sun, 02 Aug 2026 21:53:56 +0000",
+    "guid": "c7845184-9eec-48ea-b672-9b063e587cb5",
+    "duration": "0:19:30",
+    "draft": false
+  },
+  {
+    "title": "How Humans Will Actually Reach Mars",
+    "description": "How Humans Will Actually Reach Mars",
+    "audio_file": "how-humans-will-actually-reach-mars.mp3",
+    "source_name": "How Humans Will Actually Reach Mars.mp3",
+    "source_sha256": "742f7d474212c1a1d184e3a1e2874c00f8872a1a0c377d28a46e87e7dd7c1b16",
+    "converted_to_aac": false,
+    "published": "Sun, 02 Aug 2026 21:53:56 +0000",
+    "guid": "c1ab6033-314b-4587-aca7-faa36513d994",
+    "duration": "0:21:20",
+    "draft": false
+  },
+  {
     "title": "Rome From Mud to Ottoman Cannons - Vince and Margaret",
     "description": "A Jogg-voiced deep-dive conversation with Vince and Margaret covering Rome's rise, major emperors and conquests, military reversals, and the forces behind the empire's long decline.",
     "audio_file": "rome-from-mud-to-ottoman-cannons-vince-and-margaret.mp3",

@@ -17,6 +17,42 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Cloudflare Secure Hosting — Outbound Tunnels Without Open Firewall Ports</title>
+      <description>A detailed two-host briefing on Cloudflare Anycast, QUIC tunnels, origin protection, identity-aware access, caching, observability, launchd operations, and systematic troubleshooting for a Mac mini-hosted service.</description>
+      <pubDate>Thu, 20 Aug 2026 10:42:19 +0000</pubDate>
+      <guid isPermaLink="false">8bea357b-dfa7-4cb8-bd9c-3780a5c32a4a</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/cloudflare-secure-hosting-outbound-tunnels-without-open-firewall-ports.mp3" length="59215149" type="audio/mpeg"/>
+      <itunes:duration>0:41:07</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>The Logistical Nightmare Of Reaching Mars (1)</title>
+      <description>The Logistical Nightmare Of Reaching Mars (1)</description>
+      <pubDate>Sun, 02 Aug 2026 21:53:56 +0000</pubDate>
+      <guid isPermaLink="false">3ec60ba0-9f17-48cb-ad21-86ba92e46758</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-logistical-nightmare-of-reaching-mars-1.mp3" length="30612303" type="audio/mpeg"/>
+      <itunes:duration>0:21:15</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Mars Mission Architecture Jogg Render Rendered Voices</title>
+      <description>Mars Mission Architecture Jogg Render Rendered Voices</description>
+      <pubDate>Sun, 02 Aug 2026 21:53:56 +0000</pubDate>
+      <guid isPermaLink="false">c7845184-9eec-48ea-b672-9b063e587cb5</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/mars-mission-architecture-jogg-render-rendered-voices.mp3" length="28083286" type="audio/mpeg"/>
+      <itunes:duration>0:19:30</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>How Humans Will Actually Reach Mars</title>
+      <description>How Humans Will Actually Reach Mars</description>
+      <pubDate>Sun, 02 Aug 2026 21:53:56 +0000</pubDate>
+      <guid isPermaLink="false">c1ab6033-314b-4587-aca7-faa36513d994</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/how-humans-will-actually-reach-mars.mp3" length="30738945" type="audio/mpeg"/>
+      <itunes:duration>0:21:20</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Rome From Mud to Ottoman Cannons - Vince and Margaret</title>
       <description>A Jogg-voiced deep-dive conversation with Vince and Margaret covering Rome&#x27;s rise, major emperors and conquests, military reversals, and the forces behind the empire&#x27;s long decline.</description>
       <pubDate>Tue, 18 Aug 2026 20:16:28 +0000</pubDate>

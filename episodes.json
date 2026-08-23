@@ -1,17 +1,5 @@
 [
   {
-    "title": "How Humans Will Actually Reach Mars \u2014 ElevenLabs Two-Voice Edition",
-    "description": "Original NotebookLM Audio Overview revoiced as a two-host ElevenLabs V2: Blain as the male host and Matilda as the female host. Original source preserved.",
-    "audio_file": "how-humans-will-actually-reach-mars-elevenlabs-two-voice-v2.m4a",
-    "source_name": "how-humans-will-actually-reach-mars-elevenlabs-two-voice-v2.m4a",
-    "source_sha256": "ad4967997b682f98f0ace790045f55f05a2b856eb8152f18a05e2e253e89a86e",
-    "converted_to_aac": false,
-    "published": "Sun, 23 Aug 2026 13:05:28 +0000",
-    "guid": "596C168E-6860-4C59-9E5A-54DCCB97902A",
-    "duration": "0:21:21",
-    "draft": false
-  },
-  {
     "title": "The Generator: A 10-Minute Capability Tour",
     "description": "Vince demonstrates how the Generator connects NotebookLM videos, audio, reports, infographics, mind maps, evidence, downloads, and notebook-family navigation.",
     "audio_file": "generator-capability-tour-avatarx-10min.m4a",
@@ -64,9 +52,9 @@
     "description": "How Humans Will Actually Reach Mars",
     "audio_file": "how-humans-will-actually-reach-mars.mp3",
     "source_name": "How Humans Will Actually Reach Mars.mp3",
-    "source_sha256": "742f7d474212c1a1d184e3a1e2874c00f8872a1a0c377d28a46e87e7dd7c1b16",
+    "source_sha256": "7f330a3f3806a544e33bfa0cbc3e02761dbb803db7f1dbfcefbcc1ee7185560b",
     "converted_to_aac": false,
-    "published": "Sun, 02 Aug 2026 21:53:56 +0000",
+    "published": "Sun, 23 Aug 2026 13:14:03 +0000",
     "guid": "c1ab6033-314b-4587-aca7-faa36513d994",
     "duration": "0:21:20",
     "draft": false,
@@ -76,7 +64,32 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "libraryColumn": "Technology",
-    "libraryGroup": "Space & Cosmology"
+    "libraryGroup": "Space & Cosmology",
+    "original_notebooklm_source_sha256": "742f7d474212c1a1d184e3a1e2874c00f8872a1a0c377d28a46e87e7dd7c1b16",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/how-humans-will-actually-reach-mars-orig-nblm.mp3",
+    "original_notebooklm_filename": "how-humans-will-actually-reach-mars-orig-nblm.mp3",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 1280.719819,
+      "outputDurationSeconds": 1282.995374,
+      "outputSha256": "7f330a3f3806a544e33bfa0cbc3e02761dbb803db7f1dbfcefbcc1ee7185560b",
+      "creditsUsed": 7250,
+      "conversionSeconds": 298.5380000000001,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Blain - Conversational Ad Voice",
+          "id": "jHprmvvyQreWpRuutdmV"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Matilda - Knowledgable, Professional",
+          "id": "XrExE9yKIg1WjnnlVkGX"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/mars-two-voice/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Rome From Mud to Ottoman Cannons - Vince and Margaret",

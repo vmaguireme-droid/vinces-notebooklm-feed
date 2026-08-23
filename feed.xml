@@ -17,15 +17,6 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
-      <title>How Humans Will Actually Reach Mars — ElevenLabs Two-Voice Edition</title>
-      <description>Original NotebookLM Audio Overview revoiced as a two-host ElevenLabs V2: Blain as the male host and Matilda as the female host. Original source preserved.</description>
-      <pubDate>Sun, 23 Aug 2026 13:05:28 +0000</pubDate>
-      <guid isPermaLink="false">596C168E-6860-4C59-9E5A-54DCCB97902A</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/how-humans-will-actually-reach-mars-elevenlabs-two-voice-v2.m4a" length="26151456" type="audio/mp4"/>
-      <itunes:duration>0:21:21</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
       <title>The Generator: A 10-Minute Capability Tour</title>
       <description>Vince demonstrates how the Generator connects NotebookLM videos, audio, reports, infographics, mind maps, evidence, downloads, and notebook-family navigation.</description>
       <pubDate>Sun, 23 Aug 2026 02:56:38 +0000</pubDate>
@@ -64,9 +55,9 @@
     <item>
       <title>How Humans Will Actually Reach Mars</title>
       <description>How Humans Will Actually Reach Mars</description>
-      <pubDate>Sun, 02 Aug 2026 21:53:56 +0000</pubDate>
+      <pubDate>Sun, 23 Aug 2026 13:14:03 +0000</pubDate>
       <guid isPermaLink="false">c1ab6033-314b-4587-aca7-faa36513d994</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/how-humans-will-actually-reach-mars.mp3" length="30738945" type="audio/mpeg"/>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/how-humans-will-actually-reach-mars.mp3" length="30793494" type="audio/mpeg"/>
       <itunes:duration>0:21:20</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>

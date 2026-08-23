@@ -336,9 +336,9 @@
     "description": "2Why Fable 5 Keeps Downgrading Itself",
     "audio_file": "2why-fable-5-keeps-downgrading-itself.m4a",
     "source_name": "2Why_Fable_5_keeps_downgrading_itself.m4a",
-    "source_sha256": "eadb854b5dd2625a0f876f4cdd0477754279682c3bb63999f179c760fb29d84d",
+    "source_sha256": "e5a2f708a4cb51e96bafe6e824ce43b11b1d20423a63c5ec8df2b9135d45bafb",
     "converted_to_aac": false,
-    "published": "Sun, 12 Jul 2026 02:47:42 +0000",
+    "published": "Sun, 23 Aug 2026 13:15:50 +0000",
     "guid": "7b09db4f-16f8-4129-b043-9f5dda21892f",
     "duration": "0:05:08",
     "draft": false,
@@ -348,7 +348,32 @@
     "artifactType": "audio_overview",
     "variant": "Legacy/Unlabeled",
     "libraryColumn": "Other Stuff",
-    "libraryGroup": "Media & Creativity"
+    "libraryGroup": "Media & Creativity",
+    "original_notebooklm_source_sha256": "eadb854b5dd2625a0f876f4cdd0477754279682c3bb63999f179c760fb29d84d",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/2why-fable-5-keeps-downgrading-itself-orig-nblm.m4a",
+    "original_notebooklm_filename": "2why-fable-5-keeps-downgrading-itself-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 308.848617,
+      "outputDurationSeconds": 308.884082,
+      "outputSha256": "e5a2f708a4cb51e96bafe6e824ce43b11b1d20423a63c5ec8df2b9135d45bafb",
+      "creditsUsed": 1749,
+      "conversionSeconds": 78.57300000000001,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Roger - Laid-Back, Casual, Resonant",
+          "id": "CwhRBWXzGAHq8TQ4Fs17"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Sarah - Mature, Reassuring, Confident",
+          "id": "EXAVITQu4vr4xnSDxMaL"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-fable-5/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "The 0",
@@ -367,9 +392,9 @@
     "description": "The Technical Struggle To Capture Andromeda",
     "audio_file": "the-technical-struggle-to-capture-andromeda.m4a",
     "source_name": "The_technical_struggle_to_capture_Andromeda.m4a",
-    "source_sha256": "e5ebd8d3b1f5755e6c64b80463b7977eaf804f6e57f7a1bbb5a9369377f2c840",
+    "source_sha256": "10a94a89568cdc80eca58456a6ac099c6ffa18d5e373e97c4f52edc608a71181",
     "converted_to_aac": false,
-    "published": "Thu, 09 Jul 2026 03:40:36 +0000",
+    "published": "Sun, 23 Aug 2026 13:15:50 +0000",
     "guid": "9ce065a0-c730-4039-9c7d-98cbd5aa411d",
     "duration": "0:05:27",
     "draft": false,
@@ -379,7 +404,32 @@
     "artifactType": "audio_overview",
     "variant": "Legacy/Unlabeled",
     "libraryColumn": "Technology",
-    "libraryGroup": "Space & Cosmology"
+    "libraryGroup": "Space & Cosmology",
+    "original_notebooklm_source_sha256": "e5ebd8d3b1f5755e6c64b80463b7977eaf804f6e57f7a1bbb5a9369377f2c840",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/the-technical-struggle-to-capture-andromeda-orig-nblm.m4a",
+    "original_notebooklm_filename": "the-technical-struggle-to-capture-andromeda-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 327.77288,
+      "outputDurationSeconds": 327.983311,
+      "outputSha256": "10a94a89568cdc80eca58456a6ac099c6ffa18d5e373e97c4f52edc608a71181",
+      "creditsUsed": 1854,
+      "conversionSeconds": 93.39099999999998,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Chris - Charming, Down-to-Earth",
+          "id": "iP95p4xoKVk53GoZ742B"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Bella - Professional, Bright, Warm",
+          "id": "hpp4J3VqNfWAUOO0d1Us"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-andromeda/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Why Businesses Need Zero Trust Architecture",
@@ -492,8 +542,8 @@
     "description": "",
     "audio_file": "hubble-and-webb-reveal-the-early-universe.m4a",
     "source_name": "Hubble_and_Webb_reveal_the_early_universe.m4a",
-    "source_sha256": "fd4368c618039d7fc2b0cfef3c7a1b5e412c1811bd7d417cb20c897c6154f74d",
-    "published": "Tue, 16 Jun 2026 22:07:25 +0000",
+    "source_sha256": "160e243492b71e3dd12c425c64ff743848361b5ef2209b656f0451371c0c3dca",
+    "published": "Sun, 23 Aug 2026 13:15:51 +0000",
     "guid": "d8984eec-b602-406b-a52d-560b3d3f71f6",
     "duration": "0:18:58",
     "draft": true,
@@ -501,7 +551,32 @@
     "notebookTitle": "[astronomy] spaceli",
     "notebookArtifactId": "a1b2c071-e880-4f8b-a324-7baf9ab063d6",
     "artifactType": "audio_overview",
-    "variant": "Legacy/Unlabeled"
+    "variant": "Legacy/Unlabeled",
+    "original_notebooklm_source_sha256": "fd4368c618039d7fc2b0cfef3c7a1b5e412c1811bd7d417cb20c897c6154f74d",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/hubble-and-webb-reveal-the-early-universe-orig-nblm.m4a",
+    "original_notebooklm_filename": "hubble-and-webb-reveal-the-early-universe-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 1138.961995,
+      "outputDurationSeconds": 1139.13424,
+      "outputSha256": "160e243492b71e3dd12c425c64ff743848361b5ef2209b656f0451371c0c3dca",
+      "creditsUsed": 6451,
+      "conversionSeconds": 272.836,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Chris - Charming, Down-to-Earth",
+          "id": "iP95p4xoKVk53GoZ742B"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Bella - Professional, Bright, Warm",
+          "id": "hpp4J3VqNfWAUOO0d1Us"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-hubble-webb/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "The Wild West Was Corporate Warfare",
@@ -597,11 +672,11 @@
     "description": "Xage versus CyberArk for Akamai Port 443",
     "audio_file": "xage-versus-cyberark-for-akamai-port-443.m4a",
     "source_name": "Xage_versus_CyberArk_for_Akamai_Port_443.m4a",
-    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "published": "Sun, 23 Aug 2026 13:15:51 +0000",
     "guid": "be3a8ef0-8f13-4e02-9784-f6eaa4c7c230",
     "duration": "0:05:48",
     "draft": false,
-    "source_sha256": "2934c255e3017d659c69fa16b69d2ebbda9513432aaae291c7f2493d4665e9a6",
+    "source_sha256": "537ca3d3bc4f890531fd06311f9400fbadb6b16e945f57a78c630cb7bc96b4f7",
     "notebookId": "7877feec-2c6b-455d-b8ca-b0e94e288778",
     "notebookTitle": "Mastering Privileged Access: Strategic Frameworks for Modern Security Implementation",
     "notebookArtifactId": "4222070a-dd7c-4aef-ae36-569a8c9a9781",
@@ -609,7 +684,32 @@
     "variant": "Critique",
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
-    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z"
+    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z",
+    "original_notebooklm_source_sha256": "2934c255e3017d659c69fa16b69d2ebbda9513432aaae291c7f2493d4665e9a6",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/xage-versus-cyberark-for-akamai-port-443-orig-nblm.m4a",
+    "original_notebooklm_filename": "xage-versus-cyberark-for-akamai-port-443-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 348.694059,
+      "outputDurationSeconds": 348.717347,
+      "outputSha256": "537ca3d3bc4f890531fd06311f9400fbadb6b16e945f57a78c630cb7bc96b4f7",
+      "creditsUsed": 1971,
+      "conversionSeconds": 88.02499999999999,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Brian - Deep, Resonant and Comforting",
+          "id": "nPczCjzI2devNBz1zQrb"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Lily - Velvety Actress",
+          "id": "pFZP5JQG7iQjIQuC4Bku"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-xage-port-443/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Why Faster Hardware Won't Fix Your Cloud",
@@ -646,11 +746,11 @@
     "description": "Triage and Training for Barking Dogs",
     "audio_file": "triage-and-training-for-barking-dogs.m4a",
     "source_name": "Triage_and_training_for_barking_dogs.m4a",
-    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "published": "Sun, 23 Aug 2026 13:15:51 +0000",
     "guid": "f8c28931-7538-43ef-b4af-0d2f10eae2c7",
     "duration": "0:18:41",
     "draft": false,
-    "source_sha256": "c0d0af0fc20936a4e4cfdf46149e1b7d3bf6cc48dc3e388da0add96d65e8df90",
+    "source_sha256": "12625476d6b051e5c98db0408d632a7c7b19c9c9f666ca416096ddf8732be61a",
     "notebookId": "fb3b8714-639f-4c95-941e-b21a3f41b463",
     "notebookTitle": "Dog Training",
     "notebookArtifactId": "8f31f4dd-ef58-4544-911f-168a8f88254b",
@@ -658,7 +758,32 @@
     "variant": "Critique",
     "libraryColumn": "Other Stuff",
     "libraryGroup": "Animals & Training",
-    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z"
+    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z",
+    "original_notebooklm_source_sha256": "c0d0af0fc20936a4e4cfdf46149e1b7d3bf6cc48dc3e388da0add96d65e8df90",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/triage-and-training-for-barking-dogs-orig-nblm.m4a",
+    "original_notebooklm_filename": "triage-and-training-for-barking-dogs-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 1121.570249,
+      "outputDurationSeconds": 1121.597438,
+      "outputSha256": "12625476d6b051e5c98db0408d632a7c7b19c9c9f666ca416096ddf8732be61a",
+      "creditsUsed": 6349,
+      "conversionSeconds": 261.587,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Roger - Laid-Back, Casual, Resonant",
+          "id": "CwhRBWXzGAHq8TQ4Fs17"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Sarah - Mature, Reassuring, Confident",
+          "id": "EXAVITQu4vr4xnSDxMaL"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-triage-barking/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "The Death of the Network Perimeter",
@@ -719,11 +844,11 @@
     "description": "Bridging the MPLS and SRv6 Divide",
     "audio_file": "bridging-the-mpls-and-srv6-divide.m4a",
     "source_name": "Bridging_the_MPLS_and_SRv6_divide.m4a",
-    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "published": "Sun, 23 Aug 2026 13:15:51 +0000",
     "guid": "12a17c76-621d-4f85-9438-9d624fc05a99",
     "duration": "0:10:44",
     "draft": false,
-    "source_sha256": "7f30fd6a329fdb8c118886ce9a04742c370c52b216fec667a92e624a41dc6d84",
+    "source_sha256": "059682aff7cbddfc7cdaf493a267e23f9a032c830cfdd3dcbda46c3fe0da4e27",
     "notebookId": "5b2a05ab-a96d-4851-8df7-e8be0afb7433",
     "notebookTitle": "MPLS Only",
     "notebookArtifactId": "4138f63c-0f62-4166-8dca-36f4f6375d09",
@@ -731,18 +856,43 @@
     "variant": "Deep Dive",
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
-    "libraryGroupUpdatedAt": "2026-08-23T02:35:38Z"
+    "libraryGroupUpdatedAt": "2026-08-23T02:35:38Z",
+    "original_notebooklm_source_sha256": "7f30fd6a329fdb8c118886ce9a04742c370c52b216fec667a92e624a41dc6d84",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/bridging-the-mpls-and-srv6-divide-orig-nblm.m4a",
+    "original_notebooklm_filename": "bridging-the-mpls-and-srv6-divide-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 644.93424,
+      "outputDurationSeconds": 645.004694,
+      "outputSha256": "059682aff7cbddfc7cdaf493a267e23f9a032c830cfdd3dcbda46c3fe0da4e27",
+      "creditsUsed": 3652,
+      "conversionSeconds": 174.468,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Eric - Smooth, Trustworthy",
+          "id": "cjVigY5qzO86Huf0OWal"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Alice - Clear, Engaging Educator",
+          "id": "Xb7hH8MSUJpSbSDYk0k2"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-mpls-srv6/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Barking Solutions for Busy Working Families",
     "description": "Barking Solutions for Busy Working Families",
     "audio_file": "barking-solutions-for-busy-working-families.m4a",
     "source_name": "Barking_Solutions_for_Busy_Working_Families.m4a",
-    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "published": "Sun, 23 Aug 2026 13:15:51 +0000",
     "guid": "a32f0665-5029-4130-a122-82871cf21f9d",
     "duration": "0:18:39",
     "draft": false,
-    "source_sha256": "96a9e523f514322a4b74472f758f9fbb6665e149d75abba453b707d3c198c791",
+    "source_sha256": "34797f5485450f3e221671182ba51ec94952624ec5490fddd3b0039be324b8e7",
     "notebookId": "fb3b8714-639f-4c95-941e-b21a3f41b463",
     "notebookTitle": "Dog Training",
     "notebookArtifactId": "258bb409-17d1-40b5-b5a4-1cb0942f33eb",
@@ -750,6 +900,31 @@
     "variant": "Critique",
     "libraryColumn": "Other Stuff",
     "libraryGroup": "Animals & Training",
-    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z"
+    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z",
+    "original_notebooklm_source_sha256": "96a9e523f514322a4b74472f758f9fbb6665e149d75abba453b707d3c198c791",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/barking-solutions-for-busy-working-families-orig-nblm.m4a",
+    "original_notebooklm_filename": "barking-solutions-for-busy-working-families-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 1119.225034,
+      "outputDurationSeconds": 1119.25068,
+      "outputSha256": "34797f5485450f3e221671182ba51ec94952624ec5490fddd3b0039be324b8e7",
+      "creditsUsed": 6342,
+      "conversionSeconds": 247.962,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Max - eLearning and Documentary",
+          "id": "Gfpl8Yo74Is0W6cPUWWT"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Ivanna - Young, Versatile and Casual",
+          "id": "yM93hbw8Qtvdma2wCnJG"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-barking-solutions/mars-two-voice-manifest.json"
+    }
   }
 ]

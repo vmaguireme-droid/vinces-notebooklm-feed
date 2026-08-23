@@ -294,6 +294,55 @@
       box-shadow: 0 18px 50px var(--shadow);
       backdrop-filter: blur(12px);
     }
+    .audio-notebook-family {
+      display: grid;
+      gap: 12px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: rgba(var(--accent-rgb), 0.06);
+    }
+    .audio-notebook-banner {
+      margin: 0;
+      color: var(--amber);
+      font-size: clamp(18px, 2.5vw, 25px);
+      line-height: 1.2;
+    }
+    .audio-notebook-family-body {
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      gap: 12px;
+      align-items: center;
+    }
+    .audio-notebook-brace {
+      display: block;
+      color: var(--cyan);
+      font-family: Georgia, serif;
+      font-size: 78px;
+      line-height: 0.72;
+      text-align: center;
+      transform: scaleY(var(--brace-scale, 1));
+    }
+    .audio-notebook-list { display: grid; gap: 14px; min-width: 0; }
+    .audio-library-filters { display: grid; gap: 12px; margin: 0 0 20px; }
+    .audio-type-filter { border: 1px solid var(--line); border-radius: 18px; margin: 0; padding: 11px 13px 10px; }
+    .audio-type-filter legend { color: var(--muted); font-size: .72rem; font-weight: 900; letter-spacing: .08em; padding: 0 5px; text-transform: uppercase; }
+    .audio-type-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .audio-type-option { align-items: center; background: rgba(var(--accent-rgb), .07); border: 1px solid var(--line); border-radius: 999px; cursor: pointer; display: inline-flex; font-size: .78rem; font-weight: 800; gap: 7px; min-height: 36px; padding: 6px 11px; }
+    .audio-type-option:has(input:checked) { background: rgba(var(--accent-rgb), .2); border-color: var(--cyan); }
+    .audio-type-option input { accent-color: var(--cyan); height: 16px; margin: 0; width: 16px; }
+    .audio-type-status { color: var(--muted); font-size: .72rem; margin: 8px 2px 0; }
+    .audio-library-pickers { display: flex; flex-wrap: wrap; gap: 12px; }
+    .audio-library-picker { display: grid; gap: 6px; }
+    .audio-library-picker span { color: var(--muted); font-size: 0.76rem; font-weight: 800; text-transform: uppercase; }
+    .audio-library-picker select { min-height: 44px; border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; color: var(--cyan); background: var(--panel-strong); font: inherit; font-weight: 800; }
+    .rolodex-active { animation: rolodex .85s ease; }
+    @keyframes rolodex { 0% { opacity: .35; transform: rotateX(18deg) translateY(-12px); } 100% { opacity: 1; transform: none; } }
+    .episode-related { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 14px; }
+    .episode-related h3 { margin: 0 0 10px; font-size: 0.9rem; }
+    .episode-related-links { display: flex; flex-wrap: wrap; gap: 8px; }
+    .episode-related-links a { border: 1px solid var(--line); border-radius: 999px; padding: 7px 10px; text-decoration: none; font-size: 0.82rem; font-weight: 800; }
+    .episode:target, .episode.linked-artifact { outline: 3px solid var(--amber); outline-offset: 3px; }
     .episode.removing {
       opacity: 0;
       transform: translateY(8px) scale(0.985);
@@ -400,6 +449,20 @@
       background: var(--panel-strong);
       color: var(--muted);
     }
+    .availability-details {
+      color: var(--muted);
+      font-size: 0.84rem;
+      position: relative;
+    }
+    .availability-details summary { cursor: pointer; font-weight: 800; color: var(--cyan); }
+    .availability-details[open] .retention-status {
+      display: block;
+      margin-top: 8px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--panel-strong);
+    }
     @media (max-width: 760px) {
       header.topbar {
         align-items: flex-start;
@@ -430,10 +493,13 @@
         </div>
       </div>
       <nav class="site-nav" aria-label="Podcast navigation">
-        <a data-nav-link href="https://differently-streets-sustained-andale.trycloudflare.com/index.html?v=layout-20260730-3">Video Library</a>
-        <a data-nav-link href="https://differently-streets-sustained-andale.trycloudflare.com/generator.html?v=layout-20260730-3">Generate</a>
-        <a data-nav-link href="https://differently-streets-sustained-andale.trycloudflare.com/script-maker.html?v=layout-20260730-3">Script Maker</a>
-        <a data-nav-link aria-current="page" href="index.html?v=layout-20260730-3">Audio Podcasts</a>
+        <a href="https://generator.technologyandstuff.com/">Flight Deck</a>
+        <a href="https://generator.technologyandstuff.com/knowledge/">Portal</a>
+        <a href="https://vinces-public-knowledge.vmaguireme.chatgpt.site/generator">Private Control Center</a>
+        <a href="https://vinces-public-knowledge.vmaguireme.chatgpt.site/notebook-artifacts">Artifact Factory</a>
+        <a href="https://generator.technologyandstuff.com/generator.html">Suggest a Topic</a>
+        <a href="https://generator.technologyandstuff.com/index.html">Video Podcasts</a>
+        <a aria-current="page" href="https://generator.technologyandstuff.com/audio-podcasts/index.html">Audio Podcasts</a>
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Change colors to red and blue" aria-pressed="false">
           <span class="theme-toggle-dots" aria-hidden="true"><i></i><i></i></span>
           <span class="theme-toggle-label">Red + Blue</span>
@@ -443,25 +509,51 @@
     <div class="audio-actions">
       <a href="feed.xml">Podcast RSS feed</a>
       <button class="secondary-button refresh-button" type="button" id="refresh-page">Refresh page</button>
-      <button class="secondary-button" type="button" id="restore-listened">Show hidden episodes</button>
     </div>
-    <section class="playlist-panel" aria-label="Playlist controls">
-      <div class="playlist-status" id="playlist-status">No playlist episodes selected.</div>
-      <button class="playlist-button" type="button" id="play-playlist">Play playlist</button>
-      <button class="playlist-button secondary" type="button" id="select-visible">Select visible</button>
-      <button class="playlist-button secondary" type="button" id="clear-playlist">Clear playlist</button>
-    </section>
+    <div class="audio-library-filters">
+      <fieldset class="audio-type-filter" id="audioTypeFilter">
+        <legend>Audio type</legend>
+        <div class="audio-type-options" id="audioTypeOptions"></div>
+        <p class="audio-type-status" id="audioTypeStatus" aria-live="polite"></p>
+      </fieldset>
+      <div class="audio-library-pickers" aria-label="Audio notebook selection">
+        <label class="audio-library-picker"><span>Notebook</span><select id="notebookPicker"><option value="all">All notebooks</option></select></label>
+      </div>
+    </div>
     <section class="latest-panel" aria-label="Latest audio episodes">
       <p class="section-label">Latest audio episodes</p>
       <div class="latest-grid">
-        <a class="latest-link" href="#episode-8bea357b-dfa7-4cb8-bd9c-3780a5c32a4a"><span>Cloudflare Secure Hosting — Outbound Tunnels Without Open Firewall Ports</span><small>0:41:07</small></a>
+        <a class="latest-link" href="#episode-9022b85f-7a82-57bb-8c13-d1103646997f"><span>The Generator: A 10-Minute Capability Tour</span><small>0:09:59</small></a>
+<a class="latest-link" href="#episode-8bea357b-dfa7-4cb8-bd9c-3780a5c32a4a"><span>Cloudflare Secure Hosting — Outbound Tunnels Without Open Firewall Ports</span><small>0:41:07</small></a>
 <a class="latest-link" href="#episode-3ec60ba0-9f17-48cb-ad21-86ba92e46758"><span>The Logistical Nightmare Of Reaching Mars (1)</span><small>0:21:15</small></a>
 <a class="latest-link" href="#episode-c7845184-9eec-48ea-b672-9b063e587cb5"><span>Mars Mission Architecture Jogg Render Rendered Voices</span><small>0:19:30</small></a>
-<a class="latest-link" href="#episode-c1ab6033-314b-4587-aca7-faa36513d994"><span>How Humans Will Actually Reach Mars</span><small>0:21:20</small></a>
       </div>
     </section>
     <section class="episodes" id="episodes">
-      <article class="episode" id="episode-8bea357b-dfa7-4cb8-bd9c-3780a5c32a4a" data-episode-id="8bea357b-dfa7-4cb8-bd9c-3780a5c32a4a">
+      <article class="episode" id="episode-9022b85f-7a82-57bb-8c13-d1103646997f" data-episode-id="9022b85f-7a82-57bb-8c13-d1103646997f" data-retention-kind="audio">
+        <div class="episode-copy">
+          <p class="eyebrow">0:09:59</p>
+          <h2>The Generator: A 10-Minute Capability Tour</h2>
+          <p>Vince demonstrates how the Generator connects NotebookLM videos, audio, reports, infographics, mind maps, evidence, downloads, and notebook-family navigation.</p>
+        </div>
+        <div class="player">
+          <audio preload="metadata" src="audio/generator-capability-tour-avatarx-10min.m4a"></audio>
+          <div class="controls">
+            <button class="control play" type="button" aria-label="Play The Generator: A 10-Minute Capability Tour">Play</button>
+            <button class="control resume" type="button" aria-label="Resume The Generator: A 10-Minute Capability Tour">Resume</button>
+            <button class="control stop" type="button" aria-label="Stop The Generator: A 10-Minute Capability Tour">Stop</button>
+          </div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for The Generator: A 10-Minute Capability Tour">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
+          </div>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
+        </div>
+      </article>
+      <article class="episode" id="episode-8bea357b-dfa7-4cb8-bd9c-3780a5c32a4a" data-episode-id="8bea357b-dfa7-4cb8-bd9c-3780a5c32a4a" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:41:07</p>
           <h2>Cloudflare Secure Hosting — Outbound Tunnels Without Open Firewall Ports</h2>
@@ -481,21 +573,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-3ec60ba0-9f17-48cb-ad21-86ba92e46758" data-episode-id="3ec60ba0-9f17-48cb-ad21-86ba92e46758">
+      <article class="episode" id="episode-3ec60ba0-9f17-48cb-ad21-86ba92e46758" data-episode-id="3ec60ba0-9f17-48cb-ad21-86ba92e46758" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:21:15</p>
           <h2>The Logistical Nightmare Of Reaching Mars (1)</h2>
@@ -515,21 +596,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-c7845184-9eec-48ea-b672-9b063e587cb5" data-episode-id="c7845184-9eec-48ea-b672-9b063e587cb5">
+      <article class="episode" id="episode-c7845184-9eec-48ea-b672-9b063e587cb5" data-episode-id="c7845184-9eec-48ea-b672-9b063e587cb5" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:19:30</p>
           <h2>Mars Mission Architecture Jogg Render Rendered Voices</h2>
@@ -549,21 +619,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-c1ab6033-314b-4587-aca7-faa36513d994" data-episode-id="c1ab6033-314b-4587-aca7-faa36513d994">
+      <article class="episode" id="episode-c1ab6033-314b-4587-aca7-faa36513d994" data-episode-id="c1ab6033-314b-4587-aca7-faa36513d994" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:21:20</p>
           <h2>How Humans Will Actually Reach Mars</h2>
@@ -583,21 +642,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-545ec94b-f0d4-46d1-8704-b1caa781ce4a" data-episode-id="545ec94b-f0d4-46d1-8704-b1caa781ce4a">
+      <article class="episode" id="episode-545ec94b-f0d4-46d1-8704-b1caa781ce4a" data-episode-id="545ec94b-f0d4-46d1-8704-b1caa781ce4a" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:50:24</p>
           <h2>Rome From Mud to Ottoman Cannons - Vince and Margaret</h2>
@@ -617,21 +665,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-1506718a-435d-4658-bc5e-48a15164ab2c" data-episode-id="1506718a-435d-4658-bc5e-48a15164ab2c">
+      <article class="episode" id="episode-1506718a-435d-4658-bc5e-48a15164ab2c" data-episode-id="1506718a-435d-4658-bc5e-48a15164ab2c" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:05:24</p>
           <h2>Managing Reactivity In A 179 Pound Great Dane Trevor And Catherine</h2>
@@ -651,21 +688,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-e5a10e39-14b4-472b-ba6b-4a22a88de6e0" data-episode-id="e5a10e39-14b4-472b-ba6b-4a22a88de6e0">
+      <article class="episode" id="episode-e5a10e39-14b4-472b-ba6b-4a22a88de6e0" data-episode-id="e5a10e39-14b4-472b-ba6b-4a22a88de6e0" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:21:21</p>
           <h2>The Blueprint For A Human Mars Mission (8)</h2>
@@ -685,21 +711,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-7db8b571-911b-4e28-974b-f3ec1a946113" data-episode-id="7db8b571-911b-4e28-974b-f3ec1a946113">
+      <article class="episode" id="episode-7db8b571-911b-4e28-974b-f3ec1a946113" data-episode-id="7db8b571-911b-4e28-974b-f3ec1a946113" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:20:46</p>
           <h2>Ai Plant Identification Versus Human Reality</h2>
@@ -719,21 +734,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-6cbb0126-e0fb-4c20-8434-169049a64a5e" data-episode-id="6cbb0126-e0fb-4c20-8434-169049a64a5e">
+      <article class="episode" id="episode-6cbb0126-e0fb-4c20-8434-169049a64a5e" data-episode-id="6cbb0126-e0fb-4c20-8434-169049a64a5e" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:20:10</p>
           <h2>How Solar Cycle 25 Threatens Earth</h2>
@@ -753,21 +757,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-deed5ad0-9e4d-42d8-b7cf-e8c541e474d5" data-episode-id="deed5ad0-9e4d-42d8-b7cf-e8c541e474d5">
+      <article class="episode" id="episode-deed5ad0-9e4d-42d8-b7cf-e8c541e474d5" data-episode-id="deed5ad0-9e4d-42d8-b7cf-e8c541e474d5" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:37:25</p>
           <h2>Managing The 170 Pound European Great Dane</h2>
@@ -787,21 +780,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-7786c399-76cd-44d8-aed1-c24fc3edc839" data-episode-id="7786c399-76cd-44d8-aed1-c24fc3edc839">
+      <article class="episode" id="episode-7786c399-76cd-44d8-aed1-c24fc3edc839" data-episode-id="7786c399-76cd-44d8-aed1-c24fc3edc839" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:27:20</p>
           <h2>Why Dinosaurs Still Rule The Earth</h2>
@@ -821,21 +803,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-1a14974f-7310-4197-847e-72113a7157bb" data-episode-id="1a14974f-7310-4197-847e-72113a7157bb">
+      <article class="episode" id="episode-1a14974f-7310-4197-847e-72113a7157bb" data-episode-id="1a14974f-7310-4197-847e-72113a7157bb" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:04:31</p>
           <h2>The Clinical Conversion Notebooklm For Nursing Educators</h2>
@@ -855,21 +826,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-0b1d7c34-4d32-4917-ab4c-d85d6d976eb5" data-episode-id="0b1d7c34-4d32-4917-ab4c-d85d6d976eb5">
+      <article class="episode" id="episode-0b1d7c34-4d32-4917-ab4c-d85d6d976eb5" data-episode-id="0b1d7c34-4d32-4917-ab4c-d85d6d976eb5" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:10:07</p>
           <h2>The Pragmatic Bridge: Unlocking the Future with SRv6 over MPLS</h2>
@@ -889,21 +849,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-c9cdf2aa-949b-411f-932c-65761ce075d1" data-episode-id="c9cdf2aa-949b-411f-932c-65761ce075d1">
+      <article class="episode" id="episode-c9cdf2aa-949b-411f-932c-65761ce075d1" data-episode-id="c9cdf2aa-949b-411f-932c-65761ce075d1" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:01:40</p>
           <h2>Raising Massive Maine Coons And Ragdolls</h2>
@@ -923,21 +872,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-09ab9761-5849-4eb3-a8ef-5c64e9272703" data-episode-id="09ab9761-5849-4eb3-a8ef-5c64e9272703">
+      <article class="episode" id="episode-09ab9761-5849-4eb3-a8ef-5c64e9272703" data-episode-id="09ab9761-5849-4eb3-a8ef-5c64e9272703" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:19:25</p>
           <h2>Banned Colors And Standard Poodle Genetics</h2>
@@ -957,21 +895,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-15050306-3b28-48df-bf3f-64bdd0106afd" data-episode-id="15050306-3b28-48df-bf3f-64bdd0106afd">
+      <article class="episode" id="episode-15050306-3b28-48df-bf3f-64bdd0106afd" data-episode-id="15050306-3b28-48df-bf3f-64bdd0106afd" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:35:55</p>
           <h2>Anthropic S Accidental Autonomous Zero Day Engine</h2>
@@ -991,21 +918,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-1df75bc1-0a1a-43bd-b64e-2eb61cee000f" data-episode-id="1df75bc1-0a1a-43bd-b64e-2eb61cee000f">
+      <article class="episode" id="episode-1df75bc1-0a1a-43bd-b64e-2eb61cee000f" data-episode-id="1df75bc1-0a1a-43bd-b64e-2eb61cee000f" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:22:29</p>
           <h2>The Commercial Road From Moon To Mars</h2>
@@ -1025,21 +941,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-f128d5f4-19d7-4768-898f-68ba7787f9f6" data-episode-id="f128d5f4-19d7-4768-898f-68ba7787f9f6">
+      <article class="episode" id="episode-f128d5f4-19d7-4768-898f-68ba7787f9f6" data-episode-id="f128d5f4-19d7-4768-898f-68ba7787f9f6" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:01:42</p>
           <h2>Fable 5 Short Audio Overview Anthropic Fable 5 And Xbox Fable Reboot</h2>
@@ -1059,21 +964,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-1a96637b-5640-4f50-baa1-06718cec1961" data-episode-id="1a96637b-5640-4f50-baa1-06718cec1961">
+      <article class="episode" id="episode-1a96637b-5640-4f50-baa1-06718cec1961" data-episode-id="1a96637b-5640-4f50-baa1-06718cec1961" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:47:06</p>
           <h2>Ai Guardrails Versus Fable S Morality System</h2>
@@ -1093,21 +987,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-7b09db4f-16f8-4129-b043-9f5dda21892f" data-episode-id="7b09db4f-16f8-4129-b043-9f5dda21892f">
+      <article class="episode" id="episode-7b09db4f-16f8-4129-b043-9f5dda21892f" data-episode-id="7b09db4f-16f8-4129-b043-9f5dda21892f" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:05:08</p>
           <h2>2Why Fable 5 Keeps Downgrading Itself</h2>
@@ -1127,21 +1010,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-9e37a7f9-6944-4864-8eb7-29fb48dc7929" data-episode-id="9e37a7f9-6944-4864-8eb7-29fb48dc7929">
+      <article class="episode" id="episode-9e37a7f9-6944-4864-8eb7-29fb48dc7929" data-episode-id="9e37a7f9-6944-4864-8eb7-29fb48dc7929" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:38:59</p>
           <h2>The 0</h2>
@@ -1161,21 +1033,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-9ce065a0-c730-4039-9c7d-98cbd5aa411d" data-episode-id="9ce065a0-c730-4039-9c7d-98cbd5aa411d">
+      <article class="episode" id="episode-9ce065a0-c730-4039-9c7d-98cbd5aa411d" data-episode-id="9ce065a0-c730-4039-9c7d-98cbd5aa411d" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:05:27</p>
           <h2>The Technical Struggle To Capture Andromeda</h2>
@@ -1195,21 +1056,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-20626612-4ea8-48bf-a6d0-1c7a97f8c9b3" data-episode-id="20626612-4ea8-48bf-a6d0-1c7a97f8c9b3">
+      <article class="episode" id="episode-20626612-4ea8-48bf-a6d0-1c7a97f8c9b3" data-episode-id="20626612-4ea8-48bf-a6d0-1c7a97f8c9b3" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:25:37</p>
           <h2>Why Businesses Need Zero Trust Architecture</h2>
@@ -1229,21 +1079,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-e905ab3c-b612-4c4f-aaf1-93a3e9510bb9" data-episode-id="e905ab3c-b612-4c4f-aaf1-93a3e9510bb9">
+      <article class="episode" id="episode-e905ab3c-b612-4c4f-aaf1-93a3e9510bb9" data-episode-id="e905ab3c-b612-4c4f-aaf1-93a3e9510bb9" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:35:03</p>
           <h2>Why The Universe Doesn T Rip Itself Apart</h2>
@@ -1263,21 +1102,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-7a4e83ea-e38f-4262-85da-fccd12379681" data-episode-id="7a4e83ea-e38f-4262-85da-fccd12379681">
+      <article class="episode" id="episode-7a4e83ea-e38f-4262-85da-fccd12379681" data-episode-id="7a4e83ea-e38f-4262-85da-fccd12379681" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:44:50</p>
           <h2>Stargazing And The Backwards Lens Mystery (1)</h2>
@@ -1297,21 +1125,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-5c3cba5a-2af3-4519-8fe1-75355001e2fb" data-episode-id="5c3cba5a-2af3-4519-8fe1-75355001e2fb">
+      <article class="episode" id="episode-5c3cba5a-2af3-4519-8fe1-75355001e2fb" data-episode-id="5c3cba5a-2af3-4519-8fe1-75355001e2fb" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:45:52</p>
           <h2>Programming Enterprise Networks With Srv6</h2>
@@ -1331,21 +1148,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-26d2bf2b-e60a-49d3-b29e-2bfbb16d1809" data-episode-id="26d2bf2b-e60a-49d3-b29e-2bfbb16d1809">
+      <article class="episode" id="episode-26d2bf2b-e60a-49d3-b29e-2bfbb16d1809" data-episode-id="26d2bf2b-e60a-49d3-b29e-2bfbb16d1809" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:19:29</p>
           <h2>A Phased Roadmap From Backyard To Astrophysics</h2>
@@ -1365,21 +1171,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-bbab16bb-31f6-43ba-b305-82bdafdb5ebb" data-episode-id="bbab16bb-31f6-43ba-b305-82bdafdb5ebb">
+      <article class="episode" id="episode-bbab16bb-31f6-43ba-b305-82bdafdb5ebb" data-episode-id="bbab16bb-31f6-43ba-b305-82bdafdb5ebb" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:21:45</p>
           <h2>Cyberark Versus Xage For Ai Energy</h2>
@@ -1399,21 +1194,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-8ae42c63-2a5a-4d4a-aba7-e817b3f75b12" data-episode-id="8ae42c63-2a5a-4d4a-aba7-e817b3f75b12">
+      <article class="episode" id="episode-8ae42c63-2a5a-4d4a-aba7-e817b3f75b12" data-episode-id="8ae42c63-2a5a-4d4a-aba7-e817b3f75b12" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">1:05:15</p>
           <h2>The Wild West Was Corporate Warfare</h2>
@@ -1433,21 +1217,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-1acc9cb9-a09e-49b9-a038-663ce5645b88" data-episode-id="1acc9cb9-a09e-49b9-a038-663ce5645b88">
+      <article class="episode" id="episode-1acc9cb9-a09e-49b9-a038-663ce5645b88" data-episode-id="1acc9cb9-a09e-49b9-a038-663ce5645b88" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:12:39</p>
           <h2>True Crimes</h2>
@@ -1467,21 +1240,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-a824b65b-c837-4023-94ef-bad8667eae2a" data-episode-id="a824b65b-c837-4023-94ef-bad8667eae2a">
+      <article class="episode" id="episode-a824b65b-c837-4023-94ef-bad8667eae2a" data-episode-id="a824b65b-c837-4023-94ef-bad8667eae2a" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:13:15</p>
           <h2>Gunfighters Of The U S West</h2>
@@ -1501,21 +1263,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-de4b582e-1cae-4c84-bd04-24ae42d8734c" data-episode-id="de4b582e-1cae-4c84-bd04-24ae42d8734c">
+      <article class="episode" id="episode-de4b582e-1cae-4c84-bd04-24ae42d8734c" data-episode-id="de4b582e-1cae-4c84-bd04-24ae42d8734c" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:20:29</p>
           <h2>Srv6</h2>
@@ -1535,21 +1286,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-56fd71ed-723a-4990-a8ec-96bcc06fc819" data-episode-id="56fd71ed-723a-4990-a8ec-96bcc06fc819">
+      <article class="episode" id="episode-56fd71ed-723a-4990-a8ec-96bcc06fc819" data-episode-id="56fd71ed-723a-4990-a8ec-96bcc06fc819" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:14:04</p>
           <h2>Mpls</h2>
@@ -1569,21 +1309,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-80c799bc-6d55-4921-8ae4-cb0ee30c9cda" data-episode-id="80c799bc-6d55-4921-8ae4-cb0ee30c9cda">
+      <article class="episode" id="episode-80c799bc-6d55-4921-8ae4-cb0ee30c9cda" data-episode-id="80c799bc-6d55-4921-8ae4-cb0ee30c9cda" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:16:04</p>
           <h2>Elevenlabs Ww 2 Generals</h2>
@@ -1603,21 +1332,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-91e07339-151d-43f0-bce3-29354d00be03" data-episode-id="91e07339-151d-43f0-bce3-29354d00be03">
+      <article class="episode" id="episode-91e07339-151d-43f0-bce3-29354d00be03" data-episode-id="91e07339-151d-43f0-bce3-29354d00be03" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:43:25</p>
           <h2>Active Active Ha And Precision Ai Architecture</h2>
@@ -1637,21 +1355,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-be3a8ef0-8f13-4e02-9784-f6eaa4c7c230" data-episode-id="be3a8ef0-8f13-4e02-9784-f6eaa4c7c230">
+      <article class="episode" id="episode-be3a8ef0-8f13-4e02-9784-f6eaa4c7c230" data-episode-id="be3a8ef0-8f13-4e02-9784-f6eaa4c7c230" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:05:48</p>
           <h2>Xage versus CyberArk for Akamai Port 443</h2>
@@ -1671,21 +1378,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-cddb3f0c-e41a-4c26-8c3b-950212de5fcd" data-episode-id="cddb3f0c-e41a-4c26-8c3b-950212de5fcd">
+      <article class="episode" id="episode-cddb3f0c-e41a-4c26-8c3b-950212de5fcd" data-episode-id="cddb3f0c-e41a-4c26-8c3b-950212de5fcd" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:19:10</p>
           <h2>Why Faster Hardware Won&#x27;t Fix Your Cloud</h2>
@@ -1705,21 +1401,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-29445edd-ad41-4898-9b9b-f5ba005ef64d" data-episode-id="29445edd-ad41-4898-9b9b-f5ba005ef64d">
+      <article class="episode" id="episode-29445edd-ad41-4898-9b9b-f5ba005ef64d" data-episode-id="29445edd-ad41-4898-9b9b-f5ba005ef64d" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:21:25</p>
           <h2>What Your Dog Is Really Telling You</h2>
@@ -1739,21 +1424,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-f8c28931-7538-43ef-b4af-0d2f10eae2c7" data-episode-id="f8c28931-7538-43ef-b4af-0d2f10eae2c7">
+      <article class="episode" id="episode-f8c28931-7538-43ef-b4af-0d2f10eae2c7" data-episode-id="f8c28931-7538-43ef-b4af-0d2f10eae2c7" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:18:41</p>
           <h2>Triage and Training for Barking Dogs</h2>
@@ -1773,21 +1447,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-7b9e962a-4ef2-4662-9fbe-101c1f4a766a" data-episode-id="7b9e962a-4ef2-4662-9fbe-101c1f4a766a">
+      <article class="episode" id="episode-7b9e962a-4ef2-4662-9fbe-101c1f4a766a" data-episode-id="7b9e962a-4ef2-4662-9fbe-101c1f4a766a" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:20:49</p>
           <h2>The Death of the Network Perimeter</h2>
@@ -1807,21 +1470,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-53e4d25f-0537-444f-89ad-5abee6d96a3e" data-episode-id="53e4d25f-0537-444f-89ad-5abee6d96a3e">
+      <article class="episode" id="episode-53e4d25f-0537-444f-89ad-5abee6d96a3e" data-episode-id="53e4d25f-0537-444f-89ad-5abee6d96a3e" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:15:10</p>
           <h2>Surviving the Adolescence of Powerful AI</h2>
@@ -1841,21 +1493,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-95d362c8-e411-4627-9973-7718b2de90f6" data-episode-id="95d362c8-e411-4627-9973-7718b2de90f6">
+      <article class="episode" id="episode-95d362c8-e411-4627-9973-7718b2de90f6" data-episode-id="95d362c8-e411-4627-9973-7718b2de90f6" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:22:10</p>
           <h2>Replacing Legacy MPLS with uSID Routing</h2>
@@ -1875,21 +1516,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-12a17c76-621d-4f85-9438-9d624fc05a99" data-episode-id="12a17c76-621d-4f85-9438-9d624fc05a99">
+      <article class="episode" id="episode-12a17c76-621d-4f85-9438-9d624fc05a99" data-episode-id="12a17c76-621d-4f85-9438-9d624fc05a99" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:10:44</p>
           <h2>Bridging the MPLS and SRv6 Divide</h2>
@@ -1909,21 +1539,10 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
-      <article class="episode" id="episode-a32f0665-5029-4130-a122-82871cf21f9d" data-episode-id="a32f0665-5029-4130-a122-82871cf21f9d">
+      <article class="episode" id="episode-a32f0665-5029-4130-a122-82871cf21f9d" data-episode-id="a32f0665-5029-4130-a122-82871cf21f9d" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:18:39</p>
           <h2>Barking Solutions for Busy Working Families</h2>
@@ -1943,50 +1562,177 @@
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 7 days</span></details>
         </div>
       </article>
     </section>
-    <p class="empty-state" id="empty-state">Everything in this browser has been marked listened. Use "Show hidden episodes" to bring them back.</p>
   </main>
-  <script src="../nav.js?v=theme-20260730-2"></script>
+  <script src="../nav.js?v=shared-navigation-20260820-2"></script>
   <script>
-    const hiddenKey = "vinces-notebooklm-feed-hidden";
-    const playlistKey = "vinces-notebooklm-feed-playlist";
-    const refreshRemoveKey = "vinces-notebooklm-feed-refresh-remove";
     const positionKey = "vinces-notebooklm-feed-positions";
-    const hidden = new Set(JSON.parse(localStorage.getItem(hiddenKey) || "[]"));
-    const playlist = new Set(JSON.parse(localStorage.getItem(playlistKey) || "[]"));
-    const refreshRemove = new Set(JSON.parse(localStorage.getItem(refreshRemoveKey) || "[]"));
     const positions = JSON.parse(localStorage.getItem(positionKey) || "{}");
     const episodes = Array.from(document.querySelectorAll(".episode"));
-    const emptyState = document.getElementById("empty-state");
-    const playlistStatus = document.getElementById("playlist-status");
-    let playlistQueue = [];
-    let playlistIndex = -1;
+    episodes.forEach((episode) => { episode.dataset.audioSubtype = "Legacy/Unlabeled"; });
+    let audioTypes = [];
+    let audioTypeSelection = new Set();
 
-    function saveHidden() {
-      localStorage.setItem(hiddenKey, JSON.stringify(Array.from(hidden)));
+    function familyItemHref(item) {
+      if (item.kind === "video") return `/index.html?episode=${encodeURIComponent(item.id)}`;
+      if (item.kind === "audio") return `/audio-podcasts/index.html?episode=${encodeURIComponent(item.id)}`;
+      const pages = { report: "/reports/", infographic: "/infographics/", mind_map: "/mind-maps/" };
+      return `${pages[item.artifactType] || "/"}?artifact=${encodeURIComponent(item.id)}`;
     }
 
-    function savePlaylist() {
-      localStorage.setItem(playlistKey, JSON.stringify(Array.from(playlist)));
+    function familyItemLabel(item) {
+      const type = item.kind === "video" ? "Video" : item.kind === "audio" ? "Audio"
+        : item.artifactType === "mind_map" ? "Mind Map"
+          : `${item.artifactType?.[0]?.toUpperCase() || ""}${item.artifactType?.slice(1) || "Artifact"}`;
+      return `${type}${item.variant ? ` (${item.variant})` : ""}: ${item.title}`;
     }
 
-    function saveRefreshRemove() {
-      localStorage.setItem(refreshRemoveKey, JSON.stringify(Array.from(refreshRemove)));
+    function addRelatedArtifacts(episode, family, currentId) {
+      const related = family.items.filter((item) => !(item.kind === "audio" && item.id === currentId));
+      if (!related.length || episode.querySelector(".episode-related")) return;
+      const section = document.createElement("section");
+      section.className = "episode-related";
+      const heading = document.createElement("h3");
+      heading.textContent = "Related artifacts from this notebook";
+      const links = document.createElement("div");
+      links.className = "episode-related-links";
+      related.forEach((item) => {
+        const link = document.createElement("a");
+        link.href = familyItemHref(item);
+        link.textContent = familyItemLabel(item);
+        links.append(link);
+      });
+      section.append(heading, links);
+      episode.append(section);
     }
+
+    function applyNotebookFamilies(index) {
+      const picker = document.querySelector("#notebookPicker");
+      const notebookTargets = new Map();
+      (index.families || []).forEach((family) => {
+        const audioItems = family.items.filter((item) => item.kind === "audio");
+        const nodes = audioItems.map((item) => document.querySelector(`[data-episode-id="${CSS.escape(item.id)}"]`)).filter(Boolean);
+        nodes.forEach((node) => { node.dataset.notebookId = family.notebookId; });
+        audioItems.forEach((item) => {
+          const node = document.querySelector(`[data-episode-id="${CSS.escape(item.id)}"]`);
+          if (node) node.dataset.audioSubtype = item.variant || "Legacy/Unlabeled";
+        });
+        nodes.forEach((node) => addRelatedArtifacts(node, family, node.dataset.episodeId));
+        if (nodes.length < 2) return;
+        const first = nodes[0];
+        const parent = first.parentElement;
+        if (!parent || nodes.some((node) => node.parentElement !== parent)) return;
+        const wrapper = document.createElement("section");
+        wrapper.className = "audio-notebook-family";
+        wrapper.dataset.notebookId = family.notebookId;
+        const banner = document.createElement("h2");
+        banner.className = "audio-notebook-banner";
+        banner.textContent = family.notebookTitle || "NotebookLM notebook";
+        const body = document.createElement("div");
+        body.className = "audio-notebook-family-body";
+        const brace = document.createElement("span");
+        brace.className = "audio-notebook-brace";
+        brace.setAttribute("aria-hidden", "true");
+        brace.textContent = "{";
+        brace.style.setProperty("--brace-scale", String(Math.max(1, Math.min(3.4, nodes.length * .58))));
+        const list = document.createElement("div");
+        list.className = "audio-notebook-list";
+        parent.insertBefore(wrapper, first);
+        nodes.forEach((node) => list.append(node));
+        body.append(brace, list);
+        wrapper.append(banner, body);
+        notebookTargets.set(family.notebookId, { title: family.notebookTitle, target: wrapper });
+      });
+      (index.families || []).forEach((family) => {
+        if (notebookTargets.has(family.notebookId)) return;
+        const firstAudio = family.items.find((item) => item.kind === "audio");
+        const target = firstAudio ? document.querySelector(`[data-episode-id="${CSS.escape(firstAudio.id)}"]`) : null;
+        if (target) notebookTargets.set(family.notebookId, { title: family.notebookTitle, target });
+      });
+      Array.from(notebookTargets).sort((a, b) => a[1].title.localeCompare(b[1].title)).forEach(([id, entry]) => {
+        const option = document.createElement("option"); option.value = id; option.textContent = entry.title; picker.append(option);
+      });
+      picker.addEventListener("change", () => {
+        const entry = notebookTargets.get(picker.value);
+        const target = entry?.target || document.querySelector("#episodes");
+        target?.scrollIntoView({ behavior: "smooth", block: "start" });
+        if (entry?.target) { entry.target.classList.add("rolodex-active"); setTimeout(() => entry.target.classList.remove("rolodex-active"), 900); }
+      });
+      const requested = new URLSearchParams(location.search).get("episode");
+      const target = requested ? document.querySelector(`[data-episode-id="${CSS.escape(requested)}"]`) : null;
+      if (target) {
+        picker.value = target.dataset.notebookId || "all";
+        target.classList.add("linked-artifact");
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+      initializeAudioTypeFilters(notebookTargets);
+    }
+
+    function renderAudioTypeFilters() {
+      const options = document.querySelector("#audioTypeOptions");
+      options.innerHTML = "";
+      const makeOption = (value, label, checked, extraClass = "") => {
+        const wrapper = document.createElement("label");
+        wrapper.className = `audio-type-option ${extraClass}`.trim();
+        const input = document.createElement("input");
+        input.type = "checkbox";
+        input.value = value;
+        input.checked = checked;
+        if (value === "__all__") input.indeterminate = audioTypeSelection.size > 0 && audioTypeSelection.size < audioTypes.length;
+        const text = document.createElement("span");
+        text.textContent = label;
+        wrapper.append(input, text);
+        options.append(wrapper);
+      };
+      makeOption("__all__", "All", audioTypeSelection.size === audioTypes.length, "audio-type-option-all");
+      audioTypes.forEach((type) => makeOption(type, type, audioTypeSelection.has(type)));
+      document.querySelector("#audioTypeStatus").textContent = `${audioTypeSelection.size} of ${audioTypes.length} types selected`;
+    }
+
+    function applyAudioTypeFilters(notebookTargets) {
+      episodes.forEach((episode) => { episode.hidden = !audioTypeSelection.has(episode.dataset.audioSubtype); });
+      document.querySelectorAll(".audio-notebook-family").forEach((family) => {
+        family.hidden = !Array.from(family.querySelectorAll(".episode")).some((episode) => !episode.hidden);
+      });
+      document.querySelectorAll(".latest-link").forEach((link) => {
+        const target = document.querySelector(link.hash);
+        link.hidden = Boolean(target?.hidden || target?.closest(".audio-notebook-family")?.hidden);
+      });
+      const picker = document.querySelector("#notebookPicker");
+      Array.from(picker.options).forEach((option) => {
+        if (option.value === "all") return;
+        const target = notebookTargets.get(option.value)?.target;
+        const visible = target?.classList.contains("episode") ? !target.hidden : Boolean(target?.querySelector(".episode:not([hidden])"));
+        option.disabled = !visible;
+      });
+      if (picker.selectedOptions[0]?.disabled) picker.value = "all";
+      renderAudioTypeFilters();
+    }
+
+    function initializeAudioTypeFilters(notebookTargets) {
+      audioTypes = [...new Set(episodes.map((episode) => episode.dataset.audioSubtype))].sort((a, b) => {
+        const order = ["Deep Dive", "Brief", "Critique", "Debate", "Legacy/Unlabeled"];
+        return (order.indexOf(a) < 0 ? 99 : order.indexOf(a)) - (order.indexOf(b) < 0 ? 99 : order.indexOf(b)) || a.localeCompare(b);
+      });
+      audioTypeSelection = new Set(audioTypes);
+      renderAudioTypeFilters();
+      document.querySelector("#audioTypeFilter").addEventListener("change", (event) => {
+        const checkbox = event.target.closest('input[type="checkbox"]');
+        if (!checkbox) return;
+        if (checkbox.value === "__all__") audioTypeSelection = checkbox.checked ? new Set(audioTypes) : new Set();
+        else if (checkbox.checked) audioTypeSelection.add(checkbox.value);
+        else audioTypeSelection.delete(checkbox.value);
+        applyAudioTypeFilters(notebookTargets);
+      });
+    }
+
+    fetch(`/api/public-library-families?v=${Date.now()}`)
+      .then((response) => response.ok ? response.json() : { families: [] })
+      .then(applyNotebookFamilies)
+      .catch(() => applyNotebookFamilies({ families: [] }));
 
     function savePositions() {
       localStorage.setItem(positionKey, JSON.stringify(positions));
@@ -2040,22 +1786,6 @@
       }
     }
 
-    function updateEmptyState() {
-      const visible = episodes.some((episode) => episode.style.display !== "none");
-      emptyState.style.display = visible ? "none" : "block";
-    }
-
-    function selectedVisibleEpisodes() {
-      return episodes.filter((episode) => playlist.has(episode.dataset.episodeId) && episode.style.display !== "none");
-    }
-
-    function updatePlaylistStatus() {
-      const count = selectedVisibleEpisodes().length;
-      playlistStatus.textContent = count
-        ? `${count} episode${count === 1 ? "" : "s"} in playlist.`
-        : "No playlist episodes selected.";
-    }
-
     function stopAllAudio() {
       document.querySelectorAll("audio").forEach((audio) => {
         audio.pause();
@@ -2075,93 +1805,26 @@
       }
     }
 
-    function playNextInPlaylist() {
-      playlistIndex += 1;
-      if (playlistIndex >= playlistQueue.length) {
-        playlistIndex = -1;
-        playlistQueue = [];
-        updatePlaylistStatus();
-        return;
-      }
-      playEpisode(playlistQueue[playlistIndex]);
-    }
-
-    function hideEpisode(episode) {
-      const id = episode.dataset.episodeId;
-      hidden.add(id);
-      saveHidden();
-      episode.classList.add("removing");
-      setTimeout(() => {
-        episode.style.display = "none";
-        updateEmptyState();
-      }, 230);
-    }
-
     episodes.forEach((episode) => {
       const id = episode.dataset.episodeId;
       const audio = episode.querySelector("audio");
       const play = episode.querySelector(".play");
       const resume = episode.querySelector(".resume");
       const stop = episode.querySelector(".stop");
-      const removeAfterListen = episode.querySelector(".remove-option input");
-      const removeOnRefresh = episode.querySelector(".refresh-remove-check");
-      const playlistCheck = episode.querySelector(".playlist-check");
       const slider = episode.querySelector(".progress-slider");
       const listenedTime = episode.querySelector(".listened-time");
       const remainingTime = episode.querySelector(".remaining-time");
       let sliding = false;
 
-      if (refreshRemove.has(id)) {
-        hidden.add(id);
-        playlist.delete(id);
-        refreshRemove.delete(id);
-        saveHidden();
-        savePlaylist();
-        saveRefreshRemove();
-      }
-
-      if (hidden.has(id)) {
-        episode.style.display = "none";
-      }
-
-      if (playlist.has(id)) {
-        playlistCheck.checked = true;
-      }
-
-      playlistCheck.addEventListener("change", () => {
-        if (playlistCheck.checked) {
-          playlist.add(id);
-        } else {
-          playlist.delete(id);
-        }
-        savePlaylist();
-        updatePlaylistStatus();
-      });
-
-      removeOnRefresh.addEventListener("change", () => {
-        if (removeOnRefresh.checked) {
-          refreshRemove.add(id);
-        } else {
-          refreshRemove.delete(id);
-        }
-        saveRefreshRemove();
-      });
-
       play.addEventListener("click", () => {
-        playlistIndex = -1;
-        playlistQueue = [];
         playEpisode(episode, true);
       });
 
       resume.addEventListener("click", () => {
-        playlistIndex = -1;
-        playlistQueue = [];
         playEpisode(episode);
       });
 
       stop.addEventListener("click", () => {
-        playlistIndex = -1;
-        playlistQueue = [];
         audio.pause();
         saveAudioPosition(episode, audio);
       });
@@ -2209,64 +1872,25 @@
         remainingTime.textContent = "0:00";
         delete positions[id];
         savePositions();
-        if (removeAfterListen.checked) {
-          hideEpisode(episode);
-        }
-        if (playlistQueue.length) {
-          playNextInPlaylist();
-        }
       });
-    });
-
-    document.getElementById("restore-listened").addEventListener("click", () => {
-      hidden.clear();
-      refreshRemove.clear();
-      saveHidden();
-      saveRefreshRemove();
-      episodes.forEach((episode) => {
-        episode.classList.remove("removing");
-        episode.style.display = "";
-        episode.querySelector(".refresh-remove-check").checked = false;
-      });
-      updateEmptyState();
-      updatePlaylistStatus();
     });
 
     document.getElementById("refresh-page").addEventListener("click", () => {
       window.location.reload();
     });
 
-    document.getElementById("play-playlist").addEventListener("click", () => {
-      playlistQueue = selectedVisibleEpisodes();
-      playlistIndex = -1;
-      if (playlistQueue.length) {
-        playNextInPlaylist();
-      }
-    });
-
-    document.getElementById("select-visible").addEventListener("click", () => {
+    fetch("/api/public-content-retention").then((response) => response.ok ? response.json() : null).then((data) => {
+      if (!data) return;
+      const byId = new Map(data.items.filter((item) => item.kind === "audio").map((item) => [item.id, item]));
       episodes.forEach((episode) => {
-        if (episode.style.display === "none") return;
-        playlist.add(episode.dataset.episodeId);
-        episode.querySelector(".playlist-check").checked = true;
+        const item = byId.get(episode.dataset.episodeId);
+        const status = episode.querySelector(".retention-status");
+        if (!item || !status) return;
+        if (item.keepIndefinitely) { status.textContent = "Kept until the owner removes it."; return; }
+        const days = Math.max(1, Math.ceil((item.remainingSeconds || 0) / 86400));
+        status.textContent = `Available for ${days} more day${days === 1 ? "" : "s"}.`;
       });
-      savePlaylist();
-      updatePlaylistStatus();
-    });
-
-    document.getElementById("clear-playlist").addEventListener("click", () => {
-      playlist.clear();
-      playlistQueue = [];
-      playlistIndex = -1;
-      episodes.forEach((episode) => {
-        episode.querySelector(".playlist-check").checked = false;
-      });
-      savePlaylist();
-      updatePlaylistStatus();
-    });
-
-    updateEmptyState();
-    updatePlaylistStatus();
+    }).catch(() => {});
   </script>
 </body>
 </html>

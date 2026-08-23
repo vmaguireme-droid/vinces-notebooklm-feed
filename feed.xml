@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>The Generator: A 10-Minute Capability Tour</title>
+      <description>Vince demonstrates how the Generator connects NotebookLM videos, audio, reports, infographics, mind maps, evidence, downloads, and notebook-family navigation.</description>
+      <pubDate>Sun, 23 Aug 2026 02:56:38 +0000</pubDate>
+      <guid isPermaLink="false">9022b85f-7a82-57bb-8c13-d1103646997f</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/generator-capability-tour-avatarx-10min.m4a" length="11779540" type="audio/mp4"/>
+      <itunes:duration>0:09:59</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Cloudflare Secure Hosting — Outbound Tunnels Without Open Firewall Ports</title>
       <description>A detailed two-host briefing on Cloudflare Anycast, QUIC tunnels, origin protection, identity-aware access, caching, observability, launchd operations, and systematic troubleshooting for a Mac mini-hosted service.</description>
       <pubDate>Thu, 20 Aug 2026 10:42:19 +0000</pubDate>

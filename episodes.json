@@ -1,5 +1,17 @@
 [
   {
+    "title": "The Generator: A 10-Minute Capability Tour",
+    "description": "Vince demonstrates how the Generator connects NotebookLM videos, audio, reports, infographics, mind maps, evidence, downloads, and notebook-family navigation.",
+    "audio_file": "generator-capability-tour-avatarx-10min.m4a",
+    "source_name": "generator-capability-tour-avatarx-10min.m4a",
+    "source_sha256": "4efb0401583deab4ba2bbd83da6efe38d8bc0ece5297b21990be1f26cad3effc",
+    "converted_to_aac": false,
+    "published": "Sun, 23 Aug 2026 02:56:38 +0000",
+    "guid": "9022b85f-7a82-57bb-8c13-d1103646997f",
+    "duration": "0:09:59",
+    "draft": false
+  },
+  {
     "title": "Cloudflare Secure Hosting \u2014 Outbound Tunnels Without Open Firewall Ports",
     "description": "A detailed two-host briefing on Cloudflare Anycast, QUIC tunnels, origin protection, identity-aware access, caching, observability, launchd operations, and systematic troubleshooting for a Mac mini-hosted service.",
     "audio_file": "cloudflare-secure-hosting-outbound-tunnels-without-open-firewall-ports.mp3",
@@ -45,7 +57,14 @@
     "published": "Sun, 02 Aug 2026 21:53:56 +0000",
     "guid": "c1ab6033-314b-4587-aca7-faa36513d994",
     "duration": "0:21:20",
-    "draft": false
+    "draft": false,
+    "notebookId": "e5222522-955f-42f4-a8dc-e6eb9ee33dce",
+    "notebookTitle": "Moon Base to Mars: Rockets, Crew, and Mission Architecture",
+    "notebookArtifactId": "4d753d91-fec6-4ddc-84dc-35ae32e50218",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Space & Cosmology"
   },
   {
     "title": "Rome From Mud to Ottoman Cannons - Vince and Margaret",
@@ -93,7 +112,14 @@
     "published": "Wed, 29 Jul 2026 18:08:43 +0000",
     "guid": "7db8b571-911b-4e28-974b-f3ec1a946113",
     "duration": "0:20:46",
-    "draft": false
+    "draft": false,
+    "notebookId": "0237eafb-d405-40b4-9b62-fbf11c8646a1",
+    "notebookTitle": "Front yard plants",
+    "notebookArtifactId": "1d84d1da-50bd-45eb-832c-a3f7122084df",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "libraryColumn": "Technology",
+    "libraryGroup": "AI & Computing"
   },
   {
     "title": "How Solar Cycle 25 Threatens Earth",
@@ -105,7 +131,12 @@
     "published": "Fri, 17 Jul 2026 10:06:06 +0000",
     "guid": "6cbb0126-e0fb-4c20-8434-169049a64a5e",
     "duration": "0:20:10",
-    "draft": false
+    "draft": false,
+    "notebookId": "76ad9b3c-fd6d-4349-8d8f-9ddc7b04d97f",
+    "notebookTitle": "Solar Vitality and the Current Cycle",
+    "notebookArtifactId": "3c89becb-0f39-4c53-92eb-c812782fbba0",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive"
   },
   {
     "title": "Managing The 170 Pound European Great Dane",
@@ -117,7 +148,14 @@
     "published": "Tue, 14 Jul 2026 17:44:19 +0000",
     "guid": "deed5ad0-9e4d-42d8-b7cf-e8c541e474d5",
     "duration": "0:37:25",
-    "draft": false
+    "draft": false,
+    "notebookId": "23ee5447-d453-4ead-9e6b-de5ec227a21a",
+    "notebookTitle": "European Great Danes: Temperament, Size, and Care",
+    "notebookArtifactId": "33edd8f5-87be-478a-b08e-9ca007c10785",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "Animals & Training"
   },
   {
     "title": "Why Dinosaurs Still Rule The Earth",
@@ -129,7 +167,14 @@
     "published": "Tue, 14 Jul 2026 10:51:59 +0000",
     "guid": "7786c399-76cd-44d8-aed1-c24fc3edc839",
     "duration": "0:27:20",
-    "draft": false
+    "draft": false,
+    "notebookId": "9de1f8e7-bc88-47fb-adca-adc25d1a4763",
+    "notebookTitle": "Dinosaurs: Evolution, Extinction, and Alternate Futures",
+    "notebookArtifactId": "4f277cdf-bfa9-497a-b5ab-6231db786dcc",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "Nature & Home"
   },
   {
     "title": "The Clinical Conversion Notebooklm For Nursing Educators",
@@ -164,7 +209,14 @@
     "published": "Mon, 13 Jul 2026 13:22:40 +0000",
     "guid": "c9cdf2aa-949b-411f-932c-65761ce075d1",
     "duration": "0:01:40",
-    "draft": false
+    "draft": false,
+    "notebookId": "513480c5-d1e2-4596-9dba-522293f6ab26",
+    "notebookTitle": "Maine Coon and Ragdoll Care and Behavior",
+    "notebookArtifactId": "75283a9e-f5b4-44f0-9bf7-bf64688fcfe3",
+    "artifactType": "audio_overview",
+    "variant": "Brief",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "Animals & Training"
   },
   {
     "title": "Banned Colors And Standard Poodle Genetics",
@@ -176,7 +228,14 @@
     "published": "Mon, 13 Jul 2026 03:37:41 +0000",
     "guid": "09ab9761-5849-4eb3-a8ef-5c64e9272703",
     "duration": "0:19:25",
-    "draft": false
+    "draft": false,
+    "notebookId": "73c8c00d-16f2-460e-ad90-91503945f8b0",
+    "notebookTitle": "Standard Poodles: Gray, Parti, and Black",
+    "notebookArtifactId": "596d4124-576e-4bc5-8f83-6ef73a4418b4",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "Animals & Training"
   },
   {
     "title": "Anthropic S Accidental Autonomous Zero Day Engine",
@@ -188,7 +247,14 @@
     "published": "Mon, 13 Jul 2026 03:13:05 +0000",
     "guid": "15050306-3b28-48df-bf3f-64bdd0106afd",
     "duration": "0:35:55",
-    "draft": false
+    "draft": false,
+    "notebookId": "2a12d227-246d-4337-901a-8538b1d6abf2",
+    "notebookTitle": "Mythos",
+    "notebookArtifactId": "11cdea3b-6d90-4830-ae66-2ec940808cd9",
+    "artifactType": "audio_overview",
+    "variant": "Legacy/Unlabeled",
+    "libraryColumn": "Technology",
+    "libraryGroup": "AI & Computing"
   },
   {
     "title": "The Commercial Road From Moon To Mars",
@@ -200,7 +266,14 @@
     "published": "Mon, 13 Jul 2026 01:52:26 +0000",
     "guid": "1df75bc1-0a1a-43bd-b64e-2eb61cee000f",
     "duration": "0:22:29",
-    "draft": false
+    "draft": false,
+    "notebookId": "5c2c99a9-0dee-4992-ba2f-7fc5cf0b73f8",
+    "notebookTitle": "The Shuttle Space Program",
+    "notebookArtifactId": "2a1d8962-4b3a-48c3-9db6-f474da2ecc09",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Space & Cosmology"
   },
   {
     "title": "Fable 5 Short Audio Overview Anthropic Fable 5 And Xbox Fable Reboot",
@@ -224,7 +297,14 @@
     "published": "Sun, 12 Jul 2026 02:47:42 +0000",
     "guid": "1a96637b-5640-4f50-baa1-06718cec1961",
     "duration": "0:47:06",
-    "draft": false
+    "draft": false,
+    "notebookId": "bfcf8db0-99c3-43ab-860d-c3ba39356d5a",
+    "notebookTitle": "Fable: A New Beginning in Albion",
+    "notebookArtifactId": "6f20d654-2a9e-482b-a014-08d8372f34be",
+    "artifactType": "audio_overview",
+    "variant": "Legacy/Unlabeled",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "Media & Creativity"
   },
   {
     "title": "2Why Fable 5 Keeps Downgrading Itself",
@@ -236,7 +316,14 @@
     "published": "Sun, 12 Jul 2026 02:47:42 +0000",
     "guid": "7b09db4f-16f8-4129-b043-9f5dda21892f",
     "duration": "0:05:08",
-    "draft": false
+    "draft": false,
+    "notebookId": "bfcf8db0-99c3-43ab-860d-c3ba39356d5a",
+    "notebookTitle": "Fable: A New Beginning in Albion",
+    "notebookArtifactId": "6a918889-2e32-4b90-ae19-a99d1e429061",
+    "artifactType": "audio_overview",
+    "variant": "Legacy/Unlabeled",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "Media & Creativity"
   },
   {
     "title": "The 0",
@@ -260,7 +347,14 @@
     "published": "Thu, 09 Jul 2026 03:40:36 +0000",
     "guid": "9ce065a0-c730-4039-9c7d-98cbd5aa411d",
     "duration": "0:05:27",
-    "draft": false
+    "draft": false,
+    "notebookId": "7459ae08-4d80-4f77-9681-a82df3d29682",
+    "notebookTitle": "[astronomy] astroblender redcat",
+    "notebookArtifactId": "20b44098-bf93-4e2b-a3b0-0ac7eb8130e8",
+    "artifactType": "audio_overview",
+    "variant": "Legacy/Unlabeled",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Space & Cosmology"
   },
   {
     "title": "Why Businesses Need Zero Trust Architecture",
@@ -272,7 +366,14 @@
     "published": "Tue, 07 Jul 2026 19:09:03 +0000",
     "guid": "20626612-4ea8-48bf-a6d0-1c7a97f8c9b3",
     "duration": "0:25:37",
-    "draft": false
+    "draft": false,
+    "notebookId": "d007fc76-14dd-4ba5-97bc-16310164e64d",
+    "notebookTitle": "[work] NIST ZT",
+    "notebookArtifactId": "aefda626-328c-46ea-8828-f9868cfb9945",
+    "artifactType": "audio_overview",
+    "variant": "Legacy/Unlabeled",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Networking & Cybersecurity"
   },
   {
     "title": "Why The Universe Doesn T Rip Itself Apart",
@@ -284,7 +385,12 @@
     "published": "Tue, 07 Jul 2026 00:28:55 +0000",
     "guid": "e905ab3c-b612-4c4f-aaf1-93a3e9510bb9",
     "duration": "0:35:03",
-    "draft": false
+    "draft": false,
+    "notebookId": "0b96f57f-8a8a-493e-bfcd-fec2d7995097",
+    "notebookTitle": "Dark Matter Research",
+    "notebookArtifactId": "eceabd13-062d-4777-823b-4cb88d94a22a",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive"
   },
   {
     "title": "Stargazing And The Backwards Lens Mystery (1)",
@@ -308,7 +414,14 @@
     "published": "Tue, 07 Jul 2026 00:28:55 +0000",
     "guid": "5c3cba5a-2af3-4519-8fe1-75355001e2fb",
     "duration": "0:45:52",
-    "draft": false
+    "draft": false,
+    "notebookId": "aaab907a-f5d4-4bbc-81fb-4defb03002f0",
+    "notebookTitle": "Architectural Dynamics of SRv6 over MPLS Transport Cores",
+    "notebookArtifactId": "06125564-c0b4-4c39-adb0-541cb66465c2",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Networking & Cybersecurity"
   },
   {
     "title": "A Phased Roadmap From Backyard To Astrophysics",
@@ -320,7 +433,14 @@
     "published": "Tue, 30 Jun 2026 01:50:59 +0000",
     "guid": "26d2bf2b-e60a-49d3-b29e-2bfbb16d1809",
     "duration": "0:19:29",
-    "draft": false
+    "draft": false,
+    "notebookId": "19968768-aa4b-4c73-9030-e5ee030e577b",
+    "notebookTitle": "Comprehensive Guide to Introductory Astronomy and Stargazing",
+    "notebookArtifactId": "5f7c4277-5c42-496a-9b47-449fb538d1ac",
+    "artifactType": "audio_overview",
+    "variant": "Critique",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Space & Cosmology"
   },
   {
     "title": "Cyberark Versus Xage For Ai Energy",
@@ -332,7 +452,15 @@
     "published": "Tue, 16 Jun 2026 22:23:31 +0000",
     "guid": "bbab16bb-31f6-43ba-b305-82bdafdb5ebb",
     "duration": "0:21:45",
-    "draft": false
+    "draft": false,
+    "notebookId": "7877feec-2c6b-455d-b8ca-b0e94e288778",
+    "notebookTitle": "Mastering Privileged Access: Strategic Frameworks for Modern Security Implementation",
+    "notebookArtifactId": "a2e444c1-b204-4e13-b0be-9af43266ccc9",
+    "artifactType": "audio_overview",
+    "variant": "Legacy/Unlabeled",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Networking & Cybersecurity",
+    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z"
   },
   {
     "title": "Hubble And Webb Reveal The Early Universe",
@@ -343,7 +471,12 @@
     "published": "Tue, 16 Jun 2026 22:07:25 +0000",
     "guid": "d8984eec-b602-406b-a52d-560b3d3f71f6",
     "duration": "0:18:58",
-    "draft": true
+    "draft": true,
+    "notebookId": "94356eae-5805-40b1-b7cb-bd0f8fe07302",
+    "notebookTitle": "[astronomy] spaceli",
+    "notebookArtifactId": "a1b2c071-e880-4f8b-a324-7baf9ab063d6",
+    "artifactType": "audio_overview",
+    "variant": "Legacy/Unlabeled"
   },
   {
     "title": "The Wild West Was Corporate Warfare",
@@ -354,7 +487,12 @@
     "published": "Tue, 16 Jun 2026 19:19:13 +0000",
     "guid": "8ae42c63-2a5a-4d4a-aba7-e817b3f75b12",
     "duration": "1:05:15",
-    "draft": false
+    "draft": false,
+    "notebookId": "ad0e8675-e71a-4cac-b82a-a5655f5fdb0d",
+    "notebookTitle": "The Western Civil War of Incorporation: Myth vs. Reality",
+    "notebookArtifactId": "fb2012ea-f0a5-4b7e-b7c6-b479e5e041b0",
+    "artifactType": "audio_overview",
+    "variant": "Legacy/Unlabeled"
   },
   {
     "title": "True Crimes",
@@ -420,7 +558,14 @@
     "published": "Fri, 12 Jun 2026 19:33:57 +0000",
     "guid": "91e07339-151d-43f0-bce3-29354d00be03",
     "duration": "0:43:25",
-    "draft": false
+    "draft": false,
+    "notebookId": "7aa2891f-2a9d-4bdb-bb4b-066133b90627",
+    "notebookTitle": "Palo Alto Networks Panorama and PAN-OS Active-Active HA Guide",
+    "notebookArtifactId": "c3f43dd9-07d4-4adc-987b-5861668edbd4",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Networking & Cybersecurity"
   },
   {
     "title": "Xage versus CyberArk for Akamai Port 443",
@@ -431,7 +576,15 @@
     "guid": "be3a8ef0-8f13-4e02-9784-f6eaa4c7c230",
     "duration": "0:05:48",
     "draft": false,
-    "source_sha256": "2934c255e3017d659c69fa16b69d2ebbda9513432aaae291c7f2493d4665e9a6"
+    "source_sha256": "2934c255e3017d659c69fa16b69d2ebbda9513432aaae291c7f2493d4665e9a6",
+    "notebookId": "7877feec-2c6b-455d-b8ca-b0e94e288778",
+    "notebookTitle": "Mastering Privileged Access: Strategic Frameworks for Modern Security Implementation",
+    "notebookArtifactId": "4222070a-dd7c-4aef-ae36-569a8c9a9781",
+    "artifactType": "audio_overview",
+    "variant": "Critique",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Networking & Cybersecurity",
+    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z"
   },
   {
     "title": "Why Faster Hardware Won't Fix Your Cloud",
@@ -453,7 +606,15 @@
     "guid": "29445edd-ad41-4898-9b9b-f5ba005ef64d",
     "duration": "0:21:25",
     "draft": false,
-    "source_sha256": "138f057abf6b5f9217c4357bc9af8ff966cddceda90a346f8d228bc0f9472afc"
+    "source_sha256": "138f057abf6b5f9217c4357bc9af8ff966cddceda90a346f8d228bc0f9472afc",
+    "notebookId": "fb3b8714-639f-4c95-941e-b21a3f41b463",
+    "notebookTitle": "Dog Training",
+    "notebookArtifactId": "67faa3b6-0995-4c98-92a1-1c2457b4216d",
+    "artifactType": "audio_overview",
+    "variant": "Legacy/Unlabeled",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "Animals & Training",
+    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z"
   },
   {
     "title": "Triage and Training for Barking Dogs",
@@ -464,7 +625,15 @@
     "guid": "f8c28931-7538-43ef-b4af-0d2f10eae2c7",
     "duration": "0:18:41",
     "draft": false,
-    "source_sha256": "c0d0af0fc20936a4e4cfdf46149e1b7d3bf6cc48dc3e388da0add96d65e8df90"
+    "source_sha256": "c0d0af0fc20936a4e4cfdf46149e1b7d3bf6cc48dc3e388da0add96d65e8df90",
+    "notebookId": "fb3b8714-639f-4c95-941e-b21a3f41b463",
+    "notebookTitle": "Dog Training",
+    "notebookArtifactId": "8f31f4dd-ef58-4544-911f-168a8f88254b",
+    "artifactType": "audio_overview",
+    "variant": "Critique",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "Animals & Training",
+    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z"
   },
   {
     "title": "The Death of the Network Perimeter",
@@ -475,7 +644,14 @@
     "guid": "7b9e962a-4ef2-4662-9fbe-101c1f4a766a",
     "duration": "0:20:49",
     "draft": false,
-    "source_sha256": "808c10544615c28ae3c69017e262f9c235ea412083ed2bcb6de5035a582e7eda"
+    "source_sha256": "808c10544615c28ae3c69017e262f9c235ea412083ed2bcb6de5035a582e7eda",
+    "notebookId": "fbbd7a5b-4c96-4496-8a1b-9c1cd38af916",
+    "notebookTitle": "[work] SD WAN - SRv6",
+    "notebookArtifactId": "4d617128-94cd-4d38-960c-4ef95e8d2c7d",
+    "artifactType": "audio_overview",
+    "variant": "Legacy/Unlabeled",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Networking & Cybersecurity"
   },
   {
     "title": "Surviving the Adolescence of Powerful AI",
@@ -486,7 +662,14 @@
     "guid": "53e4d25f-0537-444f-89ad-5abee6d96a3e",
     "duration": "0:15:10",
     "draft": false,
-    "source_sha256": "bc233da68bba335d250190ecc7815d54405de0b67e31c613e35834e2541944f5"
+    "source_sha256": "bc233da68bba335d250190ecc7815d54405de0b67e31c613e35834e2541944f5",
+    "notebookId": "70bdba27-9aac-46ce-8755-83c7504dd619",
+    "notebookTitle": "The Adolescence of Technology: Navigating the Gauntlet of AI Risk",
+    "notebookArtifactId": "ef3cb68c-1f84-43e6-9b98-19ddc44d36e2",
+    "artifactType": "audio_overview",
+    "variant": "Legacy/Unlabeled",
+    "libraryColumn": "Technology",
+    "libraryGroup": "AI & Computing"
   },
   {
     "title": "Replacing Legacy MPLS with uSID Routing",
@@ -497,7 +680,14 @@
     "guid": "95d362c8-e411-4627-9973-7718b2de90f6",
     "duration": "0:22:10",
     "draft": false,
-    "source_sha256": "1e5e2a1a95e2b357cf8bfae04e5bdc9ca1c72a6540cbbb4b164b69cbfab05a8b"
+    "source_sha256": "1e5e2a1a95e2b357cf8bfae04e5bdc9ca1c72a6540cbbb4b164b69cbfab05a8b",
+    "notebookId": "fbbd7a5b-4c96-4496-8a1b-9c1cd38af916",
+    "notebookTitle": "[work] SD WAN - SRv6",
+    "notebookArtifactId": "4b2a081b-0ef5-44aa-b745-5b5259f7a80f",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Networking & Cybersecurity"
   },
   {
     "title": "Bridging the MPLS and SRv6 Divide",
@@ -508,7 +698,15 @@
     "guid": "12a17c76-621d-4f85-9438-9d624fc05a99",
     "duration": "0:10:44",
     "draft": false,
-    "source_sha256": "7f30fd6a329fdb8c118886ce9a04742c370c52b216fec667a92e624a41dc6d84"
+    "source_sha256": "7f30fd6a329fdb8c118886ce9a04742c370c52b216fec667a92e624a41dc6d84",
+    "notebookId": "5b2a05ab-a96d-4851-8df7-e8be0afb7433",
+    "notebookTitle": "MPLS Only",
+    "notebookArtifactId": "4138f63c-0f62-4166-8dca-36f4f6375d09",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Networking & Cybersecurity",
+    "libraryGroupUpdatedAt": "2026-08-23T02:35:38Z"
   },
   {
     "title": "Barking Solutions for Busy Working Families",
@@ -519,6 +717,14 @@
     "guid": "a32f0665-5029-4130-a122-82871cf21f9d",
     "duration": "0:18:39",
     "draft": false,
-    "source_sha256": "96a9e523f514322a4b74472f758f9fbb6665e149d75abba453b707d3c198c791"
+    "source_sha256": "96a9e523f514322a4b74472f758f9fbb6665e149d75abba453b707d3c198c791",
+    "notebookId": "fb3b8714-639f-4c95-941e-b21a3f41b463",
+    "notebookTitle": "Dog Training",
+    "notebookArtifactId": "258bb409-17d1-40b5-b5a4-1cb0942f33eb",
+    "artifactType": "audio_overview",
+    "variant": "Critique",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "Animals & Training",
+    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z"
   }
 ]

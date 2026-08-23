@@ -1,5 +1,17 @@
 [
   {
+    "title": "How Humans Will Actually Reach Mars \u2014 ElevenLabs Two-Voice Edition",
+    "description": "Original NotebookLM Audio Overview revoiced as a two-host ElevenLabs V2: Blain as the male host and Matilda as the female host. Original source preserved.",
+    "audio_file": "how-humans-will-actually-reach-mars-elevenlabs-two-voice-v2.m4a",
+    "source_name": "how-humans-will-actually-reach-mars-elevenlabs-two-voice-v2.m4a",
+    "source_sha256": "ad4967997b682f98f0ace790045f55f05a2b856eb8152f18a05e2e253e89a86e",
+    "converted_to_aac": false,
+    "published": "Sun, 23 Aug 2026 13:05:28 +0000",
+    "guid": "596C168E-6860-4C59-9E5A-54DCCB97902A",
+    "duration": "0:21:21",
+    "draft": false
+  },
+  {
     "title": "The Generator: A 10-Minute Capability Tour",
     "description": "Vince demonstrates how the Generator connects NotebookLM videos, audio, reports, infographics, mind maps, evidence, downloads, and notebook-family navigation.",
     "audio_file": "generator-capability-tour-avatarx-10min.m4a",

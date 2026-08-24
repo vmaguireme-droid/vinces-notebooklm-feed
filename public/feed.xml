@@ -17,6 +17,177 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Securing industrial infrastructure with Xage Zero Trust</title>
+      <description>A NotebookLM Brief Audio Overview from [astronomy] Zero Trust Access Management for Industrial Transformation.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:43 +0000</pubDate>
+      <guid isPermaLink="false">a5598975-f7ed-5bd3-b93b-beaf38460f6a</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/securing-industrial-infrastructure-with-xage-zero-trust.m4a" length="3978124" type="audio/mp4"/>
+      <itunes:duration>0:02:03</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Zero Trust for Critical Infrastructure</title>
+      <description>A NotebookLM Deep Dive Audio Overview from [astronomy] Zero Trust Access Management for Industrial Transformation.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:43 +0000</pubDate>
+      <guid isPermaLink="false">e2adae12-d3a4-52d9-a748-e663785737d7</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/zero-trust-for-critical-infrastructure.m4a" length="47509526" type="audio/mp4"/>
+      <itunes:duration>0:24:35</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Bridging Zero Trust Vision and Cryptographic Proof</title>
+      <description>A NotebookLM Critique Audio Overview from [astronomy] Zero Trust Access Management for Industrial Transformation.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:43 +0000</pubDate>
+      <guid isPermaLink="false">af177620-2759-509b-a47f-0328195b106f</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/bridging-zero-trust-vision-and-cryptographic-proof.m4a" length="39224198" type="audio/mp4"/>
+      <itunes:duration>0:20:18</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Replacing Industrial Castles with Zero Trust</title>
+      <description>A NotebookLM Debate Audio Overview from [astronomy] Zero Trust Access Management for Industrial Transformation.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">b2afd91e-b62f-5cd6-a8bf-d0e00f67c59d</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/replacing-industrial-castles-with-zero-trust.m4a" length="47136638" type="audio/mp4"/>
+      <itunes:duration>0:24:24</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Replacing Traditional VPNs with Appgate SDP</title>
+      <description>A NotebookLM Brief Audio Overview from Appgate SDP Documentation and Deployment Resource Hub.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">53220e94-4efe-52a9-993a-96356f60f657</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/replacing-traditional-vpns-with-appgate-sdp.m4a" length="3399684" type="audio/mp4"/>
+      <itunes:duration>0:01:45</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Appgate SDP Zero Trust Architecture and AWS</title>
+      <description>A NotebookLM Deep Dive Audio Overview from Appgate SDP Documentation and Deployment Resource Hub.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">a203e298-9a5f-5a1f-a8a9-bf65b8384bfe</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/appgate-sdp-zero-trust-architecture-and-aws.m4a" length="45717548" type="audio/mp4"/>
+      <itunes:duration>0:23:39</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Appgate SDP 6.6 Licensing and AWS Deployment</title>
+      <description>A NotebookLM Critique Audio Overview from Appgate SDP Documentation and Deployment Resource Hub.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">e4ace741-f3ff-5a80-86be-d7bf11724eab</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/appgate-sdp-6.m4a" length="35416657" type="audio/mp4"/>
+      <itunes:duration>0:18:19</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Appgate SDP Security and Administrative Complexity</title>
+      <description>A NotebookLM Debate Audio Overview from Appgate SDP Documentation and Deployment Resource Hub.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">2d011cc2-8312-5030-867a-190b3e1816c9</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/appgate-sdp-security-and-administrative-complexity.m4a" length="41297191" type="audio/mp4"/>
+      <itunes:duration>0:21:22</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>How Satellites and Security Break CDNs</title>
+      <description>A NotebookLM Brief Audio Overview from Experience the Metaverse: Unlocking Innovative CDN Solutions.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">fba331c9-1b87-500f-82e6-94d2a3d90ee8</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/how-satellites-and-security-break-cdns.m4a" length="3656034" type="audio/mp4"/>
+      <itunes:duration>0:01:53</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>The Move to an Originless Internet</title>
+      <description>A NotebookLM Deep Dive Audio Overview from Experience the Metaverse: Unlocking Innovative CDN Solutions.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">f7867c12-a54d-5236-94a8-d0f3f63f19c0</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-move-to-an-originless-internet.m4a" length="49176749" type="audio/mp4"/>
+      <itunes:duration>0:25:27</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Edge Logic Versus Network Physics in CDNs</title>
+      <description>A NotebookLM Debate Audio Overview from Experience the Metaverse: Unlocking Innovative CDN Solutions.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">1f42322d-8c95-5ac4-ae36-6e8eed3d711a</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/edge-logic-versus-network-physics-in-cdns.m4a" length="44664507" type="audio/mp4"/>
+      <itunes:duration>0:23:07</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>From Browser Caching to Starlink Satellites</title>
+      <description>A NotebookLM Critique Audio Overview from Experience the Metaverse: Unlocking Innovative CDN Solutions.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">9d1d37ac-344a-5f89-b22b-332dee742565</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/from-browser-caching-to-starlink-satellites.m4a" length="38507452" type="audio/mp4"/>
+      <itunes:duration>0:19:55</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Toxic Milkweed and Safe New Hampshire Perennials</title>
+      <description>A NotebookLM Brief Audio Overview from Front Yard Work.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">f6566095-2f13-5ca2-b43e-cbed47673200</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/toxic-milkweed-and-safe-new-hampshire-perennials.m4a" length="3406407" type="audio/mp4"/>
+      <itunes:duration>0:01:45</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>The Hidden Weapons of Garden Plants</title>
+      <description>A NotebookLM Deep Dive Audio Overview from Front Yard Work.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">ae92fe99-9841-5dbf-a27e-0082db5c9660</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-hidden-weapons-of-garden-plants.m4a" length="42403903" type="audio/mp4"/>
+      <itunes:duration>0:21:56</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Structural Refinements for Manchester Horticultural Reports</title>
+      <description>A NotebookLM Critique Audio Overview from Front Yard Work.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">8b08fdf1-7f96-5290-9b84-dc35a558c221</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/structural-refinements-for-manchester-horticultural-reports.m4a" length="21609384" type="audio/mp4"/>
+      <itunes:duration>0:11:10</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Should You Plant Toxic Milkweed for Monarchs?</title>
+      <description>A NotebookLM Debate Audio Overview from Front Yard Work.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">1553382e-6c78-5cef-ab7a-03d7d4319cd6</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/should-you-plant-toxic-milkweed-for-monarchs.m4a" length="43789492" type="audio/mp4"/>
+      <itunes:duration>0:22:40</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Scaling AI without breaking the bank</title>
+      <description>A NotebookLM Brief Audio Overview from Evolution and Architecture of Transformers and RAG Systems.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">8ff46c04-49bd-5f01-acd6-84adf1832dcf</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/scaling-ai-without-breaking-the-bank.m4a" length="4053575" type="audio/mp4"/>
+      <itunes:duration>0:02:05</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>The math and hardware behind AI</title>
+      <description>A NotebookLM Deep Dive Audio Overview from Evolution and Architecture of Transformers and RAG Systems.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">c2048185-0dee-51a9-8593-f7e1c1c2edfe</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-math-and-hardware-behind-ai.m4a" length="37163066" type="audio/mp4"/>
+      <itunes:duration>0:19:14</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Why GPU Bottlenecks Drive AI Innovation</title>
+      <description>A NotebookLM Critique Audio Overview from Evolution and Architecture of Transformers and RAG Systems.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">756e5d80-26f3-5d56-b16f-858fc5101848</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/why-gpu-bottlenecks-drive-ai-innovation.m4a" length="29771439" type="audio/mp4"/>
+      <itunes:duration>0:15:24</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Math versus Physics in AI Scaling</title>
       <description>A NotebookLM Debate Audio Overview from Evolution and Architecture of Transformers and RAG Systems.</description>
       <pubDate>Mon, 24 Aug 2026 16:27:44 +0000</pubDate>

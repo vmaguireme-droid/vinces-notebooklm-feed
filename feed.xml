@@ -17,6 +17,60 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Securing industrial infrastructure with Xage Zero Trust</title>
+      <description>A NotebookLM Brief Audio Overview from [astronomy] Zero Trust Access Management for Industrial Transformation.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:43 +0000</pubDate>
+      <guid isPermaLink="false">a5598975-f7ed-5bd3-b93b-beaf38460f6a</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/securing-industrial-infrastructure-with-xage-zero-trust.m4a" length="3978124" type="audio/mp4"/>
+      <itunes:duration>0:02:03</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Zero Trust for Critical Infrastructure</title>
+      <description>A NotebookLM Deep Dive Audio Overview from [astronomy] Zero Trust Access Management for Industrial Transformation.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:43 +0000</pubDate>
+      <guid isPermaLink="false">e2adae12-d3a4-52d9-a748-e663785737d7</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/zero-trust-for-critical-infrastructure.m4a" length="47509526" type="audio/mp4"/>
+      <itunes:duration>0:24:35</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Bridging Zero Trust Vision and Cryptographic Proof</title>
+      <description>A NotebookLM Critique Audio Overview from [astronomy] Zero Trust Access Management for Industrial Transformation.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:43 +0000</pubDate>
+      <guid isPermaLink="false">af177620-2759-509b-a47f-0328195b106f</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/bridging-zero-trust-vision-and-cryptographic-proof.m4a" length="39224198" type="audio/mp4"/>
+      <itunes:duration>0:20:18</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Replacing Industrial Castles with Zero Trust</title>
+      <description>A NotebookLM Debate Audio Overview from [astronomy] Zero Trust Access Management for Industrial Transformation.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">b2afd91e-b62f-5cd6-a8bf-d0e00f67c59d</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/replacing-industrial-castles-with-zero-trust.m4a" length="47136638" type="audio/mp4"/>
+      <itunes:duration>0:24:24</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Replacing Traditional VPNs with Appgate SDP</title>
+      <description>A NotebookLM Brief Audio Overview from Appgate SDP Documentation and Deployment Resource Hub.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">53220e94-4efe-52a9-993a-96356f60f657</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/replacing-traditional-vpns-with-appgate-sdp.m4a" length="3399684" type="audio/mp4"/>
+      <itunes:duration>0:01:45</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Appgate SDP Zero Trust Architecture and AWS</title>
+      <description>A NotebookLM Deep Dive Audio Overview from Appgate SDP Documentation and Deployment Resource Hub.</description>
+      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
+      <guid isPermaLink="false">a203e298-9a5f-5a1f-a8a9-bf65b8384bfe</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/appgate-sdp-zero-trust-architecture-and-aws.m4a" length="45717548" type="audio/mp4"/>
+      <itunes:duration>0:23:39</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Appgate SDP 6.6 Licensing and AWS Deployment</title>
       <description>A NotebookLM Critique Audio Overview from Appgate SDP Documentation and Deployment Resource Hub.</description>
       <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
@@ -217,9 +271,9 @@
     <item>
       <title>Ai Plant Identification Versus Human Reality</title>
       <description>Ai Plant Identification Versus Human Reality</description>
-      <pubDate>Wed, 29 Jul 2026 18:08:43 +0000</pubDate>
+      <pubDate>Mon, 24 Aug 2026 16:45:43 +0000</pubDate>
       <guid isPermaLink="false">7db8b571-911b-4e28-974b-f3ec1a946113</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/ai-plant-identification-versus-human-reality.mp3" length="17785926" type="audio/mpeg"/>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/ai-plant-identification-versus-human-reality.mp3" length="30001671" type="audio/mpeg"/>
       <itunes:duration>0:20:46</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
@@ -298,9 +352,9 @@
     <item>
       <title>The Commercial Road From Moon To Mars</title>
       <description>The Commercial Road From Moon To Mars</description>
-      <pubDate>Mon, 13 Jul 2026 01:52:26 +0000</pubDate>
+      <pubDate>Mon, 24 Aug 2026 16:45:44 +0000</pubDate>
       <guid isPermaLink="false">1df75bc1-0a1a-43bd-b64e-2eb61cee000f</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-commercial-road-from-moon-to-mars.m4a" length="43436668" type="audio/mp4"/>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-commercial-road-from-moon-to-mars.m4a" length="28920752" type="audio/mp4"/>
       <itunes:duration>0:22:29</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>

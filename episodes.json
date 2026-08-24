@@ -1057,9 +1057,9 @@
     "description": "Cyberark Versus Xage For Ai Energy",
     "audio_file": "cyberark-versus-xage-for-ai-energy.m4a",
     "source_name": "CyberArk_Versus_Xage_for_AI_Energy.m4a",
-    "source_sha256": "5daada8293ffc173e1177eff722f5112e367c4378a97728a119a2a542efe9909",
+    "source_sha256": "94a9c94ed1e98fb5e8df772ce431aef09c7e30646fa588dc4cbc21297646e8d4",
     "converted_to_aac": false,
-    "published": "Tue, 16 Jun 2026 22:23:31 +0000",
+    "published": "Mon, 24 Aug 2026 19:42:05 +0000",
     "guid": "bbab16bb-31f6-43ba-b305-82bdafdb5ebb",
     "duration": "0:21:45",
     "draft": false,
@@ -1070,7 +1070,32 @@
     "variant": "Legacy/Unlabeled",
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
-    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z"
+    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z",
+    "original_notebooklm_source_sha256": "5daada8293ffc173e1177eff722f5112e367c4378a97728a119a2a542efe9909",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/cyberark-versus-xage-for-ai-energy-orig-nblm.m4a",
+    "original_notebooklm_filename": "cyberark-versus-xage-for-ai-energy-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 1305.72771,
+      "outputDurationSeconds": 1305.885896,
+      "outputSha256": "94a9c94ed1e98fb5e8df772ce431aef09c7e30646fa588dc4cbc21297646e8d4",
+      "creditsUsed": 7385,
+      "conversionSeconds": 356.12699999999984,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Chris - Charming, Down-to-Earth",
+          "id": "iP95p4xoKVk53GoZ742B"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Bella - Professional, Bright, Warm",
+          "id": "hpp4J3VqNfWAUOO0d1Us"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-cyberark-xage-energy/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Hubble And Webb Reveal The Early Universe",

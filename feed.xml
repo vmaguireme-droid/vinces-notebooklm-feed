@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Math versus Physics in AI Scaling</title>
+      <description>A NotebookLM Debate Audio Overview from Evolution and Architecture of Transformers and RAG Systems.</description>
+      <pubDate>Mon, 24 Aug 2026 16:27:44 +0000</pubDate>
+      <guid isPermaLink="false">611835ee-7ba4-5c1e-b686-9bafa42347bc</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/math-versus-physics-in-ai-scaling.m4a" length="43028659" type="audio/mp4"/>
+      <itunes:duration>0:22:16</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>The Generator: A 10-Minute Capability Tour</title>
       <description>Vince demonstrates how the Generator connects NotebookLM videos, audio, reports, infographics, mind maps, evidence, downloads, and notebook-family navigation.</description>
       <pubDate>Sun, 23 Aug 2026 02:56:38 +0000</pubDate>

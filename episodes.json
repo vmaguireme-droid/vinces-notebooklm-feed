@@ -1,5 +1,17 @@
 [
   {
+    "title": "Math versus Physics in AI Scaling",
+    "description": "A NotebookLM Debate Audio Overview from Evolution and Architecture of Transformers and RAG Systems.",
+    "audio_file": "math-versus-physics-in-ai-scaling.m4a",
+    "source_name": "Math_versus_Physics_in_AI_Scaling.m4a",
+    "source_sha256": "665438deeb30363605f643447fcd254dde1050d27dbcc9906abd374c6edec2e5",
+    "converted_to_aac": false,
+    "published": "Mon, 24 Aug 2026 16:27:44 +0000",
+    "guid": "611835ee-7ba4-5c1e-b686-9bafa42347bc",
+    "duration": "0:22:16",
+    "draft": false
+  },
+  {
     "title": "The Generator: A 10-Minute Capability Tour",
     "description": "Vince demonstrates how the Generator connects NotebookLM videos, audio, reports, infographics, mind maps, evidence, downloads, and notebook-family navigation.",
     "audio_file": "generator-capability-tour-avatarx-10min.m4a",

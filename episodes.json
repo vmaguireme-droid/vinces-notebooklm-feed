@@ -492,9 +492,9 @@
     "description": "Ai Plant Identification Versus Human Reality",
     "audio_file": "ai-plant-identification-versus-human-reality.mp3",
     "source_name": "AI_plant_identification_versus_human_reality.mp3",
-    "source_sha256": "28e372e1a35c6450f41bf57df0e1172365870418c9bce957a37f2814facbd5c6",
+    "source_sha256": "c0eb6345ec603d7c6053daa3ec8e83573f55a939b8bd3cfb596b47bdba0a314c",
     "converted_to_aac": false,
-    "published": "Wed, 29 Jul 2026 18:08:43 +0000",
+    "published": "Mon, 24 Aug 2026 16:45:43 +0000",
     "guid": "7db8b571-911b-4e28-974b-f3ec1a946113",
     "duration": "0:20:46",
     "draft": false,
@@ -504,7 +504,32 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "libraryColumn": "Technology",
-    "libraryGroup": "AI & Computing"
+    "libraryGroup": "AI & Computing",
+    "original_notebooklm_source_sha256": "28e372e1a35c6450f41bf57df0e1172365870418c9bce957a37f2814facbd5c6",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/ai-plant-identification-versus-human-reality-orig-nblm.mp3",
+    "original_notebooklm_filename": "ai-plant-identification-versus-human-reality-orig-nblm.mp3",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 1246.888345,
+      "outputDurationSeconds": 1249.999773,
+      "outputSha256": "c0eb6345ec603d7c6053daa3ec8e83573f55a939b8bd3cfb596b47bdba0a314c",
+      "creditsUsed": 7061,
+      "conversionSeconds": 472.3330000000001,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Roger - Laid-Back, Casual, Resonant",
+          "id": "CwhRBWXzGAHq8TQ4Fs17"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Sarah - Mature, Reassuring, Confident",
+          "id": "EXAVITQu4vr4xnSDxMaL"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-plant-identification/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "How Solar Cycle 25 Threatens Earth",
@@ -696,9 +721,9 @@
     "description": "The Commercial Road From Moon To Mars",
     "audio_file": "the-commercial-road-from-moon-to-mars.m4a",
     "source_name": "The Commercial Road from Moon to Mars.m4a",
-    "source_sha256": "fc6bc1d783ea47293a422c32d4a496e9c1d00f246dedca180e09189a3ab737df",
+    "source_sha256": "5602114bb86a47268f12b794da5698ee99fba3f4a872012bae2465cb7011759b",
     "converted_to_aac": false,
-    "published": "Mon, 13 Jul 2026 01:52:26 +0000",
+    "published": "Mon, 24 Aug 2026 16:45:44 +0000",
     "guid": "1df75bc1-0a1a-43bd-b64e-2eb61cee000f",
     "duration": "0:22:29",
     "draft": false,
@@ -708,7 +733,32 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "libraryColumn": "Technology",
-    "libraryGroup": "Space & Cosmology"
+    "libraryGroup": "Space & Cosmology",
+    "original_notebooklm_source_sha256": "fc6bc1d783ea47293a422c32d4a496e9c1d00f246dedca180e09189a3ab737df",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/the-commercial-road-from-moon-to-mars-orig-nblm.m4a",
+    "original_notebooklm_filename": "the-commercial-road-from-moon-to-mars-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 1349.613424,
+      "outputDurationSeconds": 1349.721723,
+      "outputSha256": "5602114bb86a47268f12b794da5698ee99fba3f4a872012bae2465cb7011759b",
+      "creditsUsed": 7641,
+      "conversionSeconds": 463.15499999999975,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Chris - Charming, Down-to-Earth",
+          "id": "iP95p4xoKVk53GoZ742B"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Bella - Professional, Bright, Warm",
+          "id": "hpp4J3VqNfWAUOO0d1Us"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-commercial-mars/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Fable 5 Short Audio Overview Anthropic Fable 5 And Xbox Fable Reboot",

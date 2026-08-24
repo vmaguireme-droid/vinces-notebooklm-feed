@@ -1511,18 +1511,43 @@
     "description": "Replacing Legacy MPLS with uSID Routing",
     "audio_file": "replacing-legacy-mpls-with-usid-routing.m4a",
     "source_name": "Replacing_legacy_MPLS_with_uSID_routing.m4a",
-    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "published": "Mon, 24 Aug 2026 20:03:06 +0000",
     "guid": "95d362c8-e411-4627-9973-7718b2de90f6",
     "duration": "0:22:10",
     "draft": false,
-    "source_sha256": "1e5e2a1a95e2b357cf8bfae04e5bdc9ca1c72a6540cbbb4b164b69cbfab05a8b",
+    "source_sha256": "8563113165579b7f4a7c848b02bb10a3740ff2c0ae243261d7ee55cf14c2af82",
     "notebookId": "fbbd7a5b-4c96-4496-8a1b-9c1cd38af916",
     "notebookTitle": "[work] SD WAN - SRv6",
     "notebookArtifactId": "4b2a081b-0ef5-44aa-b745-5b5259f7a80f",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "libraryColumn": "Technology",
-    "libraryGroup": "Networking & Cybersecurity"
+    "libraryGroup": "Networking & Cybersecurity",
+    "original_notebooklm_source_sha256": "1e5e2a1a95e2b357cf8bfae04e5bdc9ca1c72a6540cbbb4b164b69cbfab05a8b",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/replacing-legacy-mpls-with-usid-routing-orig-nblm.m4a",
+    "original_notebooklm_filename": "replacing-legacy-mpls-with-usid-routing-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 1330.805261,
+      "outputDurationSeconds": 1330.834127,
+      "outputSha256": "8563113165579b7f4a7c848b02bb10a3740ff2c0ae243261d7ee55cf14c2af82",
+      "creditsUsed": 7532,
+      "conversionSeconds": 327.62699999999984,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Blain - Conversational Ad Voice",
+          "id": "jHprmvvyQreWpRuutdmV"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Matilda - Knowledgable, Professional",
+          "id": "XrExE9yKIg1WjnnlVkGX"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-replacing-legacy-mpls/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Bridging the MPLS and SRv6 Divide",

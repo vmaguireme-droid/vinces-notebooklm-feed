@@ -578,9 +578,9 @@
     "description": "Managing The 170 Pound European Great Dane",
     "audio_file": "managing-the-170-pound-european-great-dane.m4a",
     "source_name": "Managing_the_170_pound_European_Great_Dane.m4a",
-    "source_sha256": "0ceb22c9bd36b058b6fae1908ba7683dfce72e34fc8153fbf063a72aa5d32cfb",
+    "source_sha256": "779256a5c65e34a1c6141fc0d268a6d208f7806275c94c24a76cdf1a6fbcbc9a",
     "converted_to_aac": false,
-    "published": "Tue, 14 Jul 2026 17:44:19 +0000",
+    "published": "Mon, 24 Aug 2026 19:54:30 +0000",
     "guid": "deed5ad0-9e4d-42d8-b7cf-e8c541e474d5",
     "duration": "0:37:25",
     "draft": false,
@@ -590,7 +590,32 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "libraryColumn": "Other Stuff",
-    "libraryGroup": "Animals & Training"
+    "libraryGroup": "Animals & Training",
+    "original_notebooklm_source_sha256": "0ceb22c9bd36b058b6fae1908ba7683dfce72e34fc8153fbf063a72aa5d32cfb",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/managing-the-170-pound-european-great-dane-orig-nblm.m4a",
+    "original_notebooklm_filename": "managing-the-170-pound-european-great-dane-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 2245.369615,
+      "outputDurationSeconds": 2245.757347,
+      "outputSha256": "779256a5c65e34a1c6141fc0d268a6d208f7806275c94c24a76cdf1a6fbcbc9a",
+      "creditsUsed": 12711,
+      "conversionSeconds": 633.5869999999999,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Brian - Deep, Resonant and Comforting",
+          "id": "nPczCjzI2devNBz1zQrb"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Lily - Velvety Actress",
+          "id": "pFZP5JQG7iQjIQuC4Bku"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-european-great-dane/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Why Dinosaurs Still Rule The Earth",

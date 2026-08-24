@@ -808,18 +808,43 @@
     "description": "Surviving the Adolescence of Powerful AI",
     "audio_file": "surviving-the-adolescence-of-powerful-ai.m4a",
     "source_name": "Surviving the Adolescence of Powerful AI.m4a",
-    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "published": "Mon, 24 Aug 2026 11:34:44 +0000",
     "guid": "53e4d25f-0537-444f-89ad-5abee6d96a3e",
     "duration": "0:15:10",
     "draft": false,
-    "source_sha256": "bc233da68bba335d250190ecc7815d54405de0b67e31c613e35834e2541944f5",
+    "source_sha256": "87a3c28a24e19d86352a65eccb9137534966d9fe6ce5784a678cb99d67bc2264",
     "notebookId": "70bdba27-9aac-46ce-8755-83c7504dd619",
     "notebookTitle": "The Adolescence of Technology: Navigating the Gauntlet of AI Risk",
     "notebookArtifactId": "ef3cb68c-1f84-43e6-9b98-19ddc44d36e2",
     "artifactType": "audio_overview",
     "variant": "Legacy/Unlabeled",
     "libraryColumn": "Technology",
-    "libraryGroup": "AI & Computing"
+    "libraryGroup": "AI & Computing",
+    "original_notebooklm_source_sha256": "bc233da68bba335d250190ecc7815d54405de0b67e31c613e35834e2541944f5",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/surviving-the-adolescence-of-powerful-ai-orig-nblm.m4a",
+    "original_notebooklm_filename": "surviving-the-adolescence-of-powerful-ai-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 910.733061,
+      "outputDurationSeconds": 911.049546,
+      "outputSha256": "87a3c28a24e19d86352a65eccb9137534966d9fe6ce5784a678cb99d67bc2264",
+      "creditsUsed": 5165,
+      "conversionSeconds": 270.96400000000017,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Blain - Conversational Ad Voice",
+          "id": "jHprmvvyQreWpRuutdmV"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Matilda - Knowledgable, Professional",
+          "id": "XrExE9yKIg1WjnnlVkGX"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-powerful-ai/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Replacing Legacy MPLS with uSID Routing",

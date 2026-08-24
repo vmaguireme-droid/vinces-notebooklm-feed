@@ -9,7 +9,11 @@
     "published": "Mon, 24 Aug 2026 16:27:44 +0000",
     "guid": "611835ee-7ba4-5c1e-b686-9bafa42347bc",
     "duration": "0:22:16",
-    "draft": false
+    "draft": false,
+    "notebookId": "dcd21712-c7b4-429e-b67e-d33cbb2778e3",
+    "notebookTitle": "Evolution and Architecture of Transformers and RAG Systems",
+    "artifactType": "audio_overview",
+    "variant": "Debate"
   },
   {
     "title": "The Generator: A 10-Minute Capability Tour",
@@ -163,9 +167,9 @@
     "description": "How Solar Cycle 25 Threatens Earth",
     "audio_file": "how-solar-cycle-25-threatens-earth.m4a",
     "source_name": "How_Solar_Cycle_25_threatens_Earth.m4a",
-    "source_sha256": "d03313cf6d8b806866cc7aeee1e15e346a218e5f1e1d8d816c660cc7a1334c3c",
+    "source_sha256": "47687fdb74fada0ee98fc9896aa36c43ab17df0f5235bb4bfa17b328239346eb",
     "converted_to_aac": false,
-    "published": "Fri, 17 Jul 2026 10:06:06 +0000",
+    "published": "Mon, 24 Aug 2026 16:35:04 +0000",
     "guid": "6cbb0126-e0fb-4c20-8434-169049a64a5e",
     "duration": "0:20:10",
     "draft": false,
@@ -173,7 +177,32 @@
     "notebookTitle": "Solar Vitality and the Current Cycle",
     "notebookArtifactId": "3c89becb-0f39-4c53-92eb-c812782fbba0",
     "artifactType": "audio_overview",
-    "variant": "Deep Dive"
+    "variant": "Deep Dive",
+    "original_notebooklm_source_sha256": "d03313cf6d8b806866cc7aeee1e15e346a218e5f1e1d8d816c660cc7a1334c3c",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/how-solar-cycle-25-threatens-earth-orig-nblm.m4a",
+    "original_notebooklm_filename": "how-solar-cycle-25-threatens-earth-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 1210.409796,
+      "outputDurationSeconds": 1210.686122,
+      "outputSha256": "47687fdb74fada0ee98fc9896aa36c43ab17df0f5235bb4bfa17b328239346eb",
+      "creditsUsed": 6857,
+      "conversionSeconds": 400.1140000000002,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Blain - Conversational Ad Voice",
+          "id": "jHprmvvyQreWpRuutdmV"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Matilda - Knowledgable, Professional",
+          "id": "XrExE9yKIg1WjnnlVkGX"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-solar-cycle/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Managing The 170 Pound European Great Dane",
@@ -260,9 +289,9 @@
     "description": "Banned Colors And Standard Poodle Genetics",
     "audio_file": "banned-colors-and-standard-poodle-genetics.m4a",
     "source_name": "Banned_Colors_and_Standard_Poodle_Genetics.m4a",
-    "source_sha256": "568c7bf16a6b98282f3c8373fe34b94bafffa13f375f29c74e74be3e860fc0f3",
+    "source_sha256": "5a55914392b0a228eef15e2ecc4eafb58bacbc15155e9f947388d932f95854e0",
     "converted_to_aac": false,
-    "published": "Mon, 13 Jul 2026 03:37:41 +0000",
+    "published": "Mon, 24 Aug 2026 16:35:04 +0000",
     "guid": "09ab9761-5849-4eb3-a8ef-5c64e9272703",
     "duration": "0:19:25",
     "draft": false,
@@ -272,7 +301,32 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "libraryColumn": "Other Stuff",
-    "libraryGroup": "Animals & Training"
+    "libraryGroup": "Animals & Training",
+    "original_notebooklm_source_sha256": "568c7bf16a6b98282f3c8373fe34b94bafffa13f375f29c74e74be3e860fc0f3",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/banned-colors-and-standard-poodle-genetics-orig-nblm.m4a",
+    "original_notebooklm_filename": "banned-colors-and-standard-poodle-genetics-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 1165.409524,
+      "outputDurationSeconds": 1165.575011,
+      "outputSha256": "5a55914392b0a228eef15e2ecc4eafb58bacbc15155e9f947388d932f95854e0",
+      "creditsUsed": 6597,
+      "conversionSeconds": 424.3699999999997,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Max - eLearning and Documentary",
+          "id": "Gfpl8Yo74Is0W6cPUWWT"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Ivanna - Young, Versatile and Casual",
+          "id": "yM93hbw8Qtvdma2wCnJG"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-poodle-genetics/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Anthropic S Accidental Autonomous Zero Day Engine",

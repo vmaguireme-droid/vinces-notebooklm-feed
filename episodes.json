@@ -1013,9 +1013,9 @@
     "description": "A Phased Roadmap From Backyard To Astrophysics",
     "audio_file": "a-phased-roadmap-from-backyard-to-astrophysics.m4a",
     "source_name": "A_phased_roadmap_from_backyard_to_astrophysics.m4a",
-    "source_sha256": "cc2c2ea4f31b511325b1b34753332c99d14683479fb69c69c3277973e6abeb46",
+    "source_sha256": "54b5ca8764ff625665319272475527269d540e2768a161515b24ae2579239aa9",
     "converted_to_aac": false,
-    "published": "Tue, 30 Jun 2026 01:50:59 +0000",
+    "published": "Mon, 24 Aug 2026 19:39:58 +0000",
     "guid": "26d2bf2b-e60a-49d3-b29e-2bfbb16d1809",
     "duration": "0:19:29",
     "draft": false,
@@ -1025,7 +1025,32 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "libraryColumn": "Technology",
-    "libraryGroup": "Space & Cosmology"
+    "libraryGroup": "Space & Cosmology",
+    "original_notebooklm_source_sha256": "cc2c2ea4f31b511325b1b34753332c99d14683479fb69c69c3277973e6abeb46",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/a-phased-roadmap-from-backyard-to-astrophysics-orig-nblm.m4a",
+    "original_notebooklm_filename": "a-phased-roadmap-from-backyard-to-astrophysics-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 1169.449796,
+      "outputDurationSeconds": 1169.485601,
+      "outputSha256": "54b5ca8764ff625665319272475527269d540e2768a161515b24ae2579239aa9",
+      "creditsUsed": 6624,
+      "conversionSeconds": 266.0200000000001,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Roger - Laid-Back, Casual, Resonant",
+          "id": "CwhRBWXzGAHq8TQ4Fs17"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Sarah - Mature, Reassuring, Confident",
+          "id": "EXAVITQu4vr4xnSDxMaL"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-astrophysics-roadmap/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Cyberark Versus Xage For Ai Energy",

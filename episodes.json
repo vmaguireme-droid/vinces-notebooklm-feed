@@ -1187,11 +1187,11 @@
     "description": "What Your Dog Is Really Telling You",
     "audio_file": "what-your-dog-is-really-telling-you.m4a",
     "source_name": "What_your_dog_is_really_telling_you.m4a",
-    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "published": "Mon, 24 Aug 2026 19:13:42 +0000",
     "guid": "29445edd-ad41-4898-9b9b-f5ba005ef64d",
     "duration": "0:21:25",
     "draft": false,
-    "source_sha256": "138f057abf6b5f9217c4357bc9af8ff966cddceda90a346f8d228bc0f9472afc",
+    "source_sha256": "06f176895f0558904a25802fd3cbac5ba96926748531051379aeac879222f9a6",
     "notebookId": "fb3b8714-639f-4c95-941e-b21a3f41b463",
     "notebookTitle": "Dog Training",
     "notebookArtifactId": "67faa3b6-0995-4c98-92a1-1c2457b4216d",
@@ -1199,7 +1199,32 @@
     "variant": "Legacy/Unlabeled",
     "libraryColumn": "Other Stuff",
     "libraryGroup": "Animals & Training",
-    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z"
+    "libraryGroupUpdatedAt": "2026-08-23T02:35:39Z",
+    "original_notebooklm_source_sha256": "138f057abf6b5f9217c4357bc9af8ff966cddceda90a346f8d228bc0f9472afc",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/what-your-dog-is-really-telling-you-orig-nblm.m4a",
+    "original_notebooklm_filename": "what-your-dog-is-really-telling-you-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 1285.758549,
+      "outputDurationSeconds": 1286.031293,
+      "outputSha256": "06f176895f0558904a25802fd3cbac5ba96926748531051379aeac879222f9a6",
+      "creditsUsed": 7275,
+      "conversionSeconds": 415.73199999999986,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Brian - Deep, Resonant and Comforting",
+          "id": "nPczCjzI2devNBz1zQrb"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Lily - Velvety Actress",
+          "id": "pFZP5JQG7iQjIQuC4Bku"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-dog-language/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Triage and Training for Barking Dogs",
@@ -1250,18 +1275,43 @@
     "description": "The Death of the Network Perimeter",
     "audio_file": "the-death-of-the-network-perimeter.m4a",
     "source_name": "The_Death_of_the_Network_Perimeter.m4a",
-    "published": "Fri, 12 Jun 2026 18:55:13 +0000",
+    "published": "Mon, 24 Aug 2026 19:13:43 +0000",
     "guid": "7b9e962a-4ef2-4662-9fbe-101c1f4a766a",
     "duration": "0:20:49",
     "draft": false,
-    "source_sha256": "808c10544615c28ae3c69017e262f9c235ea412083ed2bcb6de5035a582e7eda",
+    "source_sha256": "5439a2b29e6aaa3fdacacc782b2e5cb967e3a0f5e5b8f304ab756d668c8ba8b1",
     "notebookId": "fbbd7a5b-4c96-4496-8a1b-9c1cd38af916",
     "notebookTitle": "[work] SD WAN - SRv6",
     "notebookArtifactId": "4d617128-94cd-4d38-960c-4ef95e8d2c7d",
     "artifactType": "audio_overview",
     "variant": "Legacy/Unlabeled",
     "libraryColumn": "Technology",
-    "libraryGroup": "Networking & Cybersecurity"
+    "libraryGroup": "Networking & Cybersecurity",
+    "original_notebooklm_source_sha256": "808c10544615c28ae3c69017e262f9c235ea412083ed2bcb6de5035a582e7eda",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/the-death-of-the-network-perimeter-orig-nblm.m4a",
+    "original_notebooklm_filename": "the-death-of-the-network-perimeter-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 1250.046259,
+      "outputDurationSeconds": 1250.455578,
+      "outputSha256": "5439a2b29e6aaa3fdacacc782b2e5cb967e3a0f5e5b8f304ab756d668c8ba8b1",
+      "creditsUsed": 7082,
+      "conversionSeconds": 451.0859999999998,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Eric - Smooth, Trustworthy",
+          "id": "cjVigY5qzO86Huf0OWal"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Alice - Clear, Engaging Educator",
+          "id": "Xb7hH8MSUJpSbSDYk0k2"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-network-perimeter/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Surviving the Adolescence of Powerful AI",

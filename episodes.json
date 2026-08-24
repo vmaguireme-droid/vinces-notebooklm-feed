@@ -896,9 +896,9 @@
     "description": "Why Businesses Need Zero Trust Architecture",
     "audio_file": "why-businesses-need-zero-trust-architecture.m4a",
     "source_name": "Why_businesses_need_zero_trust_architecture.m4a",
-    "source_sha256": "a49198bccf0d2e449bf775ddc6187b5913cf7e2fdd6c217b68931bed79215d72",
+    "source_sha256": "0ddb1b306787ebef1863234830b9f7e1dbc26437ddb525a3e7e17fb10f2c6d30",
     "converted_to_aac": false,
-    "published": "Tue, 07 Jul 2026 19:09:03 +0000",
+    "published": "Mon, 24 Aug 2026 19:33:32 +0000",
     "guid": "20626612-4ea8-48bf-a6d0-1c7a97f8c9b3",
     "duration": "0:25:37",
     "draft": false,
@@ -908,16 +908,41 @@
     "artifactType": "audio_overview",
     "variant": "Legacy/Unlabeled",
     "libraryColumn": "Technology",
-    "libraryGroup": "Networking & Cybersecurity"
+    "libraryGroup": "Networking & Cybersecurity",
+    "original_notebooklm_source_sha256": "a49198bccf0d2e449bf775ddc6187b5913cf7e2fdd6c217b68931bed79215d72",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/why-businesses-need-zero-trust-architecture-orig-nblm.m4a",
+    "original_notebooklm_filename": "why-businesses-need-zero-trust-architecture-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 1537.718277,
+      "outputDurationSeconds": 1537.971837,
+      "outputSha256": "0ddb1b306787ebef1863234830b9f7e1dbc26437ddb525a3e7e17fb10f2c6d30",
+      "creditsUsed": 8703,
+      "conversionSeconds": 406.076,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Blain - Conversational Ad Voice",
+          "id": "jHprmvvyQreWpRuutdmV"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Matilda - Knowledgable, Professional",
+          "id": "XrExE9yKIg1WjnnlVkGX"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-zero-trust-architecture/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Why The Universe Doesn T Rip Itself Apart",
     "description": "Why The Universe Doesn T Rip Itself Apart",
     "audio_file": "why-the-universe-doesn-t-rip-itself-apart.m4a",
     "source_name": "Why_the_Universe_Doesn_t_Rip_Itself_Apart.m4a",
-    "source_sha256": "9bae19899c827be5efb6ff61622c72c816299180e3f9597b37914d5fe56a6d35",
+    "source_sha256": "3516011ff5639fc6baebff8a7c326f4680ba1670e6d5ff15de3f55e333b8c403",
     "converted_to_aac": false,
-    "published": "Tue, 07 Jul 2026 00:28:55 +0000",
+    "published": "Mon, 24 Aug 2026 19:33:32 +0000",
     "guid": "e905ab3c-b612-4c4f-aaf1-93a3e9510bb9",
     "duration": "0:35:03",
     "draft": false,
@@ -925,7 +950,32 @@
     "notebookTitle": "Dark Matter Research",
     "notebookArtifactId": "eceabd13-062d-4777-823b-4cb88d94a22a",
     "artifactType": "audio_overview",
-    "variant": "Deep Dive"
+    "variant": "Deep Dive",
+    "original_notebooklm_source_sha256": "9bae19899c827be5efb6ff61622c72c816299180e3f9597b37914d5fe56a6d35",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/why-the-universe-doesn-t-rip-itself-apart-orig-nblm.m4a",
+    "original_notebooklm_filename": "why-the-universe-doesn-t-rip-itself-apart-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 2103.170612,
+      "outputDurationSeconds": 2103.230295,
+      "outputSha256": "3516011ff5639fc6baebff8a7c326f4680ba1670e6d5ff15de3f55e333b8c403",
+      "creditsUsed": 11916,
+      "conversionSeconds": 485.81099999999986,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Max - eLearning and Documentary",
+          "id": "Gfpl8Yo74Is0W6cPUWWT"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Ivanna - Young, Versatile and Casual",
+          "id": "yM93hbw8Qtvdma2wCnJG"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-dark-matter-research/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Stargazing And The Backwards Lens Mystery (1)",

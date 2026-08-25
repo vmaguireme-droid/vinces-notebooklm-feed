@@ -852,9 +852,9 @@
     "description": "Ai Guardrails Versus Fable S Morality System",
     "audio_file": "ai-guardrails-versus-fable-s-morality-system.m4a",
     "source_name": "AI_guardrails_versus_Fable_s_morality_system.m4a",
-    "source_sha256": "33b1ade0b27d879ecea0be99b60ad168dd43f7e2133785653ee1313ce45e92cd",
+    "source_sha256": "cb8fa890a93a81530ca7aefd7ca14f87877c9c137a6111355fde1d3de19ed02e",
     "converted_to_aac": false,
-    "published": "Sun, 12 Jul 2026 02:47:42 +0000",
+    "published": "Tue, 25 Aug 2026 12:18:29 +0000",
     "guid": "1a96637b-5640-4f50-baa1-06718cec1961",
     "duration": "0:47:06",
     "draft": false,
@@ -864,7 +864,32 @@
     "artifactType": "audio_overview",
     "variant": "Legacy/Unlabeled",
     "libraryColumn": "Other Stuff",
-    "libraryGroup": "Media & Creativity"
+    "libraryGroup": "Media & Creativity",
+    "original_notebooklm_source_sha256": "33b1ade0b27d879ecea0be99b60ad168dd43f7e2133785653ee1313ce45e92cd",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/ai-guardrails-versus-fable-s-morality-system-orig-nblm.m4a",
+    "original_notebooklm_filename": "ai-guardrails-versus-fable-s-morality-system-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 2826.774059,
+      "outputDurationSeconds": 2827.040091,
+      "outputSha256": "cb8fa890a93a81530ca7aefd7ca14f87877c9c137a6111355fde1d3de19ed02e",
+      "creditsUsed": 16005,
+      "conversionSeconds": 669.4630000000001,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Roger - Laid-Back, Casual, Resonant",
+          "id": "CwhRBWXzGAHq8TQ4Fs17"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Sarah - Mature, Reassuring, Confident",
+          "id": "EXAVITQu4vr4xnSDxMaL"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-fable-guardrails/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "2Why Fable 5 Keeps Downgrading Itself",
@@ -1069,9 +1094,9 @@
     "description": "Programming Enterprise Networks With Srv6",
     "audio_file": "programming-enterprise-networks-with-srv6.m4a",
     "source_name": "Programming_enterprise_networks_with_SRv6.m4a",
-    "source_sha256": "d39d0459452e33f1bc31fefeaff35e8f16f12671868824a2514672ec06b14d90",
+    "source_sha256": "4bb63cc3128bc86208fe6503682122b77d5cbcb3929a3e952d930bbea0ae0b15",
     "converted_to_aac": false,
-    "published": "Tue, 07 Jul 2026 00:28:55 +0000",
+    "published": "Tue, 25 Aug 2026 12:18:30 +0000",
     "guid": "5c3cba5a-2af3-4519-8fe1-75355001e2fb",
     "duration": "0:45:52",
     "draft": false,
@@ -1081,7 +1106,32 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "libraryColumn": "Technology",
-    "libraryGroup": "Networking & Cybersecurity"
+    "libraryGroup": "Networking & Cybersecurity",
+    "original_notebooklm_source_sha256": "d39d0459452e33f1bc31fefeaff35e8f16f12671868824a2514672ec06b14d90",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/programming-enterprise-networks-with-srv6-orig-nblm.m4a",
+    "original_notebooklm_filename": "programming-enterprise-networks-with-srv6-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 2752.400544,
+      "outputDurationSeconds": 2752.547098,
+      "outputSha256": "4bb63cc3128bc86208fe6503682122b77d5cbcb3929a3e952d930bbea0ae0b15",
+      "creditsUsed": 15593,
+      "conversionSeconds": 743.5009999999997,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Brian - Deep, Resonant and Comforting",
+          "id": "nPczCjzI2devNBz1zQrb"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Lily - Velvety Actress",
+          "id": "pFZP5JQG7iQjIQuC4Bku"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-programming-enterprise-srv6/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "A Phased Roadmap From Backyard To Astrophysics",
@@ -1218,8 +1268,8 @@
     "description": "The Wild West Was Corporate Warfare",
     "audio_file": "the-wild-west-was-corporate-warfare.m4a",
     "source_name": "The_Wild_West_Was_Corporate_Warfare.m4a",
-    "source_sha256": "4a2cb496b4fad75e09aadf83fe79821c354a43a15d9c44185a0989f7b8d34545",
-    "published": "Tue, 16 Jun 2026 19:19:13 +0000",
+    "source_sha256": "ef8597db2ba353c93e4468da52c8af885d70fce93a086fdab557c88e59850b67",
+    "published": "Tue, 25 Aug 2026 12:18:30 +0000",
     "guid": "8ae42c63-2a5a-4d4a-aba7-e817b3f75b12",
     "duration": "1:05:15",
     "draft": false,
@@ -1227,7 +1277,34 @@
     "notebookTitle": "The Western Civil War of Incorporation: Myth vs. Reality",
     "notebookArtifactId": "fb2012ea-f0a5-4b7e-b7c6-b479e5e041b0",
     "artifactType": "audio_overview",
-    "variant": "Legacy/Unlabeled"
+    "variant": "Legacy/Unlabeled",
+    "original_notebooklm_source_sha256": "4a2cb496b4fad75e09aadf83fe79821c354a43a15d9c44185a0989f7b8d34545",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/The_Wild_West_Was_Corporate_Warfare-orig-nblm.m4a",
+    "original_notebooklm_filename": "The_Wild_West_Was_Corporate_Warfare-orig-nblm.m4a",
+    "prior_published_audio_sha256": "53c74fd56ffc3205fd767bd70571bc98264e51321fb360d477f199be06a9871d",
+    "prior_published_audio_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/the-wild-west-was-corporate-warfare-pre-revoice-published.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 3915.116553,
+      "outputDurationSeconds": 3915.505601,
+      "outputSha256": "ef8597db2ba353c93e4468da52c8af885d70fce93a086fdab557c88e59850b67",
+      "creditsUsed": 22169,
+      "conversionSeconds": 885.447,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Eric - Smooth, Trustworthy",
+          "id": "cjVigY5qzO86Huf0OWal"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Alice - Clear, Engaging Educator",
+          "id": "Xb7hH8MSUJpSbSDYk0k2"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-wild-west-corporate-warfare/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "True Crimes",
@@ -1289,8 +1366,8 @@
     "description": "Active Active Ha And Precision Ai Architecture",
     "audio_file": "active-active-ha-and-precision-ai-architecture.m4a",
     "source_name": "Active-Active_HA_and_Precision_AI_Architecture.m4a",
-    "source_sha256": "5d6cfcc42e2efc986e70dfd65b71d2716c9f58cccadf2435524545edabff2169",
-    "published": "Fri, 12 Jun 2026 19:33:57 +0000",
+    "source_sha256": "dab164310656f1ef3a417b9a1388d51a6a8bd60bfd5efc39d3de27a84a9bd822",
+    "published": "Tue, 25 Aug 2026 12:18:30 +0000",
     "guid": "91e07339-151d-43f0-bce3-29354d00be03",
     "duration": "0:43:25",
     "draft": false,
@@ -1300,7 +1377,32 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "libraryColumn": "Technology",
-    "libraryGroup": "Networking & Cybersecurity"
+    "libraryGroup": "Networking & Cybersecurity",
+    "original_notebooklm_source_sha256": "5d6cfcc42e2efc986e70dfd65b71d2716c9f58cccadf2435524545edabff2169",
+    "original_notebooklm_backup": "/Users/vincemaguire/My Drive/Podcast Automation/original-notebooklm-audio/active-active-ha-and-precision-ai-architecture-orig-nblm.m4a",
+    "original_notebooklm_filename": "active-active-ha-and-precision-ai-architecture-orig-nblm.m4a",
+    "revoice": {
+      "provider": "ElevenLabs",
+      "format": "two-host speaker-turn revoice",
+      "sourceDurationSeconds": 2605.97551,
+      "outputDurationSeconds": 2606.536621,
+      "outputSha256": "dab164310656f1ef3a417b9a1388d51a6a8bd60bfd5efc39d3de27a84a9bd822",
+      "creditsUsed": 14764,
+      "conversionSeconds": 742.1200000000001,
+      "speakerMapping": {
+        "speaker_0": {
+          "role": "male host",
+          "name": "Chris - Charming, Down-to-Earth",
+          "id": "iP95p4xoKVk53GoZ742B"
+        },
+        "speaker_1": {
+          "role": "female host",
+          "name": "Bella - Professional, Bright, Warm",
+          "id": "hpp4J3VqNfWAUOO0d1Us"
+        }
+      },
+      "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-active-ha-precision-ai/mars-two-voice-manifest.json"
+    }
   },
   {
     "title": "Xage versus CyberArk for Akamai Port 443",

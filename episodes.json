@@ -9,7 +9,11 @@
     "published": "Mon, 31 Aug 2026 21:14:53 +0000",
     "guid": "4b9a89f2-ad5a-5cc3-a7da-e30fce83b189",
     "duration": "0:01:40",
-    "draft": false
+    "draft": false,
+    "notebookId": "0410355c-e592-4d6e-8949-02e66d0c2122",
+    "notebookTitle": "Who Owns the U.S. National Debt?",
+    "artifactType": "audio_overview",
+    "variant": "Brief"
   },
   {
     "title": "Zero Trust Architecture Versus AES Encryption",

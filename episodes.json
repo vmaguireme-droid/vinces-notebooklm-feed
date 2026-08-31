@@ -1,5 +1,17 @@
 [
   {
+    "title": "Is the Forty Trillion Debt Sustainable?",
+    "description": "A NotebookLM Debate Audio Overview examining whether the current U.S. national debt path is sustainable.",
+    "audio_file": "us-national-debt-debate.m4a",
+    "source_name": "us-national-debt-debate.m4a",
+    "source_sha256": "2c6ea7ec119bab5dd421fb7356b28366db925ea76ef10513a8e295c9c0bdfbe0",
+    "converted_to_aac": false,
+    "published": "Mon, 31 Aug 2026 22:01:18 +0000",
+    "guid": "63cec3c6-b617-5a26-8c17-6cd4de29cb81",
+    "duration": "0:14:44",
+    "draft": false
+  },
+  {
     "title": "Fixing Visual Myths About U.S. National Debt",
     "description": "A NotebookLM Critique Audio Overview examining misleading visual claims about U.S. national debt.",
     "audio_file": "us-national-debt-critique.m4a",
@@ -9,7 +21,11 @@
     "published": "Mon, 31 Aug 2026 21:53:47 +0000",
     "guid": "35e791b6-553c-5091-bc9d-b7b470a09d81",
     "duration": "0:19:02",
-    "draft": false
+    "draft": false,
+    "notebookId": "0410355c-e592-4d6e-8949-02e66d0c2122",
+    "notebookTitle": "Who Owns the U.S. National Debt?",
+    "artifactType": "audio_overview",
+    "variant": "Critique"
   },
   {
     "title": "Who Owns the U.S. National Debt? \u2014 Deep Dive",

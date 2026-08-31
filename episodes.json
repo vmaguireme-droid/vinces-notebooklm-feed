@@ -1,5 +1,17 @@
 [
   {
+    "title": "Who Owns the U.S. National Debt? \u2014 Deep Dive",
+    "description": "A detailed NotebookLM discussion based only on the approved official-source U.S. national debt packet.",
+    "audio_file": "us-national-debt-deep-dive.m4a",
+    "source_name": "us-national-debt-deep-dive.m4a",
+    "source_sha256": "b32ae8c09503180b8ca192af568139a4ef3500115e3280f957d1e11f8af056ee",
+    "converted_to_aac": false,
+    "published": "Mon, 31 Aug 2026 21:42:18 +0000",
+    "guid": "3c1f3378-381d-5b6b-baf9-bdceb12a6c43",
+    "duration": "0:24:01",
+    "draft": false
+  },
+  {
     "title": "Who Owns the U.S. National Debt? \u2014 Brief",
     "description": "A concise NotebookLM briefing based only on the approved official-source U.S. national debt packet.",
     "audio_file": "us-national-debt-brief.m4a",

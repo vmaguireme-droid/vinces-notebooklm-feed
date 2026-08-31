@@ -1,5 +1,17 @@
 [
   {
+    "title": "Fixing Visual Myths About U.S. National Debt",
+    "description": "A NotebookLM Critique Audio Overview examining misleading visual claims about U.S. national debt.",
+    "audio_file": "us-national-debt-critique.m4a",
+    "source_name": "us-national-debt-critique.m4a",
+    "source_sha256": "0422f5f29760bd515acdd4b9f01208e661be6dca3c1b36e734ec9c1c12e47d35",
+    "converted_to_aac": false,
+    "published": "Mon, 31 Aug 2026 21:53:47 +0000",
+    "guid": "35e791b6-553c-5091-bc9d-b7b470a09d81",
+    "duration": "0:19:02",
+    "draft": false
+  },
+  {
     "title": "Who Owns the U.S. National Debt? \u2014 Deep Dive",
     "description": "A detailed NotebookLM discussion based only on the approved official-source U.S. national debt packet.",
     "audio_file": "us-national-debt-deep-dive.m4a",

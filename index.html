@@ -335,6 +335,10 @@
     .episode-related h3 { margin: 0 0 10px; font-size: 0.9rem; }
     .episode-related-links { display: flex; flex-wrap: wrap; gap: 8px; }
     .episode-related-links a { border: 1px solid var(--line); border-radius: 999px; padding: 7px 10px; text-decoration: none; font-size: 0.82rem; font-weight: 800; }
+    .family-sibling-links { grid-column: 1 / -1; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px; padding-top: 14px; }
+    .family-sibling-label { flex: 1 0 100%; font-size: .9rem; font-weight: 800; }
+    .family-sibling-link { border: 1px solid var(--line); border-radius: 999px; color: var(--cyan); font-size: .82rem; font-weight: 800; min-height: 40px; padding: 9px 12px; text-decoration: none; }
+    .family-sibling-link:hover, .family-sibling-link:focus-visible { background: var(--cyan); color: #061011; outline: 3px solid var(--amber); outline-offset: 2px; }
     .episode:target, .episode.linked-artifact { outline: 3px solid var(--amber); outline-offset: 3px; }
     .episode.removing {
       opacity: 0;
@@ -3948,6 +3952,7 @@
     </section>
   </main>
   <script src="../nav.js?v=shared-navigation-20260823-1"></script>
+  <script src="../artifact-family-links.js?v=family-links-20260827-3"></script>
   <script>
     const positionKey = "vinces-notebooklm-feed-positions";
     const positions = JSON.parse(localStorage.getItem(positionKey) || "{}");
@@ -3971,22 +3976,12 @@
     }
 
     function addRelatedArtifacts(episode, family, currentId) {
-      const related = family.items.filter((item) => !(item.kind === "audio" && item.id === currentId));
-      if (!related.length || episode.querySelector(".episode-related")) return;
-      const section = document.createElement("section");
-      section.className = "episode-related";
-      const heading = document.createElement("h3");
-      heading.textContent = "Related artifacts from this notebook";
+      if (episode.querySelector(".family-sibling-links")) return;
       const links = document.createElement("div");
-      links.className = "episode-related-links";
-      related.forEach((item) => {
-        const link = document.createElement("a");
-        link.href = familyItemHref(item);
-        link.textContent = familyItemLabel(item);
-        links.append(link);
-      });
-      section.append(heading, links);
-      episode.append(section);
+      links.className = "family-sibling-links";
+      links.setAttribute("aria-label", "Other artifact types from this notebook");
+      ArtifactFamilyLinks.render(links, [family], { kind: "audio", notebookId: family.notebookId, id: currentId });
+      if (!links.hidden) episode.append(links);
     }
 
     function applyNotebookFamilies(index) {

@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>When an AI Escaped the Sandbox</title>
+      <description>A NotebookLM Deep Dive Audio Overview exploring the architecture, agency, and evolution of ChatGPT.</description>
+      <pubDate>Tue, 08 Sep 2026 15:24:34 +0000</pubDate>
+      <guid isPermaLink="false">8dfd432e-621b-527a-8297-86bcc47a5031</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/when-an-ai-escaped-the-sandbox.m4a" length="87878312" type="audio/mp4"/>
+      <itunes:duration>0:45:30</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>How ChatGPT Projects, Chats, Tasks, Skills, and Context Work</title>
       <description>A detailed explanation and comprehensive deep dive of how ChatGPT Projects, chats, tasks, skills and context memory all work.</description>
       <pubDate>Tue, 08 Sep 2026 14:13:03 +0000</pubDate>

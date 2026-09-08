@@ -1,5 +1,21 @@
 [
   {
+    "title": "When an AI Escaped the Sandbox",
+    "description": "A NotebookLM Deep Dive Audio Overview exploring the architecture, agency, and evolution of ChatGPT.",
+    "audio_file": "when-an-ai-escaped-the-sandbox.m4a",
+    "source_name": "When_an_AI_Escaped_the_Sandbox.m4a",
+    "source_sha256": "a4fb79235fd094e92669706a2f64543e4a5a25812d9ad69ea53012f8aa121748",
+    "converted_to_aac": false,
+    "published": "Tue, 08 Sep 2026 15:24:34 +0000",
+    "guid": "8dfd432e-621b-527a-8297-86bcc47a5031",
+    "duration": "0:45:30",
+    "draft": false,
+    "notebookId": "9f1acb3a-73ee-4317-badd-f5d4cac8ea18",
+    "notebookTitle": "The Definitive Guide to ChatGPT and the AI Evolution",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive"
+  },
+  {
     "title": "How ChatGPT Projects, Chats, Tasks, Skills, and Context Work",
     "description": "A detailed explanation and comprehensive deep dive of how ChatGPT Projects, chats, tasks, skills and context memory all work.",
     "audio_file": "20260907-225134-notebook-name-how-chatgpt-projects-chats-tasks-skills-and-context-work-251403-orig-nblm-source.mp3",

@@ -23,6 +23,10 @@ EPISODES_PATH = ROOT / "episodes.json"
 
 AUDIO_EXTENSIONS = {".mp3", ".m4a", ".wav", ".aac", ".ogg", ".flac"}
 MAX_DIRECT_AUDIO_BYTES = 90 * 1024 * 1024
+# Cloud/iCloud uploads can appear in a watched folder before their bytes are
+# complete.  Keep a file untouched until it has been idle for two watcher
+# cycles; the watcher runs every five minutes, so this is deliberately modest.
+MIN_INPUT_AGE_SECONDS = 120
 MIME_OVERRIDES = {
     ".m4a": "audio/mp4",
     ".mp3": "audio/mpeg",
@@ -165,6 +169,9 @@ def import_incoming(episodes, publish_new=False):
     for source in sorted(INCOMING.iterdir()):
         if not source.is_file() or source.suffix.lower() not in AUDIO_EXTENSIONS:
             continue
+        if (dt.datetime.now().timestamp() - source.stat().st_mtime) < MIN_INPUT_AGE_SECONDS:
+            print(f"Deferring {source.name}: upload is still new and may be syncing.")
+            continue
         source_hash = file_sha256(source)
         if source_hash in known_hashes:
             continue
@@ -197,11 +204,64 @@ def import_incoming(episodes, publish_new=False):
     return imported
 
 
-def archive_incoming():
+def import_exact_source(episodes, source, title, description="", guid=None, notebook_id=None, notebook_title=None, artifact_type=None, variant=None):
+    """Publish one reviewed source without sweeping unrelated incoming files."""
+    source = Path(source).expanduser().resolve()
+    if not source.is_file() or source.suffix.lower() not in AUDIO_EXTENSIONS:
+        raise RuntimeError("The exact source must be a supported audio file.")
+    AUDIO_DIR.mkdir(parents=True, exist_ok=True)
+    source_hash = file_sha256(source)
+    prior = next((episode for episode in episodes if episode.get("source_sha256") == source_hash), None)
+    if prior:
+        if notebook_id and not prior.get("notebookId"):
+            prior["notebookId"] = notebook_id
+        if notebook_title and not prior.get("notebookTitle"):
+            prior["notebookTitle"] = notebook_title
+        if artifact_type and not prior.get("artifactType"):
+            prior["artifactType"] = artifact_type
+        if variant and not prior.get("variant"):
+            prior["variant"] = variant
+        return prior, True
+    known_audio = {episode.get("audio_file") for episode in episodes}
+    converted = should_convert_for_deploy(source)
+    audio_name = unique_converted_audio_name(source, known_audio) if converted else unique_audio_name(source, known_audio)
+    destination = AUDIO_DIR / audio_name
+    copy_or_convert_for_deploy(source, destination)
+    episode = {
+        "title": title.strip() or title_from_filename(source),
+        "description": description.strip() or title.strip() or title_from_filename(source),
+        "audio_file": audio_name,
+        "source_name": source.name,
+        "source_sha256": source_hash,
+        "converted_to_aac": converted,
+        "published": rfc2822_now(),
+        "guid": guid or str(uuid.uuid4()),
+        "duration": duration_from_afinfo(destination),
+        "draft": False,
+    }
+    if notebook_id:
+        episode["notebookId"] = notebook_id
+    if notebook_title:
+        episode["notebookTitle"] = notebook_title
+    if artifact_type:
+        episode["artifactType"] = artifact_type
+    if variant:
+        episode["variant"] = variant
+    episodes.insert(0, episode)
+    return episode, False
+
+
+def archive_incoming(known_hashes):
     INCOMING.mkdir(parents=True, exist_ok=True)
     moved = []
     for source in sorted(INCOMING.iterdir()):
         if not source.is_file() or source.suffix.lower() not in AUDIO_EXTENSIONS:
+            continue
+        if (dt.datetime.now().timestamp() - source.stat().st_mtime) < MIN_INPUT_AGE_SECONDS:
+            print(f"Leaving {source.name} in incoming: upload is still new and may be syncing.")
+            continue
+        if file_sha256(source) not in known_hashes:
+            print(f"Leaving {source.name} in incoming: it was not safely imported.")
             continue
         destination = unique_archive_name(source)
         shutil.move(str(source), str(destination))
@@ -289,7 +349,7 @@ def render_index(config, episodes):
         title = html.escape(episode["title"])
         description = html.escape(episode.get("description") or "")
         duration = html.escape(episode.get("duration") or "Audio")
-        rows.append(f"""      <article class="episode" id="episode-{episode_id}" data-episode-id="{episode_id}">
+        rows.append(f"""      <article class="episode" id="episode-{episode_id}" data-episode-id="{episode_id}" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">{duration}</p>
           <h2>{title}</h2>
@@ -309,22 +369,45 @@ def render_index(config, episodes):
               <span><strong class="remaining-time">0:00</strong> left</span>
             </div>
           </div>
-          <label class="remove-option">
-            <input type="checkbox">
-            <span>Remove from this list after I listen</span>
-          </label>
-          <label class="refresh-remove-option">
-            <input class="refresh-remove-check" type="checkbox">
-            <span>Remove from this list when refreshed</span>
-          </label>
-          <label class="playlist-option">
-            <input class="playlist-check" type="checkbox">
-            <span>Add to playlist</span>
-          </label>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 10 days</span></details>
         </div>
       </article>""")
     if not rows:
         rows.append("      <p>No published episodes yet.</p>")
+
+    # Preserve the current library shell when it has the shared organization
+    # controls. Publishing new audio should only refresh the generated latest
+    # links and episode cards; it must not roll navigation and filtering back
+    # to the legacy embedded template below.
+    current_index = PUBLIC / "index.html"
+    if current_index.exists():
+        current = current_index.read_text(encoding="utf-8")
+        required_shell_markers = (
+            'id="contentSideToggle"',
+            'id="groupPicker"',
+            'id="datePicker"',
+            "nav.js?v=shared-navigation-20260827-7",
+            '<section class="latest-panel" aria-label="Latest audio episodes">',
+            '<section class="episodes" id="episodes">',
+        )
+        if all(marker in current for marker in required_shell_markers):
+            latest_start = current.index(
+                '    <section class="latest-panel" aria-label="Latest audio episodes">'
+            )
+            episodes_open = '    <section class="episodes" id="episodes">'
+            episodes_start = current.index(episodes_open, latest_start)
+            episodes_body_start = episodes_start + len(episodes_open)
+            episodes_end = current.index("\n    </section>\n  </main>", episodes_body_start)
+            return (
+                current[:latest_start]
+                + latest_panel
+                + "\n"
+                + episodes_open
+                + "\n"
+                + chr(10).join(rows)
+                + current[episodes_end:]
+            )
+
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -342,20 +425,44 @@ def render_index(config, episodes):
       --muted: #a7bfbd;
       --line: rgba(132, 255, 239, 0.2);
       --cyan: #75f7e6;
+      --cyan-light: #a9fff4;
       --amber: #ffbd61;
       --red: #ff7d73;
       --shadow: rgba(0, 0, 0, 0.36);
+      --accent-rgb: 117, 247, 230;
+      --secondary-rgb: 255, 189, 97;
+      --page-2: #0d1d21;
+      --page-3: #132529;
+      --button-text: #061011;
+    }}
+    html[data-color-theme="red-blue"] {{
+      --bg: #070b18;
+      --panel: rgba(13, 25, 47, 0.88);
+      --panel-strong: rgba(24, 44, 78, 0.96);
+      --text: #f2f6ff;
+      --muted: #b7c7df;
+      --line: rgba(91, 160, 255, 0.27);
+      --cyan: #5ba0ff;
+      --cyan-light: #acd0ff;
+      --amber: #ff5d69;
+      --red: #ff8c96;
+      --accent-rgb: 91, 160, 255;
+      --secondary-rgb: 255, 93, 105;
+      --page-2: #101a36;
+      --page-3: #18294d;
+      --button-text: #050816;
     }}
     * {{ box-sizing: border-box; }}
-    body {{
+  body {{
       margin: 0;
-      min-height: 100vh;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 18% 10%, rgba(117, 247, 230, 0.16), transparent 28rem),
-        radial-gradient(circle at 88% 4%, rgba(255, 189, 97, 0.12), transparent 24rem),
-        linear-gradient(135deg, #071012 0%, #0d1d21 55%, #132529 100%);
+        radial-gradient(circle at 18% 10%, rgba(var(--accent-rgb), 0.16), transparent 28rem),
+        radial-gradient(circle at 88% 4%, rgba(var(--secondary-rgb), 0.12), transparent 24rem),
+        linear-gradient(135deg, var(--bg) 0%, var(--page-2) 55%, var(--page-3) 100%);
     }}
     body::before {{
       content: "";
@@ -364,55 +471,59 @@ def render_index(config, episodes):
       pointer-events: none;
       opacity: 0.28;
       background-image:
-        linear-gradient(rgba(117, 247, 230, 0.08) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(117, 247, 230, 0.08) 1px, transparent 1px);
+        linear-gradient(rgba(var(--accent-rgb), 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(var(--accent-rgb), 0.08) 1px, transparent 1px);
       background-size: 44px 44px;
       mask-image: linear-gradient(to bottom, black, transparent 82%);
     }}
     main {{
       position: relative;
-      max-width: 1080px;
+      max-width: 1220px;
       margin: 0 auto;
-      padding: 32px 20px 72px;
+      padding: 0 20px 72px;
     }}
-    header {{
-      display: grid;
-      grid-template-columns: 180px 1fr;
-      gap: 32px;
+    header.topbar {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: space-between;
       align-items: center;
-      min-height: 260px;
-      margin: 0 0 30px;
-      padding: 34px;
+      margin: 32px 0 24px;
+      padding: 24px clamp(20px, 4vw, 34px);
       border: 1px solid var(--line);
       border-radius: 28px;
       background:
-        linear-gradient(135deg, rgba(117, 247, 230, 0.18), rgba(255, 189, 97, 0.12)),
-        linear-gradient(135deg, rgba(20, 45, 49, 0.96), rgba(7, 16, 18, 0.92));
+        linear-gradient(135deg, rgba(var(--accent-rgb), 0.18), rgba(var(--secondary-rgb), 0.12)),
+        linear-gradient(135deg, var(--panel-strong), var(--bg));
       box-shadow: 0 26px 70px var(--shadow);
-      overflow: hidden;
+    }}
+    .brand {{
+      align-items: center;
+      display: flex;
+      gap: 14px;
+      min-width: 0;
     }}
     .artwork {{
-      width: 180px;
-      height: 180px;
-      border-radius: 28px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
       box-shadow: 0 18px 48px var(--shadow);
       border: 1px solid var(--line);
       object-fit: cover;
+      flex: 0 0 auto;
     }}
-    h1 {{
-      font-size: clamp(34px, 6vw, 58px);
-      line-height: 0.95;
-      margin: 0 0 12px;
-      letter-spacing: 0;
-    }}
-    .subtitle {{
-      max-width: 700px;
+    .brand h1 {{
+      font-size: 1.12rem;
+      line-height: 1.1;
       margin: 0;
-      color: var(--muted);
-      font-size: 18px;
-      line-height: 1.55;
     }}
-    .top-actions {{
+    .brand .subtitle {{
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: normal;
+      margin: 4px 0 0;
+    }}
+    .audio-actions {{
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
@@ -421,26 +532,56 @@ def render_index(config, episodes):
     }}
     .site-nav {{
       display: flex;
+      flex: 1 1 100%;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 24px;
+      gap: 10px;
+      justify-content: flex-start;
+      max-width: 100%;
+      margin: 0;
     }}
-    .site-nav a {{
+    .site-nav a,
+    .site-nav .theme-toggle {{
       display: inline-flex;
       min-height: 42px;
       align-items: center;
       padding: 0 16px;
       border: 1px solid var(--line);
       border-radius: 999px;
-      background: rgba(117, 247, 230, 0.08);
+      background: rgba(var(--accent-rgb), 0.08);
       color: var(--cyan);
+      font-size: 0.92rem;
       font-weight: 800;
       text-decoration: none;
     }}
+    .site-nav .theme-toggle {{
+      appearance: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: inherit;
+      justify-content: center;
+      width: 146px;
+    }}
+    .theme-toggle-dots {{
+      display: inline-flex;
+      gap: 4px;
+      margin-right: 7px;
+    }}
+    .theme-toggle-dots i {{
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      border-radius: 50%;
+      display: block;
+      height: 10px;
+      width: 10px;
+    }}
+    .theme-toggle-dots i:first-child {{ background: #ff5d69; }}
+    .theme-toggle-dots i:last-child {{ background: #5ba0ff; }}
+    html[data-color-theme="red-blue"] .theme-toggle-dots i:first-child {{ background: #ffbd61; }}
+    html[data-color-theme="red-blue"] .theme-toggle-dots i:last-child {{ background: #75f7e6; }}
     .site-nav a[aria-current="page"],
-    .site-nav a:hover {{
-      color: #061011;
-      background: linear-gradient(135deg, var(--cyan), #a9fff4);
+    .site-nav a:hover,
+    .site-nav .theme-toggle:hover {{
+      color: var(--button-text);
+      background: linear-gradient(135deg, var(--cyan), var(--cyan-light));
       border-color: transparent;
     }}
     .playlist-panel {{
@@ -452,7 +593,7 @@ def render_index(config, episodes):
       padding: 16px;
       border: 1px solid var(--line);
       border-radius: 20px;
-      background: rgba(117, 247, 230, 0.08);
+      background: rgba(var(--accent-rgb), 0.08);
       box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
     }}
     .playlist-status {{
@@ -464,7 +605,7 @@ def render_index(config, episodes):
       padding: 18px;
       border: 1px solid var(--line);
       border-radius: 20px;
-      background: rgba(255, 189, 97, 0.08);
+      background: rgba(var(--secondary-rgb), 0.08);
       box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
     }}
     .section-label {{
@@ -508,7 +649,7 @@ def render_index(config, episodes):
       padding: 0 16px;
       border: 1px solid var(--line);
       border-radius: 999px;
-      background: rgba(117, 247, 230, 0.08);
+      background: rgba(var(--accent-rgb), 0.08);
       color: var(--cyan);
       font-weight: 800;
       text-decoration: none;
@@ -516,13 +657,13 @@ def render_index(config, episodes):
     .top-actions a[aria-current="page"],
     .top-actions a:hover {{
       color: #061011;
-      background: linear-gradient(135deg, var(--cyan), #a9fff4);
+      background: linear-gradient(135deg, var(--cyan), var(--cyan-light));
       border-color: transparent;
     }}
     .secondary-button {{
       appearance: none;
       border: 1px solid var(--line);
-      background: rgba(117, 247, 230, 0.08);
+      background: rgba(var(--accent-rgb), 0.08);
       border-radius: 999px;
       padding: 10px 16px;
       font: inherit;
@@ -530,7 +671,7 @@ def render_index(config, episodes):
     }}
     .refresh-button {{
       color: #061011;
-      background: linear-gradient(135deg, var(--cyan), #a9fff4);
+      background: linear-gradient(135deg, var(--cyan), var(--cyan-light));
       border-color: transparent;
       font-weight: 800;
     }}
@@ -540,14 +681,14 @@ def render_index(config, episodes):
       border-radius: 999px;
       padding: 0 18px;
       color: #061011;
-      background: linear-gradient(135deg, var(--cyan), #a9fff4);
+      background: linear-gradient(135deg, var(--cyan), var(--cyan-light));
       font: inherit;
       font-weight: 800;
       cursor: pointer;
     }}
     .playlist-button.secondary {{
       color: var(--cyan);
-      background: rgba(117, 247, 230, 0.08);
+      background: rgba(var(--accent-rgb), 0.08);
       border: 1px solid var(--line);
     }}
     .episodes {{
@@ -566,6 +707,49 @@ def render_index(config, episodes):
       box-shadow: 0 18px 50px var(--shadow);
       backdrop-filter: blur(12px);
     }}
+    .audio-notebook-family {{
+      border: 2px solid rgba(var(--accent-rgb), 0.62);
+      border-radius: 22px;
+      overflow: hidden;
+      background: linear-gradient(145deg, rgba(3, 15, 16, 0.98), rgba(8, 27, 29, 0.96));
+      box-shadow: inset 0 0 0 1px rgba(var(--accent-rgb), 0.08), 0 14px 34px rgba(0, 0, 0, 0.24);
+    }}
+    .audio-notebook-banner {{
+      margin: 0;
+      padding: 10px 16px;
+      color: var(--cyan);
+      background: rgba(var(--accent-rgb), 0.1);
+      border-bottom: 1px solid rgba(var(--accent-rgb), 0.28);
+      font-size: 0.92rem;
+      font-weight: 900;
+    }}
+    .audio-notebook-family-body {{
+      padding: 12px;
+    }}
+    .audio-notebook-list {{ background: rgba(var(--accent-rgb), .035); border: 1px solid rgba(var(--accent-rgb), .18); border-radius: 14px; display: grid; gap: 14px; min-width: 0; padding: 9px; }}
+    .audio-library-filters {{ display: grid; gap: 12px; margin: 0 0 20px; }}
+    .audio-type-filter {{ border: 1px solid var(--line); border-radius: 18px; margin: 0; padding: 11px 13px 10px; }}
+    .audio-type-filter legend {{ color: var(--muted); font-size: .72rem; font-weight: 900; letter-spacing: .08em; padding: 0 5px; text-transform: uppercase; }}
+    .audio-type-options {{ display: flex; flex-wrap: wrap; gap: 8px; }}
+    .audio-type-option {{ align-items: center; background: rgba(var(--accent-rgb), .07); border: 1px solid var(--line); border-radius: 999px; cursor: pointer; display: inline-flex; font-size: .78rem; font-weight: 800; gap: 7px; min-height: 36px; padding: 6px 11px; }}
+    .audio-type-option:has(input:checked) {{ background: rgba(var(--accent-rgb), .2); border-color: var(--cyan); }}
+    .audio-type-option input {{ accent-color: var(--cyan); height: 16px; margin: 0; width: 16px; }}
+    .audio-type-status {{ color: var(--muted); font-size: .72rem; margin: 8px 2px 0; }}
+    .audio-library-pickers {{ display: flex; flex-wrap: wrap; gap: 12px; }}
+    .audio-library-picker {{ display: grid; gap: 6px; }}
+    .audio-library-picker span {{ color: var(--muted); font-size: 0.76rem; font-weight: 800; text-transform: uppercase; }}
+    .audio-library-picker select {{ min-height: 44px; border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; color: var(--cyan); background: var(--panel-strong); font: inherit; font-weight: 800; }}
+    .rolodex-active {{ animation: rolodex .85s ease; }}
+    @keyframes rolodex {{ 0% {{ opacity: .35; transform: rotateX(18deg) translateY(-12px); }} 100% {{ opacity: 1; transform: none; }} }}
+    .episode-related {{ grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 14px; }}
+    .episode-related h3 {{ margin: 0 0 10px; font-size: 0.9rem; }}
+    .episode-related-links {{ display: flex; flex-wrap: wrap; gap: 8px; }}
+    .episode-related-links a {{ border: 1px solid var(--line); border-radius: 999px; padding: 7px 10px; text-decoration: none; font-size: 0.82rem; font-weight: 800; }}
+    .family-sibling-links {{ grid-column: 1 / -1; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px; padding-top: 14px; }}
+    .family-sibling-label {{ flex: 1 0 100%; font-size: .9rem; font-weight: 800; }}
+    .family-sibling-link {{ border: 1px solid var(--line); border-radius: 999px; color: var(--cyan); font-size: .82rem; font-weight: 800; min-height: 40px; padding: 9px 12px; text-decoration: none; }}
+    .family-sibling-link:hover, .family-sibling-link:focus-visible {{ background: var(--cyan); color: #061011; outline: 3px solid var(--amber); outline-offset: 2px; }}
+    .episode:target, .episode.linked-artifact {{ outline: 3px solid var(--amber); outline-offset: 3px; }}
     .episode.removing {{
       opacity: 0;
       transform: translateY(8px) scale(0.985);
@@ -609,14 +793,14 @@ def render_index(config, episodes):
       box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
     }}
     .play {{
-      background: linear-gradient(135deg, var(--cyan), #a9fff4);
+      background: linear-gradient(135deg, var(--cyan), var(--cyan-light));
     }}
     .stop {{
       background: linear-gradient(135deg, var(--amber), var(--red));
     }}
     .resume {{
       color: var(--cyan);
-      background: rgba(117, 247, 230, 0.08);
+      background: rgba(var(--accent-rgb), 0.08);
       border: 1px solid var(--line);
     }}
     .progress-control {{
@@ -657,7 +841,7 @@ def render_index(config, episodes):
     .refresh-remove-option {{
       padding: 10px;
       border-radius: 14px;
-      background: rgba(255, 189, 97, 0.08);
+      background: rgba(var(--secondary-rgb), 0.08);
     }}
     .playlist-option {{
       padding: 10px;
@@ -672,11 +856,23 @@ def render_index(config, episodes):
       background: var(--panel-strong);
       color: var(--muted);
     }}
+    .availability-details {{
+      color: var(--muted);
+      font-size: 0.84rem;
+      position: relative;
+    }}
+    .availability-details summary {{ cursor: pointer; font-weight: 800; color: var(--cyan); }}
+    .availability-details[open] .retention-status {{
+      display: block;
+      margin-top: 8px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--panel-strong);
+    }}
     @media (max-width: 760px) {{
-      header {{
-        grid-template-columns: 1fr;
-        min-height: auto;
-        padding: 24px;
+      header.topbar {{
+        align-items: flex-start;
       }}
       .episode {{
         grid-template-columns: 1fr;
@@ -687,71 +883,225 @@ def render_index(config, episodes):
       .latest-grid {{
         grid-template-columns: 1fr;
       }}
-      .artwork {{
-        width: 132px;
-        height: 132px;
+    }}
+    @media (max-width: 620px) {{
+      .site-nav {{
+        flex-wrap: nowrap;
+        margin-inline: -4px;
+        overflow-x: auto;
+        padding: 2px 4px 8px;
+        scrollbar-width: thin;
       }}
+      .site-nav a,
+      .site-nav .theme-toggle {{
+        flex: 0 0 auto;
+        font-size: 0.75rem;
+        min-height: 38px;
+        padding-inline: 12px;
+        white-space: nowrap;
+      }}
+      .brand .subtitle {{ display: none; }}
     }}
   </style>
 </head>
 <body>
   <main>
-    <header>
-      <img class="artwork" src="artwork.png" alt="">
-      <div>
-        <h1>{html.escape(config["title"])}</h1>
-        <p class="subtitle">{html.escape(config["description"])}</p>
-        <nav class="site-nav" aria-label="Podcast navigation">
-          <a data-nav-link href="../index.html">Video Podcasts</a>
-          <a data-nav-link href="../generator.html">Generate</a>
-          <a data-nav-link aria-current="page" href="index.html">Audio Podcasts</a>
-        </nav>
+    <header class="topbar">
+      <div class="brand">
+        <img class="artwork" src="artwork.png" alt="">
+        <div>
+          <h1>Vinces Podcasts</h1>
+          <p class="subtitle">Audio podcast library</p>
+        </div>
       </div>
+      <nav class="site-nav" data-generator-nav aria-label="Generator navigation">
+        <a href="https://generator.technologyandstuff.com/">Flight Deck</a>
+        <a href="https://generator.technologyandstuff.com/knowledge/">Portal</a>
+        <a href="https://vinces-public-knowledge.vmaguireme.chatgpt.site/generator">Private Control Center</a>
+        <a href="https://vinces-public-knowledge.vmaguireme.chatgpt.site/notebook-artifacts">Artifact Factory</a>
+        <a href="https://generator.technologyandstuff.com/generator.html">Suggest a Topic</a>
+        <a href="https://generator.technologyandstuff.com/index.html">Videos</a>
+        <a aria-current="page" href="https://generator.technologyandstuff.com/audio-podcasts/index.html">Audio</a>
+        <a href="https://generator.technologyandstuff.com/reports/">Reports</a>
+        <a href="https://generator.technologyandstuff.com/infographics/">Infographics</a>
+        <a href="https://generator.technologyandstuff.com/mind-maps/">Mind Maps</a>
+        <button class="theme-toggle" type="button" data-nav-utility data-theme-toggle aria-label="Change colors to red and blue" aria-pressed="false">
+          <span class="theme-toggle-dots" aria-hidden="true"><i></i><i></i></span>
+          <span class="theme-toggle-label">Red + Blue</span>
+        </button>
+      </nav>
     </header>
-    <div class="top-actions">
+    <div class="audio-actions">
       <a href="feed.xml">Podcast RSS feed</a>
       <button class="secondary-button refresh-button" type="button" id="refresh-page">Refresh page</button>
-      <button class="secondary-button" type="button" id="restore-listened">Show hidden episodes</button>
     </div>
-    <section class="playlist-panel" aria-label="Playlist controls">
-      <div class="playlist-status" id="playlist-status">No playlist episodes selected.</div>
-      <button class="playlist-button" type="button" id="play-playlist">Play playlist</button>
-      <button class="playlist-button secondary" type="button" id="select-visible">Select visible</button>
-      <button class="playlist-button secondary" type="button" id="clear-playlist">Clear playlist</button>
-    </section>
+    <div class="audio-library-filters">
+      <fieldset class="audio-type-filter" id="audioTypeFilter">
+        <legend>Audio type</legend>
+        <div class="audio-type-options" id="audioTypeOptions"></div>
+        <p class="audio-type-status" id="audioTypeStatus" aria-live="polite"></p>
+      </fieldset>
+      <div class="audio-library-pickers" aria-label="Audio notebook selection">
+        <label class="audio-library-picker"><span>Notebook</span><select id="notebookPicker"><option value="all">All notebooks</option></select></label>
+      </div>
+    </div>
 {latest_panel}
     <section class="episodes" id="episodes">
 {chr(10).join(rows)}
     </section>
-    <p class="empty-state" id="empty-state">Everything in this browser has been marked listened. Use "Show hidden episodes" to bring them back.</p>
   </main>
-  <script src="../nav.js"></script>
+  <script src="../nav.js?v=shared-navigation-20260823-1"></script>
+  <script src="../artifact-family-links.js?v=family-links-20260827-3"></script>
   <script>
-    const hiddenKey = "vinces-notebooklm-feed-hidden";
-    const playlistKey = "vinces-notebooklm-feed-playlist";
-    const refreshRemoveKey = "vinces-notebooklm-feed-refresh-remove";
     const positionKey = "vinces-notebooklm-feed-positions";
-    const hidden = new Set(JSON.parse(localStorage.getItem(hiddenKey) || "[]"));
-    const playlist = new Set(JSON.parse(localStorage.getItem(playlistKey) || "[]"));
-    const refreshRemove = new Set(JSON.parse(localStorage.getItem(refreshRemoveKey) || "[]"));
     const positions = JSON.parse(localStorage.getItem(positionKey) || "{{}}");
     const episodes = Array.from(document.querySelectorAll(".episode"));
-    const emptyState = document.getElementById("empty-state");
-    const playlistStatus = document.getElementById("playlist-status");
-    let playlistQueue = [];
-    let playlistIndex = -1;
+    episodes.forEach((episode) => {{ episode.dataset.audioSubtype = "Legacy/Unlabeled"; }});
+    let audioTypes = [];
+    let audioTypeSelection = new Set();
 
-    function saveHidden() {{
-      localStorage.setItem(hiddenKey, JSON.stringify(Array.from(hidden)));
+    function familyItemHref(item) {{
+      if (item.kind === "video") return `/index.html?episode=${{encodeURIComponent(item.id)}}`;
+      if (item.kind === "audio") return `/audio-podcasts/index.html?episode=${{encodeURIComponent(item.id)}}`;
+      const pages = {{ report: "/reports/", infographic: "/infographics/", mind_map: "/mind-maps/" }};
+      return `${{pages[item.artifactType] || "/"}}?artifact=${{encodeURIComponent(item.id)}}`;
     }}
 
-    function savePlaylist() {{
-      localStorage.setItem(playlistKey, JSON.stringify(Array.from(playlist)));
+    function familyItemLabel(item) {{
+      const type = item.kind === "video" ? "Video" : item.kind === "audio" ? "Audio"
+        : item.artifactType === "mind_map" ? "Mind Map"
+          : `${{item.artifactType?.[0]?.toUpperCase() || ""}}${{item.artifactType?.slice(1) || "Artifact"}}`;
+      return `${{type}}${{item.variant ? ` (${{item.variant}})` : ""}}: ${{item.title}}`;
     }}
 
-    function saveRefreshRemove() {{
-      localStorage.setItem(refreshRemoveKey, JSON.stringify(Array.from(refreshRemove)));
+    function addRelatedArtifacts(episode, family, currentId) {{
+      if (episode.querySelector(".family-sibling-links")) return;
+      const links = document.createElement("div");
+      links.className = "family-sibling-links";
+      links.setAttribute("aria-label", "Other artifact types from this notebook");
+      ArtifactFamilyLinks.render(links, [family], {{ kind: "audio", notebookId: family.notebookId, id: currentId }});
+      if (!links.hidden) episode.append(links);
     }}
+
+    function applyNotebookFamilies(index) {{
+      const picker = document.querySelector("#notebookPicker");
+      const notebookTargets = new Map();
+      (index.families || []).forEach((family) => {{
+        const audioItems = family.items.filter((item) => item.kind === "audio");
+        const nodes = audioItems.map((item) => document.querySelector(`[data-episode-id="${{CSS.escape(item.id)}}"]`)).filter(Boolean);
+        nodes.forEach((node) => {{ node.dataset.notebookId = family.notebookId; }});
+        audioItems.forEach((item) => {{
+          const node = document.querySelector(`[data-episode-id="${{CSS.escape(item.id)}}"]`);
+          if (node) node.dataset.audioSubtype = item.variant || "Legacy/Unlabeled";
+        }});
+        nodes.forEach((node) => addRelatedArtifacts(node, family, node.dataset.episodeId));
+        if (!nodes.length) return;
+        const first = nodes[0];
+        const parent = first.parentElement;
+        if (!parent || nodes.some((node) => node.parentElement !== parent)) return;
+        const wrapper = document.createElement("section");
+        wrapper.className = "audio-notebook-family";
+        wrapper.dataset.notebookId = family.notebookId;
+        const banner = document.createElement("h2");
+        banner.className = "audio-notebook-banner";
+        banner.textContent = family.notebookTitle || "NotebookLM notebook";
+        const body = document.createElement("div");
+        body.className = "audio-notebook-family-body";
+        const list = document.createElement("div");
+        list.className = "audio-notebook-list";
+        parent.insertBefore(wrapper, first);
+        nodes.forEach((node) => list.append(node));
+        body.append(list);
+        wrapper.append(banner, body);
+        notebookTargets.set(family.notebookId, {{ title: family.notebookTitle, target: wrapper }});
+      }});
+      (index.families || []).forEach((family) => {{
+        if (notebookTargets.has(family.notebookId)) return;
+        const firstAudio = family.items.find((item) => item.kind === "audio");
+        const target = firstAudio ? document.querySelector(`[data-episode-id="${{CSS.escape(firstAudio.id)}}"]`) : null;
+        if (target) notebookTargets.set(family.notebookId, {{ title: family.notebookTitle, target }});
+      }});
+      Array.from(notebookTargets).sort((a, b) => a[1].title.localeCompare(b[1].title)).forEach(([id, entry]) => {{
+        const option = document.createElement("option"); option.value = id; option.textContent = entry.title; picker.append(option);
+      }});
+      picker.addEventListener("change", () => {{
+        const entry = notebookTargets.get(picker.value);
+        const target = entry?.target || document.querySelector("#episodes");
+        target?.scrollIntoView({{ behavior: "smooth", block: "start" }});
+        if (entry?.target) {{ entry.target.classList.add("rolodex-active"); setTimeout(() => entry.target.classList.remove("rolodex-active"), 900); }}
+      }});
+      const requested = new URLSearchParams(location.search).get("episode");
+      const target = requested ? document.querySelector(`[data-episode-id="${{CSS.escape(requested)}}"]`) : null;
+      if (target) {{
+        picker.value = target.dataset.notebookId || "all";
+        target.classList.add("linked-artifact");
+        target.scrollIntoView({{ behavior: "smooth", block: "center" }});
+      }}
+      initializeAudioTypeFilters(notebookTargets);
+    }}
+
+    function renderAudioTypeFilters() {{
+      const options = document.querySelector("#audioTypeOptions");
+      options.innerHTML = "";
+      const makeOption = (value, label, checked, extraClass = "") => {{
+        const wrapper = document.createElement("label");
+        wrapper.className = `audio-type-option ${{extraClass}}`.trim();
+        const input = document.createElement("input");
+        input.type = "checkbox";
+        input.value = value;
+        input.checked = checked;
+        if (value === "__all__") input.indeterminate = audioTypeSelection.size > 0 && audioTypeSelection.size < audioTypes.length;
+        const text = document.createElement("span");
+        text.textContent = label;
+        wrapper.append(input, text);
+        options.append(wrapper);
+      }};
+      makeOption("__all__", "All", audioTypeSelection.size === audioTypes.length, "audio-type-option-all");
+      audioTypes.forEach((type) => makeOption(type, type, audioTypeSelection.has(type)));
+      document.querySelector("#audioTypeStatus").textContent = `${{audioTypeSelection.size}} of ${{audioTypes.length}} types selected`;
+    }}
+
+    function applyAudioTypeFilters(notebookTargets) {{
+      episodes.forEach((episode) => {{ episode.hidden = !audioTypeSelection.has(episode.dataset.audioSubtype); }});
+      document.querySelectorAll(".audio-notebook-family").forEach((family) => {{
+        family.hidden = !Array.from(family.querySelectorAll(".episode")).some((episode) => !episode.hidden);
+      }});
+      document.querySelectorAll(".latest-link").forEach((link) => {{
+        const target = document.querySelector(link.hash);
+        link.hidden = Boolean(target?.hidden || target?.closest(".audio-notebook-family")?.hidden);
+      }});
+      const picker = document.querySelector("#notebookPicker");
+      Array.from(picker.options).forEach((option) => {{
+        if (option.value === "all") return;
+        const target = notebookTargets.get(option.value)?.target;
+        const visible = target?.classList.contains("episode") ? !target.hidden : Boolean(target?.querySelector(".episode:not([hidden])"));
+        option.disabled = !visible;
+      }});
+      if (picker.selectedOptions[0]?.disabled) picker.value = "all";
+      renderAudioTypeFilters();
+    }}
+
+    function initializeAudioTypeFilters(notebookTargets) {{
+      audioTypes = [...new Set(episodes.map((episode) => episode.dataset.audioSubtype))].sort((a, b) => {{
+        const order = ["Deep Dive", "Brief", "Critique", "Debate", "Legacy/Unlabeled"];
+        return (order.indexOf(a) < 0 ? 99 : order.indexOf(a)) - (order.indexOf(b) < 0 ? 99 : order.indexOf(b)) || a.localeCompare(b);
+      }});
+      audioTypeSelection = new Set(audioTypes);
+      renderAudioTypeFilters();
+      document.querySelector("#audioTypeFilter").addEventListener("change", (event) => {{
+        const checkbox = event.target.closest('input[type="checkbox"]');
+        if (!checkbox) return;
+        if (checkbox.value === "__all__") audioTypeSelection = checkbox.checked ? new Set(audioTypes) : new Set();
+        else if (checkbox.checked) audioTypeSelection.add(checkbox.value);
+        else audioTypeSelection.delete(checkbox.value);
+        applyAudioTypeFilters(notebookTargets);
+      }});
+    }}
+
+    fetch(`/api/public-library-families?v=${{Date.now()}}`)
+      .then((response) => response.ok ? response.json() : {{ families: [] }})
+      .then(applyNotebookFamilies)
+      .catch(() => applyNotebookFamilies({{ families: [] }}));
 
     function savePositions() {{
       localStorage.setItem(positionKey, JSON.stringify(positions));
@@ -805,61 +1155,47 @@ def render_index(config, episodes):
       }}
     }}
 
-    function updateEmptyState() {{
-      const visible = episodes.some((episode) => episode.style.display !== "none");
-      emptyState.style.display = visible ? "none" : "block";
-    }}
-
-    function selectedVisibleEpisodes() {{
-      return episodes.filter((episode) => playlist.has(episode.dataset.episodeId) && episode.style.display !== "none");
-    }}
-
-    function updatePlaylistStatus() {{
-      const count = selectedVisibleEpisodes().length;
-      playlistStatus.textContent = count
-        ? `${{count}} episode${{count === 1 ? "" : "s"}} in playlist.`
-        : "No playlist episodes selected.";
-    }}
-
-    function stopAllAudio() {{
+    function stopAllAudio(exceptAudio = null) {{
       document.querySelectorAll("audio").forEach((audio) => {{
-        audio.pause();
+        if (audio !== exceptAudio) {{
+          audio.pause();
+        }}
       }});
     }}
 
     function playEpisode(episode, fromBeginning = false) {{
       const audio = episode.querySelector("audio");
-      stopAllAudio();
+      if (!audio) return;
+      stopAllAudio(audio);
+
+      const target = fromBeginning ? 0 : (audio.currentTime > 1 ? audio.currentTime : Number(positions[episode.dataset.episodeId] || 0));
+
       if (fromBeginning) {{
         delete positions[episode.dataset.episodeId];
         savePositions();
-        seekWhenReady(audio, 0, () => audio.play());
+      }}
+
+      const applySeek = () => {{
+        if (Number.isFinite(target) && target >= 0) {{
+          const limit = audio.duration ? Math.max(0, audio.duration - 0.5) : target;
+          try {{
+            audio.currentTime = Math.min(target, limit);
+          }} catch (e) {{}}
+        }}
+      }};
+
+      if (audio.readyState >= 1) {{
+        applySeek();
       }} else {{
-        const target = audio.currentTime > 1 ? audio.currentTime : Number(positions[episode.dataset.episodeId] || 0);
-        seekWhenReady(audio, target, () => audio.play());
+        audio.addEventListener("loadedmetadata", applySeek, {{ once: true }});
       }}
-    }}
 
-    function playNextInPlaylist() {{
-      playlistIndex += 1;
-      if (playlistIndex >= playlistQueue.length) {{
-        playlistIndex = -1;
-        playlistQueue = [];
-        updatePlaylistStatus();
-        return;
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {{
+        playPromise.catch((err) => {{
+          console.warn("Audio playback prevented or failed:", err);
+        }});
       }}
-      playEpisode(playlistQueue[playlistIndex]);
-    }}
-
-    function hideEpisode(episode) {{
-      const id = episode.dataset.episodeId;
-      hidden.add(id);
-      saveHidden();
-      episode.classList.add("removing");
-      setTimeout(() => {{
-        episode.style.display = "none";
-        updateEmptyState();
-      }}, 230);
     }}
 
     episodes.forEach((episode) => {{
@@ -868,67 +1204,35 @@ def render_index(config, episodes):
       const play = episode.querySelector(".play");
       const resume = episode.querySelector(".resume");
       const stop = episode.querySelector(".stop");
-      const removeAfterListen = episode.querySelector(".remove-option input");
-      const removeOnRefresh = episode.querySelector(".refresh-remove-check");
-      const playlistCheck = episode.querySelector(".playlist-check");
       const slider = episode.querySelector(".progress-slider");
       const listenedTime = episode.querySelector(".listened-time");
       const remainingTime = episode.querySelector(".remaining-time");
       let sliding = false;
 
-      if (refreshRemove.has(id)) {{
-        hidden.add(id);
-        playlist.delete(id);
-        refreshRemove.delete(id);
-        saveHidden();
-        savePlaylist();
-        saveRefreshRemove();
-      }}
-
-      if (hidden.has(id)) {{
-        episode.style.display = "none";
-      }}
-
-      if (playlist.has(id)) {{
-        playlistCheck.checked = true;
-      }}
-
-      playlistCheck.addEventListener("change", () => {{
-        if (playlistCheck.checked) {{
-          playlist.add(id);
-        }} else {{
-          playlist.delete(id);
-        }}
-        savePlaylist();
-        updatePlaylistStatus();
-      }});
-
-      removeOnRefresh.addEventListener("change", () => {{
-        if (removeOnRefresh.checked) {{
-          refreshRemove.add(id);
-        }} else {{
-          refreshRemove.delete(id);
-        }}
-        saveRefreshRemove();
-      }});
-
       play.addEventListener("click", () => {{
-        playlistIndex = -1;
-        playlistQueue = [];
         playEpisode(episode, true);
       }});
 
       resume.addEventListener("click", () => {{
-        playlistIndex = -1;
-        playlistQueue = [];
-        playEpisode(episode);
+        playEpisode(episode, false);
       }});
 
       stop.addEventListener("click", () => {{
-        playlistIndex = -1;
-        playlistQueue = [];
         audio.pause();
         saveAudioPosition(episode, audio);
+        updateProgress();
+      }});
+
+      audio.addEventListener("play", () => {{
+        episode.classList.add("is-playing");
+      }});
+
+      audio.addEventListener("pause", () => {{
+        episode.classList.remove("is-playing");
+      }});
+
+      audio.addEventListener("error", () => {{
+        console.warn(`Audio error for episode ${{id}}:`, audio.error);
       }});
 
       function updateProgress() {{
@@ -974,64 +1278,25 @@ def render_index(config, episodes):
         remainingTime.textContent = "0:00";
         delete positions[id];
         savePositions();
-        if (removeAfterListen.checked) {{
-          hideEpisode(episode);
-        }}
-        if (playlistQueue.length) {{
-          playNextInPlaylist();
-        }}
       }});
-    }});
-
-    document.getElementById("restore-listened").addEventListener("click", () => {{
-      hidden.clear();
-      refreshRemove.clear();
-      saveHidden();
-      saveRefreshRemove();
-      episodes.forEach((episode) => {{
-        episode.classList.remove("removing");
-        episode.style.display = "";
-        episode.querySelector(".refresh-remove-check").checked = false;
-      }});
-      updateEmptyState();
-      updatePlaylistStatus();
     }});
 
     document.getElementById("refresh-page").addEventListener("click", () => {{
       window.location.reload();
     }});
 
-    document.getElementById("play-playlist").addEventListener("click", () => {{
-      playlistQueue = selectedVisibleEpisodes();
-      playlistIndex = -1;
-      if (playlistQueue.length) {{
-        playNextInPlaylist();
-      }}
-    }});
-
-    document.getElementById("select-visible").addEventListener("click", () => {{
+    fetch("/api/public-content-retention").then((response) => response.ok ? response.json() : null).then((data) => {{
+      if (!data) return;
+      const byId = new Map(data.items.filter((item) => item.kind === "audio").map((item) => [item.id, item]));
       episodes.forEach((episode) => {{
-        if (episode.style.display === "none") return;
-        playlist.add(episode.dataset.episodeId);
-        episode.querySelector(".playlist-check").checked = true;
+        const item = byId.get(episode.dataset.episodeId);
+        const status = episode.querySelector(".retention-status");
+        if (!item || !status) return;
+        if (item.keepIndefinitely) {{ status.textContent = "Kept until the owner removes it."; return; }}
+        const days = Math.max(1, Math.ceil((item.remainingSeconds || 0) / 86400));
+        status.textContent = `Available for ${{days}} more day${{days === 1 ? "" : "s"}}.`;
       }});
-      savePlaylist();
-      updatePlaylistStatus();
-    }});
-
-    document.getElementById("clear-playlist").addEventListener("click", () => {{
-      playlist.clear();
-      playlistQueue = [];
-      playlistIndex = -1;
-      episodes.forEach((episode) => {{
-        episode.querySelector(".playlist-check").checked = false;
-      }});
-      savePlaylist();
-      updatePlaylistStatus();
-    }});
-
-    updateEmptyState();
-    updatePlaylistStatus();
+    }}).catch(() => {{}});
   </script>
 </body>
 </html>
@@ -1050,16 +1315,46 @@ def main():
         action="store_true",
         help="Move audio files from incoming to old-files after importing/generating.",
     )
+    parser.add_argument("--exact-source", help="Publish only this reviewed audio source.")
+    parser.add_argument("--exact-title", default="", help="Title for --exact-source.")
+    parser.add_argument("--exact-description", default="", help="Description for --exact-source.")
+    parser.add_argument("--exact-guid", default="", help="Stable GUID for --exact-source.")
+    parser.add_argument("--exact-notebook-id", default="", help="Notebook UUID for --exact-source.")
+    parser.add_argument("--exact-notebook-title", default="", help="Notebook title for --exact-source.")
+    parser.add_argument("--exact-artifact-type", default="", help="Artifact type for --exact-source.")
+    parser.add_argument("--exact-variant", default="", help="Variant for --exact-source.")
+    parser.add_argument(
+        "--render-only",
+        action="store_true",
+        help="Regenerate the public page and feed from episodes.json without importing incoming files.",
+    )
     args = parser.parse_args()
 
     config = load_json(CONFIG_PATH, {})
     episodes = load_json(EPISODES_PATH, [])
-    imported = import_incoming(episodes, publish_new=args.publish_new)
+    if args.render_only:
+        imported = []
+    elif args.exact_source:
+        episode, duplicate = import_exact_source(
+            episodes,
+            args.exact_source,
+            args.exact_title,
+            args.exact_description,
+            args.exact_guid or None,
+            notebook_id=args.exact_notebook_id or None,
+            notebook_title=args.exact_notebook_title or None,
+            artifact_type=args.exact_artifact_type or None,
+            variant=args.exact_variant or None,
+        )
+        imported = [] if duplicate else [episode]
+    else:
+        imported = import_incoming(episodes, publish_new=args.publish_new)
     save_json(EPISODES_PATH, episodes)
     PUBLIC.mkdir(exist_ok=True)
     (PUBLIC / "feed.xml").write_text(render_feed(config, episodes), encoding="utf-8")
     (PUBLIC / "index.html").write_text(render_index(config, episodes), encoding="utf-8")
-    archived = archive_incoming() if args.archive_incoming else []
+    known_hashes = {episode.get("source_sha256") for episode in episodes if episode.get("source_sha256")}
+    archived = archive_incoming(known_hashes) if args.archive_incoming and not args.render_only else []
 
     print(f"Imported {len(imported)} new audio file(s).")
     print(f"Episodes tracked: {len(episodes)}")

@@ -24,6 +24,8 @@
       --page-2: #0d1d21;
       --page-3: #132529;
       --button-text: #061011;
+      --teal: #75f7e6;
+      --dark: #061011;
     }
     html[data-color-theme="red-blue"] {
       --bg: #070b18;
@@ -41,6 +43,8 @@
       --page-2: #101a36;
       --page-3: #18294d;
       --button-text: #050816;
+      --teal: #5ba0ff;
+      --dark: #050816;
     }
     * { box-sizing: border-box; }
   body {
@@ -86,6 +90,9 @@
         linear-gradient(135deg, rgba(var(--accent-rgb), 0.18), rgba(var(--secondary-rgb), 0.12)),
         linear-gradient(135deg, var(--panel-strong), var(--bg));
       box-shadow: 0 26px 70px var(--shadow);
+      position: sticky;
+      top: 8px;
+      z-index: 20;
     }
     .brand {
       align-items: center;
@@ -318,6 +325,13 @@
     }
     .audio-notebook-list { background: rgba(var(--accent-rgb), .035); border: 1px solid rgba(var(--accent-rgb), .18); border-radius: 14px; display: grid; gap: 14px; min-width: 0; padding: 9px; }
     .audio-library-filters { display: grid; gap: 12px; margin: 0 0 20px; }
+    .content-side-toggle { align-items: center; border: 1px solid var(--line); border-radius: 18px; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 11px 13px 10px; }
+    .content-side-toggle legend { color: var(--muted); font-size: .72rem; font-weight: 900; letter-spacing: .08em; padding: 0 5px; text-transform: uppercase; }
+    .content-side-toggle label { align-items: center; background: rgba(var(--accent-rgb), .07); border: 1px solid var(--line); border-radius: 999px; cursor: pointer; display: inline-flex; font-size: .78rem; font-weight: 850; gap: 7px; min-height: 38px; padding: 6px 12px; }
+    .content-side-toggle label:has(input:checked) { background: var(--cyan); border-color: var(--cyan); color: var(--button-text); }
+    .content-side-toggle input { accent-color: var(--button-text); height: 17px; margin: 0; width: 17px; }
+    .content-side-toggle label:focus-within { outline: 3px solid rgba(var(--accent-rgb), .28); outline-offset: 2px; }
+    .content-side-toggle p { color: var(--muted); flex-basis: 100%; font-size: .72rem; margin: 0; }
     .audio-type-filter { border: 1px solid var(--line); border-radius: 18px; margin: 0; padding: 11px 13px 10px; }
     .audio-type-filter legend { color: var(--muted); font-size: .72rem; font-weight: 900; letter-spacing: .08em; padding: 0 5px; text-transform: uppercase; }
     .audio-type-options { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -328,17 +342,20 @@
     .audio-library-pickers { display: flex; flex-wrap: wrap; gap: 12px; }
     .audio-library-picker { display: grid; gap: 6px; }
     .audio-library-picker span { color: var(--muted); font-size: 0.76rem; font-weight: 800; text-transform: uppercase; }
-    .audio-library-picker select { min-height: 44px; border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; color: var(--cyan); background: var(--panel-strong); font: inherit; font-weight: 800; }
+    .audio-library-picker select, .audio-library-picker input, .audio-library-picker button { min-height: 44px; border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; color: var(--cyan); background: var(--panel-strong); font: inherit; font-weight: 800; }
+    .audio-date-row { display: flex; gap: 7px; }
+    .family-sibling-links { background: rgba(var(--accent-rgb), .045); border: 1px solid var(--line); border-radius: 14px; display: grid; gap: 10px; grid-column: 1 / -1; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 4px; padding: 12px; }
+    .family-sibling-label { color: var(--muted); font-size: .76rem; font-weight: 800; grid-column: 1 / -1; text-transform: uppercase; }
+    .family-sibling-link { align-items: center; background: rgba(var(--accent-rgb), .08); border: 1px solid var(--line); border-radius: 12px; color: var(--cyan); display: flex; font-size: .84rem; font-weight: 800; justify-content: center; min-height: 46px; padding: 9px 12px; text-align: center; text-decoration: none; }
+    .family-sibling-link:hover, .family-sibling-link:focus-visible { background: var(--cyan); color: var(--dark); outline: none; }
+    .family-sibling-link.is-current { background: var(--cyan); color: var(--dark); }
+    .family-sibling-link.is-unavailable { border-style: dashed; color: var(--muted); cursor: not-allowed; opacity: .72; }
     .rolodex-active { animation: rolodex .85s ease; }
     @keyframes rolodex { 0% { opacity: .35; transform: rotateX(18deg) translateY(-12px); } 100% { opacity: 1; transform: none; } }
     .episode-related { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 14px; }
     .episode-related h3 { margin: 0 0 10px; font-size: 0.9rem; }
     .episode-related-links { display: flex; flex-wrap: wrap; gap: 8px; }
     .episode-related-links a { border: 1px solid var(--line); border-radius: 999px; padding: 7px 10px; text-decoration: none; font-size: 0.82rem; font-weight: 800; }
-    .family-sibling-links { grid-column: 1 / -1; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px; padding-top: 14px; }
-    .family-sibling-label { flex: 1 0 100%; font-size: .9rem; font-weight: 800; }
-    .family-sibling-link { border: 1px solid var(--line); border-radius: 999px; color: var(--cyan); font-size: .82rem; font-weight: 800; min-height: 40px; padding: 9px 12px; text-decoration: none; }
-    .family-sibling-link:hover, .family-sibling-link:focus-visible { background: var(--cyan); color: #061011; outline: 3px solid var(--amber); outline-offset: 2px; }
     .episode:target, .episode.linked-artifact { outline: 3px solid var(--amber); outline-offset: 3px; }
     .episode.removing {
       opacity: 0;
@@ -369,7 +386,7 @@
     }
     .controls {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 12px;
     }
     .control {
@@ -392,6 +409,13 @@
       color: var(--cyan);
       background: rgba(var(--accent-rgb), 0.08);
       border: 1px solid var(--line);
+    }
+    .download {
+      align-items: center;
+      background: linear-gradient(135deg, #d7f4ee, #69d5c5);
+      display: grid;
+      justify-items: center;
+      text-decoration: none;
     }
     .progress-control {
       display: grid;
@@ -462,6 +486,8 @@
     }
     @media (max-width: 760px) {
       header.topbar {
+        position: relative;
+        top: auto;
         align-items: flex-start;
       }
       .episode {
@@ -475,6 +501,7 @@
       }
     }
     @media (max-width: 620px) {
+      .family-sibling-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .site-nav {
         flex-wrap: nowrap;
         margin-inline: -4px;
@@ -491,6 +518,10 @@
         white-space: nowrap;
       }
       .brand .subtitle { display: none; }
+      .audio-library-pickers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
+      .audio-library-picker { min-width: 0; }
+      .audio-library-picker:last-child { grid-column: 1 / -1; }
+      .audio-library-picker select, .audio-library-picker input, .audio-library-picker button { max-width: 100%; width: 100%; }
     }
   </style>
 </head>
@@ -505,16 +536,14 @@
         </div>
       </div>
       <nav class="site-nav" data-generator-nav aria-label="Generator navigation">
-        <a href="https://generator.technologyandstuff.com/">Flight Deck</a>
-        <a href="https://generator.technologyandstuff.com/knowledge/">Portal</a>
-        <a href="https://vinces-public-knowledge.vmaguireme.chatgpt.site/generator">Private Control Center</a>
-        <a href="https://vinces-public-knowledge.vmaguireme.chatgpt.site/notebook-artifacts">Artifact Factory</a>
-        <a href="https://generator.technologyandstuff.com/generator.html">Suggest a Topic</a>
-        <a href="https://generator.technologyandstuff.com/index.html">Videos</a>
-        <a aria-current="page" href="https://generator.technologyandstuff.com/audio-podcasts/index.html">Audio</a>
-        <a href="https://generator.technologyandstuff.com/reports/">Reports</a>
-        <a href="https://generator.technologyandstuff.com/infographics/">Infographics</a>
-        <a href="https://generator.technologyandstuff.com/mind-maps/">Mind Maps</a>
+        <a href="/">Flight Deck</a>
+        <a href="/knowledge/">Landing Zone</a>
+        <a href="/generator.html">Suggest a Topic</a>
+        <a href="/index.html">Videos</a>
+        <a aria-current="page" href="/audio-podcasts/index.html">Audio</a>
+        <a href="/reports/">Reports</a>
+        <a href="/infographics/">Infographics</a>
+        <a href="/mind-maps/">Mind Maps</a>
         <button class="theme-toggle" type="button" data-nav-utility data-theme-toggle aria-label="Change colors to red and blue" aria-pressed="false">
           <span class="theme-toggle-dots" aria-hidden="true"><i></i><i></i></span>
           <span class="theme-toggle-label">Red + Blue</span>
@@ -526,13 +555,21 @@
       <button class="secondary-button refresh-button" type="button" id="refresh-page">Refresh page</button>
     </div>
     <div class="audio-library-filters">
+      <fieldset class="content-side-toggle" id="contentSideToggle">
+        <legend>Library side</legend>
+        <label><input type="radio" name="audio-content-side" value="technology" checked><span>Technology</span></label>
+        <label><input type="radio" name="audio-content-side" value="other-stuff"><span>Other Stuff</span></label>
+        <p id="contentSideStatus" aria-live="polite"></p>
+      </fieldset>
       <fieldset class="audio-type-filter" id="audioTypeFilter">
         <legend>Audio type</legend>
         <div class="audio-type-options" id="audioTypeOptions"></div>
         <p class="audio-type-status" id="audioTypeStatus" aria-live="polite"></p>
       </fieldset>
-      <div class="audio-library-pickers" aria-label="Audio notebook selection">
+      <div class="audio-library-pickers" aria-label="Audio organization and date starting point">
+        <label class="audio-library-picker"><span>Group</span><select id="groupPicker"><option value="all">All groups</option></select></label>
         <label class="audio-library-picker"><span>Notebook</span><select id="notebookPicker"><option value="all">All notebooks</option></select></label>
+        <div class="audio-library-picker"><label for="datePicker">Start date</label><div class="audio-date-row"><input id="datePicker" type="date" aria-describedby="datePickerHelp"><button id="clearDatePicker" type="button">Clear</button></div><span class="sr-only" id="datePickerHelp">Choose a creation date to begin a chronological list. Clear the date to return to groups.</span></div>
       </div>
     </div>
     <section class="latest-panel" aria-label="Latest audio episodes">
@@ -3997,7 +4034,8 @@
       </article>
     </section>
   </main>
-  <script src="../nav.js?v=shared-navigation-20260823-1"></script>
+  <script src="../nav.js?v=shared-navigation-20260827-7"></script>
+  <script src="../viewer-ordering.js?v=content-side-toggle-20260827-4"></script>
   <script src="../artifact-family-links.js?v=family-links-20260827-3"></script>
   <script>
     const positionKey = "vinces-notebooklm-feed-positions";
@@ -4006,6 +4044,9 @@
     episodes.forEach((episode) => { episode.dataset.audioSubtype = "Legacy/Unlabeled"; });
     let audioTypes = [];
     let audioTypeSelection = new Set();
+    let audioRecords = [];
+    let audioOrganization = "topics";
+    let audioSideSelection = localStorage.getItem("vinces-audio-content-side-v1") === "other-stuff" ? "other-stuff" : "technology";
 
     function familyItemHref(item) {
       if (item.kind === "video") return `/index.html?episode=${encodeURIComponent(item.id)}`;
@@ -4022,12 +4063,28 @@
     }
 
     function addRelatedArtifacts(episode, family, currentId) {
+      const related = family.items.filter((item) => !(item.kind === "audio" && item.id === currentId));
       if (episode.querySelector(".family-sibling-links")) return;
+      const siblingLinks = document.createElement("div");
+      siblingLinks.className = "family-sibling-links";
+      siblingLinks.setAttribute("aria-label", "Other artifact types from this notebook");
+      ArtifactFamilyLinks.render(siblingLinks, [family], { kind: "audio", notebookId: family.notebookId, id: currentId });
+      if (!siblingLinks.hidden) episode.append(siblingLinks);
+      if (!related.length || episode.querySelector(".episode-related")) return;
+      const section = document.createElement("section");
+      section.className = "episode-related";
+      const heading = document.createElement("h3");
+      heading.textContent = "Related artifacts from this notebook";
       const links = document.createElement("div");
-      links.className = "family-sibling-links";
-      links.setAttribute("aria-label", "Other artifact types from this notebook");
-      ArtifactFamilyLinks.render(links, [family], { kind: "audio", notebookId: family.notebookId, id: currentId });
-      if (!links.hidden) episode.append(links);
+      links.className = "episode-related-links";
+      related.forEach((item) => {
+        const link = document.createElement("a");
+        link.href = familyItemHref(item);
+        link.textContent = familyItemLabel(item);
+        links.append(link);
+      });
+      section.append(heading, links);
+      episode.append(section);
     }
 
     function applyNotebookFamilies(index) {
@@ -4062,6 +4119,21 @@
         wrapper.append(banner, body);
         notebookTargets.set(family.notebookId, { title: family.notebookTitle, target: wrapper });
       });
+      const metadataById = new Map();
+      (index.families || []).forEach((family) => family.items.filter((item) => item.kind === "audio").forEach((item) => {
+        metadataById.set(item.id, { ...item, notebookId: family.notebookId, notebookTitle: family.notebookTitle, sourceArtifactCreatedAt: item.createdAt });
+      }));
+      audioRecords = episodes.map((node, index) => ({
+        ...(metadataById.get(node.dataset.episodeId) || {}),
+        id: node.dataset.episodeId,
+        title: metadataById.get(node.dataset.episodeId)?.title || node.querySelector("h2")?.textContent?.trim() || "Untitled audio",
+        notebookId: metadataById.get(node.dataset.episodeId)?.notebookId || node.dataset.notebookId || "",
+        notebookTitle: metadataById.get(node.dataset.episodeId)?.notebookTitle || "",
+        sourceArtifactCreatedAt: metadataById.get(node.dataset.episodeId)?.createdAt,
+        node,
+        originalIndex: index
+      }));
+      audioRecords.forEach((record) => { record.node.dataset.contentSide = ViewerOrdering.contentSide(record); });
       (index.families || []).forEach((family) => {
         if (notebookTargets.has(family.notebookId)) return;
         const firstAudio = family.items.find((item) => item.kind === "audio");
@@ -4077,14 +4149,92 @@
         target?.scrollIntoView({ behavior: "smooth", block: "start" });
         if (entry?.target) { entry.target.classList.add("rolodex-active"); setTimeout(() => entry.target.classList.remove("rolodex-active"), 900); }
       });
-      const requested = new URLSearchParams(location.search).get("episode");
+      const params = new URLSearchParams(location.search);
+      const requested = params.get("episode");
+      const requestedNotebook = params.get("notebook");
+      const requestedRecord = audioRecords.find((record) => record.id === requested)
+        || audioRecords.find((record) => record.notebookId === requestedNotebook);
+      if (requestedRecord) audioSideSelection = ViewerOrdering.contentSide(requestedRecord);
+      initializeAudioOrganization();
+      initializeAudioSideToggle(notebookTargets);
       const target = requested ? document.querySelector(`[data-episode-id="${CSS.escape(requested)}"]`) : null;
       if (target) {
         picker.value = target.dataset.notebookId || "all";
         target.classList.add("linked-artifact");
         target.scrollIntoView({ behavior: "smooth", block: "center" });
+      } else if (requestedNotebook && notebookTargets.has(requestedNotebook)) {
+        picker.value = requestedNotebook;
+        notebookTargets.get(requestedNotebook).target.scrollIntoView({ behavior: "smooth", block: "start" });
       }
       initializeAudioTypeFilters(notebookTargets);
+    }
+
+    function audioBlock(record) {
+      return record.node.closest(".audio-notebook-family") || record.node;
+    }
+
+    function applyAudioOrganization() {
+      const sideRecords = ViewerOrdering.filterBySide(audioRecords, audioSideSelection);
+      const organized = ViewerOrdering.organizedView(sideRecords, {}, "reading", audioOrganization);
+      const blocks = [];
+      organized.episodes.forEach((record) => {
+        const block = audioBlock(record);
+        if (!blocks.includes(block)) blocks.push(block);
+      });
+      blocks.forEach((block) => document.querySelector("#episodes").append(block));
+      const picker = document.querySelector("#groupPicker");
+      picker.innerHTML = '<option value="all">All groups</option>';
+      if (audioOrganization === "topics") {
+        organized.columns.forEach((column) => column.groups.forEach((group) => {
+          const option = document.createElement("option");
+          option.value = group.key;
+          option.textContent = `${column.label} — ${group.label}`;
+          picker.append(option);
+          group.episodes.forEach((record) => { audioBlock(record).dataset.groupKey = group.key; });
+        }));
+        picker.disabled = false;
+      } else {
+        picker.value = "all";
+        picker.disabled = true;
+      }
+      document.querySelector("#clearDatePicker").disabled = !document.querySelector("#datePicker").value;
+    }
+
+    function renderAudioSideToggle() {
+      document.querySelectorAll('#contentSideToggle input[type="radio"]').forEach((input) => { input.checked = input.value === audioSideSelection; });
+      document.querySelector("#contentSideStatus").textContent = `${audioSideSelection === "technology" ? "Technology" : "Other Stuff"} selected`;
+    }
+
+    function initializeAudioSideToggle(notebookTargets) {
+      renderAudioSideToggle();
+      document.querySelector("#contentSideToggle").addEventListener("change", (event) => {
+        const radio = event.target.closest('input[type="radio"]');
+        if (!radio?.checked) return;
+        audioSideSelection = radio.value === "other-stuff" ? "other-stuff" : "technology";
+        localStorage.setItem("vinces-audio-content-side-v1", audioSideSelection);
+        document.querySelector("#groupPicker").value = "all";
+        document.querySelector("#notebookPicker").value = "all";
+        renderAudioSideToggle();
+        applyAudioOrganization();
+        applyAudioTypeFilters(notebookTargets);
+      });
+    }
+
+    function initializeAudioOrganization() {
+      const picker = document.querySelector("#groupPicker");
+      const date = document.querySelector("#datePicker");
+      picker.addEventListener("change", () => {
+        if (picker.value === "all") return document.querySelector("#episodes").scrollIntoView({ behavior: "smooth", block: "start" });
+        document.querySelector(`[data-group-key="${CSS.escape(picker.value)}"]`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+      const setDate = (value) => {
+        audioOrganization = value ? `date-${value}` : "topics";
+        applyAudioOrganization();
+      };
+      date.addEventListener("input", () => setDate(date.value));
+      date.addEventListener("change", () => setDate(date.value));
+      document.querySelector("#clearDatePicker").addEventListener("click", () => { date.value = ""; setDate(""); });
+      applyAudioOrganization();
     }
 
     function renderAudioTypeFilters() {
@@ -4109,7 +4259,9 @@
     }
 
     function applyAudioTypeFilters(notebookTargets) {
-      episodes.forEach((episode) => { episode.hidden = !audioTypeSelection.has(episode.dataset.audioSubtype); });
+      episodes.forEach((episode) => {
+        episode.hidden = episode.dataset.contentSide !== audioSideSelection || !audioTypeSelection.has(episode.dataset.audioSubtype);
+      });
       document.querySelectorAll(".audio-notebook-family").forEach((family) => {
         family.hidden = !Array.from(family.querySelectorAll(".episode")).some((episode) => !episode.hidden);
       });
@@ -4149,6 +4301,20 @@
       .then((response) => response.ok ? response.json() : { families: [] })
       .then(applyNotebookFamilies)
       .catch(() => applyNotebookFamilies({ families: [] }));
+
+    episodes.forEach((episode) => {
+      const audio = episode.querySelector("audio");
+      const controls = episode.querySelector(".controls");
+      if (!audio?.getAttribute("src") || !controls || controls.querySelector(".download")) return;
+      const download = document.createElement("a");
+      download.className = "control download";
+      download.href = audio.getAttribute("src");
+      download.download = "";
+      download.textContent = "Download";
+      const title = episode.querySelector("h2")?.textContent?.trim() || "audio artifact";
+      download.setAttribute("aria-label", `Download ${title}`);
+      controls.append(download);
+    });
 
     function savePositions() {
       localStorage.setItem(positionKey, JSON.stringify(positions));
@@ -4202,46 +4368,22 @@
       }
     }
 
-    function stopAllAudio(exceptAudio = null) {
+    function stopAllAudio() {
       document.querySelectorAll("audio").forEach((audio) => {
-        if (audio !== exceptAudio) {
-          audio.pause();
-        }
+        audio.pause();
       });
     }
 
     function playEpisode(episode, fromBeginning = false) {
       const audio = episode.querySelector("audio");
-      if (!audio) return;
-      stopAllAudio(audio);
-
-      const target = fromBeginning ? 0 : (audio.currentTime > 1 ? audio.currentTime : Number(positions[episode.dataset.episodeId] || 0));
-
+      stopAllAudio();
       if (fromBeginning) {
         delete positions[episode.dataset.episodeId];
         savePositions();
-      }
-
-      const applySeek = () => {
-        if (Number.isFinite(target) && target >= 0) {
-          const limit = audio.duration ? Math.max(0, audio.duration - 0.5) : target;
-          try {
-            audio.currentTime = Math.min(target, limit);
-          } catch (e) {}
-        }
-      };
-
-      if (audio.readyState >= 1) {
-        applySeek();
+        seekWhenReady(audio, 0, () => audio.play());
       } else {
-        audio.addEventListener("loadedmetadata", applySeek, { once: true });
-      }
-
-      const playPromise = audio.play();
-      if (playPromise !== undefined) {
-        playPromise.catch((err) => {
-          console.warn("Audio playback prevented or failed:", err);
-        });
+        const target = audio.currentTime > 1 ? audio.currentTime : Number(positions[episode.dataset.episodeId] || 0);
+        seekWhenReady(audio, target, () => audio.play());
       }
     }
 
@@ -4261,25 +4403,12 @@
       });
 
       resume.addEventListener("click", () => {
-        playEpisode(episode, false);
+        playEpisode(episode);
       });
 
       stop.addEventListener("click", () => {
         audio.pause();
         saveAudioPosition(episode, audio);
-        updateProgress();
-      });
-
-      audio.addEventListener("play", () => {
-        episode.classList.add("is-playing");
-      });
-
-      audio.addEventListener("pause", () => {
-        episode.classList.remove("is-playing");
-      });
-
-      audio.addEventListener("error", () => {
-        console.warn(`Audio error for episode ${id}:`, audio.error);
       });
 
       function updateProgress() {

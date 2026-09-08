@@ -335,6 +335,10 @@
     .episode-related h3 { margin: 0 0 10px; font-size: 0.9rem; }
     .episode-related-links { display: flex; flex-wrap: wrap; gap: 8px; }
     .episode-related-links a { border: 1px solid var(--line); border-radius: 999px; padding: 7px 10px; text-decoration: none; font-size: 0.82rem; font-weight: 800; }
+    .family-sibling-links { grid-column: 1 / -1; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px; padding-top: 14px; }
+    .family-sibling-label { flex: 1 0 100%; font-size: .9rem; font-weight: 800; }
+    .family-sibling-link { border: 1px solid var(--line); border-radius: 999px; color: var(--cyan); font-size: .82rem; font-weight: 800; min-height: 40px; padding: 9px 12px; text-decoration: none; }
+    .family-sibling-link:hover, .family-sibling-link:focus-visible { background: var(--cyan); color: #061011; outline: 3px solid var(--amber); outline-offset: 2px; }
     .episode:target, .episode.linked-artifact { outline: 3px solid var(--amber); outline-offset: 3px; }
     .episode.removing {
       opacity: 0;
@@ -534,13 +538,36 @@
     <section class="latest-panel" aria-label="Latest audio episodes">
       <p class="section-label">Latest audio episodes</p>
       <div class="latest-grid">
-        <a class="latest-link" href="#episode-63cec3c6-b617-5a26-8c17-6cd4de29cb81"><span>Is the Forty Trillion Debt Sustainable?</span><small>0:14:44</small></a>
+        <a class="latest-link" href="#episode-541831cf-6140-4c26-885f-1a3ac5c589db"><span>How ChatGPT Projects, Chats, Tasks, Skills, and Context Work</span><small>0:45:30</small></a>
+<a class="latest-link" href="#episode-63cec3c6-b617-5a26-8c17-6cd4de29cb81"><span>Is the Forty Trillion Debt Sustainable?</span><small>0:14:44</small></a>
 <a class="latest-link" href="#episode-35e791b6-553c-5091-bc9d-b7b470a09d81"><span>Fixing Visual Myths About U.S. National Debt</span><small>0:19:02</small></a>
 <a class="latest-link" href="#episode-3c1f3378-381d-5b6b-baf9-bdceb12a6c43"><span>Who Owns the U.S. National Debt? — Deep Dive</span><small>0:24:01</small></a>
-<a class="latest-link" href="#episode-4b9a89f2-ad5a-5cc3-a7da-e30fce83b189"><span>Who Owns the U.S. National Debt? — Brief</span><small>0:01:40</small></a>
       </div>
     </section>
     <section class="episodes" id="episodes">
+      <article class="episode" id="episode-541831cf-6140-4c26-885f-1a3ac5c589db" data-episode-id="541831cf-6140-4c26-885f-1a3ac5c589db" data-retention-kind="audio">
+        <div class="episode-copy">
+          <p class="eyebrow">0:45:30</p>
+          <h2>How ChatGPT Projects, Chats, Tasks, Skills, and Context Work</h2>
+          <p>A detailed explanation and comprehensive deep dive of how ChatGPT Projects, chats, tasks, skills and context memory all work.</p>
+        </div>
+        <div class="player">
+          <audio preload="metadata" src="audio/20260907-225134-notebook-name-how-chatgpt-projects-chats-tasks-skills-and-context-work-251403-orig-nblm-source.mp3"></audio>
+          <div class="controls">
+            <button class="control play" type="button" aria-label="Play How ChatGPT Projects, Chats, Tasks, Skills, and Context Work">Play</button>
+            <button class="control resume" type="button" aria-label="Resume How ChatGPT Projects, Chats, Tasks, Skills, and Context Work">Resume</button>
+            <button class="control stop" type="button" aria-label="Stop How ChatGPT Projects, Chats, Tasks, Skills, and Context Work">Stop</button>
+          </div>
+          <div class="progress-control">
+            <input class="progress-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position for How ChatGPT Projects, Chats, Tasks, Skills, and Context Work">
+            <div class="time-row" aria-live="polite">
+              <span><strong class="listened-time">0:00</strong> listened</span>
+              <span><strong class="remaining-time">0:00</strong> left</span>
+            </div>
+          </div>
+          <details class="availability-details"><summary>Availability</summary><span class="retention-status">Available for 10 days</span></details>
+        </div>
+      </article>
       <article class="episode" id="episode-63cec3c6-b617-5a26-8c17-6cd4de29cb81" data-episode-id="63cec3c6-b617-5a26-8c17-6cd4de29cb81" data-retention-kind="audio">
         <div class="episode-copy">
           <p class="eyebrow">0:14:44</p>
@@ -3948,6 +3975,7 @@
     </section>
   </main>
   <script src="../nav.js?v=shared-navigation-20260823-1"></script>
+  <script src="../artifact-family-links.js?v=family-links-20260827-3"></script>
   <script>
     const positionKey = "vinces-notebooklm-feed-positions";
     const positions = JSON.parse(localStorage.getItem(positionKey) || "{}");
@@ -3971,22 +3999,12 @@
     }
 
     function addRelatedArtifacts(episode, family, currentId) {
-      const related = family.items.filter((item) => !(item.kind === "audio" && item.id === currentId));
-      if (!related.length || episode.querySelector(".episode-related")) return;
-      const section = document.createElement("section");
-      section.className = "episode-related";
-      const heading = document.createElement("h3");
-      heading.textContent = "Related artifacts from this notebook";
+      if (episode.querySelector(".family-sibling-links")) return;
       const links = document.createElement("div");
-      links.className = "episode-related-links";
-      related.forEach((item) => {
-        const link = document.createElement("a");
-        link.href = familyItemHref(item);
-        link.textContent = familyItemLabel(item);
-        links.append(link);
-      });
-      section.append(heading, links);
-      episode.append(section);
+      links.className = "family-sibling-links";
+      links.setAttribute("aria-label", "Other artifact types from this notebook");
+      ArtifactFamilyLinks.render(links, [family], { kind: "audio", notebookId: family.notebookId, id: currentId });
+      if (!links.hidden) episode.append(links);
     }
 
     function applyNotebookFamilies(index) {
@@ -4161,22 +4179,46 @@
       }
     }
 
-    function stopAllAudio() {
+    function stopAllAudio(exceptAudio = null) {
       document.querySelectorAll("audio").forEach((audio) => {
-        audio.pause();
+        if (audio !== exceptAudio) {
+          audio.pause();
+        }
       });
     }
 
     function playEpisode(episode, fromBeginning = false) {
       const audio = episode.querySelector("audio");
-      stopAllAudio();
+      if (!audio) return;
+      stopAllAudio(audio);
+
+      const target = fromBeginning ? 0 : (audio.currentTime > 1 ? audio.currentTime : Number(positions[episode.dataset.episodeId] || 0));
+
       if (fromBeginning) {
         delete positions[episode.dataset.episodeId];
         savePositions();
-        seekWhenReady(audio, 0, () => audio.play());
+      }
+
+      const applySeek = () => {
+        if (Number.isFinite(target) && target >= 0) {
+          const limit = audio.duration ? Math.max(0, audio.duration - 0.5) : target;
+          try {
+            audio.currentTime = Math.min(target, limit);
+          } catch (e) {}
+        }
+      };
+
+      if (audio.readyState >= 1) {
+        applySeek();
       } else {
-        const target = audio.currentTime > 1 ? audio.currentTime : Number(positions[episode.dataset.episodeId] || 0);
-        seekWhenReady(audio, target, () => audio.play());
+        audio.addEventListener("loadedmetadata", applySeek, { once: true });
+      }
+
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((err) => {
+          console.warn("Audio playback prevented or failed:", err);
+        });
       }
     }
 
@@ -4196,12 +4238,25 @@
       });
 
       resume.addEventListener("click", () => {
-        playEpisode(episode);
+        playEpisode(episode, false);
       });
 
       stop.addEventListener("click", () => {
         audio.pause();
         saveAudioPosition(episode, audio);
+        updateProgress();
+      });
+
+      audio.addEventListener("play", () => {
+        episode.classList.add("is-playing");
+      });
+
+      audio.addEventListener("pause", () => {
+        episode.classList.remove("is-playing");
+      });
+
+      audio.addEventListener("error", () => {
+        console.warn(`Audio error for episode ${id}:`, audio.error);
       });
 
       function updateProgress() {

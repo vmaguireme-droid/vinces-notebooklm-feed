@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>How ChatGPT Projects, Chats, Tasks, Skills, and Context Work</title>
+      <description>A detailed explanation and comprehensive deep dive of how ChatGPT Projects, chats, tasks, skills and context memory all work.</description>
+      <pubDate>Tue, 08 Sep 2026 14:13:03 +0000</pubDate>
+      <guid isPermaLink="false">541831cf-6140-4c26-885f-1a3ac5c589db</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/20260907-225134-notebook-name-how-chatgpt-projects-chats-tasks-skills-and-context-work-251403-orig-nblm-source.mp3" length="65533420" type="audio/mpeg"/>
+      <itunes:duration>0:45:30</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Is the Forty Trillion Debt Sustainable?</title>
       <description>A NotebookLM Debate Audio Overview examining whether the current U.S. national debt path is sustainable.</description>
       <pubDate>Mon, 31 Aug 2026 22:01:18 +0000</pubDate>
@@ -606,7 +615,7 @@
       <description>A NotebookLM Brief Audio Overview from EPUB S.</description>
       <pubDate>Mon, 24 Aug 2026 22:31:34 +0000</pubDate>
       <guid isPermaLink="false">9c056970-de81-5507-b00d-82eb20d82e78</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/vincent-maguire-s-two-day-pregabalin-prescription.m4a" length="2954333" type="audio/mp4"/>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/vincent-maguire-s-two-day-pregabalin-prescription.m4a" length="0" type="audio/mp4"/>
       <itunes:duration>0:01:31</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
@@ -615,7 +624,7 @@
       <description>A NotebookLM Deep Dive Audio Overview from EPUB S.</description>
       <pubDate>Mon, 24 Aug 2026 22:31:34 +0000</pubDate>
       <guid isPermaLink="false">6d9df1b0-a5d9-591f-b367-aea11de5899d</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-surveillance-hidden-in-your-cvs-receipt.m4a" length="33196393" type="audio/mp4"/>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-surveillance-hidden-in-your-cvs-receipt.m4a" length="0" type="audio/mp4"/>
       <itunes:duration>0:17:10</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>

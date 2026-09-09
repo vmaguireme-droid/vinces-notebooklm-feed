@@ -1,5 +1,21 @@
 [
   {
+    "title": "How Pirates Built the First Macintosh",
+    "description": "generatorJobId: 20260909-185205-notebook-name-test-apple-history-test-apple-history-suggested-source-h-c62fdc\n\nnotebookPrompt:\nNotebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com\n\nfocus:\nFocus on early Macs\n\nAdditional comments: Test notes",
+    "audio_file": "20260909-185205-notebook-name-test-apple-history-test-apple-history-suggested-source-h-c62fdc-orig-nblm-source.m4a",
+    "source_name": "20260909-185205-notebook-name-test-apple-history-test-apple-history-suggested-source-h-c62fdc-orig-nblm-source.m4a",
+    "source_sha256": "002c9be1014c940667684436c5512b27c52c7d08f97e45f078b6738de53eb4f7",
+    "converted_to_aac": true,
+    "published": "Wed, 09 Sep 2026 23:36:31 +0000",
+    "guid": "20260909-185205-notebook-name-test-apple-history-test-apple-history-suggested-source-h-c62fdc",
+    "duration": "0:51:43",
+    "draft": false,
+    "notebookId": "82a9445d-3bb7-4772-8067-f67990512eef",
+    "notebookTitle": "Test Apple History",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive"
+  },
+  {
     "title": "The 1984 Macintosh Rebellion Against IBM",
     "description": "generatorJobId: 20260909-075636-notebook-name-test-apple-history-test-apple-history-suggested-source-h-260c2d\n\nnotebookPrompt:\nNotebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com\n\nfocus:\nFocus on early Macs\n\nAdditional comments: Test notes",
     "audio_file": "20260909-075636-notebook-name-test-apple-history-test-apple-history-suggested-source-h-260c2d-orig-nblm-source.m4a",

@@ -1,5 +1,21 @@
 [
   {
+    "title": "The 1984 Macintosh Rebellion Against IBM",
+    "description": "generatorJobId: 20260909-075636-notebook-name-test-apple-history-test-apple-history-suggested-source-h-260c2d\n\nnotebookPrompt:\nNotebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com\n\nfocus:\nFocus on early Macs\n\nAdditional comments: Test notes",
+    "audio_file": "20260909-075636-notebook-name-test-apple-history-test-apple-history-suggested-source-h-260c2d-orig-nblm-source.m4a",
+    "source_name": "20260909-075636-notebook-name-test-apple-history-test-apple-history-suggested-source-h-260c2d-orig-nblm-source.m4a",
+    "source_sha256": "edac363bcf621ce150fba768af0965e8cf4f305a35217fe19ad20f70c34b53d0",
+    "converted_to_aac": true,
+    "published": "Wed, 09 Sep 2026 12:30:28 +0000",
+    "guid": "20260909-075636-notebook-name-test-apple-history-test-apple-history-suggested-source-h-260c2d",
+    "duration": "0:50:07",
+    "draft": false,
+    "notebookId": "dcc512b0-faa1-434c-a2df-a7bcd2462e17",
+    "notebookTitle": "Test Apple History",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive"
+  },
+  {
     "title": "How the Macintosh Humanized Computing",
     "description": "Notebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com\n\nFocus on early Macs\n\nAdditional comments: Test notes",
     "audio_file": "20260908-210922-notebook-name-test-apple-history-test-apple-history-suggested-source-h-852956-orig-nblm-source.m4a",

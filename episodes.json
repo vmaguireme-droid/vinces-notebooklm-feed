@@ -1,5 +1,21 @@
 [
   {
+    "title": "How Pirates Built the 1984 Macintosh",
+    "description": "generatorJobId: 20260909-193047-notebook-name-test-apple-history-test-apple-history-suggested-source-h-944b1d\n\nnotebookPrompt:\nNotebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com\n\nfocus:\nFocus on early Macs\n\nAdditional comments: Test notes",
+    "audio_file": "20260909-193047-notebook-name-test-apple-history-test-apple-history-suggested-source-h-944b1d-orig-nblm-source.m4a",
+    "source_name": "20260909-193047-notebook-name-test-apple-history-test-apple-history-suggested-source-h-944b1d-orig-nblm-source.m4a",
+    "source_sha256": "bfbe89a38db38d51df3f3bae6b092794e8559a80c524f344ea4de3556fe06df4",
+    "converted_to_aac": false,
+    "published": "Thu, 10 Sep 2026 00:36:05 +0000",
+    "guid": "20260909-193047-notebook-name-test-apple-history-test-apple-history-suggested-source-h-944b1d",
+    "duration": "0:40:37",
+    "draft": false,
+    "notebookId": "601f1522-32da-4ab6-844c-0feb78fa1cc9",
+    "notebookTitle": "Test Apple History",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive"
+  },
+  {
     "title": "How Pirates Built the First Macintosh",
     "description": "generatorJobId: 20260909-185205-notebook-name-test-apple-history-test-apple-history-suggested-source-h-c62fdc\n\nnotebookPrompt:\nNotebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com\n\nfocus:\nFocus on early Macs\n\nAdditional comments: Test notes",
     "audio_file": "20260909-185205-notebook-name-test-apple-history-test-apple-history-suggested-source-h-c62fdc-orig-nblm-source.m4a",

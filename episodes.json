@@ -1,124 +1,5 @@
 [
   {
-    "title": "How Pirates Built the 1984 Macintosh",
-    "description": "generatorJobId: 20260909-193047-notebook-name-test-apple-history-test-apple-history-suggested-source-h-944b1d\n\nnotebookPrompt:\nNotebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com\n\nfocus:\nFocus on early Macs\n\nAdditional comments: Test notes",
-    "audio_file": "20260909-193047-notebook-name-test-apple-history-test-apple-history-suggested-source-h-944b1d-orig-nblm-source.m4a",
-    "source_name": "20260909-193047-notebook-name-test-apple-history-test-apple-history-suggested-source-h-944b1d-orig-nblm-source.m4a",
-    "source_sha256": "bfbe89a38db38d51df3f3bae6b092794e8559a80c524f344ea4de3556fe06df4",
-    "converted_to_aac": false,
-    "published": "Thu, 10 Sep 2026 00:36:05 +0000",
-    "guid": "20260909-193047-notebook-name-test-apple-history-test-apple-history-suggested-source-h-944b1d",
-    "duration": "0:40:37",
-    "draft": false,
-    "notebookId": "601f1522-32da-4ab6-844c-0feb78fa1cc9",
-    "notebookTitle": "Test Apple History",
-    "artifactType": "audio_overview",
-    "variant": "Deep Dive"
-  },
-  {
-    "title": "How Pirates Built the First Macintosh",
-    "description": "generatorJobId: 20260909-185205-notebook-name-test-apple-history-test-apple-history-suggested-source-h-c62fdc\n\nnotebookPrompt:\nNotebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com\n\nfocus:\nFocus on early Macs\n\nAdditional comments: Test notes",
-    "audio_file": "20260909-185205-notebook-name-test-apple-history-test-apple-history-suggested-source-h-c62fdc-orig-nblm-source.m4a",
-    "source_name": "20260909-185205-notebook-name-test-apple-history-test-apple-history-suggested-source-h-c62fdc-orig-nblm-source.m4a",
-    "source_sha256": "002c9be1014c940667684436c5512b27c52c7d08f97e45f078b6738de53eb4f7",
-    "converted_to_aac": true,
-    "published": "Wed, 09 Sep 2026 23:36:31 +0000",
-    "guid": "20260909-185205-notebook-name-test-apple-history-test-apple-history-suggested-source-h-c62fdc",
-    "duration": "0:51:43",
-    "draft": false,
-    "notebookId": "82a9445d-3bb7-4772-8067-f67990512eef",
-    "notebookTitle": "Test Apple History",
-    "artifactType": "audio_overview",
-    "variant": "Deep Dive"
-  },
-  {
-    "title": "The 1984 Macintosh Rebellion Against IBM",
-    "description": "generatorJobId: 20260909-075636-notebook-name-test-apple-history-test-apple-history-suggested-source-h-260c2d\n\nnotebookPrompt:\nNotebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com\n\nfocus:\nFocus on early Macs\n\nAdditional comments: Test notes",
-    "audio_file": "20260909-075636-notebook-name-test-apple-history-test-apple-history-suggested-source-h-260c2d-orig-nblm-source.m4a",
-    "source_name": "20260909-075636-notebook-name-test-apple-history-test-apple-history-suggested-source-h-260c2d-orig-nblm-source.m4a",
-    "source_sha256": "edac363bcf621ce150fba768af0965e8cf4f305a35217fe19ad20f70c34b53d0",
-    "converted_to_aac": true,
-    "published": "Wed, 09 Sep 2026 12:30:28 +0000",
-    "guid": "20260909-075636-notebook-name-test-apple-history-test-apple-history-suggested-source-h-260c2d",
-    "duration": "0:50:07",
-    "draft": false,
-    "notebookId": "dcc512b0-faa1-434c-a2df-a7bcd2462e17",
-    "notebookTitle": "Test Apple History",
-    "artifactType": "audio_overview",
-    "variant": "Deep Dive"
-  },
-  {
-    "title": "How the Macintosh Humanized Computing",
-    "description": "Notebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com\n\nFocus on early Macs\n\nAdditional comments: Test notes",
-    "audio_file": "20260908-210922-notebook-name-test-apple-history-test-apple-history-suggested-source-h-852956-orig-nblm-source.m4a",
-    "source_name": "20260908-210922-notebook-name-test-apple-history-test-apple-history-suggested-source-h-852956-orig-nblm-source.m4a",
-    "source_sha256": "4920ff8c4127b1c150915a2dec4f35ffdcbfc413339395664a162d1491385f80",
-    "converted_to_aac": true,
-    "published": "Wed, 09 Sep 2026 02:14:15 +0000",
-    "guid": "20260908-210922-notebook-name-test-apple-history-test-apple-history-suggested-source-h-852956",
-    "duration": "0:59:47",
-    "draft": false,
-    "notebookId": "186e5a2f-e9cc-40f1-81fa-53df4e5740d4",
-    "notebookTitle": "Test Apple History",
-    "artifactType": "audio_overview",
-    "variant": "original_notebooklm_audio"
-  },
-  {
-    "title": "How pirates built the 1984 Macintosh",
-    "description": "Notebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com\n\nFocus on early Macs\n\nAdditional comments: Test notes",
-    "audio_file": "20260908-211158-notebook-name-test-apple-history-test-apple-history-suggested-source-h-5d858f-orig-nblm-source.m4a",
-    "source_name": "20260908-211158-notebook-name-test-apple-history-test-apple-history-suggested-source-h-5d858f-orig-nblm-source.m4a",
-    "source_sha256": "6ee796522ecc81d9486bc3be61bba25ddc696ab926c22b814f38a304d29cae00",
-    "converted_to_aac": true,
-    "published": "Wed, 09 Sep 2026 01:58:34 +0000",
-    "guid": "20260908-211158-notebook-name-test-apple-history-test-apple-history-suggested-source-h-5d858f",
-    "duration": "0:50:24",
-    "draft": false,
-    "notebookId": "31b4ef42-8d4d-4e04-9ab2-74e69c9a183c",
-    "notebookTitle": "Test Apple History",
-    "artifactType": "audio_overview",
-    "variant": "original_notebooklm_audio"
-  },
-  {
-    "title": "How pirates built the 1984 Macintosh",
-    "description": "Notebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com\n\nFocus on early Macs\n\nAdditional comments: Test notes",
-    "audio_file": "20260908-193147-notebook-name-test-apple-history-test-apple-history-suggested-source-h-a98d15-orig-nblm-source.m4a",
-    "source_name": "20260908-193147-notebook-name-test-apple-history-test-apple-history-suggested-source-h-a98d15-orig-nblm-source.m4a",
-    "source_sha256": "f2736d2e46898124acc4ae6896d2c0fffa9e0dc7a735a4d7ff934c24fd8a3515",
-    "converted_to_aac": false,
-    "published": "Wed, 09 Sep 2026 00:00:40 +0000",
-    "guid": "20260908-193147-notebook-name-test-apple-history-test-apple-history-suggested-source-h-a98d15",
-    "duration": "0:34:43",
-    "draft": false,
-    "notebookId": "b88968fc-eb91-4b23-a051-1320689b3823",
-    "notebookTitle": "Test Apple History",
-    "artifactType": "audio_overview",
-    "variant": "original_notebooklm_audio"
-  },
-  {
-    "title": "The Desperate Birth of the Apple Macintosh",
-    "description": "Notebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com\n\nFocus on early Macs\n\nAdditional comments: Test notes",
-    "audio_file": "20260908-184312-notebook-name-test-apple-history-test-apple-history-suggested-source-h-515c25-orig-nblm-source.m4a",
-    "source_name": "20260908-184312-notebook-name-test-apple-history-test-apple-history-suggested-source-h-515c25-orig-nblm-source.m4a",
-    "source_sha256": "59f4a482981486db0669eb8599e57d6a158f1db004d8e728042a0e486aba3838",
-    "converted_to_aac": false,
-    "published": "Tue, 08 Sep 2026 23:24:02 +0000",
-    "guid": "20260908-184312-notebook-name-test-apple-history-test-apple-history-suggested-source-h-515c25",
-    "duration": "0:44:29",
-    "draft": false,
-    "notebookId": "59c8cd5b-72dd-4da8-a842-e299bb86d0a7",
-    "notebookTitle": "Test Apple History",
-    "artifactType": "Audio Overview",
-    "variant": "Deep Dive / Long / original_notebooklm_audio",
-    "generatorJobId": "20260908-184312-notebook-name-test-apple-history-test-apple-history-suggested-source-h-515c25",
-    "notebookPrompt": "Notebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com",
-    "focus": "Focus on early Macs\n\nAdditional comments: Test notes",
-    "promptRecord": "/Users/vincemaguire/My Drive/Podcast Automation/notebooklm-jobs/prompt-records/20260908-184312-notebook-name-test-apple-history-test-apple-history-suggested-source-h-515c25.json",
-    "jobFile": "/Users/vincemaguire/My Drive/Podcast Automation/notebooklm-jobs/queued/20260908-184312-notebook-name-test-apple-history-test-apple-history-suggested-source-h-515c25.json",
-    "notebookUrl": "https://notebook.google.com/notebook/59c8cd5b-72dd-4da8-a842-e299bb86d0a7",
-    "voiceMode": "original_notebooklm_audio"
-  },
-  {
     "title": "Dinosaur Evolution, Survival, and Intelligence",
     "description": "Notebook name: Dinosaur Evolution, Survival, and Intelligence\n\nDescribe how dinasouurs evolved, what the world be like if the asteroid did not hit the earth. Do we have any dinasours today. How did the small mammals evolve into humans. Will AI take over from humans. If small rodents evolved into man then why couldn\u2019t dinasours develop opposable thumbs.",
     "audio_file": "if-the-asteroid-missed-the-dinosaurs-source.mp3",
@@ -128,7 +9,8 @@
     "published": "Tue, 08 Sep 2026 22:38:35 +0000",
     "guid": "f902e041-7742-4489-9178-6a29fa3a8b68",
     "duration": "0:45:08",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "When an AI Escaped the Sandbox",
@@ -144,7 +26,8 @@
     "notebookId": "9f1acb3a-73ee-4317-badd-f5d4cac8ea18",
     "notebookTitle": "The Definitive Guide to ChatGPT and the AI Evolution",
     "artifactType": "audio_overview",
-    "variant": "Deep Dive"
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "How ChatGPT Projects, Chats, Tasks, Skills, and Context Work",
@@ -156,7 +39,8 @@
     "published": "Tue, 08 Sep 2026 14:13:03 +0000",
     "guid": "541831cf-6140-4c26-885f-1a3ac5c589db",
     "duration": "0:45:30",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Is the Forty Trillion Debt Sustainable?",
@@ -172,7 +56,8 @@
     "notebookId": "0410355c-e592-4d6e-8949-02e66d0c2122",
     "notebookTitle": "Who Owns the U.S. National Debt?",
     "artifactType": "audio_overview",
-    "variant": "Debate"
+    "variant": "Debate",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Fixing Visual Myths About U.S. National Debt",
@@ -188,7 +73,8 @@
     "notebookId": "0410355c-e592-4d6e-8949-02e66d0c2122",
     "notebookTitle": "Who Owns the U.S. National Debt?",
     "artifactType": "audio_overview",
-    "variant": "Critique"
+    "variant": "Critique",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Who Owns the U.S. National Debt? \u2014 Deep Dive",
@@ -204,7 +90,8 @@
     "notebookId": "0410355c-e592-4d6e-8949-02e66d0c2122",
     "notebookTitle": "Who Owns the U.S. National Debt?",
     "artifactType": "audio_overview",
-    "variant": "Deep Dive"
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Who Owns the U.S. National Debt? \u2014 Brief",
@@ -220,7 +107,8 @@
     "notebookId": "0410355c-e592-4d6e-8949-02e66d0c2122",
     "notebookTitle": "Who Owns the U.S. National Debt?",
     "artifactType": "audio_overview",
-    "variant": "Brief"
+    "variant": "Brief",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Zero Trust Architecture Versus AES Encryption",
@@ -238,7 +126,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "9cef628b-560c-5c61-9745-8115500c2802",
-    "artifactItemId": "c96aa8ee-ab11-4da0-b995-564021f13e71"
+    "artifactItemId": "c96aa8ee-ab11-4da0-b995-564021f13e71",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Telescope Geometry Versus the Imaging Train",
@@ -256,7 +145,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "b41513b3-92f7-50ac-9a6b-e819e50471ce",
-    "artifactItemId": "1b2b07bb-2106-417e-adcc-068249c8639a"
+    "artifactItemId": "1b2b07bb-2106-417e-adcc-068249c8639a",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Restructuring Astroblender's Back-Focus 101 Playlist",
@@ -274,7 +164,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "b41513b3-92f7-50ac-9a6b-e819e50471ce",
-    "artifactItemId": "c7a77b40-d125-4a82-a420-bedcc160187f"
+    "artifactItemId": "c7a77b40-d125-4a82-a420-bedcc160187f",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "From stateful MPLS to stateless SRv6",
@@ -292,7 +183,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "e15a21b3-707b-5095-a2b3-4ced452590b2",
-    "artifactItemId": "ab6b049f-6158-4720-afb5-1d4a08feac2e"
+    "artifactItemId": "ab6b049f-6158-4720-afb5-1d4a08feac2e",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "MPLS versus SRv6 network steering",
@@ -310,7 +202,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "e15a21b3-707b-5095-a2b3-4ced452590b2",
-    "artifactItemId": "f0c28505-7d32-4755-b463-91e6072fbbbe"
+    "artifactItemId": "f0c28505-7d32-4755-b463-91e6072fbbbe",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "AES Encryption and Zero Trust Architecture",
@@ -328,7 +221,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "9cef628b-560c-5c61-9745-8115500c2802",
-    "artifactItemId": "d85b89bb-cd46-43bd-a405-ee0a2b709ec4"
+    "artifactItemId": "d85b89bb-cd46-43bd-a405-ee0a2b709ec4",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Bridging the AES Zero Trust Gap",
@@ -346,7 +240,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "9cef628b-560c-5c61-9745-8115500c2802",
-    "artifactItemId": "fe13755b-0d20-415a-9ede-cf7ec3c1e311"
+    "artifactItemId": "fe13755b-0d20-415a-9ede-cf7ec3c1e311",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Calculate Perfect Back-Focus for Sharp Stars",
@@ -364,7 +259,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "b41513b3-92f7-50ac-9a6b-e819e50471ce",
-    "artifactItemId": "b8d8e5b1-94ae-432d-8c50-3b76722fa099"
+    "artifactItemId": "b8d8e5b1-94ae-432d-8c50-3b76722fa099",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Telescope Back-Focus and the Robot Roadblock",
@@ -382,7 +278,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "b41513b3-92f7-50ac-9a6b-e819e50471ce",
-    "artifactItemId": "98eec6c8-e01c-470c-ae18-e65d8b0e273a"
+    "artifactItemId": "98eec6c8-e01c-470c-ae18-e65d8b0e273a",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Cisco ACI Spine Leaf Design Essentials",
@@ -400,7 +297,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "65b2bb5d-f04d-539c-8f8f-83f3915d75a7",
-    "artifactItemId": "a19a4e6f-43c1-4dc0-8a3c-425848ce6220"
+    "artifactItemId": "a19a4e6f-43c1-4dc0-8a3c-425848ce6220",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Restructuring the Cisco ACI Design Guide",
@@ -418,7 +316,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "65b2bb5d-f04d-539c-8f8f-83f3915d75a7",
-    "artifactItemId": "68c860b6-13c8-456a-b8dc-b993976e549e"
+    "artifactItemId": "68c860b6-13c8-456a-b8dc-b993976e549e",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "SRv6 traffic steering over legacy MPLS",
@@ -436,7 +335,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "e15a21b3-707b-5095-a2b3-4ced452590b2",
-    "artifactItemId": "5efac02a-6069-4904-9aa7-b1ebd5680551"
+    "artifactItemId": "5efac02a-6069-4904-9aa7-b1ebd5680551",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Enterprise PAM versus Unified Zero Trust Platforms",
@@ -454,7 +354,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "035c036e-db91-5e9f-863f-6bd9b658d4a8",
-    "artifactItemId": "daa8b2eb-5900-44eb-a622-250e89beceab"
+    "artifactItemId": "daa8b2eb-5900-44eb-a622-250e89beceab",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "2025 DISA Military Cloud Security Rules",
@@ -472,7 +373,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "aef9ceb3-3f80-56bd-a769-d40d3b6ab5bc",
-    "artifactItemId": "617d8e68-fa03-4706-aab3-f3fb1ef12aca"
+    "artifactItemId": "617d8e68-fa03-4706-aab3-f3fb1ef12aca",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Military Security in the Commercial Cloud",
@@ -490,7 +392,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "aef9ceb3-3f80-56bd-a769-d40d3b6ab5bc",
-    "artifactItemId": "93d2f8ed-de34-4b02-92ff-9c5ab0f2b16d"
+    "artifactItemId": "93d2f8ed-de34-4b02-92ff-9c5ab0f2b16d",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Redesigning the DOD Cloud Security Guide",
@@ -508,7 +411,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "aef9ceb3-3f80-56bd-a769-d40d3b6ab5bc",
-    "artifactItemId": "383c0031-55c7-45c8-b7a6-603fbdba840e"
+    "artifactItemId": "383c0031-55c7-45c8-b7a6-603fbdba840e",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Pentagon\u2019s Commercial Cloud Security Playbook",
@@ -526,7 +430,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "aef9ceb3-3f80-56bd-a769-d40d3b6ab5bc",
-    "artifactItemId": "b6fdb803-b408-43ce-9308-1fd2cb6240d4"
+    "artifactItemId": "b6fdb803-b408-43ce-9308-1fd2cb6240d4",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Unifying Cisco AWS and 5G Zero Trust",
@@ -544,7 +449,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "c020b0d7-3894-5b53-8016-e7c625fe3ad0",
-    "artifactItemId": "15a312ab-dc5b-4261-9963-4d3b0e499298"
+    "artifactItemId": "15a312ab-dc5b-4261-9963-4d3b0e499298",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The military blueprint for Zero Trust",
@@ -562,7 +468,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "c020b0d7-3894-5b53-8016-e7c625fe3ad0",
-    "artifactItemId": "b7fd72b4-adea-4872-ae64-43fb6fc79521"
+    "artifactItemId": "b7fd72b4-adea-4872-ae64-43fb6fc79521",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Zero Trust Identity versus Network Architecture",
@@ -580,7 +487,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "c020b0d7-3894-5b53-8016-e7c625fe3ad0",
-    "artifactItemId": "d4166dc8-be85-40e3-80f7-9c5b6577f345"
+    "artifactItemId": "d4166dc8-be85-40e3-80f7-9c5b6577f345",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Weaving Soviet competition into the Apollo timeline",
@@ -598,7 +506,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "52d67e44-408b-5c40-86db-be43a629d374",
-    "artifactItemId": "0ed484b2-9595-4f1b-bce7-24e93046d7d5"
+    "artifactItemId": "0ed484b2-9595-4f1b-bce7-24e93046d7d5",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Was Apollo 11 a Weapon or Milestone",
@@ -616,7 +525,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "52d67e44-408b-5c40-86db-be43a629d374",
-    "artifactItemId": "be58da75-05ba-41a0-8ba2-48e3b61dfd84"
+    "artifactItemId": "be58da75-05ba-41a0-8ba2-48e3b61dfd84",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "BeyondTrust CyberArk and Agile PAM Challengers",
@@ -634,7 +544,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "035c036e-db91-5e9f-863f-6bd9b658d4a8",
-    "artifactItemId": "50fb5821-c06d-4faa-91a8-f9ff4dc1a725"
+    "artifactItemId": "50fb5821-c06d-4faa-91a8-f9ff4dc1a725",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Zero Trust Slicing and Dynamic Routing",
@@ -652,7 +563,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "c020b0d7-3894-5b53-8016-e7c625fe3ad0",
-    "artifactItemId": "5f7e9086-76e1-4ab0-a763-cd1d3ea3d9b3"
+    "artifactItemId": "5f7e9086-76e1-4ab0-a763-cd1d3ea3d9b3",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "How Apollo 11 Won the Space Race",
@@ -670,7 +582,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "52d67e44-408b-5c40-86db-be43a629d374",
-    "artifactItemId": "3c479d7c-02b5-497c-88e0-efe54a1846d8"
+    "artifactItemId": "3c479d7c-02b5-497c-88e0-efe54a1846d8",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Appgate swaps debt for private ownership",
@@ -688,7 +601,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "e13f92de-bf5e-5f87-b4cc-4ae933f4e2c8",
-    "artifactItemId": "9fb71dd1-230e-4d80-a8a5-bc1f3e2583bf"
+    "artifactItemId": "9fb71dd1-230e-4d80-a8a5-bc1f3e2583bf",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Appgate's surgical Chapter 11 debt reset",
@@ -706,7 +620,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "e13f92de-bf5e-5f87-b4cc-4ae933f4e2c8",
-    "artifactItemId": "2f403f62-f671-4ebc-9e6e-5c8f28df2772"
+    "artifactItemId": "2f403f62-f671-4ebc-9e6e-5c8f28df2772",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Structuring Pacific War Narratives and Archives",
@@ -724,7 +639,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "7d9ac567-fee2-51de-94ce-b675e50d5668",
-    "artifactItemId": "8ad10adb-dbe5-4884-a8fe-4695b1ae7506"
+    "artifactItemId": "8ad10adb-dbe5-4884-a8fe-4695b1ae7506",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Pacific Fleets Jungle Warriors and Atomic Science",
@@ -742,7 +658,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "7d9ac567-fee2-51de-94ce-b675e50d5668",
-    "artifactItemId": "e2cadf82-0ed6-4475-aadc-075480fb431c"
+    "artifactItemId": "e2cadf82-0ed6-4475-aadc-075480fb431c",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Is SRv6 Over MPLS a Smart Compromise",
@@ -760,7 +677,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "7ff9fa3b-f8e9-517f-873f-0642df0ea595",
-    "artifactItemId": "67e2a31b-8859-423a-8de8-8ce828b2dac4"
+    "artifactItemId": "67e2a31b-8859-423a-8de8-8ce828b2dac4",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Deploying SRv6 over legacy MPLS networks",
@@ -778,7 +696,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "7ff9fa3b-f8e9-517f-873f-0642df0ea595",
-    "artifactItemId": "e89131c5-340d-41a9-805b-3471f0daf361"
+    "artifactItemId": "e89131c5-340d-41a9-805b-3471f0daf361",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Training a 179 Pound Reactive Great Dane",
@@ -796,7 +715,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "a0aa3449-2015-5b58-99d3-dca0f2fcb47a",
-    "artifactItemId": "44da1100-4ea2-4d97-8120-b74588d766b1"
+    "artifactItemId": "44da1100-4ea2-4d97-8120-b74588d766b1",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Air Cans and Massive Great Dane Reactivity",
@@ -814,7 +734,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "a0aa3449-2015-5b58-99d3-dca0f2fcb47a",
-    "artifactItemId": "f77bed49-4784-43d8-b3cb-e82b48ec8acd"
+    "artifactItemId": "f77bed49-4784-43d8-b3cb-e82b48ec8acd",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "AI prompts for reactive Great Dane training",
@@ -832,7 +753,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "a0aa3449-2015-5b58-99d3-dca0f2fcb47a",
-    "artifactItemId": "036b8fb2-6291-4d91-a8ff-cd0b6baef6bf"
+    "artifactItemId": "036b8fb2-6291-4d91-a8ff-cd0b6baef6bf",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Unlock NotebookLM infographics with Canva Magic Layers",
@@ -850,7 +772,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "c47dd1fb-34b3-5e39-a57a-7255a3c89e08",
-    "artifactItemId": "6882c62f-6041-4a02-976f-cee8e7c55c53"
+    "artifactItemId": "6882c62f-6041-4a02-976f-cee8e7c55c53",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Static Break Protocol for AI infographics",
@@ -868,7 +791,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "c47dd1fb-34b3-5e39-a57a-7255a3c89e08",
-    "artifactItemId": "cad06959-1612-4d6a-b5a8-38753965cf96"
+    "artifactItemId": "cad06959-1612-4d6a-b5a8-38753965cf96",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Static Break Protocol with NotebookLM and Canva",
@@ -886,7 +810,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "c47dd1fb-34b3-5e39-a57a-7255a3c89e08",
-    "artifactItemId": "f29eba2d-51a3-432e-9cd0-5654b85c3dd0"
+    "artifactItemId": "f29eba2d-51a3-432e-9cd0-5654b85c3dd0",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Make NotebookLM infographics editable in Canva",
@@ -904,79 +829,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "c47dd1fb-34b3-5e39-a57a-7255a3c89e08",
-    "artifactItemId": "5ed3f67a-498f-4a43-811a-f9da5cde7db4"
-  },
-  {
-    "title": "Toxic garden hazards and safe native plants",
-    "description": "A NotebookLM Brief Audio Overview from Uook.",
-    "audio_file": "toxic-garden-hazards-and-safe-native-plants.m4a",
-    "source_name": "Toxic_garden_hazards_and_safe_native_plants.m4a",
-    "source_sha256": "f6c761226a2a9792690ce14c7130f55d507dfb8b4260534774dc1869baa02e39",
-    "converted_to_aac": false,
-    "published": "Mon, 24 Aug 2026 22:31:36 +0000",
-    "guid": "8df85ac5-f2f4-58e5-8432-28295b4e87ef",
-    "duration": "0:01:42",
-    "draft": false,
-    "notebookId": "d174fc63-4861-4c79-a4b1-015b21c3a8fa",
-    "notebookTitle": "Uook",
-    "artifactType": "audio_overview",
-    "variant": "Brief",
-    "artifactJobId": "d22dbb12-ea7a-5416-892c-72ea1b3c3ab7",
-    "artifactItemId": "a8ac6e33-31c4-4534-b3c9-5637da2f5586"
-  },
-  {
-    "title": "Prioritize yard management over botanical trivia",
-    "description": "A NotebookLM Critique Audio Overview from Uook.",
-    "audio_file": "prioritize-yard-management-over-botanical-trivia.m4a",
-    "source_name": "Prioritize_yard_management_over_botanical_trivia.m4a",
-    "source_sha256": "1fc5d7efc02dea4581231b9956f9cbd19202937b7276dadb15a778d24bd55c76",
-    "converted_to_aac": false,
-    "published": "Mon, 24 Aug 2026 22:31:36 +0000",
-    "guid": "5f5d1db9-d2cd-5c80-8114-f7238d3cfada",
-    "duration": "0:10:10",
-    "draft": false,
-    "notebookId": "d174fc63-4861-4c79-a4b1-015b21c3a8fa",
-    "notebookTitle": "Uook",
-    "artifactType": "audio_overview",
-    "variant": "Critique",
-    "artifactJobId": "d22dbb12-ea7a-5416-892c-72ea1b3c3ab7",
-    "artifactItemId": "c5bada6e-d65b-400b-aa52-a4440e214163"
-  },
-  {
-    "title": "Are Toxic Native Plants Worth the Risk",
-    "description": "A NotebookLM Debate Audio Overview from Uook.",
-    "audio_file": "are-toxic-native-plants-worth-the-risk.m4a",
-    "source_name": "Are_Toxic_Native_Plants_Worth_the_Risk.m4a",
-    "source_sha256": "a112ad9f976c6521308b331daaffc93eccb4ba41fb5b377c01315c38b2ca63a9",
-    "converted_to_aac": false,
-    "published": "Mon, 24 Aug 2026 22:31:35 +0000",
-    "guid": "6adefbf2-b0f1-552d-b37a-71d838ec8650",
-    "duration": "0:19:37",
-    "draft": false,
-    "notebookId": "d174fc63-4861-4c79-a4b1-015b21c3a8fa",
-    "notebookTitle": "Uook",
-    "artifactType": "audio_overview",
-    "variant": "Debate",
-    "artifactJobId": "d22dbb12-ea7a-5416-892c-72ea1b3c3ab7",
-    "artifactItemId": "6f068359-a961-4cd6-80b5-c2fb187cc97d"
-  },
-  {
-    "title": "The hidden war in your garden",
-    "description": "A NotebookLM Deep Dive Audio Overview from Uook.",
-    "audio_file": "the-hidden-war-in-your-garden.m4a",
-    "source_name": "The_hidden_war_in_your_garden.m4a",
-    "source_sha256": "0260de13dc7e3d604cd90dcb2d82093237e0cc5e994143e8085dd8123af733ba",
-    "converted_to_aac": false,
-    "published": "Mon, 24 Aug 2026 22:31:35 +0000",
-    "guid": "97a901a0-b75f-5c21-b214-453e49bbf590",
-    "duration": "0:22:06",
-    "draft": false,
-    "notebookId": "d174fc63-4861-4c79-a4b1-015b21c3a8fa",
-    "notebookTitle": "Uook",
-    "artifactType": "audio_overview",
-    "variant": "Deep Dive",
-    "artifactJobId": "d22dbb12-ea7a-5416-892c-72ea1b3c3ab7",
-    "artifactItemId": "67ae8fec-4db5-4c02-b529-0a1a41c7812e"
+    "artifactItemId": "5ed3f67a-498f-4a43-811a-f9da5cde7db4",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Which Backyard Plants to Pull or Keep",
@@ -994,7 +848,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "d59e21aa-b761-5a5e-bc9f-0d37e502cf74",
-    "artifactItemId": "f19d2c8e-7c57-4932-906f-411ba3b47c9d"
+    "artifactItemId": "f19d2c8e-7c57-4932-906f-411ba3b47c9d",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Should plant origin or behavior guide gardening",
@@ -1012,7 +867,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "d59e21aa-b761-5a5e-bc9f-0d37e502cf74",
-    "artifactItemId": "c8bcf49e-945b-4fc6-a78a-5237ba3ad46a"
+    "artifactItemId": "c8bcf49e-945b-4fc6-a78a-5237ba3ad46a",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Prioritize Urgent Threats in Garden Guides",
@@ -1030,7 +886,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "d59e21aa-b761-5a5e-bc9f-0d37e502cf74",
-    "artifactItemId": "80b0e69a-7c9f-4e54-8bb9-d129d915c6b3"
+    "artifactItemId": "80b0e69a-7c9f-4e54-8bb9-d129d915c6b3",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Protecting Kids and Pets From Dangerous Plants",
@@ -1048,7 +905,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "d59e21aa-b761-5a5e-bc9f-0d37e502cf74",
-    "artifactItemId": "a7748788-250c-4e27-9723-a24fb946837e"
+    "artifactItemId": "a7748788-250c-4e27-9723-a24fb946837e",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Essential third party tools for NotebookLM",
@@ -1066,7 +924,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "e1d14b86-1792-5066-bf77-0547e41cb1ef",
-    "artifactItemId": "65ce794f-72d5-41e0-b8fb-23b24acd5fc1"
+    "artifactItemId": "65ce794f-72d5-41e0-b8fb-23b24acd5fc1",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Bypassing NotebookLM limits with third-party tools",
@@ -1084,7 +943,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "e1d14b86-1792-5066-bf77-0547e41cb1ef",
-    "artifactItemId": "85668ea1-2f59-4222-9005-2000f91ef18a"
+    "artifactItemId": "85668ea1-2f59-4222-9005-2000f91ef18a",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Hacking NotebookLM Or Local Open Source",
@@ -1102,7 +962,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "e1d14b86-1792-5066-bf77-0547e41cb1ef",
-    "artifactItemId": "dd4e2bb7-98a8-480e-8863-2337feec6742"
+    "artifactItemId": "dd4e2bb7-98a8-480e-8863-2337feec6742",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Advanced NotebookLM automation and export hacks",
@@ -1120,7 +981,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "e1d14b86-1792-5066-bf77-0547e41cb1ef",
-    "artifactItemId": "aacc93c1-8444-4f2c-88c1-6a9ab259f1c9"
+    "artifactItemId": "aacc93c1-8444-4f2c-88c1-6a9ab259f1c9",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Why Google Gemini requires a login",
@@ -1138,7 +1000,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "f7447bd0-ae0c-5018-8877-c0fd74496334",
-    "artifactItemId": "8d7cdb07-7a96-49d6-a6db-c0364c4bc491"
+    "artifactItemId": "8d7cdb07-7a96-49d6-a6db-c0364c4bc491",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Hidden Architecture of Seven Tiny Words",
@@ -1156,7 +1019,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "f7447bd0-ae0c-5018-8877-c0fd74496334",
-    "artifactItemId": "0d0f3c56-199f-40ee-8e62-e7b6383b325b"
+    "artifactItemId": "0d0f3c56-199f-40ee-8e62-e7b6383b325b",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Nine Words Defining the Google Gemini Gateway",
@@ -1174,7 +1038,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "f7447bd0-ae0c-5018-8877-c0fd74496334",
-    "artifactItemId": "6ccf9e7f-591f-4ab3-a589-c31a1264fbdd"
+    "artifactItemId": "6ccf9e7f-591f-4ab3-a589-c31a1264fbdd",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Five Word Digital Airlock",
@@ -1192,7 +1057,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "6db0abc0-f57d-53ac-a725-46baf19a3c64",
-    "artifactItemId": "39a5c30f-4527-44a4-8844-79f9144cb56f"
+    "artifactItemId": "39a5c30f-4527-44a4-8844-79f9144cb56f",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Your Google Account Unlocks Gemini",
@@ -1210,7 +1076,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "6db0abc0-f57d-53ac-a725-46baf19a3c64",
-    "artifactItemId": "eaeaf7df-da4e-4423-b14a-b64bf8f2589d"
+    "artifactItemId": "eaeaf7df-da4e-4423-b14a-b64bf8f2589d",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Fixing the Sign in Google apps Text",
@@ -1228,7 +1095,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "6db0abc0-f57d-53ac-a725-46baf19a3c64",
-    "artifactItemId": "f954c45c-efca-42ca-9f3c-37c2bbee0b03"
+    "artifactItemId": "f954c45c-efca-42ca-9f3c-37c2bbee0b03",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "One missing space defines Google Gemini",
@@ -1246,7 +1114,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "6db0abc0-f57d-53ac-a725-46baf19a3c64",
-    "artifactItemId": "2101377e-ad7b-4b16-90c0-b031a374b2de"
+    "artifactItemId": "2101377e-ad7b-4b16-90c0-b031a374b2de",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Safe TV mounting for metal gazebos",
@@ -1264,7 +1133,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "2fe0802f-6dd7-56a8-b40a-4b3d3da95321",
-    "artifactItemId": "7b1c6b4e-1f3d-4b5b-9c7d-2a26b1aed13c"
+    "artifactItemId": "7b1c6b4e-1f3d-4b5b-9c7d-2a26b1aed13c",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Building Collapse AI and Gazebo Physics",
@@ -1282,7 +1152,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "2fe0802f-6dd7-56a8-b40a-4b3d3da95321",
-    "artifactItemId": "d9629aee-d560-4869-9674-373b16cdc4f6"
+    "artifactItemId": "d9629aee-d560-4869-9674-373b16cdc4f6",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Why AI Ignores Emergencies For Gazebos",
@@ -1300,7 +1171,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "2fe0802f-6dd7-56a8-b40a-4b3d3da95321",
-    "artifactItemId": "dee2725c-4f54-42a8-b91a-e7f4db1e28b1"
+    "artifactItemId": "dee2725c-4f54-42a8-b91a-e7f4db1e28b1",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Physics of Gazebo TV Mounting",
@@ -1318,61 +1190,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "2fe0802f-6dd7-56a8-b40a-4b3d3da95321",
-    "artifactItemId": "b1c6acbf-b305-412a-b37f-133c9777c531"
-  },
-  {
-    "title": "Vincent Maguire's two-day Pregabalin prescription",
-    "description": "A NotebookLM Brief Audio Overview from EPUB S.",
-    "audio_file": "vincent-maguire-s-two-day-pregabalin-prescription.m4a",
-    "source_name": "Vincent_Maguire_s_two-day_Pregabalin_prescription.m4a",
-    "source_sha256": "5bd2ab7aa79f4498b5cedefcec26f011d70321a94519a9b9d199fcad92e4f8b5",
-    "converted_to_aac": false,
-    "published": "Mon, 24 Aug 2026 22:31:34 +0000",
-    "guid": "9c056970-de81-5507-b00d-82eb20d82e78",
-    "duration": "0:01:31",
-    "draft": false,
-    "notebookId": "b2fcd749-36c8-4202-9117-312c4b1ea277",
-    "notebookTitle": "EPUB S",
-    "artifactType": "audio_overview",
-    "variant": "Brief",
-    "artifactJobId": "a07423fb-1ae8-5694-9402-a622ecc33a80",
-    "artifactItemId": "0ef5162e-bb27-45b6-834c-1ac50ce9a707"
-  },
-  {
-    "title": "The Surveillance Hidden in Your CVS Receipt",
-    "description": "A NotebookLM Deep Dive Audio Overview from EPUB S.",
-    "audio_file": "the-surveillance-hidden-in-your-cvs-receipt.m4a",
-    "source_name": "The_Surveillance_Hidden_in_Your_CVS_Receipt.m4a",
-    "source_sha256": "d0f7fd7a5541ca07b27c72021f9f3793533927b83f6e324c1adbd595bff478f6",
-    "converted_to_aac": false,
-    "published": "Mon, 24 Aug 2026 22:31:34 +0000",
-    "guid": "6d9df1b0-a5d9-591f-b367-aea11de5899d",
-    "duration": "0:17:10",
-    "draft": false,
-    "notebookId": "b2fcd749-36c8-4202-9117-312c4b1ea277",
-    "notebookTitle": "EPUB S",
-    "artifactType": "audio_overview",
-    "variant": "Deep Dive",
-    "artifactJobId": "a07423fb-1ae8-5694-9402-a622ecc33a80",
-    "artifactItemId": "bd2a743c-e916-40a5-b524-4ca4a25a2964"
-  },
-  {
-    "title": "Empathetic AI for Prescription Receipts",
-    "description": "A NotebookLM Critique Audio Overview from EPUB S.",
-    "audio_file": "empathetic-ai-for-prescription-receipts.m4a",
-    "source_name": "Empathetic_AI_for_Prescription_Receipts.m4a",
-    "source_sha256": "322e87f8f6f437ac6bea2b37b7a977afa78403142b2c8e407e146395538c4865",
-    "converted_to_aac": false,
-    "published": "Mon, 24 Aug 2026 22:31:34 +0000",
-    "guid": "8dc27b74-b5f9-5cef-ac45-3f1dd99b4bd0",
-    "duration": "0:19:52",
-    "draft": false,
-    "notebookId": "b2fcd749-36c8-4202-9117-312c4b1ea277",
-    "notebookTitle": "EPUB S",
-    "artifactType": "audio_overview",
-    "variant": "Critique",
-    "artifactJobId": "a07423fb-1ae8-5694-9402-a622ecc33a80",
-    "artifactItemId": "ef024933-edbe-49d9-a471-31cdf5120e54"
+    "artifactItemId": "b1c6acbf-b305-412a-b37f-133c9777c531",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Mastering 105mm Back Focus Spacing",
@@ -1390,7 +1209,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "62d6a8b3-8b02-5009-907f-7fa8588cf446",
-    "artifactItemId": "bc251684-af7b-4845-b3a6-4bb1de782abc"
+    "artifactItemId": "bc251684-af7b-4845-b3a6-4bb1de782abc",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Celestron 105mm back focus with ZWO cameras",
@@ -1408,7 +1228,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "62d6a8b3-8b02-5009-907f-7fa8588cf446",
-    "artifactItemId": "f40dd21a-061a-415a-b87a-e791294c780f"
+    "artifactItemId": "f40dd21a-061a-415a-b87a-e791294c780f",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Solving the 105mm back focus puzzle",
@@ -1426,7 +1247,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "62d6a8b3-8b02-5009-907f-7fa8588cf446",
-    "artifactItemId": "8b0ae52e-ce46-4a7c-a1e8-32d5f10e5cd8"
+    "artifactItemId": "8b0ae52e-ce46-4a7c-a1e8-32d5f10e5cd8",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The 105mm Back Focus Debate",
@@ -1444,7 +1266,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "62d6a8b3-8b02-5009-907f-7fa8588cf446",
-    "artifactItemId": "61e358b2-20f2-4e63-9e62-66e142e82262"
+    "artifactItemId": "61e358b2-20f2-4e63-9e62-66e142e82262",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Engineering a Bulletproof New England Yard",
@@ -1462,7 +1285,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "227b404a-0464-507a-9a5d-16c5305a2fd5",
-    "artifactItemId": "b84bf94f-caa9-431d-b46e-d19e00d70ad8"
+    "artifactItemId": "b84bf94f-caa9-431d-b46e-d19e00d70ad8",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Dog Run Engineering and Toxic Plant Triage",
@@ -1480,7 +1304,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "227b404a-0464-507a-9a5d-16c5305a2fd5",
-    "artifactItemId": "5d6f6256-8cb9-444a-b0bd-530179ff1c9e"
+    "artifactItemId": "5d6f6256-8cb9-444a-b0bd-530179ff1c9e",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Dog turf engineering and toxic plant warfare",
@@ -1498,7 +1323,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "227b404a-0464-507a-9a5d-16c5305a2fd5",
-    "artifactItemId": "1d8ea994-cc99-457f-86b3-ca9f0b7cb0bb"
+    "artifactItemId": "1d8ea994-cc99-457f-86b3-ca9f0b7cb0bb",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Pet Turf Engineering and Toxic Plant Eradication",
@@ -1516,7 +1342,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "227b404a-0464-507a-9a5d-16c5305a2fd5",
-    "artifactItemId": "e431d684-d96c-41ad-b72f-2bada6a6ed60"
+    "artifactItemId": "e431d684-d96c-41ad-b72f-2bada6a6ed60",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Toxic garden hazards and native plants",
@@ -1534,7 +1361,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "a1e5859a-55cd-5ec7-924a-69f2ea326e05",
-    "artifactItemId": "bcb525cc-fa9e-4747-8a69-fe486299fd4f"
+    "artifactItemId": "bcb525cc-fa9e-4747-8a69-fe486299fd4f",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Personalized Plant Safety and Garden Management",
@@ -1552,7 +1380,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "a1e5859a-55cd-5ec7-924a-69f2ea326e05",
-    "artifactItemId": "d2595f9e-ac28-48b4-8a38-aece25e70578"
+    "artifactItemId": "d2595f9e-ac28-48b4-8a38-aece25e70578",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Toxic Plants and the Invasive Debate",
@@ -1570,7 +1399,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "a1e5859a-55cd-5ec7-924a-69f2ea326e05",
-    "artifactItemId": "9e5b0e92-d629-453f-b94a-7963428480c3"
+    "artifactItemId": "9e5b0e92-d629-453f-b94a-7963428480c3",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Identify Toxic and Invasive Backyard Plants",
@@ -1588,7 +1418,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "1769cdd9-4ff8-5afd-a7e7-4dbc96c7dbfd",
-    "artifactItemId": "dac98448-bfdc-4e20-adb4-fa28a4dba791"
+    "artifactItemId": "dac98448-bfdc-4e20-adb4-fa28a4dba791",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Garden safety versus native plant habitat",
@@ -1606,7 +1437,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "1769cdd9-4ff8-5afd-a7e7-4dbc96c7dbfd",
-    "artifactItemId": "751886fe-59a8-4bd7-8483-1f1459cd80fd"
+    "artifactItemId": "751886fe-59a8-4bd7-8483-1f1459cd80fd",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Prioritize Toxic Hazards in Garden Manuals",
@@ -1624,7 +1456,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "1769cdd9-4ff8-5afd-a7e7-4dbc96c7dbfd",
-    "artifactItemId": "0b542d2d-03c4-4291-a864-80381f09d726"
+    "artifactItemId": "0b542d2d-03c4-4291-a864-80381f09d726",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Garden Triage for Toxic and Invasive Plants",
@@ -1642,7 +1475,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "1769cdd9-4ff8-5afd-a7e7-4dbc96c7dbfd",
-    "artifactItemId": "34816c10-3341-41a7-85de-4848bd2c3f66"
+    "artifactItemId": "34816c10-3341-41a7-85de-4848bd2c3f66",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Securing industrial infrastructure with Xage Zero Trust",
@@ -1660,7 +1494,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "f9fc37ba-2a50-5d95-a659-3d8dcecff1e9",
-    "artifactItemId": "20e51886-cd6d-4ea7-ab20-6a2407633c05"
+    "artifactItemId": "20e51886-cd6d-4ea7-ab20-6a2407633c05",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Zero Trust for Critical Infrastructure",
@@ -1678,7 +1513,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "f9fc37ba-2a50-5d95-a659-3d8dcecff1e9",
-    "artifactItemId": "ef5808d2-0942-4979-80f5-5fb7e50f1516"
+    "artifactItemId": "ef5808d2-0942-4979-80f5-5fb7e50f1516",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Bridging Zero Trust Vision and Cryptographic Proof",
@@ -1696,7 +1532,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "f9fc37ba-2a50-5d95-a659-3d8dcecff1e9",
-    "artifactItemId": "38c4eeac-1c16-4b1a-8e57-fb19755b1942"
+    "artifactItemId": "38c4eeac-1c16-4b1a-8e57-fb19755b1942",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Replacing Industrial Castles with Zero Trust",
@@ -1714,7 +1551,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "f9fc37ba-2a50-5d95-a659-3d8dcecff1e9",
-    "artifactItemId": "d155a254-b05a-476e-a085-d57b4e2a30b6"
+    "artifactItemId": "d155a254-b05a-476e-a085-d57b4e2a30b6",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Replacing Traditional VPNs with Appgate SDP",
@@ -1732,7 +1570,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "9a266cfe-a482-590e-831b-6c57cd88b8d5",
-    "artifactItemId": "1168efdc-fdbc-4e9f-acb2-0ba03c6a9b11"
+    "artifactItemId": "1168efdc-fdbc-4e9f-acb2-0ba03c6a9b11",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Appgate SDP Zero Trust Architecture and AWS",
@@ -1750,7 +1589,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "9a266cfe-a482-590e-831b-6c57cd88b8d5",
-    "artifactItemId": "d921ba2d-4629-4a9f-a758-91eb384e40f2"
+    "artifactItemId": "d921ba2d-4629-4a9f-a758-91eb384e40f2",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Appgate SDP 6.6 Licensing and AWS Deployment",
@@ -1768,7 +1608,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "9a266cfe-a482-590e-831b-6c57cd88b8d5",
-    "artifactItemId": "e4fc9db5-da80-4c43-932b-9ca9e89399e6"
+    "artifactItemId": "e4fc9db5-da80-4c43-932b-9ca9e89399e6",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Appgate SDP Security and Administrative Complexity",
@@ -1786,7 +1627,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "9a266cfe-a482-590e-831b-6c57cd88b8d5",
-    "artifactItemId": "861b94d8-64cc-4f93-b733-e46df6ed7652"
+    "artifactItemId": "861b94d8-64cc-4f93-b733-e46df6ed7652",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "How Satellites and Security Break CDNs",
@@ -1804,7 +1646,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "eaf8294c-8472-5195-a421-05824fdb0c48",
-    "artifactItemId": "a4966377-b3d9-4a7f-a468-ec0e67f27926"
+    "artifactItemId": "a4966377-b3d9-4a7f-a468-ec0e67f27926",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Move to an Originless Internet",
@@ -1822,7 +1665,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "eaf8294c-8472-5195-a421-05824fdb0c48",
-    "artifactItemId": "2281e2e9-13f8-47c7-a696-d50b34b8f8c9"
+    "artifactItemId": "2281e2e9-13f8-47c7-a696-d50b34b8f8c9",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Edge Logic Versus Network Physics in CDNs",
@@ -1840,7 +1684,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "eaf8294c-8472-5195-a421-05824fdb0c48",
-    "artifactItemId": "a273d111-fd9f-463c-aca6-d6aaf71c87c3"
+    "artifactItemId": "a273d111-fd9f-463c-aca6-d6aaf71c87c3",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "From Browser Caching to Starlink Satellites",
@@ -1858,7 +1703,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "eaf8294c-8472-5195-a421-05824fdb0c48",
-    "artifactItemId": "6ae1bbf7-4ea8-4d70-ab5d-b1238b248af7"
+    "artifactItemId": "6ae1bbf7-4ea8-4d70-ab5d-b1238b248af7",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Toxic Milkweed and Safe New Hampshire Perennials",
@@ -1876,7 +1722,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "fd4e14ae-b887-5690-9b3d-c9892bd55553",
-    "artifactItemId": "01f86484-7db9-4074-9b9f-8559ea84330a"
+    "artifactItemId": "01f86484-7db9-4074-9b9f-8559ea84330a",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Hidden Weapons of Garden Plants",
@@ -1894,7 +1741,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "fd4e14ae-b887-5690-9b3d-c9892bd55553",
-    "artifactItemId": "e59ff0ad-bc02-4043-8424-61027ca47238"
+    "artifactItemId": "e59ff0ad-bc02-4043-8424-61027ca47238",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Structural Refinements for Manchester Horticultural Reports",
@@ -1912,7 +1760,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "fd4e14ae-b887-5690-9b3d-c9892bd55553",
-    "artifactItemId": "346cc315-8c46-4d40-8f9b-ea5b4660e71c"
+    "artifactItemId": "346cc315-8c46-4d40-8f9b-ea5b4660e71c",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Should You Plant Toxic Milkweed for Monarchs?",
@@ -1930,7 +1779,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "fd4e14ae-b887-5690-9b3d-c9892bd55553",
-    "artifactItemId": "8069a82b-0d45-4116-9d49-8654a542a032"
+    "artifactItemId": "8069a82b-0d45-4116-9d49-8654a542a032",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Scaling AI without breaking the bank",
@@ -1948,7 +1798,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "artifactJobId": "0425ba09-7cc0-5cc0-8f84-d695f5723d28",
-    "artifactItemId": "bbf270b2-b73b-4ccb-8b6b-b4518428e700"
+    "artifactItemId": "bbf270b2-b73b-4ccb-8b6b-b4518428e700",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The math and hardware behind AI",
@@ -1966,7 +1817,8 @@
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "artifactJobId": "0425ba09-7cc0-5cc0-8f84-d695f5723d28",
-    "artifactItemId": "067c233d-394c-4893-82fb-7cd5ee849429"
+    "artifactItemId": "067c233d-394c-4893-82fb-7cd5ee849429",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Why GPU Bottlenecks Drive AI Innovation",
@@ -1984,7 +1836,8 @@
     "artifactType": "audio_overview",
     "variant": "Critique",
     "artifactJobId": "0425ba09-7cc0-5cc0-8f84-d695f5723d28",
-    "artifactItemId": "32bb7fe1-c8e8-4777-972b-ecb297c417b2"
+    "artifactItemId": "32bb7fe1-c8e8-4777-972b-ecb297c417b2",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Math versus Physics in AI Scaling",
@@ -2002,7 +1855,8 @@
     "artifactType": "audio_overview",
     "variant": "Debate",
     "artifactJobId": "0425ba09-7cc0-5cc0-8f84-d695f5723d28",
-    "artifactItemId": "180cca97-e254-4663-9c92-75d0ae62d5c9"
+    "artifactItemId": "180cca97-e254-4663-9c92-75d0ae62d5c9",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Generator: A 10-Minute Capability Tour",
@@ -2014,7 +1868,8 @@
     "published": "Sun, 23 Aug 2026 02:56:38 +0000",
     "guid": "9022b85f-7a82-57bb-8c13-d1103646997f",
     "duration": "0:09:59",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Cloudflare Secure Hosting \u2014 Outbound Tunnels Without Open Firewall Ports",
@@ -2026,7 +1881,8 @@
     "published": "Thu, 20 Aug 2026 10:42:19 +0000",
     "guid": "8bea357b-dfa7-4cb8-bd9c-3780a5c32a4a",
     "duration": "0:41:07",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Logistical Nightmare Of Reaching Mars (1)",
@@ -2038,7 +1894,8 @@
     "published": "Sun, 02 Aug 2026 21:53:56 +0000",
     "guid": "3ec60ba0-9f17-48cb-ad21-86ba92e46758",
     "duration": "0:21:15",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Mars Mission Architecture Jogg Render Rendered Voices",
@@ -2050,7 +1907,8 @@
     "published": "Sun, 02 Aug 2026 21:53:56 +0000",
     "guid": "c7845184-9eec-48ea-b672-9b063e587cb5",
     "duration": "0:19:30",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "How Humans Will Actually Reach Mars",
@@ -2094,7 +1952,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/mars-two-voice/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Rome From Mud to Ottoman Cannons - Vince and Margaret",
@@ -2106,7 +1965,8 @@
     "published": "Tue, 18 Aug 2026 20:16:28 +0000",
     "guid": "545ec94b-f0d4-46d1-8704-b1caa781ce4a",
     "duration": "0:50:24",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Managing Reactivity In A 179 Pound Great Dane Trevor And Catherine",
@@ -2118,7 +1978,8 @@
     "published": "Tue, 18 Aug 2026 18:54:01 +0000",
     "guid": "1506718a-435d-4658-bc5e-48a15164ab2c",
     "duration": "0:05:24",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Blueprint For A Human Mars Mission (8)",
@@ -2130,7 +1991,8 @@
     "published": "Sat, 01 Aug 2026 01:15:03 +0000",
     "guid": "e5a10e39-14b4-472b-ba6b-4a22a88de6e0",
     "duration": "0:21:21",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Ai Plant Identification Versus Human Reality",
@@ -2174,7 +2036,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-plant-identification/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "How Solar Cycle 25 Threatens Earth",
@@ -2216,7 +2079,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-solar-cycle/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Managing The 170 Pound European Great Dane",
@@ -2260,7 +2124,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-european-great-dane/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Why Dinosaurs Still Rule The Earth",
@@ -2304,7 +2169,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-dinosaurs-rule/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Clinical Conversion Notebooklm For Nursing Educators",
@@ -2316,7 +2182,8 @@
     "published": "Mon, 13 Jul 2026 22:49:45 +0000",
     "guid": "1a14974f-7310-4197-847e-72113a7157bb",
     "duration": "0:04:31",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Pragmatic Bridge: Unlocking the Future with SRv6 over MPLS",
@@ -2327,7 +2194,8 @@
     "published": "Mon, 13 Jul 2026 22:03:25 +0000",
     "guid": "0b1d7c34-4d32-4917-ab4c-d85d6d976eb5",
     "duration": "0:10:07",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Raising Massive Maine Coons And Ragdolls",
@@ -2346,7 +2214,8 @@
     "artifactType": "audio_overview",
     "variant": "Brief",
     "libraryColumn": "Other Stuff",
-    "libraryGroup": "Animals & Training"
+    "libraryGroup": "Animals & Training",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Banned Colors And Standard Poodle Genetics",
@@ -2390,7 +2259,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-poodle-genetics/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Anthropic S Accidental Autonomous Zero Day Engine",
@@ -2434,7 +2304,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-anthropic-zero-day/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Commercial Road From Moon To Mars",
@@ -2478,7 +2349,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-commercial-mars/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Fable 5 Short Audio Overview Anthropic Fable 5 And Xbox Fable Reboot",
@@ -2490,7 +2362,8 @@
     "published": "Sun, 12 Jul 2026 21:46:27 +0000",
     "guid": "f128d5f4-19d7-4768-898f-68ba7787f9f6",
     "duration": "0:01:42",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Ai Guardrails Versus Fable S Morality System",
@@ -2534,7 +2407,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-fable-guardrails/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "2Why Fable 5 Keeps Downgrading Itself",
@@ -2578,7 +2452,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-fable-5/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The 0",
@@ -2590,7 +2465,8 @@
     "published": "Sat, 11 Jul 2026 19:58:51 +0000",
     "guid": "9e37a7f9-6944-4864-8eb7-29fb48dc7929",
     "duration": "0:38:59",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Technical Struggle To Capture Andromeda",
@@ -2634,7 +2510,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-andromeda/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Why Businesses Need Zero Trust Architecture",
@@ -2678,7 +2555,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-zero-trust-architecture/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Why The Universe Doesn T Rip Itself Apart",
@@ -2720,7 +2598,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-dark-matter-research/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Stargazing And The Backwards Lens Mystery (1)",
@@ -2732,7 +2611,8 @@
     "published": "Tue, 07 Jul 2026 00:28:55 +0000",
     "guid": "7a4e83ea-e38f-4262-85da-fccd12379681",
     "duration": "0:44:50",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Programming Enterprise Networks With Srv6",
@@ -2776,7 +2656,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-programming-enterprise-srv6/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "A Phased Roadmap From Backyard To Astrophysics",
@@ -2820,7 +2701,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-astrophysics-roadmap/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Cyberark Versus Xage For Ai Energy",
@@ -2865,7 +2747,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-cyberark-xage-energy/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Hubble And Webb Reveal The Early Universe",
@@ -2906,7 +2789,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-hubble-webb/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Wild West Was Corporate Warfare",
@@ -2949,7 +2833,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-wild-west-corporate-warfare/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "True Crimes",
@@ -2960,7 +2845,8 @@
     "published": "Mon, 15 Jun 2026 01:58:19 +0000",
     "guid": "1acc9cb9-a09e-49b9-a038-663ce5645b88",
     "duration": "0:12:39",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Gunfighters Of The U S West",
@@ -2971,7 +2857,8 @@
     "published": "Mon, 15 Jun 2026 01:58:19 +0000",
     "guid": "a824b65b-c837-4023-94ef-bad8667eae2a",
     "duration": "0:13:15",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Srv6",
@@ -2982,7 +2869,8 @@
     "published": "Mon, 15 Jun 2026 01:31:08 +0000",
     "guid": "de4b582e-1cae-4c84-bd04-24ae42d8734c",
     "duration": "0:20:29",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Mpls",
@@ -2993,7 +2881,8 @@
     "published": "Mon, 15 Jun 2026 01:31:08 +0000",
     "guid": "56fd71ed-723a-4990-a8ec-96bcc06fc819",
     "duration": "0:14:04",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Elevenlabs Ww 2 Generals",
@@ -3004,7 +2893,8 @@
     "published": "Sun, 14 Jun 2026 22:10:25 +0000",
     "guid": "80c799bc-6d55-4921-8ae4-cb0ee30c9cda",
     "duration": "0:16:04",
-    "draft": false
+    "draft": false,
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Active Active Ha And Precision Ai Architecture",
@@ -3047,7 +2937,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-active-ha-precision-ai/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Xage versus CyberArk for Akamai Port 443",
@@ -3091,7 +2982,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-xage-port-443/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Why Faster Hardware Won't Fix Your Cloud",
@@ -3102,7 +2994,8 @@
     "guid": "cddb3f0c-e41a-4c26-8c3b-950212de5fcd",
     "duration": "0:19:10",
     "draft": false,
-    "source_sha256": "5f87161b96ab320ed29477f61b565771f398db7d2ca3595014fe40687c8a3935"
+    "source_sha256": "5f87161b96ab320ed29477f61b565771f398db7d2ca3595014fe40687c8a3935",
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "What Your Dog Is Really Telling You",
@@ -3146,7 +3039,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-dog-language/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Triage and Training for Barking Dogs",
@@ -3190,7 +3084,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-triage-barking/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "The Death of the Network Perimeter",
@@ -3233,7 +3128,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-network-perimeter/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Surviving the Adolescence of Powerful AI",
@@ -3276,7 +3172,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-powerful-ai/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Replacing Legacy MPLS with uSID Routing",
@@ -3319,7 +3216,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-replacing-legacy-mpls/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Bridging the MPLS and SRv6 Divide",
@@ -3363,7 +3261,8 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-mpls-srv6/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   },
   {
     "title": "Barking Solutions for Busy Working Families",
@@ -3407,6 +3306,7 @@
         }
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-barking-solutions/mars-two-voice-manifest.json"
-    }
+    },
+    "publicReviewStatus": "Existing publication; editorial review not recorded"
   }
 ]

@@ -1,5 +1,26 @@
 [
   {
+    "title": "The Pirates Who Built the Macintosh",
+    "description": "generatorJobId: 20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4\n\nnotebookPrompt:\nNotebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com\n\nfocus:\nFocus on early Macs\n\nAdditional comments: Test notes",
+    "audio_file": "20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4-orig-nblm-source.m4a",
+    "source_name": "20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4-orig-nblm-source.m4a",
+    "source_sha256": "9ae6efd1f3d7ab5b67cebd791b6cb1cfae8086a534fa930b4a3d07fa33b528af",
+    "converted_to_aac": true,
+    "published": "Fri, 11 Sep 2026 14:40:28 +0000",
+    "guid": "20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4",
+    "duration": "0:48:55",
+    "draft": false,
+    "notebookId": "000f4368-a05c-425a-91d4-7e87db766afd",
+    "notebookTitle": "Test Apple History",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "generatorJobId": "20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4",
+    "notebookPrompt": "Notebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com",
+    "focus": "Focus on early Macs\n\nAdditional comments: Test notes",
+    "libraryColumn": "Technology",
+    "libraryGroup": "AI & Computing"
+  },
+  {
     "title": "The American Revolution \u2014 Deep Dive",
     "description": "From British debt to the American Constitution: an original-voices NotebookLM Audio Overview covering causes, campaigns, battles, and the Constitution. Based on the notebook\u2019s eight Wikipedia sources; not a primary-source research edition.",
     "audio_file": "american-revolution-deep-dive-delivery.mp3",

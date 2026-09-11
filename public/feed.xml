@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Manufacturing Supply Chain Traceability: NIST IR 8536 Deep Dive</title>
+      <description>A NotebookLM Deep Dive Audio Overview exploring NIST IR 8536: Manufacturing Supply Chain Traceability Meta-Framework principles, selective disclosure, and decentralized trust.</description>
+      <pubDate>Fri, 11 Sep 2026 20:43:40 +0000</pubDate>
+      <guid isPermaLink="false">8859ac4a-0703-5818-9cba-0642b3ba8bba</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/nist-ir-8536-audio.m4a" length="42038379" type="audio/mp4"/>
+      <itunes:duration>0:21:46</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Target Level Zero Trust by FY27</title>
       <description>Target Level Zero Trust by FY27</description>
       <pubDate>Fri, 11 Sep 2026 20:07:55 +0000</pubDate>

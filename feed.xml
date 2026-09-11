@@ -17,6 +17,27 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>The Pirates Who Built the Macintosh</title>
+      <description>generatorJobId: 20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4
+
+notebookPrompt:
+Notebook name: Test Apple History
+
+Test Apple History
+
+Suggested source: https://example.com
+
+focus:
+Focus on early Macs
+
+Additional comments: Test notes</description>
+      <pubDate>Fri, 11 Sep 2026 14:40:28 +0000</pubDate>
+      <guid isPermaLink="false">20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4-orig-nblm-source.m4a" length="39710405" type="audio/mp4"/>
+      <itunes:duration>0:48:55</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>The American Revolution — Deep Dive</title>
       <description>From British debt to the American Constitution: an original-voices NotebookLM Audio Overview covering causes, campaigns, battles, and the Constitution. Based on the notebook’s eight Wikipedia sources; not a primary-source research edition.</description>
       <pubDate>Fri, 11 Sep 2026 03:38:59 +0000</pubDate>

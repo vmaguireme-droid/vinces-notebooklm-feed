@@ -1,5 +1,24 @@
 [
   {
+    "title": "The American Revolution \u2014 Deep Dive",
+    "description": "From British debt to the American Constitution: an original-voices NotebookLM Audio Overview covering causes, campaigns, battles, and the Constitution. Based on the notebook\u2019s eight Wikipedia sources; not a primary-source research edition.",
+    "audio_file": "american-revolution-deep-dive-delivery.mp3",
+    "source_name": "American-Revolution-Deep-Dive-delivery.mp3",
+    "source_sha256": "04e3288d6309528759c6dfdf74322a24ba3bb23e5bc0c7057bd54fe2db3881da",
+    "converted_to_aac": false,
+    "published": "Fri, 11 Sep 2026 03:38:59 +0000",
+    "guid": "541bd357-a015-5d62-ba6f-efc773588010",
+    "duration": "1:12:40",
+    "draft": false,
+    "notebookId": "3a0b03c2-a4ca-4c05-bfbf-0bca053f3cc4",
+    "notebookTitle": "The American Revolution",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "History & Culture",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
     "title": "Dinosaur Evolution, Survival, and Intelligence",
     "description": "Notebook name: Dinosaur Evolution, Survival, and Intelligence\n\nDescribe how dinasouurs evolved, what the world be like if the asteroid did not hit the earth. Do we have any dinasours today. How did the small mammals evolve into humans. Will AI take over from humans. If small rodents evolved into man then why couldn\u2019t dinasours develop opposable thumbs.",
     "audio_file": "if-the-asteroid-missed-the-dinosaurs-source.mp3",

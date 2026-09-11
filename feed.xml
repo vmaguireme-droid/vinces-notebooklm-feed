@@ -31,9 +31,9 @@ focus:
 Focus on early Macs
 
 Additional comments: Test notes</description>
-      <pubDate>Fri, 11 Sep 2026 14:40:28 +0000</pubDate>
+      <pubDate>Fri, 11 Sep 2026 14:33:38 +0000</pubDate>
       <guid isPermaLink="false">20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4-orig-nblm-source.m4a" length="39710405" type="audio/mp4"/>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4-orig-nblm-source.m4a" length="39711026" type="audio/mp4"/>
       <itunes:duration>0:48:55</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
@@ -44,6 +44,27 @@ Additional comments: Test notes</description>
       <guid isPermaLink="false">541bd357-a015-5d62-ba6f-efc773588010</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/american-revolution-deep-dive-delivery.mp3" length="69761286" type="audio/mpeg"/>
       <itunes:duration>1:12:40</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>How Pirates Built the Apple Macintosh</title>
+      <description>generatorJobId: 20260910-165823-notebook-name-test-apple-history-test-apple-history-suggested-source-h-6203f6
+
+notebookPrompt:
+Notebook name: Test Apple History
+
+Test Apple History
+
+Suggested source: https://example.com
+
+focus:
+Focus on early Macs
+
+Additional comments: Test notes</description>
+      <pubDate>Thu, 10 Sep 2026 21:51:12 +0000</pubDate>
+      <guid isPermaLink="false">2028651c-d29d-534e-b7b5-98bd94a90c3b</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/20260910-165823-notebook-name-test-apple-history-test-apple-history-suggested-source-h-6203f6-orig-nblm-source.m4a" length="66919328" type="audio/mp4"/>
+      <itunes:duration>0:34:39</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
@@ -622,6 +643,33 @@ Describe how dinasouurs evolved, what the world be like if the asteroid did not 
       <guid isPermaLink="false">06a9e0be-32ec-593e-a989-6bdebd77366a</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-physics-of-gazebo-tv-mounting.m4a" length="42996537" type="audio/mp4"/>
       <itunes:duration>0:22:15</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Vincent Maguire&#x27;s two-day Pregabalin prescription</title>
+      <description>A NotebookLM Brief Audio Overview from EPUB S.</description>
+      <pubDate>Mon, 24 Aug 2026 22:31:34 +0000</pubDate>
+      <guid isPermaLink="false">9c056970-de81-5507-b00d-82eb20d82e78</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/vincent-maguire-s-two-day-pregabalin-prescription.m4a" length="0" type="audio/mp4"/>
+      <itunes:duration>0:01:31</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>The Surveillance Hidden in Your CVS Receipt</title>
+      <description>A NotebookLM Deep Dive Audio Overview from EPUB S.</description>
+      <pubDate>Mon, 24 Aug 2026 22:31:34 +0000</pubDate>
+      <guid isPermaLink="false">6d9df1b0-a5d9-591f-b367-aea11de5899d</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-surveillance-hidden-in-your-cvs-receipt.m4a" length="0" type="audio/mp4"/>
+      <itunes:duration>0:17:10</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Empathetic AI for Prescription Receipts</title>
+      <description>A NotebookLM Critique Audio Overview from EPUB S.</description>
+      <pubDate>Mon, 24 Aug 2026 22:31:34 +0000</pubDate>
+      <guid isPermaLink="false">8dc27b74-b5f9-5cef-ac45-3f1dd99b4bd0</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/empathetic-ai-for-prescription-receipts.m4a" length="38406602" type="audio/mp4"/>
+      <itunes:duration>0:19:52</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>

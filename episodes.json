@@ -6,7 +6,7 @@
     "source_name": "20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4-orig-nblm-source.m4a",
     "source_sha256": "9ae6efd1f3d7ab5b67cebd791b6cb1cfae8086a534fa930b4a3d07fa33b528af",
     "converted_to_aac": true,
-    "published": "Fri, 11 Sep 2026 14:40:28 +0000",
+    "published": "Fri, 11 Sep 2026 14:33:38 +0000",
     "guid": "20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4",
     "duration": "0:48:55",
     "draft": false,
@@ -18,7 +18,8 @@
     "notebookPrompt": "Notebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com",
     "focus": "Focus on early Macs\n\nAdditional comments: Test notes",
     "libraryColumn": "Technology",
-    "libraryGroup": "AI & Computing"
+    "libraryGroup": "AI & Computing",
+    "publicReviewStatus": "Owner reviewed"
   },
   {
     "title": "The American Revolution \u2014 Deep Dive",

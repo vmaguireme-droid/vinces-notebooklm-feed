@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Astro Blender</title>
+      <description>Astro Blender</description>
+      <pubDate>Sun, 13 Sep 2026 00:55:59 +0000</pubDate>
+      <guid isPermaLink="false">ce1ba5b7-a5c4-494c-b303-6a250484e92a</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/batch-upgrade-8923bdd1-orig-nblm.mp3" length="30246798" type="audio/mpeg"/>
+      <itunes:duration>0:21:00</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Implementing SRvTrust on Nokia Platforms</title>
       <description>Implementing SRvTrust on Nokia Platforms</description>
       <pubDate>Sun, 13 Sep 2026 00:53:21 +0000</pubDate>

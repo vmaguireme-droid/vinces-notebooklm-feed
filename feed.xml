@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Validating Sources with NotBookLM</title>
+      <description>Validating Sources with NotBookLM</description>
+      <pubDate>Sun, 13 Sep 2026 19:43:20 +0000</pubDate>
+      <guid isPermaLink="false">8769f2b2-024a-4d06-ad3c-ad268807297a</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/batch-upgrade-d2995410-orig-nblm.mp3" length="31046772" type="audio/mpeg"/>
+      <itunes:duration>0:21:33</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Zero Trust Architecture: Blueprint and Maturity Models</title>
       <description>Zero Trust Architecture: Blueprint and Maturity Models</description>
       <pubDate>Sun, 13 Sep 2026 19:34:38 +0000</pubDate>

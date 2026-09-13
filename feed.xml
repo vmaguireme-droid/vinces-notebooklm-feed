@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>NIST ZT</title>
+      <description>NIST ZT</description>
+      <pubDate>Sun, 13 Sep 2026 19:16:51 +0000</pubDate>
+      <guid isPermaLink="false">c3fb542a-ac2f-4f55-8d63-0529f87e847c</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/batch-upgrade-d007fc76-orig-nblm.mp3" length="36600822" type="audio/mpeg"/>
+      <itunes:duration>0:25:25</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>The Comprehensive Guide to Mastering Google NotebookLM</title>
       <description>The Comprehensive Guide to Mastering Google NotebookLM</description>
       <pubDate>Sun, 13 Sep 2026 19:09:06 +0000</pubDate>

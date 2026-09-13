@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Mythos</title>
+      <description>Mythos</description>
+      <pubDate>Sun, 13 Sep 2026 01:36:45 +0000</pubDate>
+      <guid isPermaLink="false">681a7a20-5495-4301-969a-4d678c38b536</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/batch-upgrade-2a12d227-orig-nblm.mp3" length="51730736" type="audio/mpeg"/>
+      <itunes:duration>0:35:55</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>spaceli</title>
       <description>spaceli</description>
       <pubDate>Sun, 13 Sep 2026 01:34:02 +0000</pubDate>

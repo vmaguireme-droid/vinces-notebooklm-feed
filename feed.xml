@@ -17,6 +17,82 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Cessna 150 airplane</title>
+      <description>Notebook name: Cessna 150 airplane
+
+Cessna 150 airplane
+
+Focus: Flight characteristics of the airplane, top speed, range, rotation speed, flight profile, stall speed, landing techniques, weight allowances, and front/rear seat balance.</description>
+      <pubDate>Sat, 17 Oct 2026 01:49:29 +0000</pubDate>
+      <guid isPermaLink="false">475311b2-1e70-4a59-8730-ba31b173e0bd</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/a783632f-d2d1-42d7-b4d8-ccddf2985f70-orig-nblm-source.mp3" length="70365864" type="audio/mpeg"/>
+      <itunes:duration>0:48:51</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Apple Studio (M5 Ultra 96GB) vs. Maxed-Out Mac mini (M5 64GB) — Complete AI &amp; Video Deep Dive</title>
+      <description>Deep-dive podcast comparing the maxed-out Mac mini M5 (64GB) and Mac Studio M5 Ultra (96GB) across Jogg.AI, Descript, LLM speed &amp; intelligence, Top 5 models, multi-model concurrency, and 5-year TCO.</description>
+      <pubDate>Thu, 15 Oct 2026 17:10:00 -0400</pubDate>
+      <guid isPermaLink="false">e540a810-3d92-4c61-8b25-7a91f304c405</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/e540a810-3d92-4c61-8b25-7a91f304c405.mp3" length="4374404" type="audio/mpeg"/>
+      <itunes:duration>2:45</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Why Ford Built the Godzilla V8</title>
+      <description>21-minute NotebookLM Audio Studio deep dive comparing the 7.3L Godzilla V8 against the 6.7L Power Stroke diesel, 6.2L Boss, and 6.8L V8.</description>
+      <pubDate>Wed, 14 Oct 2026 23:58:00 -0400</pubDate>
+      <guid isPermaLink="false">9117eafd-71d1-46cb-8a8e-0fc586eeb8a1</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/9117eafd-71d1-46cb-8a8e-0fc586eeb8a1.mp3" length="16617159" type="audio/mpeg"/>
+      <itunes:duration>21:35</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Automotive Powertrains: ICE vs EV Engineering Debate</title>
+      <description>Vigorous academic debate exploring combustion thermodynamic headroom, gravimetric energy density disparities, motor efficiency curves, and raw material lifecycle bottlenecks.</description>
+      <pubDate>Sat, 03 Oct 2026 21:04:01 -0400</pubDate>
+      <guid isPermaLink="false">automotive-powertrains-2026-audio-debate</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/automotive-powertrains-debate-2026.m4a" length="24851838" type="audio/mp4"/>
+      <itunes:duration>0:12:52</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Is the Standard Cosmological Model Broken: The Lambda-CDM Debate</title>
+      <description>Vigorous academic debate evaluating cosmic inflation, Planck CMB consistency, the 5-sigma Hubble constant tension, and quantum gravity corrections.</description>
+      <pubDate>Sun, 04 Oct 2026 01:15:00 -0400</pubDate>
+      <guid isPermaLink="false">universe-cosmology-2026-audio-debate</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/universe-cosmology-debate-2026.m4a" length="41229851" type="audio/mp4"/>
+      <itunes:duration>0:21:21</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Post-Quantum Encryption on Trial: The Pro vs. Anti Debate</title>
+      <description>Rigorous academic debate evaluating post-quantum cryptography (ML-KEM, ML-DSA) acceleration on silicon vs. physical side-channel power analysis and network MTU fragmentation.</description>
+      <pubDate>Sat, 03 Oct 2026 17:12:00 -0400</pubDate>
+      <guid isPermaLink="false">post-quantum-encryption-debate-2026-audio-debate</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/20261003-170600-post-quantum-encryption-debate.mp3" length="1687128" type="audio/mpeg"/>
+      <itunes:duration>0:01:24</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Crypto-Resistant Computing on Trial: The Pro vs. Anti Debate</title>
+      <description>Rigorous debate between two specialist hosts evaluating post-quantum cryptography (ML-KEM, ML-DSA) acceleration on RISC-V vs. severe microarchitectural timing leakage (KyberSlash) and middlebox MTU fragmentation failures.</description>
+      <pubDate>Sat, 03 Oct 2026 16:30:00 -0400</pubDate>
+      <guid isPermaLink="false">crypto-resistant-computing-debate-2026-audio-debate</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/20261003-163000-crypto-resistant-computing-debate.mp3" length="2881454" type="audio/mpeg"/>
+      <itunes:duration>0:18:42</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Data Centers on Trial: The Pro vs. Anti Debate</title>
+      <description>Spirited two-host debate dissecting whether hyperscale data centers are the backbone of future clean energy or an unsustainable drain on municipal water and electrical grids.</description>
+      <pubDate>Sat, 03 Oct 2026 15:15:00 -0400</pubDate>
+      <guid isPermaLink="false">data-centers-debate-2026-audio-debate</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/20261003-151500-data-centers-pro-anti-debate.mp3" length="2881454" type="audio/mpeg"/>
+      <itunes:duration>0:12:45</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>How AI Slop Is Breaking Reality</title>
       <description>An in-depth analysis of AI slop, generative content saturation, and the cultural and technological impacts of synthetic media on human culture and information integrity.</description>
       <pubDate>Tue, 22 Sep 2026 11:58:25 +0000</pubDate>
@@ -197,24 +273,6 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Front Yard 2 Plant Guide - Manchester, NH</title>
-      <description>Front Yard 2 Plant Guide - Manchester, NH</description>
-      <pubDate>Sun, 13 Sep 2026 05:41:21 +0000</pubDate>
-      <guid isPermaLink="false">839f0974-d661-4b0a-bc45-7e79ac5eeba0</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/batch-upgrade-54c014fa-orig-nblm.mp3" length="30098213" type="audio/mpeg"/>
-      <itunes:duration>0:20:54</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Front yard plants</title>
-      <description>Front yard plants</description>
-      <pubDate>Sun, 13 Sep 2026 05:36:12 +0000</pubDate>
-      <guid isPermaLink="false">204bc40b-3b5b-4602-b33c-c61e04483648</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/batch-upgrade-0237eafb-orig-nblm.mp3" length="36034697" type="audio/mpeg"/>
-      <itunes:duration>0:25:01</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
       <title>Xage PAM solution Deep Dive</title>
       <description>Xage PAM solution Deep Dive</description>
       <pubDate>Sun, 13 Sep 2026 05:30:59 +0000</pubDate>
@@ -275,15 +333,6 @@
       <guid isPermaLink="false">b347cbb8-dbb7-4673-bd19-b435958a9f67</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/batch-upgrade-8b6faeab-orig-nblm.mp3" length="26479523" type="audio/mpeg"/>
       <itunes:duration>0:18:23</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Retirement Analysis</title>
-      <description>Retirement Analysis</description>
-      <pubDate>Sun, 13 Sep 2026 02:34:19 +0000</pubDate>
-      <guid isPermaLink="false">403ced98-5f61-4ea5-8e24-e708e62d3fa5</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/batch-upgrade-2e832e77-orig-nblm.mp3" length="7855053" type="audio/mpeg"/>
-      <itunes:duration>0:05:27</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
@@ -413,15 +462,6 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Front Yard Work</title>
-      <description>Front Yard Work</description>
-      <pubDate>Sun, 13 Sep 2026 01:22:53 +0000</pubDate>
-      <guid isPermaLink="false">97ee433f-7fba-4341-b9d1-3152d56767de</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/batch-upgrade-8ea108e8-orig-nblm.mp3" length="32642958" type="audio/mpeg"/>
-      <itunes:duration>0:22:40</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
       <title>Experience the Metaverse: Unlocking Innovative CDN Solutions</title>
       <description>Experience the Metaverse: Unlocking Innovative CDN Solutions</description>
       <pubDate>Sun, 13 Sep 2026 01:19:49 +0000</pubDate>
@@ -458,15 +498,6 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>EPUB S</title>
-      <description>EPUB S</description>
-      <pubDate>Sun, 13 Sep 2026 01:09:18 +0000</pubDate>
-      <guid isPermaLink="false">8d78caa9-05ce-4055-adb6-3410d4bcb080</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/batch-upgrade-b2fcd749-orig-nblm.mp3" length="28629296" type="audio/mpeg"/>
-      <itunes:duration>0:19:52</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
       <title>Outdoor TV Selection and Installation for Metal Gazebos</title>
       <description>Outdoor TV Selection and Installation for Metal Gazebos</description>
       <pubDate>Sun, 13 Sep 2026 01:06:38 +0000</pubDate>
@@ -491,15 +522,6 @@
       <guid isPermaLink="false">f40764e4-a761-4c88-b7a5-1028cefa7e21</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/batch-upgrade-d5c0ebbf-orig-nblm.mp3" length="21932336" type="audio/mpeg"/>
       <itunes:duration>0:15:13</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>F Yard</title>
-      <description>F Yard</description>
-      <pubDate>Sun, 13 Sep 2026 00:58:39 +0000</pubDate>
-      <guid isPermaLink="false">72d3962f-8cdc-416f-bb4d-97cba2aaae26</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/batch-upgrade-212b5724-orig-nblm.mp3" length="36383275" type="audio/mpeg"/>
-      <itunes:duration>0:25:15</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
@@ -593,35 +615,6 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Large Language Models: Architectures, Scaling Laws, and Reasoning Paradigms</title>
-      <description>Large Language Models: Architectures, Scaling Laws, and Reasoning Paradigms
-
-A comprehensive deep dive into Transformer self-attention, Mixture of Experts (MoE), Chinchilla scaling laws, FlashAttention, DPO alignment, test-time compute, and Model Context Protocol (MCP) enterprise integration.</description>
-      <pubDate>Sat, 12 Sep 2026 19:03:59 +0000</pubDate>
-      <guid isPermaLink="false">582c1306-3af6-45c9-a4a3-b5240d977782</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/20260912-143600-large-language-models-architectures-scaling-orig-nblm-source.m4a" length="53937492" type="audio/mp4"/>
-      <itunes:duration>1:07:15</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Manufacturing Supply Chain Traceability: NIST IR 8536 Deep Dive</title>
-      <description>A NotebookLM Deep Dive Audio Overview exploring NIST IR 8536: Manufacturing Supply Chain Traceability Meta-Framework principles, selective disclosure, and decentralized trust.</description>
-      <pubDate>Fri, 11 Sep 2026 20:43:40 +0000</pubDate>
-      <guid isPermaLink="false">8859ac4a-0703-5818-9cba-0642b3ba8bba</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/nist-ir-8536-audio.m4a" length="42023440" type="audio/mp4"/>
-      <itunes:duration>0:21:46</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Target Level Zero Trust by FY27</title>
-      <description>Target Level Zero Trust by FY27</description>
-      <pubDate>Fri, 11 Sep 2026 20:07:55 +0000</pubDate>
-      <guid isPermaLink="false">09d2690a-8e4f-530b-a26f-a8851e8cd151</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/target-level-zero-trust-by-fy27.m4a" length="42287628" type="audio/mp4"/>
-      <itunes:duration>0:51:59</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
       <title>The Pirates Who Built the Macintosh</title>
       <description>generatorJobId: 20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4
 
@@ -652,52 +645,11 @@ Additional comments: Test notes</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>How Pirates Built the Apple Macintosh</title>
-      <description>generatorJobId: 20260910-165823-notebook-name-test-apple-history-test-apple-history-suggested-source-h-6203f6
-
-notebookPrompt:
-Notebook name: Test Apple History
-
-Test Apple History
-
-Suggested source: https://example.com
-
-focus:
-Focus on early Macs
-
-Additional comments: Test notes</description>
-      <pubDate>Thu, 10 Sep 2026 21:51:12 +0000</pubDate>
-      <guid isPermaLink="false">2028651c-d29d-534e-b7b5-98bd94a90c3b</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/20260910-165823-notebook-name-test-apple-history-test-apple-history-suggested-source-h-6203f6-orig-nblm-source.m4a" length="66895413" type="audio/mp4"/>
-      <itunes:duration>0:34:39</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Dinosaur Evolution, Survival, and Intelligence</title>
-      <description>Notebook name: Dinosaur Evolution, Survival, and Intelligence
-
-Describe how dinasouurs evolved, what the world be like if the asteroid did not hit the earth. Do we have any dinasours today. How did the small mammals evolve into humans. Will AI take over from humans. If small rodents evolved into man then why couldn’t dinasours develop opposable thumbs.</description>
-      <pubDate>Tue, 08 Sep 2026 22:38:35 +0000</pubDate>
-      <guid isPermaLink="false">f902e041-7742-4489-9178-6a29fa3a8b68</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/if-the-asteroid-missed-the-dinosaurs-source.mp3" length="65013688" type="audio/mpeg"/>
-      <itunes:duration>0:45:08</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
       <title>When an AI Escaped the Sandbox</title>
       <description>A NotebookLM Deep Dive Audio Overview exploring the architecture, agency, and evolution of ChatGPT.</description>
       <pubDate>Tue, 08 Sep 2026 15:24:34 +0000</pubDate>
       <guid isPermaLink="false">8dfd432e-621b-527a-8297-86bcc47a5031</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/when-an-ai-escaped-the-sandbox.m4a" length="87846961" type="audio/mp4"/>
-      <itunes:duration>0:45:30</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>How ChatGPT Projects, Chats, Tasks, Skills, and Context Work</title>
-      <description>A detailed explanation and comprehensive deep dive of how ChatGPT Projects, chats, tasks, skills and context memory all work.</description>
-      <pubDate>Tue, 08 Sep 2026 14:13:03 +0000</pubDate>
-      <guid isPermaLink="false">541831cf-6140-4c26-885f-1a3ac5c589db</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/20260907-225134-notebook-name-how-chatgpt-projects-chats-tasks-skills-and-context-work-251403-orig-nblm-source.mp3" length="65533420" type="audio/mpeg"/>
       <itunes:duration>0:45:30</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
@@ -1080,42 +1032,6 @@ Describe how dinasouurs evolved, what the world be like if the asteroid did not 
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Which Backyard Plants to Pull or Keep</title>
-      <description>A NotebookLM Brief Audio Overview from F Yard.</description>
-      <pubDate>Mon, 24 Aug 2026 22:31:35 +0000</pubDate>
-      <guid isPermaLink="false">d39e2358-f93e-5104-a140-ebb387b43e99</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/which-backyard-plants-to-pull-or-keep.m4a" length="3665084" type="audio/mp4"/>
-      <itunes:duration>0:01:53</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Should plant origin or behavior guide gardening</title>
-      <description>A NotebookLM Debate Audio Overview from F Yard.</description>
-      <pubDate>Mon, 24 Aug 2026 22:31:35 +0000</pubDate>
-      <guid isPermaLink="false">f0026667-28bf-5be6-a07a-fd475c8b3d99</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/should-plant-origin-or-behavior-guide-gardening.m4a" length="48770720" type="audio/mp4"/>
-      <itunes:duration>0:25:15</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Prioritize Urgent Threats in Garden Guides</title>
-      <description>A NotebookLM Critique Audio Overview from F Yard.</description>
-      <pubDate>Mon, 24 Aug 2026 22:31:35 +0000</pubDate>
-      <guid isPermaLink="false">2b7931cc-6d66-5f8a-8637-e7ae4f504bd0</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/prioritize-urgent-threats-in-garden-guides.m4a" length="33644624" type="audio/mp4"/>
-      <itunes:duration>0:17:25</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Protecting Kids and Pets From Dangerous Plants</title>
-      <description>A NotebookLM Deep Dive Audio Overview from F Yard.</description>
-      <pubDate>Mon, 24 Aug 2026 22:31:35 +0000</pubDate>
-      <guid isPermaLink="false">801ea632-5aef-5be6-a0b5-5a02077412d5</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/protecting-kids-and-pets-from-dangerous-plants.m4a" length="41941989" type="audio/mp4"/>
-      <itunes:duration>0:21:43</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
       <title>Essential third party tools for NotebookLM</title>
       <description>A NotebookLM Brief Audio Overview from [Gemini] NBLM Extensions.</description>
       <pubDate>Mon, 24 Aug 2026 22:31:35 +0000</pubDate>
@@ -1251,33 +1167,6 @@ Describe how dinasouurs evolved, what the world be like if the asteroid did not 
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Vincent Maguire&#x27;s two-day Pregabalin prescription</title>
-      <description>A NotebookLM Brief Audio Overview from EPUB S.</description>
-      <pubDate>Mon, 24 Aug 2026 22:31:34 +0000</pubDate>
-      <guid isPermaLink="false">9c056970-de81-5507-b00d-82eb20d82e78</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/vincent-maguire-s-two-day-pregabalin-prescription.m4a" length="0" type="audio/mp4"/>
-      <itunes:duration>0:01:31</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>The Surveillance Hidden in Your CVS Receipt</title>
-      <description>A NotebookLM Deep Dive Audio Overview from EPUB S.</description>
-      <pubDate>Mon, 24 Aug 2026 22:31:34 +0000</pubDate>
-      <guid isPermaLink="false">6d9df1b0-a5d9-591f-b367-aea11de5899d</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-surveillance-hidden-in-your-cvs-receipt.m4a" length="0" type="audio/mp4"/>
-      <itunes:duration>0:17:10</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Empathetic AI for Prescription Receipts</title>
-      <description>A NotebookLM Critique Audio Overview from EPUB S.</description>
-      <pubDate>Mon, 24 Aug 2026 22:31:34 +0000</pubDate>
-      <guid isPermaLink="false">8dc27b74-b5f9-5cef-ac45-3f1dd99b4bd0</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/empathetic-ai-for-prescription-receipts.m4a" length="38376362" type="audio/mp4"/>
-      <itunes:duration>0:19:52</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
       <title>Mastering 105mm Back Focus Spacing</title>
       <description>A NotebookLM Brief Audio Overview from [astronomy]Back-Focus 101: Celestron SCT wIth Celestron f/6.3 Reducer/Corrector.</description>
       <pubDate>Mon, 24 Aug 2026 22:21:50 +0000</pubDate>
@@ -1347,69 +1236,6 @@ Describe how dinasouurs evolved, what the world be like if the asteroid did not 
       <guid isPermaLink="false">89039039-e7c8-5971-b107-7e029d936451</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/pet-turf-engineering-and-toxic-plant-eradication.m4a" length="46318157" type="audio/mp4"/>
       <itunes:duration>0:23:59</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Toxic garden hazards and native plants</title>
-      <description>A NotebookLM Brief Audio Overview from Front yard plants.</description>
-      <pubDate>Mon, 24 Aug 2026 22:21:49 +0000</pubDate>
-      <guid isPermaLink="false">2dcfef93-19fc-5803-86db-2bd4518093bd</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/toxic-garden-hazards-and-native-plants.m4a" length="2962863" type="audio/mp4"/>
-      <itunes:duration>0:01:32</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Personalized Plant Safety and Garden Management</title>
-      <description>A NotebookLM Critique Audio Overview from Front yard plants.</description>
-      <pubDate>Mon, 24 Aug 2026 22:21:49 +0000</pubDate>
-      <guid isPermaLink="false">d2b4057f-a0e2-52a5-ab00-5455685428c6</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/personalized-plant-safety-and-garden-management.m4a" length="35801308" type="audio/mp4"/>
-      <itunes:duration>0:18:32</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Toxic Plants and the Invasive Debate</title>
-      <description>A NotebookLM Debate Audio Overview from Front yard plants.</description>
-      <pubDate>Mon, 24 Aug 2026 22:21:49 +0000</pubDate>
-      <guid isPermaLink="false">7b4a4eec-be4b-54e3-bd04-cab1763fe202</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/toxic-plants-and-the-invasive-debate.m4a" length="48303793" type="audio/mp4"/>
-      <itunes:duration>0:25:01</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Identify Toxic and Invasive Backyard Plants</title>
-      <description>A NotebookLM Brief Audio Overview from Front Yard 2 Plant Guide - Manchester, NH.</description>
-      <pubDate>Mon, 24 Aug 2026 22:21:49 +0000</pubDate>
-      <guid isPermaLink="false">dbd39f83-597d-543e-a2ec-8c59d4de9f21</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/identify-toxic-and-invasive-backyard-plants.m4a" length="3540328" type="audio/mp4"/>
-      <itunes:duration>0:01:49</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Garden safety versus native plant habitat</title>
-      <description>A NotebookLM Debate Audio Overview from Front Yard 2 Plant Guide - Manchester, NH.</description>
-      <pubDate>Mon, 24 Aug 2026 22:21:49 +0000</pubDate>
-      <guid isPermaLink="false">58b66e1d-4f62-5934-89ba-5746c907b5af</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/garden-safety-versus-native-plant-habitat.m4a" length="40345563" type="audio/mp4"/>
-      <itunes:duration>0:20:53</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Prioritize Toxic Hazards in Garden Manuals</title>
-      <description>A NotebookLM Critique Audio Overview from Front Yard 2 Plant Guide - Manchester, NH.</description>
-      <pubDate>Mon, 24 Aug 2026 22:21:49 +0000</pubDate>
-      <guid isPermaLink="false">70dd1847-464d-572a-b296-8dda9eb6c09b</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/prioritize-toxic-hazards-in-garden-manuals.m4a" length="32369425" type="audio/mp4"/>
-      <itunes:duration>0:16:46</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Garden Triage for Toxic and Invasive Plants</title>
-      <description>A NotebookLM Deep Dive Audio Overview from Front Yard 2 Plant Guide - Manchester, NH.</description>
-      <pubDate>Mon, 24 Aug 2026 22:21:49 +0000</pubDate>
-      <guid isPermaLink="false">4199e14a-6d78-56f0-bae5-18c0242cdb6e</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/garden-triage-for-toxic-and-invasive-plants.m4a" length="43779712" type="audio/mp4"/>
-      <itunes:duration>0:22:40</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
@@ -1521,42 +1347,6 @@ Describe how dinasouurs evolved, what the world be like if the asteroid did not 
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Toxic Milkweed and Safe New Hampshire Perennials</title>
-      <description>A NotebookLM Brief Audio Overview from Front Yard Work.</description>
-      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
-      <guid isPermaLink="false">f6566095-2f13-5ca2-b43e-cbed47673200</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/toxic-milkweed-and-safe-new-hampshire-perennials.m4a" length="3388679" type="audio/mp4"/>
-      <itunes:duration>0:01:45</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>The Hidden Weapons of Garden Plants</title>
-      <description>A NotebookLM Deep Dive Audio Overview from Front Yard Work.</description>
-      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
-      <guid isPermaLink="false">ae92fe99-9841-5dbf-a27e-0082db5c9660</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-hidden-weapons-of-garden-plants.m4a" length="42372287" type="audio/mp4"/>
-      <itunes:duration>0:21:56</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Structural Refinements for Manchester Horticultural Reports</title>
-      <description>A NotebookLM Critique Audio Overview from Front Yard Work.</description>
-      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
-      <guid isPermaLink="false">8b08fdf1-7f96-5290-9b84-dc35a558c221</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/structural-refinements-for-manchester-horticultural-reports.m4a" length="21585136" type="audio/mp4"/>
-      <itunes:duration>0:11:10</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Should You Plant Toxic Milkweed for Monarchs?</title>
-      <description>A NotebookLM Debate Audio Overview from Front Yard Work.</description>
-      <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
-      <guid isPermaLink="false">1553382e-6c78-5cef-ab7a-03d7d4319cd6</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/should-you-plant-toxic-milkweed-for-monarchs.m4a" length="43757324" type="audio/mp4"/>
-      <itunes:duration>0:22:40</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
       <title>Scaling AI without breaking the bank</title>
       <description>A NotebookLM Brief Audio Overview from Evolution and Architecture of Transformers and RAG Systems.</description>
       <pubDate>Mon, 24 Aug 2026 16:35:42 +0000</pubDate>
@@ -1593,84 +1383,12 @@ Describe how dinasouurs evolved, what the world be like if the asteroid did not 
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>The Generator: A 10-Minute Capability Tour</title>
-      <description>Vince demonstrates how the Generator connects NotebookLM videos, audio, reports, infographics, mind maps, evidence, downloads, and notebook-family navigation.</description>
-      <pubDate>Sun, 23 Aug 2026 02:56:38 +0000</pubDate>
-      <guid isPermaLink="false">9022b85f-7a82-57bb-8c13-d1103646997f</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/generator-capability-tour-avatarx-10min.m4a" length="11779540" type="audio/mp4"/>
-      <itunes:duration>0:09:59</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Cloudflare Secure Hosting — Outbound Tunnels Without Open Firewall Ports</title>
-      <description>A detailed two-host briefing on Cloudflare Anycast, QUIC tunnels, origin protection, identity-aware access, caching, observability, launchd operations, and systematic troubleshooting for a Mac mini-hosted service.</description>
-      <pubDate>Thu, 20 Aug 2026 10:42:19 +0000</pubDate>
-      <guid isPermaLink="false">8bea357b-dfa7-4cb8-bd9c-3780a5c32a4a</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/cloudflare-secure-hosting-outbound-tunnels-without-open-firewall-ports.mp3" length="59215149" type="audio/mpeg"/>
-      <itunes:duration>0:41:07</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>The Logistical Nightmare Of Reaching Mars (1)</title>
-      <description>The Logistical Nightmare Of Reaching Mars (1)</description>
-      <pubDate>Sun, 02 Aug 2026 21:53:56 +0000</pubDate>
-      <guid isPermaLink="false">3ec60ba0-9f17-48cb-ad21-86ba92e46758</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-logistical-nightmare-of-reaching-mars-1.mp3" length="30612303" type="audio/mpeg"/>
-      <itunes:duration>0:21:15</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Mars Mission Architecture Jogg Render Rendered Voices</title>
-      <description>Mars Mission Architecture Jogg Render Rendered Voices</description>
-      <pubDate>Sun, 02 Aug 2026 21:53:56 +0000</pubDate>
-      <guid isPermaLink="false">c7845184-9eec-48ea-b672-9b063e587cb5</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/mars-mission-architecture-jogg-render-rendered-voices.mp3" length="28083286" type="audio/mpeg"/>
-      <itunes:duration>0:19:30</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
       <title>How Humans Will Actually Reach Mars</title>
       <description>How Humans Will Actually Reach Mars</description>
       <pubDate>Sun, 23 Aug 2026 13:14:03 +0000</pubDate>
       <guid isPermaLink="false">c1ab6033-314b-4587-aca7-faa36513d994</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/how-humans-will-actually-reach-mars.mp3" length="30793494" type="audio/mpeg"/>
       <itunes:duration>0:21:20</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Rome From Mud to Ottoman Cannons - Vince and Margaret</title>
-      <description>A Jogg-voiced deep-dive conversation with Vince and Margaret covering Rome&#x27;s rise, major emperors and conquests, military reversals, and the forces behind the empire&#x27;s long decline.</description>
-      <pubDate>Tue, 18 Aug 2026 20:16:28 +0000</pubDate>
-      <guid isPermaLink="false">545ec94b-f0d4-46d1-8704-b1caa781ce4a</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/rome-from-mud-to-ottoman-cannons-vince-and-margaret.mp3" length="72591382" type="audio/mpeg"/>
-      <itunes:duration>0:50:24</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Managing Reactivity In A 179 Pound Great Dane Trevor And Catherine</title>
-      <description>Managing Reactivity In A 179 Pound Great Dane Trevor And Catherine</description>
-      <pubDate>Tue, 18 Aug 2026 18:54:01 +0000</pubDate>
-      <guid isPermaLink="false">1506718a-435d-4658-bc5e-48a15164ab2c</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/managing-reactivity-in-a-179-pound-great-dane-trevor-and-catherine.mp3" length="7789078" type="audio/mpeg"/>
-      <itunes:duration>0:05:24</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>The Blueprint For A Human Mars Mission (8)</title>
-      <description>The Blueprint For A Human Mars Mission (8)</description>
-      <pubDate>Sat, 01 Aug 2026 01:15:03 +0000</pubDate>
-      <guid isPermaLink="false">e5a10e39-14b4-472b-ba6b-4a22a88de6e0</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-blueprint-for-a-human-mars-mission-8.mp3" length="30766530" type="audio/mpeg"/>
-      <itunes:duration>0:21:21</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Ai Plant Identification Versus Human Reality</title>
-      <description>Ai Plant Identification Versus Human Reality</description>
-      <pubDate>Mon, 24 Aug 2026 16:45:43 +0000</pubDate>
-      <guid isPermaLink="false">7db8b571-911b-4e28-974b-f3ec1a946113</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/ai-plant-identification-versus-human-reality.mp3" length="30001671" type="audio/mpeg"/>
-      <itunes:duration>0:20:46</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
@@ -1698,24 +1416,6 @@ Describe how dinasouurs evolved, what the world be like if the asteroid did not 
       <guid isPermaLink="false">7786c399-76cd-44d8-aed1-c24fc3edc839</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/why-dinosaurs-still-rule-the-earth.m4a" length="33525931" type="audio/mp4"/>
       <itunes:duration>0:27:20</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>The Clinical Conversion Notebooklm For Nursing Educators</title>
-      <description>The Clinical Conversion Notebooklm For Nursing Educators</description>
-      <pubDate>Mon, 13 Jul 2026 22:49:45 +0000</pubDate>
-      <guid isPermaLink="false">1a14974f-7310-4197-847e-72113a7157bb</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-clinical-conversion-notebooklm-for-nursing-educators.m4a" length="4305348" type="audio/mp4"/>
-      <itunes:duration>0:04:31</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>The Pragmatic Bridge: Unlocking the Future with SRv6 over MPLS</title>
-      <description>Audio-only version of the good SRv6 over MPLS Jogg podcast video.</description>
-      <pubDate>Mon, 13 Jul 2026 22:03:25 +0000</pubDate>
-      <guid isPermaLink="false">0b1d7c34-4d32-4917-ab4c-d85d6d976eb5</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-pragmatic-bridge-srv6-over-mpls.m4a" length="4980042" type="audio/mp4"/>
-      <itunes:duration>0:10:07</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
@@ -1755,15 +1455,6 @@ Describe how dinasouurs evolved, what the world be like if the asteroid did not 
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Fable 5 Short Audio Overview Anthropic Fable 5 And Xbox Fable Reboot</title>
-      <description>Fable 5 Short Audio Overview Anthropic Fable 5 And Xbox Fable Reboot</description>
-      <pubDate>Sun, 12 Jul 2026 21:46:27 +0000</pubDate>
-      <guid isPermaLink="false">f128d5f4-19d7-4768-898f-68ba7787f9f6</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/fable-5-short-audio-overview-anthropic-fable-5-and-xbox-fable-reboot.m4a" length="3312481" type="audio/mp4"/>
-      <itunes:duration>0:01:42</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
       <title>Ai Guardrails Versus Fable S Morality System</title>
       <description>Ai Guardrails Versus Fable S Morality System</description>
       <pubDate>Tue, 25 Aug 2026 12:18:29 +0000</pubDate>
@@ -1779,15 +1470,6 @@ Describe how dinasouurs evolved, what the world be like if the asteroid did not 
       <guid isPermaLink="false">7b09db4f-16f8-4129-b043-9f5dda21892f</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/2why-fable-5-keeps-downgrading-itself.m4a" length="6692399" type="audio/mp4"/>
       <itunes:duration>0:05:08</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>The 0</title>
-      <description>The 0</description>
-      <pubDate>Sat, 11 Jul 2026 19:58:51 +0000</pubDate>
-      <guid isPermaLink="false">9e37a7f9-6944-4864-8eb7-29fb48dc7929</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/the-0.m4a" length="75276471" type="audio/mp4"/>
-      <itunes:duration>0:38:59</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
@@ -1815,15 +1497,6 @@ Describe how dinasouurs evolved, what the world be like if the asteroid did not 
       <guid isPermaLink="false">e905ab3c-b612-4c4f-aaf1-93a3e9510bb9</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/why-the-universe-doesn-t-rip-itself-apart.m4a" length="46004496" type="audio/mp4"/>
       <itunes:duration>0:35:03</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Stargazing And The Backwards Lens Mystery (1)</title>
-      <description>Stargazing And The Backwards Lens Mystery (1)</description>
-      <pubDate>Tue, 07 Jul 2026 00:28:55 +0000</pubDate>
-      <guid isPermaLink="false">7a4e83ea-e38f-4262-85da-fccd12379681</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/stargazing-and-the-backwards-lens-mystery-1.m4a" length="86557544" type="audio/mp4"/>
-      <itunes:duration>0:44:50</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
@@ -1872,51 +1545,6 @@ Describe how dinasouurs evolved, what the world be like if the asteroid did not 
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>True Crimes</title>
-      <description>True Crimes</description>
-      <pubDate>Mon, 15 Jun 2026 01:58:19 +0000</pubDate>
-      <guid isPermaLink="false">1acc9cb9-a09e-49b9-a038-663ce5645b88</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/true-crimes.m4a" length="12107028" type="audio/mp4"/>
-      <itunes:duration>0:12:39</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Gunfighters Of The U S West</title>
-      <description>Gunfighters Of The U S West</description>
-      <pubDate>Mon, 15 Jun 2026 01:58:19 +0000</pubDate>
-      <guid isPermaLink="false">a824b65b-c837-4023-94ef-bad8667eae2a</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/gunfighters-of-the-u-s-west.m4a" length="12685771" type="audio/mp4"/>
-      <itunes:duration>0:13:15</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Srv6</title>
-      <description>Srv6</description>
-      <pubDate>Mon, 15 Jun 2026 01:31:08 +0000</pubDate>
-      <guid isPermaLink="false">de4b582e-1cae-4c84-bd04-24ae42d8734c</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/srv6.m4a" length="19576782" type="audio/mp4"/>
-      <itunes:duration>0:20:29</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Mpls</title>
-      <description>Mpls</description>
-      <pubDate>Mon, 15 Jun 2026 01:31:08 +0000</pubDate>
-      <guid isPermaLink="false">56fd71ed-723a-4990-a8ec-96bcc06fc819</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/mpls.m4a" length="13456058" type="audio/mp4"/>
-      <itunes:duration>0:14:04</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Elevenlabs Ww 2 Generals</title>
-      <description>Elevenlabs Ww 2 Generals</description>
-      <pubDate>Sun, 14 Jun 2026 22:10:25 +0000</pubDate>
-      <guid isPermaLink="false">80c799bc-6d55-4921-8ae4-cb0ee30c9cda</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/elevenlabs-ww-2-generals.mp3" length="23144140" type="audio/mpeg"/>
-      <itunes:duration>0:16:04</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
       <title>Active Active Ha And Precision Ai Architecture</title>
       <description>Active Active Ha And Precision Ai Architecture</description>
       <pubDate>Tue, 25 Aug 2026 12:18:30 +0000</pubDate>
@@ -1932,15 +1560,6 @@ Describe how dinasouurs evolved, what the world be like if the asteroid did not 
       <guid isPermaLink="false">be3a8ef0-8f13-4e02-9784-f6eaa4c7c230</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/xage-versus-cyberark-for-akamai-port-443.m4a" length="7811752" type="audio/mp4"/>
       <itunes:duration>0:05:48</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Why Faster Hardware Won&#x27;t Fix Your Cloud</title>
-      <description>Why Faster Hardware Won&#x27;t Fix Your Cloud</description>
-      <pubDate>Fri, 12 Jun 2026 18:55:13 +0000</pubDate>
-      <guid isPermaLink="false">cddb3f0c-e41a-4c26-8c3b-950212de5fcd</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/why-faster-hardware-won-t-fix-your-cloud.m4a" length="37001831" type="audio/mp4"/>
-      <itunes:duration>0:19:10</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
@@ -2004,6 +1623,24 @@ Describe how dinasouurs evolved, what the world be like if the asteroid did not 
       <guid isPermaLink="false">a32f0665-5029-4130-a122-82871cf21f9d</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/barking-solutions-for-busy-working-families.m4a" length="24611459" type="audio/mp4"/>
       <itunes:duration>0:18:39</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>World History: Ancient Near East &amp; Mesopotamia — Brief Audio Overview</title>
+      <description>Executive summary brief focused on Cyrus the Great, the Cyrus Cylinder, and religious tolerance in the Ancient Near East.</description>
+      <pubDate>Fri, 18 Sep 2026 22:43:58 -0400</pubDate>
+      <guid isPermaLink="false">history-ancient_near_east-audio-1</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/history-ancient_near_east-audio-1.m4a" length="3461582" type="audio/mp4"/>
+      <itunes:duration>0:01:48</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>World History: Ancient Near East &amp; Mesopotamia — Deep Dive Audio Overview</title>
+      <description>Deep dive discussion of restoration and political authority in the Ancient Near East, including Cyrus the Great.</description>
+      <pubDate>Fri, 18 Sep 2026 22:43:58 -0400</pubDate>
+      <guid isPermaLink="false">history-ancient_near_east-audio-2</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/history-ancient_near_east-audio-2.m4a" length="37932757" type="audio/mp4"/>
+      <itunes:duration>0:19:39</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
   </channel>

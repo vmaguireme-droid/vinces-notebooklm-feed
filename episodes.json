@@ -1,5 +1,69 @@
 [
   {
+    "title": "Retrieval Augmented Generation (RAG) in AI",
+    "description": "Notebook name: Retrieval Augmented Generation (RAG) in AI\n\nRetrieval Augmented Generation (RAG) in AI\n\nFocus: Focus on exectly what it is and its impact on hallucinations.  Does it prevent 100% hallucinations if you vet all your sources",
+    "audio_file": "5e10e269-e966-4b34-8341-982814569185-orig-nblm-source.mp3",
+    "source_name": "5e10e269-e966-4b34-8341-982814569185-orig-nblm-source.mp3",
+    "source_sha256": "56a14963c328ae524ba13255d04cbd7ac7ba5f7bc85b072470e042f0e2a214fc",
+    "converted_to_aac": false,
+    "published": "Tue, 27 Oct 2026 17:48:34 +0000",
+    "guid": "aabaa102-d6c1-4f52-9b1e-7d403587d29a",
+    "duration": "0:58:15",
+    "draft": false,
+    "notebookId": "866460db-d671-422a-a3d6-d269f910fb26",
+    "notebookTitle": "Retrieval Augmented Generation (RAG) in AI",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "title": "Electric Vehicles",
+    "description": "Notebook name: Electric Vehicles\n\nElectric Vehicles\n\nFocus: Focus on the efficiency - provide a calculator of when gas prices cross electric prices in terms of efficiency - so if gas is $4 a gallon what is th equivalent cost in terms of KWH.  Include an electric car selector.",
+    "audio_file": "b095a41f-551e-495d-bf8f-c565906f6b13-orig-nblm-source.mp3",
+    "source_name": "b095a41f-551e-495d-bf8f-c565906f6b13-orig-nblm-source.mp3",
+    "source_sha256": "8cc3a3eeb3530a2ccc15fd3c999b0eb406d57f6d0456fbbebc8ae0d3851c15f2",
+    "converted_to_aac": false,
+    "published": "Sun, 25 Oct 2026 15:21:49 +0000",
+    "guid": "b568948a-08e4-4f25-8b2a-bf08b860a913",
+    "duration": "0:48:22",
+    "draft": false,
+    "notebookId": "59db607c-6711-4b75-b331-825068086300",
+    "notebookTitle": "Electric Vehicles",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "title": "Okay",
+    "description": "Notebook name: Okay\n\nOkay\n\nFocus: We have uh two thousand. We have two five five.",
+    "audio_file": "65b8ae0c-d6cf-40f4-aded-8fcc771501a5-orig-nblm-source.mp3",
+    "source_name": "65b8ae0c-d6cf-40f4-aded-8fcc771501a5-orig-nblm-source.mp3",
+    "source_sha256": "e2babc50e3564be8c786130ed5c6842d021a0695ebc28c69ff540b0cf37882dd",
+    "converted_to_aac": false,
+    "published": "Tue, 20 Oct 2026 20:20:36 +0000",
+    "guid": "5deb28b8-ff2e-41b9-a704-8544c2ac9c85",
+    "duration": "0:40:07",
+    "draft": false,
+    "notebookId": "815563df-5a94-4163-a50a-13a944ac886b",
+    "notebookTitle": "Okay",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "title": "Amazon Web Services Security",
+    "description": "Notebook name: Amazon Web Services Security\n\nAmazon Web Services Security\n\nFocus: and a WAF. I don't know what the requirements are for uh Amazon web services. I want them compared. I want a really deep comparison between the two. I need a table that compares them uh and then an explanation of why one was better than the other.",
+    "audio_file": "9d3a821f-5d2d-4583-9d29-f2f065d3f960-orig-nblm-source.mp3",
+    "source_name": "9d3a821f-5d2d-4583-9d29-f2f065d3f960-orig-nblm-source.mp3",
+    "source_sha256": "15d96aa2ef13e0233ec48e965b30c9ce5adf2f35ee44eb45a51f14737954b6f3",
+    "converted_to_aac": false,
+    "published": "Tue, 20 Oct 2026 11:56:51 +0000",
+    "guid": "6e54f51e-e83a-410d-87c1-63ffc72fe0ba",
+    "duration": "0:54:49",
+    "draft": false,
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
     "title": "Amazon Web Services and Cloud Computing",
     "description": "Notebook name: Amazon Web Services and Cloud Computing\n\nAmazon Web Services and Cloud Computing\n\nFocus: your cloud computing architecture, the S.C.C.A., is very important to have uh that comparison and I'd like to see a table uh that compares them with which one has the advantage and then a comments section that explains why.",
     "audio_file": "c72e9925-ae8b-4d4d-9f29-89cf4b07313e-orig-nblm-source.mp3",
@@ -23,6 +87,10 @@
     "guid": "1448f88f-7f46-4db2-b24d-2794fb5590b4",
     "duration": "1:01:34",
     "draft": false,
+    "libraryColumn": "Technology",
+    "libraryGroup": "Aircraft",
+    "notebookId": "5d4fa4f3-ffad-44aa-91bf-8f484173de0f",
+    "notebookTitle": "Lockheed SR-71 Blackbird",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -36,6 +104,10 @@
     "guid": "7231fe29-6492-4d96-ab81-6d22554fb153",
     "duration": "0:47:18",
     "draft": false,
+    "libraryColumn": "Technology",
+    "libraryGroup": "Aircraft",
+    "notebookId": "303f5e72-9462-4138-85a7-f0dcf556b421",
+    "notebookTitle": "Cessna 210 Centurion Aircraft",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -49,6 +121,10 @@
     "guid": "475311b2-1e70-4a59-8730-ba31b173e0bd",
     "duration": "0:48:51",
     "draft": false,
+    "libraryColumn": "Technology",
+    "libraryGroup": "Aircraft",
+    "notebookId": "a6b2a50d-b593-43b1-a539-1461ace1ad6e",
+    "notebookTitle": "Cessna 150 airplane",
     "publicReviewStatus": "Owner reviewed"
   },
   {

@@ -1,5 +1,22 @@
 [
   {
+    "title": "Human-Led, AI-Assisted: Building a Grounded Decision Matrix for Higher Ed and Career Moves",
+    "description": "Notebook name: Human-Led, AI-Assisted: Building a Grounded Decision Matrix for Higher Ed and Career Moves\n\nHuman-Led, AI-Assisted: Building a Grounded Decision Matrix for Higher Ed and Career Moves\n\nFocus: How early- and mid-career professionals can leverage AI tools like NotebookLM to analyze complex choices\u2014such as comparing graduate programs, industry pivots, or long-term growth paths\u2014while ensuring human values, personal constraints, and non-linear ambitions drive the final choice.",
+    "audio_file": "63efcc86-5a49-4fc4-b54b-d7782ca28ad5-orig-nblm-source.mp3",
+    "source_name": "63efcc86-5a49-4fc4-b54b-d7782ca28ad5-orig-nblm-source.mp3",
+    "source_sha256": "583bdc3194c17fe590adb81262e293f26a3d867126098e1b942b41f887b01024",
+    "converted_to_aac": false,
+    "published": "Tue, 27 Oct 2026 20:09:28 +0000",
+    "guid": "be246715-c69f-4caa-9839-ed4b5ddf0c7d",
+    "duration": "0:36:32",
+    "draft": false,
+    "notebookId": "7740bdbf-895c-4517-94cd-f42a909dc0fb",
+    "notebookTitle": "Human-Led, AI-Assisted: Building a Grounded Decision Matrix for Higher Ed and Career Moves",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
     "title": "Retrieval Augmented Generation (RAG) in AI",
     "description": "Notebook name: Retrieval Augmented Generation (RAG) in AI\n\nRetrieval Augmented Generation (RAG) in AI\n\nFocus: Focus on exectly what it is and its impact on hallucinations.  Does it prevent 100% hallucinations if you vet all your sources",
     "audio_file": "5e10e269-e966-4b34-8341-982814569185-orig-nblm-source.mp3",
@@ -14,6 +31,8 @@
     "notebookTitle": "Retrieval Augmented Generation (RAG) in AI",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "libraryColumn": "Technology",
+    "libraryGroup": "AI & Computing",
     "publicReviewStatus": "Owner reviewed"
   },
   {

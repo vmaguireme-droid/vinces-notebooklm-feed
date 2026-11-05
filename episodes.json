@@ -1,5 +1,236 @@
 [
   {
+    "title": "Automated API Verification Topic - d82aa04b",
+    "description": "Notebook name: Automated API Verification Topic - d82aa04b\n\nAutomated API Verification Topic - d82aa04b\n\nFocus: Testing the v1 REST API submission endpoint",
+    "audio_file": "fe7bcc10-1de9-4bc9-bf76-f8b4d846f50e-orig-nblm-source.mp3",
+    "source_name": "fe7bcc10-1de9-4bc9-bf76-f8b4d846f50e-orig-nblm-source.mp3",
+    "source_sha256": "d9a7752a81fe3e5566dc0d835bfb35575999b88de749bfdb2727f70b3efcd471",
+    "converted_to_aac": false,
+    "published": "Thu, 05 Nov 2026 01:13:26 +0000",
+    "guid": "b72f9246-dd16-4530-a01d-f713e0193817",
+    "duration": "0:42:37",
+    "draft": false,
+    "notebookId": "4525bd0c-541d-48f3-9a6a-f6565c4629ef",
+    "notebookTitle": "Automated API Verification Topic - d82aa04b",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "guid": "history-middle_east_and_iran-audio-2",
+    "id": "history-middle_east_and_iran-audio-2",
+    "title": "World History: Middle East, Islamic Statecraft & The War with Iran \u2014 Brief Audio Overview",
+    "description": "Brief exploration of Islamic statecraft, Persian vizier administration, Sykes-Picot, Operation Ajax, 1979 Revolution, and modern US-Iran conflict.",
+    "audio_file": "history-middle_east_and_iran-audio-2.m4a",
+    "published": "2026-09-18T22:45:28-04:00",
+    "duration": "0:02:12",
+    "draft": false,
+    "notebookId": "c8b3b101-d6fc-4782-8eef-f6d116c33d55",
+    "notebookTitle": "World History: Middle East, Islamic Statecraft & The War with Iran",
+    "variant": "Brief",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "History & Culture",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "guid": "history-middle_east_and_iran-audio-1",
+    "id": "history-middle_east_and_iran-audio-1",
+    "title": "World History: Middle East, Islamic Statecraft & The War with Iran \u2014 Deep Dive Audio Overview",
+    "description": "Deep Dive exploration of Islamic statecraft, Persian vizier administration, Sykes-Picot, Operation Ajax, 1979 Revolution, and modern US-Iran conflict.",
+    "audio_file": "history-middle_east_and_iran-audio-1.m4a",
+    "published": "2026-09-18T22:45:28-04:00",
+    "duration": "0:23:27",
+    "draft": false,
+    "notebookId": "c8b3b101-d6fc-4782-8eef-f6d116c33d55",
+    "notebookTitle": "World History: Middle East, Islamic Statecraft & The War with Iran",
+    "variant": "Deep Dive",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "History & Culture",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "guid": "history-classical_antiquity-audio-1",
+    "id": "history-classical_antiquity-audio-1",
+    "title": "World History: Classical Antiquity & Western Strategy \u2014 Deep Dive Audio Overview",
+    "description": "Deep Dive exploration of Greco-Roman strategic thought and Western theories of statecraft from Herodotus and Thucydides to Machiavelli and Clausewitz.",
+    "audio_file": "history-classical_antiquity-audio-1.m4a",
+    "published": "2026-09-18T22:45:22-04:00",
+    "duration": "15:00",
+    "draft": false,
+    "notebookId": "16cd1218-0a30-494c-b4ef-1195cb76ed48",
+    "notebookTitle": "World History: Classical Antiquity & Western Strategy",
+    "variant": "Deep Dive",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "History & Culture",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "guid": "history-south_and_mesoamerica-audio-2",
+    "id": "history-south_and_mesoamerica-audio-2",
+    "title": "World History: South American & Mesoamerican Civilizations \u2014 Brief Audio Overview",
+    "description": "Brief exploration of Mayan cosmology (Popol Vuh), Nahua accounts of the Conquest, Incan history, and Bolivar's Jamaica Letter.",
+    "audio_file": "history-south_and_mesoamerica-audio-2.m4a",
+    "published": "2026-09-18T22:44:24-04:00",
+    "duration": "15:00",
+    "draft": false,
+    "notebookId": "cc3838f6-4b3e-40f7-86db-56468358cf8d",
+    "notebookTitle": "World History: South American & Mesoamerican Civilizations",
+    "variant": "Brief",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "History & Culture",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "guid": "history-south_and_mesoamerica-audio-1",
+    "id": "history-south_and_mesoamerica-audio-1",
+    "title": "World History: South American & Mesoamerican Civilizations \u2014 Deep Dive Audio Overview",
+    "description": "Deep Dive exploration of Mayan cosmology (Popol Vuh), Nahua accounts of the Conquest, Incan history, and Bolivar's Jamaica Letter.",
+    "audio_file": "history-south_and_mesoamerica-audio-1.m4a",
+    "published": "2026-09-18T22:44:24-04:00",
+    "duration": "15:00",
+    "draft": false,
+    "notebookId": "cc3838f6-4b3e-40f7-86db-56468358cf8d",
+    "notebookTitle": "World History: South American & Mesoamerican Civilizations",
+    "variant": "Deep Dive",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "History & Culture",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "guid": "history-africa-audio-2",
+    "id": "history-africa-audio-2",
+    "title": "World History: African Civilizations & Diaspora \u2014 Brief Audio Overview",
+    "description": "Brief exploration of The Charter of Kurukan Fuga, Ibn Battuta's travels, Timbuktu chronicles, and early diaspora narratives.",
+    "audio_file": "history-africa-audio-2.m4a",
+    "published": "2026-09-18T22:44:23-04:00",
+    "duration": "15:00",
+    "draft": false,
+    "notebookId": "591e87db-707f-430e-9d75-26f67659f001",
+    "notebookTitle": "World History: African Civilizations & Diaspora",
+    "variant": "Brief",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "History & Culture",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "guid": "history-africa-audio-1",
+    "id": "history-africa-audio-1",
+    "title": "World History: African Civilizations & Diaspora \u2014 Deep Dive Audio Overview",
+    "description": "Deep Dive exploration of The Charter of Kurukan Fuga, Ibn Battuta's travels, Timbuktu chronicles, and early diaspora narratives.",
+    "audio_file": "history-africa-audio-1.m4a",
+    "published": "2026-09-18T22:44:23-04:00",
+    "duration": "15:00",
+    "draft": false,
+    "notebookId": "591e87db-707f-430e-9d75-26f67659f001",
+    "notebookTitle": "World History: African Civilizations & Diaspora",
+    "variant": "Deep Dive",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "History & Culture",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "guid": "history-asia-audio-2",
+    "id": "history-asia-audio-2",
+    "title": "World History: Asian Civilizations & Statecraft \u2014 Brief Audio Overview",
+    "description": "Brief exploration of Strategic and philosophical doctrines of Sun Tzu, Confucius, Sima Qian, Kautilya, Ashoka, and Musashi.",
+    "audio_file": "history-asia-audio-2.m4a",
+    "published": "2026-09-18T22:44:10-04:00",
+    "duration": "15:00",
+    "draft": false,
+    "notebookId": "8b5a67a9-caf7-445c-a943-ccb8bef6c5ed",
+    "notebookTitle": "World History: Asian Civilizations & Statecraft",
+    "variant": "Brief",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "History & Culture",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "guid": "history-asia-audio-1",
+    "id": "history-asia-audio-1",
+    "title": "World History: Asian Civilizations & Statecraft \u2014 Deep Dive Audio Overview",
+    "description": "Deep Dive exploration of Strategic and philosophical doctrines of Sun Tzu, Confucius, Sima Qian, Kautilya, Ashoka, and Musashi.",
+    "audio_file": "history-asia-audio-1.m4a",
+    "published": "2026-09-18T22:44:10-04:00",
+    "duration": "15:00",
+    "draft": false,
+    "notebookId": "8b5a67a9-caf7-445c-a943-ccb8bef6c5ed",
+    "notebookTitle": "World History: Asian Civilizations & Statecraft",
+    "variant": "Deep Dive",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "History & Culture",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "guid": "1c31ca2d-279e-4407-8f91-0e311bca9f3c",
+    "id": "1c31ca2d-279e-4407-8f91-0e311bca9f3c",
+    "title": "Akamai Ghost versus Cloudflare Pingora Architectures",
+    "description": "Rigorous technical critique analyzing proprietary transport mechanisms, lock-in risks, and the real-world performance impact of Google protocol lineage.",
+    "audio_file": "1c31ca2d-279e-4407-8f91-0e311bca9f3c.mp3",
+    "published": "2026-10-13T08:26:48-04:00",
+    "duration": "17:35",
+    "draft": false,
+    "notebookId": "0b146c79-9fcf-482f-8d8d-6f5b04efa20b",
+    "notebookTitle": "Akamai Reverse Proxy",
+    "variant": "Critique",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Networking & Cybersecurity",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "guid": "9dca1b7b-17df-46ea-aae1-684452ad2dea",
+    "id": "9dca1b7b-17df-46ea-aae1-684452ad2dea",
+    "title": "Akamai versus Cloudflare Reverse Proxy Architectures",
+    "description": "Engaging debate between two technical hosts weighing Akamai's deep carrier presence against Cloudflare's unified software-defined Anycast fleet.",
+    "audio_file": "9dca1b7b-17df-46ea-aae1-684452ad2dea.mp3",
+    "published": "2026-10-13T08:26:48-04:00",
+    "duration": "20:23",
+    "draft": false,
+    "notebookId": "0b146c79-9fcf-482f-8d8d-6f5b04efa20b",
+    "notebookTitle": "Akamai Reverse Proxy",
+    "variant": "Debate",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Networking & Cybersecurity",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "guid": "lockheed-yf-12-audio-4acfb5d8",
+    "id": "lockheed-yf-12-audio-4acfb5d8",
+    "title": "Lockheed YF-12: Mach 3+ Titanium Interceptor, J58 Propulsion & ASG-18 Fire Control",
+    "notebookTitle": "Lockheed YF-12",
+    "notebookId": "4acfb5d8-a4e5-49ec-955d-725940cfd4b0",
+    "notebook_id": "4acfb5d8-a4e5-49ec-955d-725940cfd4b0",
+    "audio_file": "6e9e2ce5-2d42-4a67-8846-d1a4bc7b223c-orig-nblm-source.mp3",
+    "enclosure_url": "https://podcasts.technologyandstuff.com/audio-podcasts/audio/6e9e2ce5-2d42-4a67-8846-d1a4bc7b223c-orig-nblm-source.mp3",
+    "summary": "Technical audio overview covering the Lockheed YF-12 Mach 3.2 twin-seat interceptor, Pratt & Whitney J58 turboramjet propulsion, titanium thermal structures, and Hughes AN/ASG-18 pulse-Doppler radar.",
+    "description": "Technical audio overview covering the Lockheed YF-12 Mach 3.2 twin-seat interceptor, Pratt & Whitney J58 turboramjet propulsion, titanium thermal structures, and Hughes AN/ASG-18 pulse-Doppler radar.",
+    "published": "Tue, 20 Oct 2026 12:30:00 -0400",
+    "publishedAt": "2026-10-20T12:30:00-04:00",
+    "duration": "28:10",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "Aviation & Space",
+    "draft": false,
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "guid": "3f6c13a1-90da-4d6c-bcf5-3b5fa76ef4ed-audio",
+    "id": "3f6c13a1-90da-4d6c-bcf5-3b5fa76ef4ed-audio",
+    "title": "Cessna 182 Skylane: Aerodynamics, Lycoming O-540 Powertrain & Avionics Deep Dive",
+    "notebookTitle": "Cessna 182 Skylane",
+    "notebookId": "3f6c13a1-90da-4d6c-bcf5-3b5fa76ef4ed",
+    "notebook_id": "3f6c13a1-90da-4d6c-bcf5-3b5fa76ef4ed",
+    "audio_file": "3f6c13a1-90da-4d6c-bcf5-3b5fa76ef4ed-orig-nblm-source.m4a",
+    "enclosure_url": "https://podcasts.technologyandstuff.com/audio-podcasts/audio/3f6c13a1-90da-4d6c-bcf5-3b5fa76ef4ed-orig-nblm-source.m4a",
+    "summary": "Deep-dive audio overview exploring the Cessna 182 Skylane high-wing airframe, constant-speed propeller dynamics, Lycoming IO-540 propulsion, and Garmin G1000 NXi flight deck.",
+    "description": "Deep-dive audio overview exploring the Cessna 182 Skylane high-wing airframe, constant-speed propeller dynamics, Lycoming IO-540 propulsion, and Garmin G1000 NXi flight deck.",
+    "published": "Tue, 20 Oct 2026 12:00:00 -0400",
+    "publishedAt": "2026-10-20T12:00:00-04:00",
+    "duration": "24:15",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "Aviation & Space",
+    "draft": false,
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
     "title": "Human led AI assisted . Building a grounded decision matrix for higher education and career moves",
     "description": "Notebook name: Human led AI assisted . Building a grounded decision matrix for higher education and career moves\n\nHuman led AI assisted . Building a grounded decision matrix for higher education and career moves\n\nFocus: how early and mid career professional can leverage ai tools like notebooklm to analyse complex - such as comparing graduate programs, industry pivots o long term growth paths - while ensuring human values , personal constraints and non linear ambitions drive the final choice",
     "audio_file": "aab21619-1085-4b73-89cf-ee0e55677b22-orig-nblm-source.mp3",
@@ -14,6 +245,9 @@
     "notebookTitle": "Human led AI assisted . Building a grounded decision matrix for higher education and career moves",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "libraryColumn": "Technology",
+    "libraryGroup": "AI & Computing",
+    "notebook_id": "57a4552f-695b-449f-9d8c-e6a7700ec54b",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -27,12 +261,13 @@
     "guid": "be246715-c69f-4caa-9839-ed4b5ddf0c7d",
     "duration": "0:36:32",
     "draft": false,
-    "notebookId": "7740bdbf-895c-4517-94cd-f42a909dc0fb",
+    "notebookId": "57a4552f-695b-449f-9d8c-e6a7700ec54b",
     "notebookTitle": "Human-Led, AI-Assisted: Building a Grounded Decision Matrix for Higher Ed and Career Moves",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
     "libraryColumn": "Technology",
     "libraryGroup": "AI & Computing",
+    "notebook_id": "57a4552f-695b-449f-9d8c-e6a7700ec54b",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -52,6 +287,7 @@
     "variant": "Deep Dive",
     "libraryColumn": "Technology",
     "libraryGroup": "AI & Computing",
+    "notebook_id": "866460db-d671-422a-a3d6-d269f910fb26",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -69,23 +305,9 @@
     "notebookTitle": "Electric Vehicles",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
-    "publicReviewStatus": "Owner reviewed"
-  },
-  {
-    "title": "Okay",
-    "description": "Notebook name: Okay\n\nOkay\n\nFocus: We have uh two thousand. We have two five five.",
-    "audio_file": "65b8ae0c-d6cf-40f4-aded-8fcc771501a5-orig-nblm-source.mp3",
-    "source_name": "65b8ae0c-d6cf-40f4-aded-8fcc771501a5-orig-nblm-source.mp3",
-    "source_sha256": "e2babc50e3564be8c786130ed5c6842d021a0695ebc28c69ff540b0cf37882dd",
-    "converted_to_aac": false,
-    "published": "Tue, 20 Oct 2026 20:20:36 +0000",
-    "guid": "5deb28b8-ff2e-41b9-a704-8544c2ac9c85",
-    "duration": "0:40:07",
-    "draft": false,
-    "notebookId": "815563df-5a94-4163-a50a-13a944ac886b",
-    "notebookTitle": "Okay",
-    "artifactType": "audio_overview",
-    "variant": "Deep Dive",
+    "notebook_id": "59db607c-6711-4b75-b331-825068086300",
+    "libraryColumn": "Technology",
+    "libraryGroup": "General",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -99,6 +321,11 @@
     "guid": "6e54f51e-e83a-410d-87c1-63ffc72fe0ba",
     "duration": "0:54:49",
     "draft": false,
+    "notebookId": "00bdf6a1-460f-49aa-9bac-eab5bf7127cf",
+    "notebook_id": "00bdf6a1-460f-49aa-9bac-eab5bf7127cf",
+    "notebookTitle": "Amazon Web Services Security",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Cloud & Infrastructure",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -112,6 +339,11 @@
     "guid": "b6c737c6-fdec-4ad3-b850-de67864fdf9b",
     "duration": "0:45:50",
     "draft": false,
+    "notebookId": "00bdf6a1-460f-49aa-9bac-eab5bf7127cf",
+    "notebook_id": "00bdf6a1-460f-49aa-9bac-eab5bf7127cf",
+    "notebookTitle": "Amazon Web Services Security",
+    "libraryColumn": "Technology",
+    "libraryGroup": "Cloud & Infrastructure",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -129,6 +361,7 @@
     "libraryGroup": "Aircraft",
     "notebookId": "5d4fa4f3-ffad-44aa-91bf-8f484173de0f",
     "notebookTitle": "Lockheed SR-71 Blackbird",
+    "notebook_id": "5d4fa4f3-ffad-44aa-91bf-8f484173de0f",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -146,6 +379,7 @@
     "libraryGroup": "Aircraft",
     "notebookId": "303f5e72-9462-4138-85a7-f0dcf556b421",
     "notebookTitle": "Cessna 210 Centurion Aircraft",
+    "notebook_id": "303f5e72-9462-4138-85a7-f0dcf556b421",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -163,6 +397,7 @@
     "libraryGroup": "Aircraft",
     "notebookId": "a6b2a50d-b593-43b1-a539-1461ace1ad6e",
     "notebookTitle": "Cessna 150 airplane",
+    "notebook_id": "a6b2a50d-b593-43b1-a539-1461ace1ad6e",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -199,69 +434,7 @@
     "kind": "audio",
     "public": true,
     "draft": false,
-    "publicReviewStatus": "Owner reviewed"
-  },
-  {
-    "id": "apple-studio-mac-mini-explainer-94c1a01",
-    "title": "Apple Studio (M5 Ultra 96GB) vs. Mac mini (M5 64GB) \u2014 Full Technical Explainer",
-    "notebookId": "4c8044a8-aa65-4b92-b5ae-31c1cfa5c6e3",
-    "notebookTitle": "Apple Studio and Mac mini comparison",
-    "category": "AI & Computing",
-    "libraryColumn": "Technology",
-    "libraryGroup": "AI & Computing",
-    "mediaType": "video",
-    "videoVariant": "explainer",
-    "type": "video",
-    "videoUrl": "/episodes/video/apple-studio-mac-mini-explainer-94c1a01.mp4",
-    "thumbnailUrl": "/episodes/thumbnails/apple-studio-mac-mini-explainer-94c1a01.png",
-    "viewUrl": "/index.html?episode=apple-studio-mac-mini-explainer-94c1a01",
-    "publishedAt": "2026-10-15T21:11:12.197972+00:00",
-    "createdAt": "2026-10-15T21:11:12.197972+00:00",
-    "status": "approved",
-    "reviewState": "approved",
-    "summary": "Full technical explainer comparing Jogg.AI and Descript rendering, 819 GB/s vs 307 GB/s LLM speeds, Top 5 models per machine, and 5-vs-3 concurrent multi-model execution.",
-    "publicReviewStatus": "Owner reviewed"
-  },
-  {
-    "id": "apple-studio-mac-mini-cinematic-94c1a02",
-    "title": "Inside the Silicon: M5 Ultra 819 GB/s Copper Core vs. M5 Mac mini Architecture",
-    "notebookId": "4c8044a8-aa65-4b92-b5ae-31c1cfa5c6e3",
-    "notebookTitle": "Apple Studio and Mac mini comparison",
-    "category": "AI & Computing",
-    "libraryColumn": "Technology",
-    "libraryGroup": "AI & Computing",
-    "mediaType": "video",
-    "videoVariant": "cinematic",
-    "type": "video",
-    "videoUrl": "/episodes/video/apple-studio-mac-mini-cinematic-94c1a02.mp4",
-    "thumbnailUrl": "/episodes/thumbnails/apple-studio-mac-mini-cinematic-94c1a02.png",
-    "viewUrl": "/index.html?episode=apple-studio-mac-mini-cinematic-94c1a02",
-    "publishedAt": "2026-10-15T21:11:12.197972+00:00",
-    "createdAt": "2026-10-15T21:11:12.197972+00:00",
-    "status": "approved",
-    "reviewState": "approved",
-    "summary": "Cinematic architectural walkthrough of the M5 Ultra Dual-Die UltraFusion interposer, Solid Copper thermal module, and 96 GB unified memory array vs. the 5x5-inch Mac mini M5.",
-    "publicReviewStatus": "Owner reviewed"
-  },
-  {
-    "id": "apple-studio-mac-mini-short-94c1a03",
-    "title": "60-Second Verdict: Mac Studio M5 Ultra (96GB) vs. Maxed-Out Mac mini M5 (64GB)",
-    "notebookId": "4c8044a8-aa65-4b92-b5ae-31c1cfa5c6e3",
-    "notebookTitle": "Apple Studio and Mac mini comparison",
-    "category": "AI & Computing",
-    "libraryColumn": "Technology",
-    "libraryGroup": "AI & Computing",
-    "mediaType": "video",
-    "videoVariant": "short",
-    "type": "video",
-    "videoUrl": "/episodes/video/apple-studio-mac-mini-short-94c1a03.mp4",
-    "thumbnailUrl": "/episodes/thumbnails/apple-studio-mac-mini-short-94c1a03.png",
-    "viewUrl": "/index.html?episode=apple-studio-mac-mini-short-94c1a03",
-    "publishedAt": "2026-10-15T21:11:12.197972+00:00",
-    "createdAt": "2026-10-15T21:11:12.197972+00:00",
-    "status": "approved",
-    "reviewState": "approved",
-    "summary": "Rapid 60-second executive summary of speed, largest runnable AI models (123B vs 70B), concurrent multi-model limits (5 vs 3), and 5-year net lifecycle cost ($23/mo delta).",
+    "notebook_id": "4c8044a8-aa65-4b92-b5ae-31c1cfa5c6e3",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -298,6 +471,7 @@
     "kind": "audio",
     "public": true,
     "draft": false,
+    "notebook_id": "340aa49b-0207-4e65-b057-1249f7562433",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -328,6 +502,7 @@
     "source_name": "automotive-powertrains-debate-2026.m4a",
     "draft": false,
     "description": "Vigorous academic debate exploring combustion thermodynamic headroom, gravimetric energy density disparities, motor efficiency curves, and raw material lifecycle bottlenecks.",
+    "notebook_id": "972f730a-77cc-45b6-8f1a-bf61f773b42c",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -357,6 +532,7 @@
     "publishedAt": "2026-10-04T01:15:00-04:00",
     "draft": false,
     "public": true,
+    "notebook_id": "173eb701-b0bd-4d7f-b1fc-58cf0d5bb956",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -377,6 +553,7 @@
     "variant": "Debate",
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
+    "notebook_id": "02fc0db7-f3bb-498d-88d1-ca7e5707bf2b",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -397,6 +574,7 @@
     "variant": "Debate",
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
+    "notebook_id": "29886b95-daa6-415e-beff-51df1cad0c23",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -416,6 +594,7 @@
     "variant": "Debate",
     "libraryColumn": "Technology",
     "libraryGroup": "Energy & Computing Infrastructure",
+    "notebook_id": "6a4d8c2e-3f1b-4a5d-9e7c-1b2a3c4d5e6f",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -433,6 +612,7 @@
     "notebookTitle": "AI Slop and the Generative Media Landscape",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "70dbdd40-12ef-4bbf-9f96-3687f82b64bb",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -453,6 +633,7 @@
     "libraryColumn": "Other Stuff",
     "libraryGroup": "Media & Creativity",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "9d10ecba-5764-4ae9-af27-685870d22df3",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -470,6 +651,7 @@
     "notebookTitle": "Validating Sources with NotBookLM",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "d2995410-d2cb-4357-aa94-ec879dcaeef8",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -487,6 +669,7 @@
     "notebookTitle": "Zero Trust Architecture: Blueprint and Maturity Models",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "d9a8f898-e54c-41fb-bb1c-6b317e53b28c",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -504,6 +687,7 @@
     "notebookTitle": "NIST ZT",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "d007fc76-14dd-4ba5-97bc-16310164e64d",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -521,6 +705,7 @@
     "notebookTitle": "The Comprehensive Guide to Mastering Google NotebookLM",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "eb13e739-db36-415c-bf38-2de9b1a79f9f",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -541,6 +726,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Space & Cosmology",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "0b96f57f-8a8a-493e-bfcd-fec2d7995097",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -558,6 +744,7 @@
     "notebookTitle": "Island Enterprise Browser: Ratings, Integration, and Security Insights",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "bc616ca2-bf47-4283-a1e8-b503b8bd012e",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -575,6 +762,7 @@
     "notebookTitle": "The Technomythological Horizon: From Ancient Folklore to Physical AI",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "ce41698d-dc1d-4a49-9e67-10075a1c0e43",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -595,6 +783,7 @@
     "libraryColumn": "Other Stuff",
     "libraryGroup": "History & Culture",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "ad0e8675-e71a-4cac-b82a-a5655f5fdb0d",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -612,6 +801,7 @@
     "notebookTitle": "Anthropic: Evolution, Alignment, and Functional Emotions inside Claude",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "04169f3e-b32d-4f55-af7c-3bee8af92f7b",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -629,6 +819,7 @@
     "notebookTitle": "Glossary of Key Information Security Terms",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "bab28ece-fdfa-407b-84ca-c3a4c2b712ab",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -646,6 +837,7 @@
     "notebookTitle": "William Optics RedCat and Ultra-Cat Telescope Technical Reviews",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "ba0c417a-51aa-4557-b13e-6595ff4b76ee",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -666,6 +858,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "AI & Computing",
     "libraryGroupUpdatedAt": "2026-09-30T02:44:55Z",
+    "notebook_id": "1d8a6dd0-83d1-444b-b4ca-50a1c62f9311",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -683,6 +876,7 @@
     "notebookTitle": "The Adolescence of Technology: Navigating the Gauntlet of AI Risk",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "70bdba27-9aac-46ce-8755-83c7504dd619",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -700,6 +894,7 @@
     "notebookTitle": "Moon Base to Mars: Rockets, Crew, and Mission Architecture",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "e5222522-955f-42f4-a8dc-e6eb9ee33dce",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -717,6 +912,7 @@
     "notebookTitle": "SCT and EdgeHD Optical Collimation Guide",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "084b6d65-ab90-4514-aed9-3194c5e50909",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -734,6 +930,7 @@
     "notebookTitle": "Back-Focus 101: Celestron SCT wIth Celestron f/6.3 Reducer/Corrector",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "0ab03b67-4235-4cb7-a192-9951cbb8c04a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -754,6 +951,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "31939ae9-4144-443c-9de3-798986d1262c",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -774,6 +972,7 @@
     "libraryColumn": "Other Stuff",
     "libraryGroup": "Nature & Home",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "2cda0f19-c08c-4b26-91e6-e718c96df52d",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -791,23 +990,7 @@
     "notebookTitle": "Xage PAM solution Deep Dive",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
-    "publicReviewStatus": "Owner reviewed"
-  },
-  {
-    "title": "notebooklm.google.com",
-    "description": "notebooklm.google.com",
-    "audio_file": "batch-upgrade-da182318-orig-nblm.mp3",
-    "source_name": "batch-upgrade-da182318-orig-nblm.mp3",
-    "source_sha256": "2d76e519a511981b6104a27b457617d3f1a472f9052991686554d0e0a57c1ef3",
-    "converted_to_aac": false,
-    "published": "Sun, 13 Sep 2026 05:25:45 +0000",
-    "guid": "d8ec7458-8467-4372-8282-43f913adb6f2",
-    "duration": "0:52:42",
-    "draft": false,
-    "notebookId": "da182318-d7d7-431f-9540-f55c272bf7b8",
-    "notebookTitle": "notebooklm.google.com",
-    "artifactType": "audio_overview",
-    "variant": "Deep Dive",
+    "notebook_id": "76ea4641-43f9-4415-8d9e-6df519320b7a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -825,6 +1008,7 @@
     "notebookTitle": "Cisco Catalyst SD-WAN System Architecture and Overview",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "ba1b3c48-2fc5-4751-b53c-5c5ae364b037",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -845,6 +1029,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "AI & Computing",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "258f54fc-78b2-4dd9-b861-b173187430a4",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -865,6 +1050,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "08f97505-04a7-43c0-9e4b-ccc67545508f",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -882,6 +1068,7 @@
     "notebookTitle": "Maine Coon and Ragdoll Care and Behavior",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "513480c5-d1e2-4596-9dba-522293f6ab26",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -899,6 +1086,7 @@
     "notebookTitle": "Xage and Privileged Access Management (PAM)",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "8b6faeab-2626-4b25-9888-1360acc88b17",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -916,6 +1104,7 @@
     "notebookTitle": "Cisco Viptella SDWAN vs SRV6",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "24fb8355-5851-4447-8c1d-1c0ebdc39d5f",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -933,6 +1122,7 @@
     "notebookTitle": "NBLM Extensions",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "8ae758c4-8050-4528-8a2c-191e4ad108f3",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -950,6 +1140,7 @@
     "notebookTitle": "Standard Poodles: Gray, Parti, and Black",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "73c8c00d-16f2-460e-ad90-91503945f8b0",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -970,6 +1161,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "AI & Computing",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "bfcf8db0-99c3-43ab-860d-c3ba39356d5a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -990,6 +1182,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Space & Cosmology",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "76ad9b3c-fd6d-4349-8d8f-9ddc7b04d97f",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1007,6 +1200,7 @@
     "notebookTitle": "European Great Danes: Temperament, Size, and Care",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "23ee5447-d453-4ead-9e6b-de5ec227a21a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1024,6 +1218,7 @@
     "notebookTitle": "The Shuttle Space Program",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "5c2c99a9-0dee-4992-ba2f-7fc5cf0b73f8",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1044,6 +1239,7 @@
     "libraryColumn": "Other Stuff",
     "libraryGroup": "General Interest",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "9de1f8e7-bc88-47fb-adca-adc25d1a4763",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1061,6 +1257,7 @@
     "notebookTitle": "This FREE AI Trick Unlocks NotebookLM's Locked Infographics",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "092f0746-4524-4789-be99-fbeb0ca2da9f",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1078,6 +1275,7 @@
     "notebookTitle": "Mythos",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "2a12d227-246d-4337-901a-8538b1d6abf2",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1095,6 +1293,7 @@
     "notebookTitle": "spaceli",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "94356eae-5805-40b1-b7cb-bd0f8fe07302",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1112,6 +1311,7 @@
     "notebookTitle": "Cyber Security",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "80414477-4114-45fe-8557-d0e7ccbd625c",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1129,6 +1329,7 @@
     "notebookTitle": "AI sided hustles",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "477518c0-e677-4e88-b4b7-836c91be0af8",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1149,6 +1350,7 @@
     "libraryColumn": "Other Stuff",
     "libraryGroup": "Nature & Home",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "0428a950-7c30-4227-aa4d-19c226452e80",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1169,6 +1371,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "a9fb5c77-a65c-4478-9338-81495cfe2d65",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1186,6 +1389,7 @@
     "notebookTitle": "Appgate SDP Documentation and Deployment Resource Hub",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "4e946d31-737a-4af3-8b24-1fb5b0e846e9",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1206,6 +1410,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "c2300e51-2560-4b39-94b3-52b0cac24031",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1223,6 +1428,7 @@
     "notebookTitle": "AKAMI",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "99ed5238-6470-43a5-bfc7-3b01c75c04a7",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1243,6 +1449,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "AI & Computing",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "303d337d-dabf-45db-a633-6540ce9f751a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1260,6 +1467,7 @@
     "notebookTitle": "The Nexus of Google Gemini",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "aae645c3-b77f-41a6-866e-256c2c59a978",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1277,6 +1485,7 @@
     "notebookTitle": "The Google Gemini Interface",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "d5c0ebbf-2af3-47e1-b5ae-f8a4bfa8c7bd",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1294,6 +1503,7 @@
     "notebookTitle": "Astro Blender",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "8923bdd1-4c4d-40ba-ab81-a68bfef2122a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1311,6 +1521,7 @@
     "notebookTitle": "Implementing SRvTrust on Nokia Platforms",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "c4667c8f-352a-4534-8513-d103fde3bf56",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1328,6 +1539,7 @@
     "notebookTitle": "Who Owns the U.S. National Debt?",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "0410355c-e592-4d6e-8949-02e66d0c2122",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1345,6 +1557,7 @@
     "notebookTitle": "Evolution of Apple",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "59c8cd5b-72dd-4da8-a842-e299bb86d0a7",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1362,6 +1575,7 @@
     "notebookTitle": "The American Revolution",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "3a0b03c2-a4ca-4c05-bfbf-0bca053f3cc4",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1379,6 +1593,7 @@
     "notebookTitle": "Black Hole Cosmology: Universes Within Black Holes",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "bc4916cb-edb8-4307-9092-230cdd62cf90",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1399,6 +1614,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "AI & Computing",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "8c4b8504-7a5a-48bd-8ef4-fb417fa82987",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1416,10 +1632,11 @@
     "notebookTitle": "Comprehensive Guide to Introductory Astronomy and Stargazing",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "19968768-aa4b-4c73-9030-e5ee030e577b",
     "publicReviewStatus": "Owner reviewed"
   },
   {
-    "title": "Test Apple History",
+    "title": "The Pirates Who Built the Macintosh: Inside the 1984 Apple Macintosh 128K Team",
     "description": "Test Apple History",
     "audio_file": "batch-upgrade-000f4368-orig-nblm.mp3",
     "source_name": "batch-upgrade-000f4368-orig-nblm.mp3",
@@ -1430,9 +1647,10 @@
     "duration": "0:36:13",
     "draft": false,
     "notebookId": "000f4368-a05c-425a-91d4-7e87db766afd",
-    "notebookTitle": "Test Apple History",
+    "notebookTitle": "The Pirates Who Built the Macintosh (Apple Macintosh 128K)",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "000f4368-a05c-425a-91d4-7e87db766afd",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1450,6 +1668,7 @@
     "notebookTitle": "Large Language Models: Architectures, Scaling Laws, and Reasoning Paradigms",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "36bd9546-592c-4d41-9596-9330af3383b0",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1470,6 +1689,7 @@
     "generatorJobId": "20260911-093554-notebook-name-test-apple-history-test-apple-history-suggested-source-h-e3c3e4",
     "notebookPrompt": "Notebook name: Test Apple History\n\nTest Apple History\n\nSuggested source: https://example.com",
     "focus": "Focus on early Macs\n\nAdditional comments: Test notes",
+    "notebook_id": "000f4368-a05c-425a-91d4-7e87db766afd",
     "libraryColumn": "Technology",
     "libraryGroup": "AI & Computing",
     "publicReviewStatus": "Owner reviewed"
@@ -1495,6 +1715,7 @@
     "libraryColumn": "Other Stuff",
     "libraryGroup": "History & Culture",
     "libraryGroupUpdatedAt": "2026-09-11T03:43:39Z",
+    "notebook_id": "3a0b03c2-a4ca-4c05-bfbf-0bca053f3cc4",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1512,6 +1733,7 @@
     "notebookTitle": "The Definitive Guide to ChatGPT and the AI Evolution",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "9f1acb3a-73ee-4317-badd-f5d4cac8ea18",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1529,6 +1751,7 @@
     "notebookTitle": "Who Owns the U.S. National Debt?",
     "artifactType": "audio_overview",
     "variant": "Debate",
+    "notebook_id": "0410355c-e592-4d6e-8949-02e66d0c2122",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1546,6 +1769,7 @@
     "notebookTitle": "Who Owns the U.S. National Debt?",
     "artifactType": "audio_overview",
     "variant": "Critique",
+    "notebook_id": "0410355c-e592-4d6e-8949-02e66d0c2122",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1563,6 +1787,7 @@
     "notebookTitle": "Who Owns the U.S. National Debt?",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "notebook_id": "0410355c-e592-4d6e-8949-02e66d0c2122",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1580,6 +1805,7 @@
     "notebookTitle": "Who Owns the U.S. National Debt?",
     "artifactType": "audio_overview",
     "variant": "Brief",
+    "notebook_id": "0410355c-e592-4d6e-8949-02e66d0c2122",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1599,6 +1825,7 @@
     "variant": "Debate",
     "artifactJobId": "9cef628b-560c-5c61-9745-8115500c2802",
     "artifactItemId": "c96aa8ee-ab11-4da0-b995-564021f13e71",
+    "notebook_id": "91e7e66d-2855-4623-94d9-e4bd359f64b7",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1618,6 +1845,7 @@
     "variant": "Debate",
     "artifactJobId": "b41513b3-92f7-50ac-9a6b-e819e50471ce",
     "artifactItemId": "1b2b07bb-2106-417e-adcc-068249c8639a",
+    "notebook_id": "8923bdd1-4c4d-40ba-ab81-a68bfef2122a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1637,6 +1865,7 @@
     "variant": "Critique",
     "artifactJobId": "b41513b3-92f7-50ac-9a6b-e819e50471ce",
     "artifactItemId": "c7a77b40-d125-4a82-a420-bedcc160187f",
+    "notebook_id": "8923bdd1-4c4d-40ba-ab81-a68bfef2122a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1656,6 +1885,7 @@
     "variant": "Critique",
     "artifactJobId": "e15a21b3-707b-5095-a2b3-4ced452590b2",
     "artifactItemId": "ab6b049f-6158-4720-afb5-1d4a08feac2e",
+    "notebook_id": "5b2a05ab-a96d-4851-8df7-e8be0afb7433",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1675,6 +1905,7 @@
     "variant": "Debate",
     "artifactJobId": "e15a21b3-707b-5095-a2b3-4ced452590b2",
     "artifactItemId": "f0c28505-7d32-4755-b463-91e6072fbbbe",
+    "notebook_id": "5b2a05ab-a96d-4851-8df7-e8be0afb7433",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1694,6 +1925,7 @@
     "variant": "Brief",
     "artifactJobId": "9cef628b-560c-5c61-9745-8115500c2802",
     "artifactItemId": "d85b89bb-cd46-43bd-a405-ee0a2b709ec4",
+    "notebook_id": "91e7e66d-2855-4623-94d9-e4bd359f64b7",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1713,6 +1945,7 @@
     "variant": "Critique",
     "artifactJobId": "9cef628b-560c-5c61-9745-8115500c2802",
     "artifactItemId": "fe13755b-0d20-415a-9ede-cf7ec3c1e311",
+    "notebook_id": "91e7e66d-2855-4623-94d9-e4bd359f64b7",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1732,6 +1965,7 @@
     "variant": "Brief",
     "artifactJobId": "b41513b3-92f7-50ac-9a6b-e819e50471ce",
     "artifactItemId": "b8d8e5b1-94ae-432d-8c50-3b76722fa099",
+    "notebook_id": "8923bdd1-4c4d-40ba-ab81-a68bfef2122a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1751,6 +1985,7 @@
     "variant": "Deep Dive",
     "artifactJobId": "b41513b3-92f7-50ac-9a6b-e819e50471ce",
     "artifactItemId": "98eec6c8-e01c-470c-ae18-e65d8b0e273a",
+    "notebook_id": "8923bdd1-4c4d-40ba-ab81-a68bfef2122a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1770,6 +2005,7 @@
     "variant": "Brief",
     "artifactJobId": "65b2bb5d-f04d-539c-8f8f-83f3915d75a7",
     "artifactItemId": "a19a4e6f-43c1-4dc0-8a3c-425848ce6220",
+    "notebook_id": "75da5796-aebc-4b21-8626-8901366cf4b2",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1789,6 +2025,7 @@
     "variant": "Critique",
     "artifactJobId": "65b2bb5d-f04d-539c-8f8f-83f3915d75a7",
     "artifactItemId": "68c860b6-13c8-456a-b8dc-b993976e549e",
+    "notebook_id": "75da5796-aebc-4b21-8626-8901366cf4b2",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1808,6 +2045,7 @@
     "variant": "Brief",
     "artifactJobId": "e15a21b3-707b-5095-a2b3-4ced452590b2",
     "artifactItemId": "5efac02a-6069-4904-9aa7-b1ebd5680551",
+    "notebook_id": "5b2a05ab-a96d-4851-8df7-e8be0afb7433",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1827,6 +2065,7 @@
     "variant": "Debate",
     "artifactJobId": "035c036e-db91-5e9f-863f-6bd9b658d4a8",
     "artifactItemId": "daa8b2eb-5900-44eb-a622-250e89beceab",
+    "notebook_id": "7877feec-2c6b-455d-b8ca-b0e94e288778",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1846,6 +2085,7 @@
     "variant": "Brief",
     "artifactJobId": "aef9ceb3-3f80-56bd-a769-d40d3b6ab5bc",
     "artifactItemId": "617d8e68-fa03-4706-aab3-f3fb1ef12aca",
+    "notebook_id": "cf603d02-71a2-47ac-84cc-0dd58d81eec7",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1865,6 +2105,7 @@
     "variant": "Debate",
     "artifactJobId": "aef9ceb3-3f80-56bd-a769-d40d3b6ab5bc",
     "artifactItemId": "93d2f8ed-de34-4b02-92ff-9c5ab0f2b16d",
+    "notebook_id": "cf603d02-71a2-47ac-84cc-0dd58d81eec7",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1884,6 +2125,7 @@
     "variant": "Critique",
     "artifactJobId": "aef9ceb3-3f80-56bd-a769-d40d3b6ab5bc",
     "artifactItemId": "383c0031-55c7-45c8-b7a6-603fbdba840e",
+    "notebook_id": "cf603d02-71a2-47ac-84cc-0dd58d81eec7",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1903,6 +2145,7 @@
     "variant": "Deep Dive",
     "artifactJobId": "aef9ceb3-3f80-56bd-a769-d40d3b6ab5bc",
     "artifactItemId": "b6fdb803-b408-43ce-9308-1fd2cb6240d4",
+    "notebook_id": "cf603d02-71a2-47ac-84cc-0dd58d81eec7",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1922,6 +2165,7 @@
     "variant": "Critique",
     "artifactJobId": "c020b0d7-3894-5b53-8016-e7c625fe3ad0",
     "artifactItemId": "15a312ab-dc5b-4261-9963-4d3b0e499298",
+    "notebook_id": "c4667c8f-352a-4534-8513-d103fde3bf56",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1941,6 +2185,7 @@
     "variant": "Deep Dive",
     "artifactJobId": "c020b0d7-3894-5b53-8016-e7c625fe3ad0",
     "artifactItemId": "b7fd72b4-adea-4872-ae64-43fb6fc79521",
+    "notebook_id": "c4667c8f-352a-4534-8513-d103fde3bf56",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1960,6 +2205,7 @@
     "variant": "Debate",
     "artifactJobId": "c020b0d7-3894-5b53-8016-e7c625fe3ad0",
     "artifactItemId": "d4166dc8-be85-40e3-80f7-9c5b6577f345",
+    "notebook_id": "c4667c8f-352a-4534-8513-d103fde3bf56",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1979,6 +2225,7 @@
     "variant": "Critique",
     "artifactJobId": "52d67e44-408b-5c40-86db-be43a629d374",
     "artifactItemId": "0ed484b2-9595-4f1b-bce7-24e93046d7d5",
+    "notebook_id": "21417014-cbff-46ed-a133-95a977840ea1",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -1998,6 +2245,7 @@
     "variant": "Debate",
     "artifactJobId": "52d67e44-408b-5c40-86db-be43a629d374",
     "artifactItemId": "be58da75-05ba-41a0-8ba2-48e3b61dfd84",
+    "notebook_id": "21417014-cbff-46ed-a133-95a977840ea1",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2017,6 +2265,7 @@
     "variant": "Brief",
     "artifactJobId": "035c036e-db91-5e9f-863f-6bd9b658d4a8",
     "artifactItemId": "50fb5821-c06d-4faa-91a8-f9ff4dc1a725",
+    "notebook_id": "7877feec-2c6b-455d-b8ca-b0e94e288778",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2036,6 +2285,7 @@
     "variant": "Brief",
     "artifactJobId": "c020b0d7-3894-5b53-8016-e7c625fe3ad0",
     "artifactItemId": "5f7e9086-76e1-4ab0-a763-cd1d3ea3d9b3",
+    "notebook_id": "c4667c8f-352a-4534-8513-d103fde3bf56",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2055,6 +2305,7 @@
     "variant": "Brief",
     "artifactJobId": "52d67e44-408b-5c40-86db-be43a629d374",
     "artifactItemId": "3c479d7c-02b5-497c-88e0-efe54a1846d8",
+    "notebook_id": "21417014-cbff-46ed-a133-95a977840ea1",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2074,6 +2325,7 @@
     "variant": "Brief",
     "artifactJobId": "e13f92de-bf5e-5f87-b4cc-4ae933f4e2c8",
     "artifactItemId": "9fb71dd1-230e-4d80-a8a5-bc1f3e2583bf",
+    "notebook_id": "338dcaa7-d09a-4741-b2a0-1cfca5fb7a18",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2093,6 +2345,7 @@
     "variant": "Deep Dive",
     "artifactJobId": "e13f92de-bf5e-5f87-b4cc-4ae933f4e2c8",
     "artifactItemId": "2f403f62-f671-4ebc-9e6e-5c8f28df2772",
+    "notebook_id": "338dcaa7-d09a-4741-b2a0-1cfca5fb7a18",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2115,6 +2368,7 @@
     "libraryColumn": "Other Stuff",
     "libraryGroup": "History & Culture",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "0db4c9af-21da-4d5f-87de-99f2ec3e2f06",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2137,6 +2391,7 @@
     "libraryColumn": "Other Stuff",
     "libraryGroup": "History & Culture",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "0db4c9af-21da-4d5f-87de-99f2ec3e2f06",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2156,6 +2411,7 @@
     "variant": "Debate",
     "artifactJobId": "7ff9fa3b-f8e9-517f-873f-0642df0ea595",
     "artifactItemId": "67e2a31b-8859-423a-8de8-8ce828b2dac4",
+    "notebook_id": "aaab907a-f5d4-4bbc-81fb-4defb03002f0",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2175,6 +2431,7 @@
     "variant": "Critique",
     "artifactJobId": "7ff9fa3b-f8e9-517f-873f-0642df0ea595",
     "artifactItemId": "e89131c5-340d-41a9-805b-3471f0daf361",
+    "notebook_id": "aaab907a-f5d4-4bbc-81fb-4defb03002f0",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2194,6 +2451,7 @@
     "variant": "Brief",
     "artifactJobId": "a0aa3449-2015-5b58-99d3-dca0f2fcb47a",
     "artifactItemId": "44da1100-4ea2-4d97-8120-b74588d766b1",
+    "notebook_id": "ab10d701-b7cb-401f-b7a4-ee37471ef4dc",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2213,6 +2471,7 @@
     "variant": "Debate",
     "artifactJobId": "a0aa3449-2015-5b58-99d3-dca0f2fcb47a",
     "artifactItemId": "f77bed49-4784-43d8-b3cb-e82b48ec8acd",
+    "notebook_id": "ab10d701-b7cb-401f-b7a4-ee37471ef4dc",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2232,6 +2491,7 @@
     "variant": "Critique",
     "artifactJobId": "a0aa3449-2015-5b58-99d3-dca0f2fcb47a",
     "artifactItemId": "036b8fb2-6291-4d91-a8ff-cd0b6baef6bf",
+    "notebook_id": "ab10d701-b7cb-401f-b7a4-ee37471ef4dc",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2251,6 +2511,7 @@
     "variant": "Brief",
     "artifactJobId": "c47dd1fb-34b3-5e39-a57a-7255a3c89e08",
     "artifactItemId": "6882c62f-6041-4a02-976f-cee8e7c55c53",
+    "notebook_id": "092f0746-4524-4789-be99-fbeb0ca2da9f",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2270,6 +2531,7 @@
     "variant": "Deep Dive",
     "artifactJobId": "c47dd1fb-34b3-5e39-a57a-7255a3c89e08",
     "artifactItemId": "cad06959-1612-4d6a-b5a8-38753965cf96",
+    "notebook_id": "092f0746-4524-4789-be99-fbeb0ca2da9f",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2289,6 +2551,7 @@
     "variant": "Critique",
     "artifactJobId": "c47dd1fb-34b3-5e39-a57a-7255a3c89e08",
     "artifactItemId": "f29eba2d-51a3-432e-9cd0-5654b85c3dd0",
+    "notebook_id": "092f0746-4524-4789-be99-fbeb0ca2da9f",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2308,6 +2571,7 @@
     "variant": "Debate",
     "artifactJobId": "c47dd1fb-34b3-5e39-a57a-7255a3c89e08",
     "artifactItemId": "5ed3f67a-498f-4a43-811a-f9da5cde7db4",
+    "notebook_id": "092f0746-4524-4789-be99-fbeb0ca2da9f",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2327,6 +2591,7 @@
     "variant": "Brief",
     "artifactJobId": "e1d14b86-1792-5066-bf77-0547e41cb1ef",
     "artifactItemId": "65ce794f-72d5-41e0-b8fb-23b24acd5fc1",
+    "notebook_id": "8ae758c4-8050-4528-8a2c-191e4ad108f3",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2346,6 +2611,7 @@
     "variant": "Critique",
     "artifactJobId": "e1d14b86-1792-5066-bf77-0547e41cb1ef",
     "artifactItemId": "85668ea1-2f59-4222-9005-2000f91ef18a",
+    "notebook_id": "8ae758c4-8050-4528-8a2c-191e4ad108f3",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2365,6 +2631,7 @@
     "variant": "Debate",
     "artifactJobId": "e1d14b86-1792-5066-bf77-0547e41cb1ef",
     "artifactItemId": "dd4e2bb7-98a8-480e-8863-2337feec6742",
+    "notebook_id": "8ae758c4-8050-4528-8a2c-191e4ad108f3",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2384,6 +2651,7 @@
     "variant": "Deep Dive",
     "artifactJobId": "e1d14b86-1792-5066-bf77-0547e41cb1ef",
     "artifactItemId": "aacc93c1-8444-4f2c-88c1-6a9ab259f1c9",
+    "notebook_id": "8ae758c4-8050-4528-8a2c-191e4ad108f3",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2403,6 +2671,7 @@
     "variant": "Brief",
     "artifactJobId": "f7447bd0-ae0c-5018-8877-c0fd74496334",
     "artifactItemId": "8d7cdb07-7a96-49d6-a6db-c0364c4bc491",
+    "notebook_id": "d5c0ebbf-2af3-47e1-b5ae-f8a4bfa8c7bd",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2422,6 +2691,7 @@
     "variant": "Deep Dive",
     "artifactJobId": "f7447bd0-ae0c-5018-8877-c0fd74496334",
     "artifactItemId": "0d0f3c56-199f-40ee-8e62-e7b6383b325b",
+    "notebook_id": "d5c0ebbf-2af3-47e1-b5ae-f8a4bfa8c7bd",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2441,6 +2711,7 @@
     "variant": "Debate",
     "artifactJobId": "f7447bd0-ae0c-5018-8877-c0fd74496334",
     "artifactItemId": "6ccf9e7f-591f-4ab3-a589-c31a1264fbdd",
+    "notebook_id": "d5c0ebbf-2af3-47e1-b5ae-f8a4bfa8c7bd",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2460,6 +2731,7 @@
     "variant": "Deep Dive",
     "artifactJobId": "6db0abc0-f57d-53ac-a725-46baf19a3c64",
     "artifactItemId": "39a5c30f-4527-44a4-8844-79f9144cb56f",
+    "notebook_id": "aae645c3-b77f-41a6-866e-256c2c59a978",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2479,6 +2751,7 @@
     "variant": "Brief",
     "artifactJobId": "6db0abc0-f57d-53ac-a725-46baf19a3c64",
     "artifactItemId": "eaeaf7df-da4e-4423-b14a-b64bf8f2589d",
+    "notebook_id": "aae645c3-b77f-41a6-866e-256c2c59a978",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2498,6 +2771,7 @@
     "variant": "Critique",
     "artifactJobId": "6db0abc0-f57d-53ac-a725-46baf19a3c64",
     "artifactItemId": "f954c45c-efca-42ca-9f3c-37c2bbee0b03",
+    "notebook_id": "aae645c3-b77f-41a6-866e-256c2c59a978",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2517,6 +2791,7 @@
     "variant": "Debate",
     "artifactJobId": "6db0abc0-f57d-53ac-a725-46baf19a3c64",
     "artifactItemId": "2101377e-ad7b-4b16-90c0-b031a374b2de",
+    "notebook_id": "aae645c3-b77f-41a6-866e-256c2c59a978",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2539,6 +2814,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "AI & Computing",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "303d337d-dabf-45db-a633-6540ce9f751a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2561,6 +2837,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "AI & Computing",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "303d337d-dabf-45db-a633-6540ce9f751a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2583,6 +2860,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "AI & Computing",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "303d337d-dabf-45db-a633-6540ce9f751a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2605,6 +2883,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "AI & Computing",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "303d337d-dabf-45db-a633-6540ce9f751a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2624,6 +2903,7 @@
     "variant": "Brief",
     "artifactJobId": "62d6a8b3-8b02-5009-907f-7fa8588cf446",
     "artifactItemId": "bc251684-af7b-4845-b3a6-4bb1de782abc",
+    "notebook_id": "0ab03b67-4235-4cb7-a192-9951cbb8c04a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2643,6 +2923,7 @@
     "variant": "Critique",
     "artifactJobId": "62d6a8b3-8b02-5009-907f-7fa8588cf446",
     "artifactItemId": "f40dd21a-061a-415a-b87a-e791294c780f",
+    "notebook_id": "0ab03b67-4235-4cb7-a192-9951cbb8c04a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2662,6 +2943,7 @@
     "variant": "Deep Dive",
     "artifactJobId": "62d6a8b3-8b02-5009-907f-7fa8588cf446",
     "artifactItemId": "8b0ae52e-ce46-4a7c-a1e8-32d5f10e5cd8",
+    "notebook_id": "0ab03b67-4235-4cb7-a192-9951cbb8c04a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2681,6 +2963,7 @@
     "variant": "Debate",
     "artifactJobId": "62d6a8b3-8b02-5009-907f-7fa8588cf446",
     "artifactItemId": "61e358b2-20f2-4e63-9e62-66e142e82262",
+    "notebook_id": "0ab03b67-4235-4cb7-a192-9951cbb8c04a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2703,6 +2986,7 @@
     "libraryColumn": "Other Stuff",
     "libraryGroup": "Nature & Home",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "0428a950-7c30-4227-aa4d-19c226452e80",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2725,6 +3009,7 @@
     "libraryColumn": "Other Stuff",
     "libraryGroup": "Nature & Home",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "0428a950-7c30-4227-aa4d-19c226452e80",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2747,6 +3032,7 @@
     "libraryColumn": "Other Stuff",
     "libraryGroup": "Nature & Home",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "0428a950-7c30-4227-aa4d-19c226452e80",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2769,6 +3055,7 @@
     "libraryColumn": "Other Stuff",
     "libraryGroup": "Nature & Home",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "0428a950-7c30-4227-aa4d-19c226452e80",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2791,6 +3078,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "c2300e51-2560-4b39-94b3-52b0cac24031",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2813,6 +3101,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "c2300e51-2560-4b39-94b3-52b0cac24031",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2835,6 +3124,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "c2300e51-2560-4b39-94b3-52b0cac24031",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2857,6 +3147,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "c2300e51-2560-4b39-94b3-52b0cac24031",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2876,6 +3167,7 @@
     "variant": "Brief",
     "artifactJobId": "9a266cfe-a482-590e-831b-6c57cd88b8d5",
     "artifactItemId": "1168efdc-fdbc-4e9f-acb2-0ba03c6a9b11",
+    "notebook_id": "4e946d31-737a-4af3-8b24-1fb5b0e846e9",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2895,6 +3187,7 @@
     "variant": "Deep Dive",
     "artifactJobId": "9a266cfe-a482-590e-831b-6c57cd88b8d5",
     "artifactItemId": "d921ba2d-4629-4a9f-a758-91eb384e40f2",
+    "notebook_id": "4e946d31-737a-4af3-8b24-1fb5b0e846e9",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2914,6 +3207,7 @@
     "variant": "Critique",
     "artifactJobId": "9a266cfe-a482-590e-831b-6c57cd88b8d5",
     "artifactItemId": "e4fc9db5-da80-4c43-932b-9ca9e89399e6",
+    "notebook_id": "4e946d31-737a-4af3-8b24-1fb5b0e846e9",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2933,6 +3227,7 @@
     "variant": "Debate",
     "artifactJobId": "9a266cfe-a482-590e-831b-6c57cd88b8d5",
     "artifactItemId": "861b94d8-64cc-4f93-b733-e46df6ed7652",
+    "notebook_id": "4e946d31-737a-4af3-8b24-1fb5b0e846e9",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2955,6 +3250,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "a9fb5c77-a65c-4478-9338-81495cfe2d65",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2977,6 +3273,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "a9fb5c77-a65c-4478-9338-81495cfe2d65",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -2999,6 +3296,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "a9fb5c77-a65c-4478-9338-81495cfe2d65",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3021,6 +3319,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Networking & Cybersecurity",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "a9fb5c77-a65c-4478-9338-81495cfe2d65",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3040,6 +3339,7 @@
     "variant": "Brief",
     "artifactJobId": "0425ba09-7cc0-5cc0-8f84-d695f5723d28",
     "artifactItemId": "bbf270b2-b73b-4ccb-8b6b-b4518428e700",
+    "notebook_id": "dcd21712-c7b4-429e-b67e-d33cbb2778e3",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3059,6 +3359,7 @@
     "variant": "Deep Dive",
     "artifactJobId": "0425ba09-7cc0-5cc0-8f84-d695f5723d28",
     "artifactItemId": "067c233d-394c-4893-82fb-7cd5ee849429",
+    "notebook_id": "dcd21712-c7b4-429e-b67e-d33cbb2778e3",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3078,6 +3379,7 @@
     "variant": "Critique",
     "artifactJobId": "0425ba09-7cc0-5cc0-8f84-d695f5723d28",
     "artifactItemId": "32bb7fe1-c8e8-4777-972b-ecb297c417b2",
+    "notebook_id": "dcd21712-c7b4-429e-b67e-d33cbb2778e3",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3097,6 +3399,7 @@
     "variant": "Debate",
     "artifactJobId": "0425ba09-7cc0-5cc0-8f84-d695f5723d28",
     "artifactItemId": "180cca97-e254-4663-9c92-75d0ae62d5c9",
+    "notebook_id": "dcd21712-c7b4-429e-b67e-d33cbb2778e3",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3142,6 +3445,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/mars-two-voice/mars-two-voice-manifest.json"
     },
+    "notebook_id": "e5222522-955f-42f4-a8dc-e6eb9ee33dce",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3188,6 +3492,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Space & Cosmology",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "76ad9b3c-fd6d-4349-8d8f-9ddc7b04d97f",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3233,6 +3538,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-european-great-dane/mars-two-voice-manifest.json"
     },
+    "notebook_id": "23ee5447-d453-4ead-9e6b-de5ec227a21a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3279,6 +3585,7 @@
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-dinosaurs-rule/mars-two-voice-manifest.json"
     },
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "9de1f8e7-bc88-47fb-adca-adc25d1a4763",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3299,6 +3606,7 @@
     "variant": "Brief",
     "libraryColumn": "Other Stuff",
     "libraryGroup": "Animals & Training",
+    "notebook_id": "513480c5-d1e2-4596-9dba-522293f6ab26",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3344,6 +3652,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-poodle-genetics/mars-two-voice-manifest.json"
     },
+    "notebook_id": "73c8c00d-16f2-460e-ad90-91503945f8b0",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3389,6 +3698,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-anthropic-zero-day/mars-two-voice-manifest.json"
     },
+    "notebook_id": "2a12d227-246d-4337-901a-8538b1d6abf2",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3434,6 +3744,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-commercial-mars/mars-two-voice-manifest.json"
     },
+    "notebook_id": "5c2c99a9-0dee-4992-ba2f-7fc5cf0b73f8",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3480,6 +3791,7 @@
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-fable-guardrails/mars-two-voice-manifest.json"
     },
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "bfcf8db0-99c3-43ab-860d-c3ba39356d5a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3526,6 +3838,7 @@
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-fable-5/mars-two-voice-manifest.json"
     },
     "libraryGroupUpdatedAt": "2026-10-01T01:18:15Z",
+    "notebook_id": "bfcf8db0-99c3-43ab-860d-c3ba39356d5a",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3571,6 +3884,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-andromeda/mars-two-voice-manifest.json"
     },
+    "notebook_id": "7459ae08-4d80-4f77-9681-a82df3d29682",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3616,6 +3930,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-zero-trust-architecture/mars-two-voice-manifest.json"
     },
+    "notebook_id": "d007fc76-14dd-4ba5-97bc-16310164e64d",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3662,6 +3977,7 @@
     "libraryColumn": "Technology",
     "libraryGroup": "Space & Cosmology",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "0b96f57f-8a8a-493e-bfcd-fec2d7995097",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3707,6 +4023,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-programming-enterprise-srv6/mars-two-voice-manifest.json"
     },
+    "notebook_id": "aaab907a-f5d4-4bbc-81fb-4defb03002f0",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3752,6 +4069,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-astrophysics-roadmap/mars-two-voice-manifest.json"
     },
+    "notebook_id": "19968768-aa4b-4c73-9030-e5ee030e577b",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3798,6 +4116,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-cyberark-xage-energy/mars-two-voice-manifest.json"
     },
+    "notebook_id": "7877feec-2c6b-455d-b8ca-b0e94e288778",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3840,6 +4159,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-hubble-webb/mars-two-voice-manifest.json"
     },
+    "notebook_id": "94356eae-5805-40b1-b7cb-bd0f8fe07302",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3887,6 +4207,7 @@
     "libraryColumn": "Other Stuff",
     "libraryGroup": "History & Culture",
     "libraryGroupUpdatedAt": "2026-09-30T03:04:52Z",
+    "notebook_id": "ad0e8675-e71a-4cac-b82a-a5655f5fdb0d",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3931,6 +4252,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-active-ha-precision-ai/mars-two-voice-manifest.json"
     },
+    "notebook_id": "7aa2891f-2a9d-4bdb-bb4b-066133b90627",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -3976,6 +4298,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-xage-port-443/mars-two-voice-manifest.json"
     },
+    "notebook_id": "7877feec-2c6b-455d-b8ca-b0e94e288778",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -4021,6 +4344,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-dog-language/mars-two-voice-manifest.json"
     },
+    "notebook_id": "fb3b8714-639f-4c95-941e-b21a3f41b463",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -4066,6 +4390,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-triage-barking/mars-two-voice-manifest.json"
     },
+    "notebook_id": "fb3b8714-639f-4c95-941e-b21a3f41b463",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -4110,6 +4435,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-network-perimeter/mars-two-voice-manifest.json"
     },
+    "notebook_id": "fbbd7a5b-4c96-4496-8a1b-9c1cd38af916",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -4154,6 +4480,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-powerful-ai/mars-two-voice-manifest.json"
     },
+    "notebook_id": "70bdba27-9aac-46ce-8755-83c7504dd619",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -4198,6 +4525,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-replacing-legacy-mpls/mars-two-voice-manifest.json"
     },
+    "notebook_id": "fbbd7a5b-4c96-4496-8a1b-9c1cd38af916",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -4243,6 +4571,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-mpls-srv6/mars-two-voice-manifest.json"
     },
+    "notebook_id": "5b2a05ab-a96d-4851-8df7-e8be0afb7433",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -4288,6 +4617,7 @@
       },
       "manifest": "/Users/vincemaguire/Documents/Video and Audio Troubleshooting 2/notebooklm-publication/audio-overview-revoice/audio-barking-solutions/mars-two-voice-manifest.json"
     },
+    "notebook_id": "fb3b8714-639f-4c95-941e-b21a3f41b463",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -4315,6 +4645,7 @@
     "draft": false,
     "source_sha256": "a3c941cacc01bcb1f06aca6f8f49758bb381594773dd385e6dd882b623591a2e",
     "enclosure_url": "https://podcasts.technologyandstuff.com/audio-podcasts/audio/history-ancient_near_east-audio-1.m4a",
+    "notebook_id": "ccc4be39-5fd9-4477-96a1-25bb7c8a97f6",
     "publicReviewStatus": "Owner reviewed"
   },
   {
@@ -4342,6 +4673,7 @@
     "draft": false,
     "source_sha256": "32caecc43ab36626e9c5810b9b468921552d646d909af8e336dbe514aa3efa40",
     "enclosure_url": "https://podcasts.technologyandstuff.com/audio-podcasts/audio/history-ancient_near_east-audio-2.m4a",
+    "notebook_id": "ccc4be39-5fd9-4477-96a1-25bb7c8a97f6",
     "publicReviewStatus": "Owner reviewed"
   }
 ]

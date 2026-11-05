@@ -1,5 +1,22 @@
 [
   {
+    "title": "Automated API Verification Topic - 9d84ffc2",
+    "description": "Notebook name: Automated API Verification Topic - 9d84ffc2\n\nAutomated API Verification Topic - 9d84ffc2\n\nFocus: Testing the v1 REST API submission endpoint",
+    "audio_file": "dad4bf8f-4748-48f0-be85-a9994f34cf94-orig-nblm-source.mp3",
+    "source_name": "dad4bf8f-4748-48f0-be85-a9994f34cf94-orig-nblm-source.mp3",
+    "source_sha256": "1f7e53b727c3b776bc1acaef0322f790b475e3aa45911d1be6093e8f862864ba",
+    "converted_to_aac": false,
+    "published": "Thu, 05 Nov 2026 01:18:52 +0000",
+    "guid": "a8b4a1fb-f226-45ee-9e42-b25c0759c025",
+    "duration": "0:27:39",
+    "draft": false,
+    "notebookId": "bc60021b-f7a3-4882-82e6-89a96bd4d44c",
+    "notebookTitle": "Automated API Verification Topic - 9d84ffc2",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
     "title": "Automated Gatekeeper Test Topic 1793840319092",
     "description": "Notebook name: Automated Gatekeeper Test Topic 1793840319092\n\nAutomated Gatekeeper Test Topic 1793840319092\n\nFocus: Auditing idea submission from browser to API backend",
     "audio_file": "5359659d-9b4c-46e4-ae87-f9a95db76d6c-orig-nblm-source.mp3",
@@ -14,6 +31,8 @@
     "notebookTitle": "Automated Gatekeeper Test Topic 1793840319092",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "General Interest",
     "publicReviewStatus": "Owner reviewed"
   },
   {

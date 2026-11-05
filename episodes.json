@@ -1,5 +1,22 @@
 [
   {
+    "title": "Automated API Verification Topic - 7bbcc0a1",
+    "description": "Notebook name: Automated API Verification Topic - 7bbcc0a1\n\nAutomated API Verification Topic - 7bbcc0a1\n\nFocus: Testing the v1 REST API submission endpoint",
+    "audio_file": "b60f42d0-52ef-4e90-b3d3-196e115ccffd-orig-nblm-source.mp3",
+    "source_name": "b60f42d0-52ef-4e90-b3d3-196e115ccffd-orig-nblm-source.mp3",
+    "source_sha256": "fb94d46b8f6523732ad5baef2ea283168acb7966628a15c4e48ed2f8926e0aab",
+    "converted_to_aac": false,
+    "published": "Thu, 05 Nov 2026 01:22:55 +0000",
+    "guid": "109f972b-c0fb-4c42-a8e1-a3ee5be50732",
+    "duration": "0:35:26",
+    "draft": false,
+    "notebookId": "1b93ec40-4818-4a17-8804-f316759fd6d1",
+    "notebookTitle": "Automated API Verification Topic - 7bbcc0a1",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
     "title": "Automated API Verification Topic - 9d84ffc2",
     "description": "Notebook name: Automated API Verification Topic - 9d84ffc2\n\nAutomated API Verification Topic - 9d84ffc2\n\nFocus: Testing the v1 REST API submission endpoint",
     "audio_file": "dad4bf8f-4748-48f0-be85-a9994f34cf94-orig-nblm-source.mp3",
@@ -14,6 +31,8 @@
     "notebookTitle": "Automated API Verification Topic - 9d84ffc2",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "General Interest",
     "publicReviewStatus": "Owner reviewed"
   },
   {

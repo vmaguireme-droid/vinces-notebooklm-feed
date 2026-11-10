@@ -17,55 +17,12 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
-      <title>Automated API Verification Topic - 7bbcc0a1</title>
-      <description>Notebook name: Automated API Verification Topic - 7bbcc0a1
-
-Automated API Verification Topic - 7bbcc0a1
-
-Focus: Testing the v1 REST API submission endpoint</description>
-      <pubDate>Thu, 05 Nov 2026 01:22:55 +0000</pubDate>
-      <guid isPermaLink="false">109f972b-c0fb-4c42-a8e1-a3ee5be50732</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/b60f42d0-52ef-4e90-b3d3-196e115ccffd-orig-nblm-source.mp3" length="51046119" type="audio/mpeg"/>
-      <itunes:duration>0:35:26</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Automated API Verification Topic - 9d84ffc2</title>
-      <description>Notebook name: Automated API Verification Topic - 9d84ffc2
-
-Automated API Verification Topic - 9d84ffc2
-
-Focus: Testing the v1 REST API submission endpoint</description>
-      <pubDate>Thu, 05 Nov 2026 01:18:52 +0000</pubDate>
-      <guid isPermaLink="false">a8b4a1fb-f226-45ee-9e42-b25c0759c025</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/dad4bf8f-4748-48f0-be85-a9994f34cf94-orig-nblm-source.mp3" length="39837080" type="audio/mpeg"/>
-      <itunes:duration>0:27:39</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Automated Gatekeeper Test Topic 1793840319092</title>
-      <description>Notebook name: Automated Gatekeeper Test Topic 1793840319092
-
-Automated Gatekeeper Test Topic 1793840319092
-
-Focus: Auditing idea submission from browser to API backend</description>
-      <pubDate>Thu, 05 Nov 2026 01:15:19 +0000</pubDate>
-      <guid isPermaLink="false">1f17cb51-4fc2-4d20-9078-1e469f5f10fd</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/5359659d-9b4c-46e4-ae87-f9a95db76d6c-orig-nblm-source.mp3" length="51437955" type="audio/mpeg"/>
-      <itunes:duration>0:35:43</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Automated API Verification Topic - d82aa04b</title>
-      <description>Notebook name: Automated API Verification Topic - d82aa04b
-
-Automated API Verification Topic - d82aa04b
-
-Focus: Testing the v1 REST API submission endpoint</description>
-      <pubDate>Thu, 05 Nov 2026 01:13:26 +0000</pubDate>
-      <guid isPermaLink="false">b72f9246-dd16-4530-a01d-f713e0193817</guid>
-      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/fe7bcc10-1de9-4bc9-bf76-f8b4d846f50e-orig-nblm-source.mp3" length="61380577" type="audio/mpeg"/>
-      <itunes:duration>0:42:37</itunes:duration>
+      <title>AI Foundations V2 Part 1: The Matrix Math Behind LLMs — Deep Dive Audio Overview</title>
+      <description>Comprehensive Deep Dive Audio Overview of AI Foundations V2 Part 1 (The Matrix Math Behind LLMs), exploring core AI vocabulary, neural network matrix multiplication, the Transformer architecture, tokenization, embeddings, self-attention, temperature, context windows, hallucinations, and practical prompt engineering.</description>
+      <pubDate>Tue, 10 Nov 2026 03:57:56 +0000</pubDate>
+      <guid isPermaLink="false">5c479ac9-b61a-5087-ac63-516178d53e3a</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/ai-foundations-v2-part-1-deep-dive.m4a" length="47784937" type="audio/mp4"/>
+      <itunes:duration>0:59:17</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>

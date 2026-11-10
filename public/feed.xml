@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>AI Foundations V2 Part 1: Do LLMs Reason or Predict Tokens — Debate Audio Overview</title>
+      <description>Rigorous two-host Debate Audio Overview of AI Foundations V2 Part 1 (Do LLMs Reason or Predict Tokens), contrasting competing engineering perspectives on next-token prediction versus emergent reasoning, context-window management, and hallucination mitigation.</description>
+      <pubDate>Tue, 10 Nov 2026 03:58:38 +0000</pubDate>
+      <guid isPermaLink="false">a4e3cd75-65fa-5074-9e56-df1c31fb16fc</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/ai-foundations-v2-part-1-debate.m4a" length="26450970" type="audio/mp4"/>
+      <itunes:duration>0:33:00</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>AI Foundations V2 Part 1: Engineering Mental Models for LLMs — Critique Audio Overview</title>
       <description>Expert Critique Audio Overview of AI Foundations V2 Part 1 (Engineering Mental Models for LLMs), evaluating the pedagogical structure, engineering mental models, analogies, and technical clarity of the foundational AI curriculum.</description>
       <pubDate>Tue, 10 Nov 2026 03:58:27 +0000</pubDate>

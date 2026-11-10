@@ -1,5 +1,22 @@
 [
   {
+    "title": "AI Foundations V2 Part 1: Do LLMs Reason or Predict Tokens \u2014 Debate Audio Overview",
+    "description": "Rigorous two-host Debate Audio Overview of AI Foundations V2 Part 1 (Do LLMs Reason or Predict Tokens), contrasting competing engineering perspectives on next-token prediction versus emergent reasoning, context-window management, and hallucination mitigation.",
+    "audio_file": "ai-foundations-v2-part-1-debate.m4a",
+    "source_name": "ai-foundations-v2-part-1-debate.m4a",
+    "source_sha256": "94d1fd2ad5a9f3186d6a9f38f3cf845d643920bac134ea4f5c5a60b6cf44428b",
+    "converted_to_aac": false,
+    "published": "Tue, 10 Nov 2026 03:58:38 +0000",
+    "guid": "a4e3cd75-65fa-5074-9e56-df1c31fb16fc",
+    "duration": "0:33:00",
+    "draft": false,
+    "notebookId": "aa174f8e-4e78-4ef8-b877-d2c08e9fea58",
+    "notebookTitle": "AI Foundations V2 Part 1",
+    "artifactType": "audio_overview",
+    "variant": "Debate",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
     "title": "AI Foundations V2 Part 1: Engineering Mental Models for LLMs \u2014 Critique Audio Overview",
     "description": "Expert Critique Audio Overview of AI Foundations V2 Part 1 (Engineering Mental Models for LLMs), evaluating the pedagogical structure, engineering mental models, analogies, and technical clarity of the foundational AI curriculum.",
     "audio_file": "ai-foundations-v2-part-1-critique.m4a",

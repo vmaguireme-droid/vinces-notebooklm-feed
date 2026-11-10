@@ -1,5 +1,22 @@
 [
   {
+    "title": "AI Foundations V2 Part 1: Engineering Mental Models for LLMs \u2014 Critique Audio Overview",
+    "description": "Expert Critique Audio Overview of AI Foundations V2 Part 1 (Engineering Mental Models for LLMs), evaluating the pedagogical structure, engineering mental models, analogies, and technical clarity of the foundational AI curriculum.",
+    "audio_file": "ai-foundations-v2-part-1-critique.m4a",
+    "source_name": "ai-foundations-v2-part-1-critique.m4a",
+    "source_sha256": "01f335fff745bbfc4e5618784e8f1aba6339513774c2797deeced118276b7c1f",
+    "converted_to_aac": false,
+    "published": "Tue, 10 Nov 2026 03:58:27 +0000",
+    "guid": "3da506c3-de89-5271-81fb-4106d06f096f",
+    "duration": "0:24:12",
+    "draft": false,
+    "notebookId": "aa174f8e-4e78-4ef8-b877-d2c08e9fea58",
+    "notebookTitle": "AI Foundations V2 Part 1",
+    "artifactType": "audio_overview",
+    "variant": "Critique",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
     "title": "AI Foundations V2 Part 1: The Matrix Math Behind LLMs \u2014 Deep Dive Audio Overview",
     "description": "Comprehensive Deep Dive Audio Overview of AI Foundations V2 Part 1 (The Matrix Math Behind LLMs), exploring core AI vocabulary, neural network matrix multiplication, the Transformer architecture, tokenization, embeddings, self-attention, temperature, context windows, hallucinations, and practical prompt engineering.",
     "audio_file": "ai-foundations-v2-part-1-deep-dive.m4a",

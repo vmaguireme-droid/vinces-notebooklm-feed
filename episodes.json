@@ -1,7 +1,103 @@
 [
   {
-    "title": "AI Foundations V2 Part 1: Do LLMs Reason or Predict Tokens \u2014 Debate Audio Overview",
-    "description": "Rigorous two-host Debate Audio Overview of AI Foundations V2 Part 1 (Do LLMs Reason or Predict Tokens), contrasting competing engineering perspectives on next-token prediction versus emergent reasoning, context-window management, and hallucination mitigation.",
+    "title": "Building Bulletproof AI Engineering Reports",
+    "description": "NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 2: Verified Engineering Documents & Eliminating AI Slop.",
+    "audio_file": "audio-4a80f821.m4a",
+    "source_name": "audio_4a80f821.m4a",
+    "source_sha256": "c8c13e7741dcd151ef1e5e166ee9a7b2f6c8c17b61014df2859fc68f3bdaa183",
+    "converted_to_aac": false,
+    "published": "Fri, 13 Nov 2026 22:51:38 +0000",
+    "guid": "e8f4a72e-1620-5757-a796-d4f6a133e1ef",
+    "duration": "0:23:45",
+    "draft": false,
+    "notebookId": "48df54a9-59e9-4031-89f8-ea54be87be98",
+    "notebookTitle": "AI For Engineers, Part 2: Verified Engineering Documents & Eliminating AI Slop",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "title": "Schloss Neuschwanstein: The High-Tech Illusion of Neuschwanstein Castle \u2014 Deep Dive Audio Overview",
+    "description": "Comprehensive Deep Dive Audio Overview of Schloss Neuschwanstein (originally Neue Burg Hohenschwangau), exploring King Ludwig II's architectural vision after 1866, Christian Jank's theatrical stage scenography, Eduard Riedel and Georg von Dollmann's structural plans, encased iron-and-steel framing behind limestone facades, 19th-century central heating, running water, and electric bells, and Wagnerian iconography across the Singers' Hall, Byzantine Throne Hall, Neo-Gothic Bedroom, and artificial Stalactite Grotto.",
+    "audio_file": "schloss-neuschwanstein-deep-dive.m4a",
+    "source_name": "schloss-neuschwanstein-deep-dive.m4a",
+    "source_sha256": "897b61c0eeeb2eef7cf4aac064eec302a6c124a00e72e480aee3e3202b527449",
+    "converted_to_aac": false,
+    "published": "Wed, 11 Nov 2026 03:57:01 +0000",
+    "guid": "2dd0b997-86f5-5e34-a383-37634518bd55",
+    "duration": "0:21:33",
+    "draft": false,
+    "notebookId": "698b470d-4c71-4ba5-bd86-deac1a393a30",
+    "notebookTitle": "Schloss Neuschwanstein",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "libraryColumn": "Other Stuff",
+    "libraryGroup": "History & Culture",
+    "siblingArtifacts": [
+      {
+        "id": "eeaad449-2c49-4aa6-a881-c95809ee32a6",
+        "type": "report",
+        "title": "Schloss Neuschwanstein: Architectural Genesis, Scenographic Vision, Industrial Engineering, and Cultural Legacy",
+        "url": "/artifacts/reports/eeaad449-2c49-4aa6-a881-c95809ee32a6.html",
+        "downloadUrl": "/artifacts/reports/eeaad449-2c49-4aa6-a881-c95809ee32a6.pdf"
+      },
+      {
+        "id": "sources-eeaad449-2c49-4aa6-a881-c95809ee32a6",
+        "type": "sources",
+        "title": "Verified Sources: Schloss Neuschwanstein (10 Primary & Peer-Reviewed Sources)",
+        "url": "/sources/eeaad449-2c49-4aa6-a881-c95809ee32a6/",
+        "downloadUrl": "/artifacts/report-sources/eeaad449-2c49-4aa6-a881-c95809ee32a6-sources.zip"
+      },
+      {
+        "id": "3fac2835-ed38-4869-a36d-ac7ce3b023d2",
+        "type": "infographic",
+        "title": "Schloss Neuschwanstein \u2014 Architectural Anatomy & Engineering Timeline Infographic",
+        "url": "/artifacts/infographics/3fac2835-ed38-4869-a36d-ac7ce3b023d2.html",
+        "downloadUrl": "/artifacts/infographics/3fac2835-ed38-4869-a36d-ac7ce3b023d2.png"
+      },
+      {
+        "id": "d725463e-5206-45a8-8437-446ff94c798a",
+        "type": "mind_map",
+        "title": "Schloss Neuschwanstein \u2014 Interactive Concept Mind Map",
+        "url": "/artifacts/mind-maps/d725463e-5206-45a8-8437-446ff94c798a.html",
+        "downloadUrl": "/artifacts/mind-maps/d725463e-5206-45a8-8437-446ff94c798a.json"
+      },
+      {
+        "id": "neuschwanstein-3d-atlas",
+        "type": "model_3d",
+        "title": "Schloss Neuschwanstein \u00b7 3-Axis 3D Spatial Model & See-Through Window Interiors",
+        "url": "/neuschwanstein-3d/"
+      },
+      {
+        "id": "notebooklm-schloss-neuschwanstein-explainer-114b181b3f",
+        "type": "video",
+        "title": "Schloss Neuschwanstein: Myth and Machine \u2014 Scenography & Industrial Engineering (Explainer)",
+        "url": "https://podcasts.technologyandstuff.com/video/NotebookLM%20-%20Schloss-Neuschwanstein%20-%20Explainer%20-%20114b181b3f.mp4"
+      },
+      {
+        "id": "notebooklm-schloss-neuschwanstein-cinematic-60d2d41e1b",
+        "type": "video",
+        "title": "Schloss Neuschwanstein: King Ludwig II's Alpine Castle of Stone, Steel & Legend (Cinematic)",
+        "url": "https://podcasts.technologyandstuff.com/video/NotebookLM%20-%20Schloss-Neuschwanstein%20-%20Cinematic%20-%2060d2d41e1b.mp4"
+      },
+      {
+        "id": "notebooklm-schloss-neuschwanstein-short-996bf37ff5",
+        "type": "video",
+        "title": "Schloss Neuschwanstein: Inside Neuschwanstein's Engineered Illusions (Short Video)",
+        "url": "https://podcasts.technologyandstuff.com/video/NotebookLM%20-%20Schloss-Neuschwanstein%20-%20Short%20-%20996bf37ff5.mp4"
+      },
+      {
+        "id": "2dd0b997-86f5-5e34-a383-37634518bd55",
+        "type": "audio",
+        "title": "Schloss Neuschwanstein: The High-Tech Illusion of Neuschwanstein Castle \u2014 Deep Dive Audio Overview",
+        "url": "/audio-podcasts/audio/schloss-neuschwanstein-deep-dive.m4a"
+      }
+    ],
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
+    "title": "AI Foundations Part 1: Do LLMs Reason or Predict Tokens \u2014 Debate Audio Overview",
+    "description": "Rigorous two-host Debate Audio Overview of AI Foundations Part 1 (Do LLMs Reason or Predict Tokens), contrasting competing engineering perspectives on next-token prediction versus emergent reasoning, context-window management, and hallucination mitigation.",
     "audio_file": "ai-foundations-v2-part-1-debate.m4a",
     "source_name": "ai-foundations-v2-part-1-debate.m4a",
     "source_sha256": "94d1fd2ad5a9f3186d6a9f38f3cf845d643920bac134ea4f5c5a60b6cf44428b",
@@ -11,14 +107,82 @@
     "duration": "0:33:00",
     "draft": false,
     "notebookId": "aa174f8e-4e78-4ef8-b877-d2c08e9fea58",
-    "notebookTitle": "AI Foundations V2 Part 1",
+    "notebookTitle": "AI Foundations Part 1",
     "artifactType": "audio_overview",
     "variant": "Debate",
+    "libraryColumn": "Technology",
+    "libraryGroup": "AI Foundations",
+    "siblingArtifacts": [
+      {
+        "id": "42803506-ed61-4d79-b11f-8a16d5f23a8f",
+        "type": "report",
+        "title": "AI Foundations Part 1: Foundations of Artificial Intelligence, Transformer Architecture, and Prompt Engineering",
+        "url": "/artifacts/reports/42803506-ed61-4d79-b11f-8a16d5f23a8f.html",
+        "downloadUrl": "/artifacts/reports/42803506-ed61-4d79-b11f-8a16d5f23a8f.pdf"
+      },
+      {
+        "id": "sources-42803506-ed61-4d79-b11f-8a16d5f23a8f",
+        "type": "sources",
+        "title": "Verified Sources: AI Foundations Part 1",
+        "url": "/sources/42803506-ed61-4d79-b11f-8a16d5f23a8f/",
+        "downloadUrl": "/artifacts/report-sources/42803506-ed61-4d79-b11f-8a16d5f23a8f-sources.zip"
+      },
+      {
+        "id": "bef3177b-cd09-4a49-a91b-0ba738612975",
+        "type": "infographic",
+        "title": "AI Foundations Part 1 \u2014 Overview Infographic",
+        "url": "/artifacts/infographics/bef3177b-cd09-4a49-a91b-0ba738612975.html",
+        "downloadUrl": "/artifacts/infographics/bef3177b-cd09-4a49-a91b-0ba738612975.png"
+      },
+      {
+        "id": "0fbf934c-879f-4696-bfb3-066d807e83d5",
+        "type": "mind_map",
+        "title": "AI Foundations Part 1 \u2014 Concept Mind Map",
+        "url": "/artifacts/mind-maps/0fbf934c-879f-4696-bfb3-066d807e83d5.html",
+        "downloadUrl": "/artifacts/mind-maps/0fbf934c-879f-4696-bfb3-066d807e83d5.json"
+      },
+      {
+        "id": "ai-foundations-part-1-3d-atlas",
+        "type": "model_3d",
+        "title": "AI Foundations Part 1 \u00b7 Interactive 3D LLM & Transformer Architecture Atlas",
+        "url": "/ai-foundations-part-1-3d/"
+      },
+      {
+        "id": "notebooklm-ai-foundations-part-1-explainer-4c8c315b14",
+        "type": "video",
+        "title": "AI Foundations Part 1 \u2014 Explainer Video",
+        "url": "https://podcasts.technologyandstuff.com/video/NotebookLM%20-%20AI-Foundations-Part-1%20-%20Explainer%20-%204c8c315b14.mp4"
+      },
+      {
+        "id": "notebooklm-ai-foundations-part-1-cinematic-81d1d2582b",
+        "type": "video",
+        "title": "AI Foundations Part 1 \u2014 Cinematic Video",
+        "url": "https://podcasts.technologyandstuff.com/video/NotebookLM%20-%20AI-Foundations-Part-1%20-%20Cinematic%20-%2081d1d2582b.mp4"
+      },
+      {
+        "id": "notebooklm-ai-foundations-part-1-short-d7a7df53a0",
+        "type": "video",
+        "title": "AI Foundations Part 1 \u2014 Short Video",
+        "url": "https://podcasts.technologyandstuff.com/video/NotebookLM%20-%20AI-Foundations-Part-1%20-%20Short%20-%20d7a7df53a0.mp4"
+      },
+      {
+        "id": "5c479ac9-b61a-5087-ac63-516178d53e3a",
+        "type": "audio",
+        "title": "AI Foundations Part 1: The Matrix Math Behind LLMs \u2014 Deep Dive Audio Overview",
+        "url": "/audio-podcasts/audio/ai-foundations-v2-part-1-deep-dive.m4a"
+      },
+      {
+        "id": "3da506c3-de89-5271-81fb-4106d06f096f",
+        "type": "audio",
+        "title": "AI Foundations Part 1: Engineering Mental Models for LLMs \u2014 Critique Audio Overview",
+        "url": "/audio-podcasts/audio/ai-foundations-v2-part-1-critique.m4a"
+      }
+    ],
     "publicReviewStatus": "Owner reviewed"
   },
   {
-    "title": "AI Foundations V2 Part 1: Engineering Mental Models for LLMs \u2014 Critique Audio Overview",
-    "description": "Expert Critique Audio Overview of AI Foundations V2 Part 1 (Engineering Mental Models for LLMs), evaluating the pedagogical structure, engineering mental models, analogies, and technical clarity of the foundational AI curriculum.",
+    "title": "AI Foundations Part 1: Engineering Mental Models for LLMs \u2014 Critique Audio Overview",
+    "description": "Expert Critique Audio Overview of AI Foundations Part 1 (Engineering Mental Models for LLMs), evaluating the pedagogical structure, engineering mental models, analogies, and technical clarity of the foundational AI curriculum.",
     "audio_file": "ai-foundations-v2-part-1-critique.m4a",
     "source_name": "ai-foundations-v2-part-1-critique.m4a",
     "source_sha256": "01f335fff745bbfc4e5618784e8f1aba6339513774c2797deeced118276b7c1f",
@@ -28,14 +192,82 @@
     "duration": "0:24:12",
     "draft": false,
     "notebookId": "aa174f8e-4e78-4ef8-b877-d2c08e9fea58",
-    "notebookTitle": "AI Foundations V2 Part 1",
+    "notebookTitle": "AI Foundations Part 1",
     "artifactType": "audio_overview",
     "variant": "Critique",
+    "libraryColumn": "Technology",
+    "libraryGroup": "AI Foundations",
+    "siblingArtifacts": [
+      {
+        "id": "42803506-ed61-4d79-b11f-8a16d5f23a8f",
+        "type": "report",
+        "title": "AI Foundations Part 1: Foundations of Artificial Intelligence, Transformer Architecture, and Prompt Engineering",
+        "url": "/artifacts/reports/42803506-ed61-4d79-b11f-8a16d5f23a8f.html",
+        "downloadUrl": "/artifacts/reports/42803506-ed61-4d79-b11f-8a16d5f23a8f.pdf"
+      },
+      {
+        "id": "sources-42803506-ed61-4d79-b11f-8a16d5f23a8f",
+        "type": "sources",
+        "title": "Verified Sources: AI Foundations Part 1",
+        "url": "/sources/42803506-ed61-4d79-b11f-8a16d5f23a8f/",
+        "downloadUrl": "/artifacts/report-sources/42803506-ed61-4d79-b11f-8a16d5f23a8f-sources.zip"
+      },
+      {
+        "id": "bef3177b-cd09-4a49-a91b-0ba738612975",
+        "type": "infographic",
+        "title": "AI Foundations Part 1 \u2014 Overview Infographic",
+        "url": "/artifacts/infographics/bef3177b-cd09-4a49-a91b-0ba738612975.html",
+        "downloadUrl": "/artifacts/infographics/bef3177b-cd09-4a49-a91b-0ba738612975.png"
+      },
+      {
+        "id": "0fbf934c-879f-4696-bfb3-066d807e83d5",
+        "type": "mind_map",
+        "title": "AI Foundations Part 1 \u2014 Concept Mind Map",
+        "url": "/artifacts/mind-maps/0fbf934c-879f-4696-bfb3-066d807e83d5.html",
+        "downloadUrl": "/artifacts/mind-maps/0fbf934c-879f-4696-bfb3-066d807e83d5.json"
+      },
+      {
+        "id": "ai-foundations-part-1-3d-atlas",
+        "type": "model_3d",
+        "title": "AI Foundations Part 1 \u00b7 Interactive 3D LLM & Transformer Architecture Atlas",
+        "url": "/ai-foundations-part-1-3d/"
+      },
+      {
+        "id": "notebooklm-ai-foundations-part-1-explainer-4c8c315b14",
+        "type": "video",
+        "title": "AI Foundations Part 1 \u2014 Explainer Video",
+        "url": "https://podcasts.technologyandstuff.com/video/NotebookLM%20-%20AI-Foundations-Part-1%20-%20Explainer%20-%204c8c315b14.mp4"
+      },
+      {
+        "id": "notebooklm-ai-foundations-part-1-cinematic-81d1d2582b",
+        "type": "video",
+        "title": "AI Foundations Part 1 \u2014 Cinematic Video",
+        "url": "https://podcasts.technologyandstuff.com/video/NotebookLM%20-%20AI-Foundations-Part-1%20-%20Cinematic%20-%2081d1d2582b.mp4"
+      },
+      {
+        "id": "notebooklm-ai-foundations-part-1-short-d7a7df53a0",
+        "type": "video",
+        "title": "AI Foundations Part 1 \u2014 Short Video",
+        "url": "https://podcasts.technologyandstuff.com/video/NotebookLM%20-%20AI-Foundations-Part-1%20-%20Short%20-%20d7a7df53a0.mp4"
+      },
+      {
+        "id": "5c479ac9-b61a-5087-ac63-516178d53e3a",
+        "type": "audio",
+        "title": "AI Foundations Part 1: The Matrix Math Behind LLMs \u2014 Deep Dive Audio Overview",
+        "url": "/audio-podcasts/audio/ai-foundations-v2-part-1-deep-dive.m4a"
+      },
+      {
+        "id": "a4e3cd75-65fa-5074-9e56-df1c31fb16fc",
+        "type": "audio",
+        "title": "AI Foundations Part 1: Do LLMs Reason or Predict Tokens \u2014 Debate Audio Overview",
+        "url": "/audio-podcasts/audio/ai-foundations-v2-part-1-debate.m4a"
+      }
+    ],
     "publicReviewStatus": "Owner reviewed"
   },
   {
-    "title": "AI Foundations V2 Part 1: The Matrix Math Behind LLMs \u2014 Deep Dive Audio Overview",
-    "description": "Comprehensive Deep Dive Audio Overview of AI Foundations V2 Part 1 (The Matrix Math Behind LLMs), exploring core AI vocabulary, neural network matrix multiplication, the Transformer architecture, tokenization, embeddings, self-attention, temperature, context windows, hallucinations, and practical prompt engineering.",
+    "title": "AI Foundations Part 1: The Matrix Math Behind LLMs \u2014 Deep Dive Audio Overview",
+    "description": "Comprehensive Deep Dive Audio Overview of AI Foundations Part 1 (The Matrix Math Behind LLMs), exploring core AI vocabulary, neural network matrix multiplication, the Transformer architecture, tokenization, embeddings, self-attention, temperature, context windows, hallucinations, and practical prompt engineering.",
     "audio_file": "ai-foundations-v2-part-1-deep-dive.m4a",
     "source_name": "ai-foundations-v2-part-1-deep-dive.m4a",
     "source_sha256": "35a8b18071fe521f930c6f4e1d9503c0091cc79145aa8561fd9407faac6f5e9e",
@@ -45,9 +277,77 @@
     "duration": "0:59:17",
     "draft": false,
     "notebookId": "aa174f8e-4e78-4ef8-b877-d2c08e9fea58",
-    "notebookTitle": "AI Foundations V2 Part 1",
+    "notebookTitle": "AI Foundations Part 1",
     "artifactType": "audio_overview",
     "variant": "Deep Dive",
+    "libraryColumn": "Technology",
+    "libraryGroup": "AI Foundations",
+    "siblingArtifacts": [
+      {
+        "id": "42803506-ed61-4d79-b11f-8a16d5f23a8f",
+        "type": "report",
+        "title": "AI Foundations Part 1: Foundations of Artificial Intelligence, Transformer Architecture, and Prompt Engineering",
+        "url": "/artifacts/reports/42803506-ed61-4d79-b11f-8a16d5f23a8f.html",
+        "downloadUrl": "/artifacts/reports/42803506-ed61-4d79-b11f-8a16d5f23a8f.pdf"
+      },
+      {
+        "id": "sources-42803506-ed61-4d79-b11f-8a16d5f23a8f",
+        "type": "sources",
+        "title": "Verified Sources: AI Foundations Part 1",
+        "url": "/sources/42803506-ed61-4d79-b11f-8a16d5f23a8f/",
+        "downloadUrl": "/artifacts/report-sources/42803506-ed61-4d79-b11f-8a16d5f23a8f-sources.zip"
+      },
+      {
+        "id": "bef3177b-cd09-4a49-a91b-0ba738612975",
+        "type": "infographic",
+        "title": "AI Foundations Part 1 \u2014 Overview Infographic",
+        "url": "/artifacts/infographics/bef3177b-cd09-4a49-a91b-0ba738612975.html",
+        "downloadUrl": "/artifacts/infographics/bef3177b-cd09-4a49-a91b-0ba738612975.png"
+      },
+      {
+        "id": "0fbf934c-879f-4696-bfb3-066d807e83d5",
+        "type": "mind_map",
+        "title": "AI Foundations Part 1 \u2014 Concept Mind Map",
+        "url": "/artifacts/mind-maps/0fbf934c-879f-4696-bfb3-066d807e83d5.html",
+        "downloadUrl": "/artifacts/mind-maps/0fbf934c-879f-4696-bfb3-066d807e83d5.json"
+      },
+      {
+        "id": "ai-foundations-part-1-3d-atlas",
+        "type": "model_3d",
+        "title": "AI Foundations Part 1 \u00b7 Interactive 3D LLM & Transformer Architecture Atlas",
+        "url": "/ai-foundations-part-1-3d/"
+      },
+      {
+        "id": "notebooklm-ai-foundations-part-1-explainer-4c8c315b14",
+        "type": "video",
+        "title": "AI Foundations Part 1 \u2014 Explainer Video",
+        "url": "https://podcasts.technologyandstuff.com/video/NotebookLM%20-%20AI-Foundations-Part-1%20-%20Explainer%20-%204c8c315b14.mp4"
+      },
+      {
+        "id": "notebooklm-ai-foundations-part-1-cinematic-81d1d2582b",
+        "type": "video",
+        "title": "AI Foundations Part 1 \u2014 Cinematic Video",
+        "url": "https://podcasts.technologyandstuff.com/video/NotebookLM%20-%20AI-Foundations-Part-1%20-%20Cinematic%20-%2081d1d2582b.mp4"
+      },
+      {
+        "id": "notebooklm-ai-foundations-part-1-short-d7a7df53a0",
+        "type": "video",
+        "title": "AI Foundations Part 1 \u2014 Short Video",
+        "url": "https://podcasts.technologyandstuff.com/video/NotebookLM%20-%20AI-Foundations-Part-1%20-%20Short%20-%20d7a7df53a0.mp4"
+      },
+      {
+        "id": "a4e3cd75-65fa-5074-9e56-df1c31fb16fc",
+        "type": "audio",
+        "title": "AI Foundations Part 1: Do LLMs Reason or Predict Tokens \u2014 Debate Audio Overview",
+        "url": "/audio-podcasts/audio/ai-foundations-v2-part-1-debate.m4a"
+      },
+      {
+        "id": "3da506c3-de89-5271-81fb-4106d06f096f",
+        "type": "audio",
+        "title": "AI Foundations Part 1: Engineering Mental Models for LLMs \u2014 Critique Audio Overview",
+        "url": "/audio-podcasts/audio/ai-foundations-v2-part-1-critique.m4a"
+      }
+    ],
     "publicReviewStatus": "Owner reviewed"
   },
   {

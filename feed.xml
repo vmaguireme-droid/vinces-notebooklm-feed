@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>The Math Behind AI Hallucinations</title>
+      <description>NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 3: The Prompt-First Trap &amp; Why Models Are Not Software.</description>
+      <pubDate>Fri, 13 Nov 2026 22:52:48 +0000</pubDate>
+      <guid isPermaLink="false">bfeef10d-3b80-53c5-b23e-0eee6ef04433</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/audio-a1d0f650-15b1-4e5f-af0e-e1af5d9ba1cd.m4a" length="20076216" type="audio/mp4"/>
+      <itunes:duration>0:20:41</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Building Bulletproof AI Engineering Reports</title>
       <description>NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 2: Verified Engineering Documents &amp; Eliminating AI Slop.</description>
       <pubDate>Fri, 13 Nov 2026 22:51:38 +0000</pubDate>

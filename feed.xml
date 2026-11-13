@@ -17,8 +17,26 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
-      <title>AI Foundations V2 Part 1: Do LLMs Reason or Predict Tokens — Debate Audio Overview</title>
-      <description>Rigorous two-host Debate Audio Overview of AI Foundations V2 Part 1 (Do LLMs Reason or Predict Tokens), contrasting competing engineering perspectives on next-token prediction versus emergent reasoning, context-window management, and hallucination mitigation.</description>
+      <title>Building Bulletproof AI Engineering Reports</title>
+      <description>NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 2: Verified Engineering Documents &amp; Eliminating AI Slop.</description>
+      <pubDate>Fri, 13 Nov 2026 22:51:38 +0000</pubDate>
+      <guid isPermaLink="false">e8f4a72e-1620-5757-a796-d4f6a133e1ef</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/audio-4a80f821.m4a" length="23050389" type="audio/mp4"/>
+      <itunes:duration>0:23:45</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Schloss Neuschwanstein: The High-Tech Illusion of Neuschwanstein Castle — Deep Dive Audio Overview</title>
+      <description>Comprehensive Deep Dive Audio Overview of Schloss Neuschwanstein (originally Neue Burg Hohenschwangau), exploring King Ludwig II&#x27;s architectural vision after 1866, Christian Jank&#x27;s theatrical stage scenography, Eduard Riedel and Georg von Dollmann&#x27;s structural plans, encased iron-and-steel framing behind limestone facades, 19th-century central heating, running water, and electric bells, and Wagnerian iconography across the Singers&#x27; Hall, Byzantine Throne Hall, Neo-Gothic Bedroom, and artificial Stalactite Grotto.</description>
+      <pubDate>Wed, 11 Nov 2026 03:57:01 +0000</pubDate>
+      <guid isPermaLink="false">2dd0b997-86f5-5e34-a383-37634518bd55</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/schloss-neuschwanstein-deep-dive.m4a" length="20932009" type="audio/mp4"/>
+      <itunes:duration>0:21:33</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>AI Foundations Part 1: Do LLMs Reason or Predict Tokens — Debate Audio Overview</title>
+      <description>Rigorous two-host Debate Audio Overview of AI Foundations Part 1 (Do LLMs Reason or Predict Tokens), contrasting competing engineering perspectives on next-token prediction versus emergent reasoning, context-window management, and hallucination mitigation.</description>
       <pubDate>Tue, 10 Nov 2026 03:58:38 +0000</pubDate>
       <guid isPermaLink="false">a4e3cd75-65fa-5074-9e56-df1c31fb16fc</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/ai-foundations-v2-part-1-debate.m4a" length="26450970" type="audio/mp4"/>
@@ -26,8 +44,8 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AI Foundations V2 Part 1: Engineering Mental Models for LLMs — Critique Audio Overview</title>
-      <description>Expert Critique Audio Overview of AI Foundations V2 Part 1 (Engineering Mental Models for LLMs), evaluating the pedagogical structure, engineering mental models, analogies, and technical clarity of the foundational AI curriculum.</description>
+      <title>AI Foundations Part 1: Engineering Mental Models for LLMs — Critique Audio Overview</title>
+      <description>Expert Critique Audio Overview of AI Foundations Part 1 (Engineering Mental Models for LLMs), evaluating the pedagogical structure, engineering mental models, analogies, and technical clarity of the foundational AI curriculum.</description>
       <pubDate>Tue, 10 Nov 2026 03:58:27 +0000</pubDate>
       <guid isPermaLink="false">3da506c3-de89-5271-81fb-4106d06f096f</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/ai-foundations-v2-part-1-critique.m4a" length="19558665" type="audio/mp4"/>
@@ -35,8 +53,8 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AI Foundations V2 Part 1: The Matrix Math Behind LLMs — Deep Dive Audio Overview</title>
-      <description>Comprehensive Deep Dive Audio Overview of AI Foundations V2 Part 1 (The Matrix Math Behind LLMs), exploring core AI vocabulary, neural network matrix multiplication, the Transformer architecture, tokenization, embeddings, self-attention, temperature, context windows, hallucinations, and practical prompt engineering.</description>
+      <title>AI Foundations Part 1: The Matrix Math Behind LLMs — Deep Dive Audio Overview</title>
+      <description>Comprehensive Deep Dive Audio Overview of AI Foundations Part 1 (The Matrix Math Behind LLMs), exploring core AI vocabulary, neural network matrix multiplication, the Transformer architecture, tokenization, embeddings, self-attention, temperature, context windows, hallucinations, and practical prompt engineering.</description>
       <pubDate>Tue, 10 Nov 2026 03:57:56 +0000</pubDate>
       <guid isPermaLink="false">5c479ac9-b61a-5087-ac63-516178d53e3a</guid>
       <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/ai-foundations-v2-part-1-deep-dive.m4a" length="47784937" type="audio/mp4"/>

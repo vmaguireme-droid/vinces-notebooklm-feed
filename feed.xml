@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Engineering Control in the OpenAI Stack</title>
+      <description>NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 5: OpenAI Deep Dive.</description>
+      <pubDate>Fri, 13 Nov 2026 22:57:49 +0000</pubDate>
+      <guid isPermaLink="false">46b7a229-98c3-59b0-8fd6-ed4bd83bfd3d</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/audio-31f073cd-d683-4334-ad8b-f8ffc9ebd71a.m4a" length="23047396" type="audio/mp4"/>
+      <itunes:duration>0:23:45</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Why Big Four AI Models Hallucinate</title>
       <description>NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 4: Big 4 Frontier Overview.</description>
       <pubDate>Fri, 13 Nov 2026 22:57:09 +0000</pubDate>

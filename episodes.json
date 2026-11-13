@@ -1,5 +1,22 @@
 [
   {
+    "title": "Inside Google's Vertical AI Stack",
+    "description": "NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 7: Google AI Deep Dive.",
+    "audio_file": "audio-b23b5ddf-121d-4281-a83a-da8603f02ce6.m4a",
+    "source_name": "audio_b23b5ddf-121d-4281-a83a-da8603f02ce6.m4a",
+    "source_sha256": "5ad4f05d4cc4f53aa620da9d549d025cb3a2fe0245a288587b8b3785ced66344",
+    "converted_to_aac": false,
+    "published": "Fri, 13 Nov 2026 22:59:38 +0000",
+    "guid": "b611b032-9ef0-5f16-88ca-f6dd2f3e6c03",
+    "duration": "0:19:19",
+    "draft": false,
+    "notebookId": "0ab535dd-6011-4254-8db2-c734ff301294",
+    "notebookTitle": "AI For Engineers, Part 7: Google AI Deep Dive",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
     "title": "Building Software Stacks with Anthropic Claude",
     "description": "NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 6: Anthropic Deep Dive.",
     "audio_file": "audio-ae2399c6-ca9a-4e3a-a706-69dbaddac444.m4a",

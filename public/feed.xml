@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Inside Google&#x27;s Vertical AI Stack</title>
+      <description>NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 7: Google AI Deep Dive.</description>
+      <pubDate>Fri, 13 Nov 2026 22:59:38 +0000</pubDate>
+      <guid isPermaLink="false">b611b032-9ef0-5f16-88ca-f6dd2f3e6c03</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/audio-b23b5ddf-121d-4281-a83a-da8603f02ce6.m4a" length="18746123" type="audio/mp4"/>
+      <itunes:duration>0:19:19</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Building Software Stacks with Anthropic Claude</title>
       <description>NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 6: Anthropic Deep Dive.</description>
       <pubDate>Fri, 13 Nov 2026 22:58:42 +0000</pubDate>

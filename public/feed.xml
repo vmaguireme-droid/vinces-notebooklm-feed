@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Building Software Stacks with Anthropic Claude</title>
+      <description>NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 6: Anthropic Deep Dive.</description>
+      <pubDate>Fri, 13 Nov 2026 22:58:42 +0000</pubDate>
+      <guid isPermaLink="false">568addc0-ed4e-5d04-bd83-a02867ed1406</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/audio-ae2399c6-ca9a-4e3a-a706-69dbaddac444.m4a" length="22342147" type="audio/mp4"/>
+      <itunes:duration>0:23:01</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>Engineering Control in the OpenAI Stack</title>
       <description>NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 5: OpenAI Deep Dive.</description>
       <pubDate>Fri, 13 Nov 2026 22:57:49 +0000</pubDate>

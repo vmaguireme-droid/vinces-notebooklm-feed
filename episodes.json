@@ -1,5 +1,22 @@
 [
   {
+    "title": "Building Software Stacks with Anthropic Claude",
+    "description": "NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 6: Anthropic Deep Dive.",
+    "audio_file": "audio-ae2399c6-ca9a-4e3a-a706-69dbaddac444.m4a",
+    "source_name": "audio_ae2399c6-ca9a-4e3a-a706-69dbaddac444.m4a",
+    "source_sha256": "61bacf91bbfbf465185402649eb0c364377b98aca38f85bd662628a065f0a71e",
+    "converted_to_aac": false,
+    "published": "Fri, 13 Nov 2026 22:58:42 +0000",
+    "guid": "568addc0-ed4e-5d04-bd83-a02867ed1406",
+    "duration": "0:23:01",
+    "draft": false,
+    "notebookId": "2b3bd34f-f966-4e17-91e1-30ae898177a0",
+    "notebookTitle": "AI For Engineers, Part 6: Anthropic Deep Dive",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
     "title": "Engineering Control in the OpenAI Stack",
     "description": "NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 5: OpenAI Deep Dive.",
     "audio_file": "audio-31f073cd-d683-4334-ad8b-f8ffc9ebd71a.m4a",

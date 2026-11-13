@@ -1,5 +1,22 @@
 [
   {
+    "title": "Inside xAI's Grok Architecture",
+    "description": "NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 8: xAI Grok Deep Dive.",
+    "audio_file": "audio-96c6288b-e19d-4822-adaf-5b37c7eab1e8.m4a",
+    "source_name": "audio_96c6288b-e19d-4822-adaf-5b37c7eab1e8.m4a",
+    "source_sha256": "9889b129d546e1557678b41adfdbebb737a53e2f6f78bfde565e70e61e914705",
+    "converted_to_aac": false,
+    "published": "Fri, 13 Nov 2026 23:37:27 +0000",
+    "guid": "fe384c84-50b7-5075-91ea-261ebdf64ff7",
+    "duration": "0:28:06",
+    "draft": false,
+    "notebookId": "6fd22473-49b2-432b-9ee8-1436f2172a19",
+    "notebookTitle": "AI For Engineers, Part 8: xAI Grok Deep Dive",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
     "title": "Inside Google's Vertical AI Stack",
     "description": "NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 7: Google AI Deep Dive.",
     "audio_file": "audio-b23b5ddf-121d-4281-a83a-da8603f02ce6.m4a",

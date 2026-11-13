@@ -17,6 +17,15 @@
       <itunes:email>vmaguireme@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Why Big Four AI Models Hallucinate</title>
+      <description>NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 4: Big 4 Frontier Overview.</description>
+      <pubDate>Fri, 13 Nov 2026 22:57:09 +0000</pubDate>
+      <guid isPermaLink="false">719bbe52-6dc3-5ac1-9f71-d6fd7d291cd2</guid>
+      <enclosure url="https://vmaguireme-droid.github.io/vinces-notebooklm-feed/audio/audio-87c12579-c9a0-4bad-8429-5fd9994db68b.m4a" length="20188615" type="audio/mp4"/>
+      <itunes:duration>0:20:48</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>The Math Behind AI Hallucinations</title>
       <description>NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 3: The Prompt-First Trap &amp; Why Models Are Not Software.</description>
       <pubDate>Fri, 13 Nov 2026 22:52:48 +0000</pubDate>

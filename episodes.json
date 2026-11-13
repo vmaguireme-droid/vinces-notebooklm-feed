@@ -1,5 +1,22 @@
 [
   {
+    "title": "Why Big Four AI Models Hallucinate",
+    "description": "NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 4: Big 4 Frontier Overview.",
+    "audio_file": "audio-87c12579-c9a0-4bad-8429-5fd9994db68b.m4a",
+    "source_name": "audio_87c12579-c9a0-4bad-8429-5fd9994db68b.m4a",
+    "source_sha256": "3b6e7351269efda4e8a420ee64047e2cc43ab4c1e6dfca7de9bb891d287b8fe1",
+    "converted_to_aac": false,
+    "published": "Fri, 13 Nov 2026 22:57:09 +0000",
+    "guid": "719bbe52-6dc3-5ac1-9f71-d6fd7d291cd2",
+    "duration": "0:20:48",
+    "draft": false,
+    "notebookId": "f785cab6-7a36-4911-97d3-81a52dcc73b4",
+    "notebookTitle": "AI For Engineers, Part 4: Big 4 Frontier Overview",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
     "title": "The Math Behind AI Hallucinations",
     "description": "NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 3: The Prompt-First Trap & Why Models Are Not Software.",
     "audio_file": "audio-a1d0f650-15b1-4e5f-af0e-e1af5d9ba1cd.m4a",

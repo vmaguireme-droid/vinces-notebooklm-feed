@@ -1,5 +1,22 @@
 [
   {
+    "title": "The Math Behind AI Hallucinations",
+    "description": "NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 3: The Prompt-First Trap & Why Models Are Not Software.",
+    "audio_file": "audio-a1d0f650-15b1-4e5f-af0e-e1af5d9ba1cd.m4a",
+    "source_name": "audio_a1d0f650-15b1-4e5f-af0e-e1af5d9ba1cd.m4a",
+    "source_sha256": "0a4c01ffa1048894023b33f3f8bce8b2fc2aff3ff6b65f47cb9a24255dfe790e",
+    "converted_to_aac": false,
+    "published": "Fri, 13 Nov 2026 22:52:48 +0000",
+    "guid": "bfeef10d-3b80-53c5-b23e-0eee6ef04433",
+    "duration": "0:20:41",
+    "draft": false,
+    "notebookId": "0ebbf0bb-8c8f-4e0f-ae90-66118ca40c09",
+    "notebookTitle": "AI For Engineers, Part 3: The Prompt-First Trap & Why Models Are Not Software",
+    "artifactType": "audio_overview",
+    "variant": "Deep Dive",
+    "publicReviewStatus": "Owner reviewed"
+  },
+  {
     "title": "Building Bulletproof AI Engineering Reports",
     "description": "NotebookLM Deep Dive Audio Overview for AI For Engineers, Part 2: Verified Engineering Documents & Eliminating AI Slop.",
     "audio_file": "audio-4a80f821.m4a",
